@@ -36,6 +36,7 @@ Data/SGA_Scaling/SGA_NxN_avg.txt
 Data/SGA_Scaling/SGA_NxN_scaled_to_cF3.txt 
 Data/SGA_Scaling/SGA_unaveraged.mat
 Data/SGA_Scaling/SGA_avg.txt
+Data/SGA_Scaling/SGA_NxN_unaveraged.mat
 Data/SGA_Scaling/SGA_scaled_wide.txt
 Data/SGA_Scaling/Uber_091216.mat
 Data/SGA_Scaling/SGA_2016_full_scaled.rda 
