@@ -1,0 +1,135 @@
+---
+title: "spitzemap_construction"
+author: "Chris Mathy"
+email: "chris.mathy@ucsf.edu"
+date: "3/22/2019"
+output: html_document
+---
+
+import packages
+```{r echo=T, results='hide'}
+library(tidyverse)
+```
+
+Read in the Gsp1 data, output from MATLAB
+- The data is processed to have six labels for each strain (query or array) to match the labels
+  used for the SGA preprocessing.
+```{r}
+name_to_ORF <- list()
+name_to_ORF$array_allele_name <- read_delim('gsp1_pEMAP_avg_merged_gene_names.txt', delim='\t') %>% colnames()
+name_to_ORF$array_ORF <- read_delim('gsp1_pEMAP_avg_merged.txt', delim='\t') %>% colnames()
+name_to_ORF <- as.data.frame(name_to_ORF)
+
+gsp1_pEMAP <-
+  read_delim('gsp1_pEMAP_avg_merged_gene_names.txt', delim='\t') %>% 
+  rename(query_allele_name = Gene) %>%
+  separate(query_allele_name, into = c('query_name', 'query_mutant'),
+           sep = ' - ', extra = "drop", remove = FALSE) %>% 
+  mutate(query_ORF = 'YLR293C', query_descriptor = NA) %>% 
+  unite('query_strain_id', c('query_ORF','query_mutant'), remove = FALSE) %>% 
+  gather(-starts_with('query'), key = 'array_allele_name', value = 'score', na.rm = TRUE) %>%
+  left_join(name_to_ORF, by = 'array_allele_name') %>% 
+  separate(array_allele_name, into = c('array_name', 'array_descriptor'),
+           sep = ' - ', extra = "drop", remove = FALSE) %>% 
+  mutate('array_mutant' = NA,
+         'array_strain_id' = paste(array_ORF, 'emap', sep = '_'),
+         'interaction_network' = 'gsp1_pEMAP',
+         'pvalue' = NA) %>%
+  select(starts_with('query'), starts_with('array'), score, pvalue, interaction_network)
+```
+
+import SGA data and prepare it for concatenation
+```{r}
+load('../scaling_Costanzo_SGA_data/data/SGA_2016_full_scaled.rda')
+
+SGA_to_combine <-
+  SGA_scaled_to_EMAP %>% 
+  mutate(interaction_network = paste(interaction_network, 'SGA', sep = '_')) %>% 
+  select(interaction_network, starts_with('query'), starts_with('array'),
+         -ends_with('smf'), -arraytype_temp, score_scaled_to_emap, pvalue) %>% 
+  rename('score' = score_scaled_to_emap)
+```
+
+Combine pEMAP with SGA to make spitzemap, then save
+```{r}
+spitzemap <- bind_rows(gsp1_pEMAP, SGA_to_combine)
+save(spitzemap, file = 'spitzemap.rda')
+```
+
+Prepare the "spitzemapko", which only includes KOs as arrays, for use in
+computing correlatons to Gsp1 mutant profiles.
+```{r}
+spitzemapko <-
+  spitzemap %>% 
+  filter(interaction_network %in% c('gsp1_pEMAP','ExN_SGA','NxN_SGA'),
+         !grepl('supp', query_allele_name), # exclude strains with suppressive mutations
+         !grepl('supp', array_allele_name),
+         !grepl('_tsa', array_strain_id)) # exclude ts array genes (not in gsp1 emap library anyway)
+
+save(spitzemapko, file = 'spitzemapko.rda')
+```
+
+Show that all arrays are deletions (SGA from dma, or from gsp1 emap, which has only deletions)
+```{r}
+spitzemapko %>%
+  filter(!grepl('dma', array_strain_id),
+         !grepl('emap', array_strain_id))
+```
+
+Find the intersecting array ORFs between the SGA and Gsp1 EMAP
+```{r}
+# find intersecting arrays between the Gsp1 EMAP and the SGA
+gsp1_arrays <- 
+  spitzemapko %>% 
+  filter(interaction_network == 'gsp1_pEMAP') %>% 
+  select(array_ORF) %>% 
+  distinct() %>% 
+  unlist()
+
+sga_arrays <-
+  spitzemapko %>% 
+  filter(interaction_network != 'gsp1_pEMAP') %>% 
+  select(array_ORF) %>% 
+  distinct() %>% 
+  unlist()
+
+shared_arrays <- intersect(gsp1_arrays, sga_arrays)
+
+print(length(gsp1_arrays))
+print(length(sga_arrays))
+print(length(shared_arrays))
+
+# [1] 1444
+# [1] 3827
+# [1] 1137
+```
+
+We must use unique id's whenever spreading, otherwise there
+will be multiple values for the same row-column pair in the
+wide format matrix. The following code shows that when using
+the strain_id's as unique id's, the number of distinct rows
+is equal to the number of rows of spitzemap_for_corr.
+```{r}
+spitzemapko %>% 
+  select(query_strain_id, array_ORF, score) %>%
+  distinct() %>% 
+  nrow() %>% 
+  print()
+print(nrow(spitzemapko))
+# [1] 14375673
+# [1] 14375673
+```
+
+The following full spreading (long => wide) works for the full matrix,
+so the unique strain id's work. Note that this takes a while to run (5min)
+```{r}
+cormat <-
+  spitzemapko %>% 
+  select(query_strain_id, array_ORF, score) %>%
+  spread(query_strain_id, score) %>% 
+  select(-array_ORF) %>% 
+  cor(., use = "pairwise.complete.obs", method = 'pearson')
+```
+
+
+
