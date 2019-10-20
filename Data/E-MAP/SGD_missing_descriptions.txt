@@ -1,0 +1,69 @@
+name	ORF	description	name_meaning
+WT HIS3D::KAN	WT HIS3D::KAN		
+WT LEU2D::KAN-GFP	WT LEU2D::KAN-GFP		
+YBL036C	YBL036C		
+YBL081W	YBL081W		
+YBL086C	YBL086C		
+PHO88	YBR106W	"Protein involved in SRP-independent targeting of substrates to the ER; component of an alternative ER targeting pathway that has partial functional redundancy with the GET pathway; preference for substrates with downstream transmembrane domains; interacts with Snd1p, Env10p/Snd2p, and Sec61p-translocon subunits; can compensate for loss of SRP; role in phosphate transport, interacting with pho88, and in the maturation of secretory proteins"	SRP-iNDependent targeting
+YBR141C	YBR141C	Nucleolar S-adenosylmethionine-dependent rRNA methyltransferase; methylates adenine (m1A) of the large subunit (LSU) rRNA at position 2142; belongs to Rossmann fold superfamily; green fluorescent protein (GFP)-fusion protein localizes to the nucleolus; YBR141C is not an essential gene	Base MethylTransferase of 25S RNA
+YBR238C	YBR238C	"Mitochondrial membrane protein; not required for respiratory growth but causes a synthetic respiratory defect in combination with rmd9 mutations; transcriptionally up-regulated by TOR; deletion increases life span; YBR238C has a paralog, RMD9, that arose from the whole genome duplication"	
+FMP21	YBR269C	"Protein required for assembly of succinate dehydrogenase; interacts with flavinylated Sdh1p and may function as a chaperone for free Sdh1p, protecting its FAD cofactor from redox reactions before assembly of the complex; soluble protein of the mitochondrial matrix; respiratory defect of null mutant is functionally complemented by Drosophila and human orthologs"	Succinate DeHydrogenase
+YCL001W-A	YCL001W-A		
+YCL056C	YCL056C	"Protein that regulates peroxisome populations; peroxisomal integral membrane protein; interacts with Pex11p, Pex25p, and Pex27p to control both constitutive peroxisome division and peroxisome morphology and abundance during peroxisome proliferation"	PEroXin
+FEN1	YCR034W	"Fatty acid elongase, involved in sphingolipid biosynthesis; acts on fatty acids of up to 24 carbons in length; mutations have regulatory effects on 1,3-beta-glucan synthase, vacuolar ATPase, and the secretory pathway; ELO2 has a paralog, ELO1, that arose from the whole genome duplication; lethality of the elo2 elo3 double null mutation is functionally complemented by human ELOVL1 and weakly complemented by human ELOVL3 or ELOV7"	fatty acid ELOngation
+YCR050C	YCR050C		
+YCR061W	YCR061W		
+YCR087C-A	YCR087C-A		
+YDL176W	YDL176W		
+YDR061W	YDR061W		
+GSG1	YDR108W	"Component of transport protein particle (TRAPP) complex III; TRAPPIII is a multimeric guanine nucleotide-exchange factor for the GTPase Ypt1p, regulating endosome-Golgi traffic and required for membrane expansion during autophagy and the CVT pathway; directs Ypt1p to the PAS; late post-replication meiotic role"	TRapp Subunit
+YDR131C	YDR131C	F-box protein subunit of SCF ubiquitin ligase complex; substrate-specific adaptor subunit that recruits substrates to a core ubiquitination complex	
+YDR161W	YDR161W	Specific assembly chaperone for ribosomal protein Rpl4p; binds to an evolutionarily conserved surface extension of nascent Rpl4p and chaperones Rpl4p until its assembly into the pre-ribosome; transcriptionally co-regulated with rRNA and ribosome biosynthesis genes	Assembly Chaperone of RpL4
+YDR266C	YDR266C	RING finger ubiquitin ligase (E3); involved in ubiquitination and degradation of excess histones; interacts with Ubc4p and Rad53p; null mutant sensitive to hydroxyurea (HU); green fluorescent protein (GFP)-fusion protein localizes to the cytoplasm; computational analysis suggests a role as a transcription factor	Histone E3 Ligase
+YDR306C	YDR306C	F-box protein of unknown function; interacts with Sgt1p via a Leucine-Rich Repeat (LRR) domain 	
+YEL007W	YEL007W	Transcriptional regulator of pseudohyphal growth; protein with sequence similarity to S. pombe gti1+ (gluconate transport inducer 1) and C. albicans Wor1	Muc1 expressed Independent of TEC1
+YEL043W	YEL043W	"Predicted cytoskeleton protein involved in intracellular signaling; based on quantitative analysis of protein-protein interaction maps; may interact with ribosomes, based on co-purification studies; contains fibronectin type III domain fold"	
+YEL047C	YEL047C	"Soluble fumarate reductase; required with isoenzyme Osm1p for anaerobic growth; may interact with ribosomes, based on co-purification experiments; authentic, non-tagged protein is detected in purified mitochondria in high-throughput studies; similar to Arxula adeninovorans fumarate reductase; protein abundance increases in response to DNA replication stress; FRD1 has a paralog, OSM1, that arose from the whole genome duplication"	Fumarate ReDuctase
+YER064C	YER064C	"Non-essential nuclear protein; null mutation has global effects on transcription; VHR2 has a paralog, VHR1, that arose from the whole genome duplication; relative distribution to the nucleus increases upon DNA replication stress"	VHt1 Regulator
+YER077C	YER077C	Protein that associates with mitochondrial ribosome; green fluorescent protein (GFP)-fusion protein localizes to the mitochondrion; null mutation results in a decrease in plasma membrane electron transport	Mitochondrial oRganization of gene eXpression (MIOREX)
+YER156C	YER156C	"Putative protein of unknown function; interacts with Hsp82p and copurifies with Ipl1p; expression is copper responsive and downregulated in strains deleted for MAC1, a copper-responsive transcription factor; similarity to mammalian MYG1"	
+YGL046W	YGL046W		
+YGL081W	YGL081W		
+KEM1	YGL173C	"Evolutionarily-conserved 5'-3' exonuclease; component of cytoplasmic processing (P) bodies involved in mRNA decay; enters the nucleus and positively regulates transcription initiation and elongation; involved in microtubule-mediated processes, filamentous growth, ribosomal RNA maturation, and telomere maintenance; negative regulator of autophagy; activated by the scavenger decapping enzyme Dcs1p; expression regulated by Ash1p in rich conditions"	eXoRiboNuclease
+YGL242C	YGL242C		
+YGR054W	YGR054W	"Eukaryotic initiation factor eIF2A; associates specifically with both 40S subunits and 80 S ribosomes, and interacts genetically with both eIF5b and eIF4E; homologous to mammalian eIF2A"	
+YGR071C	YGR071C	"Protein proposed to be involved in vacuolar functions; mutant shows defect in CPY processing and fragmented vacuoles; deletion mutant has increased glycogen accumulation and displays elongated buds; green fluorescent protein (GFP)-fusion protein localizes to the nucleus; ENV11 has a paralog, VID22, that arose from the whole genome duplication"	late ENdosome and Vacuole interface function
+YGR122W	YGR122W	"Protein that may be involved in pH regulation; probable ortholog of A. nidulans PalC, which is involved in pH regulation and binds to the ESCRT-III complex; null mutant does not properly process Rim101p and has decreased resistance to rapamycin; GFP-fusion protein is cytoplasmic; relative distribution to cytoplasm increases upon DNA replication stress"	
+KRE11	YGR166W	"Component of transport protein particle (TRAPP) complex II; TRAPPII is a multimeric guanine nucleotide-exchange factor for the GTPase Ypt1p, regulating intra-Golgi and endosome-Golgi traffic; role in cell wall beta-glucan biosynthesis and the stress response"	TRapp Subunit
+YGR237C	YGR237C		
+YHR009C	YHR009C	"Putative oxidoreductase involved in late endosome to Golgi transport; physical and genetical interactions with Btn2p; null mutant is viable, has extended S phase, and sensitive to expression of top1-T722A allele; similar to human FOXRED1"	Topoisomerase I Damage Affected
+YHR078W	YHR078W		
+KRE27	YIL027C	"Member of conserved ER transmembrane complex; required for efficient folding of proteins in the ER; null mutant displays induction of the unfolded protein response, and also shows K1 killer toxin resistance; homologous to worm B0334.15/EMC-5, fly CG15168, human MMGT"	ER Membrane protein Complex
+YIL029C	YIL029C		
+YJL055W	YJL055W		
+YJR011C	YJR011C		
+YJR054W	YJR054W	"Potassium transporter that mediates K+ influx; activates high-affinity Ca2+ influx system (HACS) during mating pheromone response; expression up-regulated in response to alpha factor; localized to sites of polarized growth; member of a fungal-specific gene family; potential Cdc28p substrate; KCH1 has a paralog, PRM6, that arose from the whole genome duplication"	Potassium (K) regulator of CcH1
+CSN12	YJR084W	Protein that forms a complex with Thp3p; may have a role in transcription elongation and/or mRNA splicing; identified as a COP9 signalosome component but phenotype and interactions suggest it may not be involved with the signalosome	
+YKL023W	YKL023W		
+AIM27	YKL207W	"Member of conserved ER transmembrane complex; required for efficient folding of proteins in the ER; required for respiratory growth; null mutant displays induction of the unfolded protein response; homologous to worm Y62E10A.10/EMC-3, fly CG6750, human TMEM111"	ER Membrane protein Complex
+YKR043C	YKR043C	"Sedoheptulose bisphosphatase involved in riboneogenesis; dephosphorylates sedoheptulose 1,7-bisphosphate, which is converted via the nonoxidative pentose phosphate pathway to ribose-5-phosphate; facilitates the conversion of glycolytic intermediates to pentose phosphate units; also has fructose 1,6-bisphosphatase activity but this is probably not biologically relevant, since deletion does not affect FBP levels; GFP-fusion protein localizes to the cytoplasm and nucleus"	"SedoHeptulose 1,7-Bisphosphatase"
+YKR096W	YKR096W	"hEST1A/B (SMG5/6)-like protein; contributes to environment-sensing adaptive gene expression responses; Esl2p and Esl1p contain a 14-3-3-like domain and a putative PilT N-terminus ribonuclease domain; interacts with Pex14p; may interact with ribosomes, based on co-purification experiments; green fluorescent protein (GFP)-fusion protein localizes to the nucleus and cytoplasm; ESL2 has a paralog, ESL1, that arose from the whole genome duplication"	EST/SMG-like
+YLR177W	YLR177W	"Putative protein of unknown function; phosphorylated by Dbf2p-Mob1p in vitro; some strains contain microsatellite polymophisms at this locus; not an essential gene; YLR177W has a paralog, PSP1, that arose from the whole genome duplication"	
+YLR426W	YLR426W		
+YML108W	YML108W		
+YML119W	YML119W		
+YMR010W	YMR010W	Protein involved in phospholipid flippase function; null allele suppresses growth and membrane trafficking defects associated with all flippase null alleles; proposed function as a phospholipid scramblase that reduces membrane asymmetry; PQ loop family member; localizes to the endosome and trans-Golgi network; non-essential gene	Antagonizes Neo1 Yeast phospholipid flippase
+YMR102C	YMR102C		
+YMR111C	YMR111C		
+YMR209C	YMR209C		
+YNR065C	YNR065C		
+YOR342C	YOR342C		
+YPL041C	YPL041C	Protein that associates with mitochondrial ribosome; SWAT-GFP and mCherry fusion proteins localize to the mitochondria; involved in maintenance of telomere length	Mitochondrial oRganization of gene eXpression (MIOREX) 
+YPL068C	YPL068C		
+YPL113C	YPL113C		
+YPL150W	YPL150W		
+YPR022C	YPR022C		
+YPR045C	YPR045C	Protein that may have a role in transcription elongation; forms a complex with Csn12p that is recruited to transcribed genes; possibly involved in splicing based on pre-mRNA accumulation defect for many intron-containing genes	THO-related Protein
+YPR063C	YPR063C		
+YPR084W	YPR084W		
+YPR174C	YPR174C		

@@ -1,0 +1,344 @@
+---
+title: "Scaling SGA2016 to EMAP Format"
+author: "Chris Mathy"
+email: "chris.mathy@ucsf.edu"
+date: "2/28/2019"
+output: html_document
+last update: "3/5/2019"
+---
+
+```{r, setup, include=FALSE}
+require('knitr')
+opts_knit$set(root.dir = '../..')
+```
+
+Import packages -- this notebook makes use of the tidyverse functions,
+version tidyverse_1.2.1
+```{r}
+library(tidyverse)
+library(R.matlab)
+```
+
+Download SGA data (Costanzo 2016) from The Cell Map website (uncomment to run)
+```{r}
+# url <- 'http://boonelab.ccbr.utoronto.ca/supplement/costanzo2016/data_files/Data%20File%20S1_Raw%20genetic%20interaction%20datasets:%20Pair-wise%20interaction%20format.zip'
+# download_dir <- dir.create('Data/SGA_Scaling/costanzo2016_raw_data/',showWarnings = FALSE)
+# download.file(url=url, destfile='Data/SGA_Scaling/costanzo2016_raw_data/costanzo2016.zip')
+# unzip('Data/SGA_Scaling/costanzo2016_raw_data/costanzo2016.zip', exdir='costanzo2016_data')
+# file.rename(from='Data/SGA_Scaling/costanzo2016_raw_data/Data File S1. Raw genetic interaction datasets: Pair-wise interaction format',
+#             to='costanzo2016_raw_data/datafileS1')
+```
+
+Read in each of the interaction networks included in the SGA, and make the
+following ease-of-use data preprocessing steps:
+- Column-wise concatenate the four tables into one table, and introduce a new
+  column "interaction_network" identifying from which network each genetic
+  interaction measurement originated.
+- From the Strain ID columns, create "ORF" and "Descriptor" columns, and from
+  the Allele Name columns, create "name" and "mutant" columns. Do this for
+  both Query and Array columns. This is done by separating on "_" for strain
+  IDs and on "-" for allele names. For example, "query_strain_id:
+  YAL001C_tsq508" yields "query_ORF: YAL001C" and "query_descriptor: tsq508".
+  Note that not many allele names, such as deletions, do no have mutant values
+  (i.e. they don't contain "-"), and so NA's may be introduced in the
+  "query_mutant" and "array_mutant" columns.
+- Rename column names with spaces into a common format, e.g. "`Query Strain ID`"
+  becomes "query_strain_id"
+- Save the preprocessed SGA. Rdata files are well compressed and fast loading,
+  Tab-delimited text files are bulky but readable.
+```{r}
+SGA_ExE <- read_delim('Data/SGA_Scaling/costanzo2016_raw_data/datafileS1/SGA_ExE.txt', delim='\t') # essential vs. essential
+SGA_ExN <- read_delim('Data/SGA_Scaling/costanzo2016_raw_data/datafileS1/SGA_ExN.txt', delim='\t') # essential vs. non-essential
+SGA_NxN <- read_delim('Data/SGA_Scaling/costanzo2016_raw_data/datafileS1/SGA_NxN.txt', delim='\t') # non-essential vs. non-essential
+SGA_DAmP <- read_delim('Data/SGA_Scaling/costanzo2016_raw_data/datafileS1/SGA_DAmP.txt', delim='\t') # non-essential vs. non-essential
+
+SGA <-
+  bind_rows('ExE' = SGA_ExE,
+            'ExN' = SGA_ExN,
+            'NxN' = SGA_NxN,
+            'DAmP' = SGA_DAmP,
+            .id = 'interaction_network') %>%
+  rename('query_strain_id' = `Query Strain ID`,
+         'array_strain_id' = `Array Strain ID`,
+         'query_allele_name' = `Query allele name`,
+         'array_allele_name' = `Array allele name`,
+         'arraytype_temp' = `Arraytype/Temp`,
+         'score' = `Genetic interaction score (ε)`,
+         'pvalue' = `P-value`,
+         'query_smf' = `Query single mutant fitness (SMF)`,
+         'array_smf' = `Array SMF`,
+         'dmf' = `Double mutant fitness`,
+         'dmf_sd' = `Double mutant fitness standard deviation`) %>% 
+  separate(query_strain_id,into = c('query_ORF', 'query_descriptor'),
+           sep ='_', extra = 'merge', remove = FALSE) %>%
+  separate(array_strain_id, into = c('array_ORF', 'array_descriptor'),
+           sep ='_', extra = 'merge', remove = FALSE) %>%
+  separate(query_allele_name, into = c('query_name', 'query_mutant'),
+           sep ='-', extra = 'merge', remove = FALSE) %>%
+  separate(array_allele_name, into = c('array_name', 'array_mutant'),
+           sep ='-', extra = 'merge', remove = FALSE) 
+
+save(SGA, file='Data/SGA_Scaling/SGA_2016_full.rda') # Rdata
+# write_delim(SGA, 'Data/SGA_Scaling/SGA_2016_full.txt', delim = '\t') # Tab-delimited text
+```
+
+Remove unprocessed data, leaving on the processed SGA (or if data is already
+saved, load in the datafiles)
+```{r}
+# rm(list=setdiff(ls(), c('SGA')))
+load('Data/SGA_Scaling/SGA_2016_full.rda')
+```
+
+Subsetting the SGA for analysis in conjunction with the Gsp1 pEMAP
+- In addition to the NxN network, we include the ExN and ExE networks, as
+  Costanzo et al 2016 reported having performed quantile normalization scaling
+  to ensure that the networks were comparable. In short, mutants from the
+  nonessential deletion mutant array (DMA) were included on the essential
+  temperature sensitive arrays (TSA), providing ~297,000 measurements from
+  mutants common to both arrays, and the mathematical transformation that
+  correctly normalized the common mutants was applied to all TSA-derived scores
+  (which populate the ExN and ExE networks).
+- We discard the DAmP network because Costanzo et al 2016 reported significant
+  sparseness of genetic interaction profiles of DAmP query strains compared to
+  those of temperature sensitive alleles.
+- Interactions involving an allele with the "supp" designaton are removed, as
+  they denote strains that carry a second, spontaneous suppressor mutation.
+- After these changes, the SGA kept 15,778,630 interactions out of an initial
+  17,148,734 interactions, corresponding to a loss of only 8%.
+
+Defining a unique ID for each strain, independent of marker:
+- Both deletion and ts mutants can appear as either natMX (query) or kanMX
+  (array) strains, and they are labeled differently
+- For example, YLR166C_tsq66 and YLR166C_tsa63 are both the sec10-2 mutants,
+  but their different strain IDs reflect their query/array status, determined
+  by their marker.
+- Below is a nice example, where YLR166C appears as both a ts and a DAmP
+  perturbation (each natMX marked) in conjunction with a YAL002W array strain
+  (kanMX marked), but then also as an array ts strain (kanMX marked) in
+  conjuction with a YAL002W query strain (natMX marked). All five strains have
+  unique strain IDs.
+- Standard EMAP analysis averages measurements of gene pairs in which the
+  perturbations are the same but the markers are swapped. To prepare the data
+  for averaging by the EMAP Toolbox in MATLAB, we must identically label query
+  and array strains that differ only by marker. Since we have seen that the
+  strain_id values are marker dependent, we will give a new "unique_id" formed
+  by combining the ORF and allele_name.
+  
+```{r}
+# Example showing different strain IDs for the same mutant as query and array gene
+SGA %>%
+  filter((grepl('YLR166C', query_strain_id) & 
+          grepl('YAL002W', array_strain_id)) |
+         (grepl('YAL002W', query_strain_id) & 
+          grepl('YLR166C', array_strain_id))) %>% 
+  select(query_strain_id, query_allele_name, array_strain_id,
+         array_allele_name, score)
+```
+
+Subsetting the SGA for downstream analysis (after scaling)
+```{r}
+SGA_unscaled <- SGA %>%
+  filter(interaction_network %in% c('NxN', 'ExN', 'ExE')) %>% 
+  filter(!grepl('supp', query_allele_name), !grepl('supp', array_allele_name)) %>% 
+  mutate(query_unique_id = paste(query_ORF, query_allele_name, sep = '_'),
+         array_unique_id = paste(array_ORF, array_allele_name, sep = '_'))
+
+write_delim(SGA_unscaled, 'Data/SGA_Scaling/SGA_unscaled_long.txt', delim = '\t')
+```
+
+Confirmation that the unique IDs result in no duplicate interaction measurements
+```{r}
+SGA_unscaled %>%
+  select(query_unique_id, array_unique_id, score) %>% 
+  group_by(query_unique_id, array_unique_id) %>% 
+  mutate(n_rep = n()) %>% 
+  ungroup() %>% 
+  group_by(n_rep) %>%
+  summarise(n())
+```
+
+Confirmation that there are still gene pairs with duplicate measurements for
+swapped markers
+```{r}
+SGA_unscaled %>%
+  filter(query_unique_id %in% c('YLR166C_sec10-2','YAL002W_vps8')) %>% 
+  filter(array_unique_id %in% c('YLR166C_sec10-2','YAL002W_vps8')) %>% 
+  select(query_unique_id, array_unique_id, score)
+```
+
+
+Subsetting the SGA for scaling to a reference EMAP:
+- To improve the accuracy of comparison between the SGA and the Gsp1 pEMAP, the
+  SGA will be scaled to EMAP format according to the method described in
+  Ryan et al 2012 Molecular Cell.
+- The chromosome biology EMAP ('cF3', Collins et al 2007 Nature) will serve as
+  the reference EMAP, as in Ryan et al 2012.
+- The method seeks to fits a nonlinear scaling function so that interactions
+  common to two genetic interaction datasets are scored similarly.
+- Most genes in the cF3 EMAP are deletions or DAmPs, though there are a few
+  pseudogene strains and temperature sensitive mutants. Non-deletions are
+  not be included in the scaling. As such, only the NxN SGA is needed for
+  scaling, as non of the ExN or ExE gene pairs are present in the cF3 EMAP
+
+Performing the scaling
+- The NxN network as well as the full SGA are converted from long to 
+  wide format and undergo averaging in the MATLAB EMAP Toolbox, which
+  averages replicates of gene pairs with swapped markers, and performs
+  a pseudo-averaging for singlets. This averaging step was done for the
+  Gsp1 pEMAP and the cF3 EMAP.
+- The NxN is scaled to the cF3 EMAP, resulting in a non-linear scaling spline.
+- The scaling spline is applied to the full, averaged SGA, resulting in a
+  final dataset with scores more comparable to the Gsp1 pEMAP.
+
+Spread the NxN network into wide format for MATLAB averaging/pseudo-averaging
+```{r}
+# For the NxN network, the ORFs can be used to spread, as they function
+# as unique identifiers.
+SGA_NxN_spread <-
+  SGA_unscaled %>% 
+  filter(interaction_network == 'NxN') %>% 
+  select(query_ORF, array_ORF, score) %>% 
+  spread(array_ORF, score)
+
+# create the necessary objects for the pseudo-averaging script in the EMAP MATLAB toolbox
+
+SGA_NxN_unaveraged <- list()
+SGA_NxN_unaveraged$rowlabels <- SGA_NxN_spread$query_ORF
+SGA_NxN_unaveraged$collabels <- colnames(SGA_NxN_spread)[-1]
+SGA_NxN_unaveraged$data <- select(SGA_NxN_spread, -query_ORF)
+colnames(SGA_NxN_unaveraged$data) <- NULL
+
+writeMat(con="Data/SGA_Scaling/SGA_NxN_unaveraged.mat", SGA_NxN_unaveraged = SGA_NxN_unaveraged)
+
+```
+
+
+Spread the full SGA into wide format for MATLAB averaging/pseudo-averaging
+```{r}
+SGA_spread <-
+  SGA_unscaled %>% 
+  select(query_unique_id, array_unique_id, score) %>% 
+  spread(array_unique_id, score)
+
+SGA_unaveraged <- list()
+SGA_unaveraged$rowlabels <- SGA_spread$query_unique_id
+SGA_unaveraged$collabels <- colnames(SGA_spread)[-1]
+SGA_unaveraged$data <- select(SGA_spread, -query_unique_id)
+colnames(SGA_unaveraged$data) <- NULL
+
+writeMat(con="Data/SGA_Scaling/SGA_unaveraged.mat", SGA_unaveraged = SGA_unaveraged)
+```
+
+
+At this step, the matlab files are imported into MATLAB and run through the
+averaging/pseudo-averaging step. The output matrix of the SGA_NxN subset is
+then fed into the scaling script (written in python) and a scaling spline
+that scales the SGA to the cF3 EMAP is calculated. This curve is saved
+as a series of points, and the same spline can be fit for use in R.
+
+```{r}
+
+
+
+spline_input <- read_delim('Supplemental_Figures/SGA_Scaling/scaler_output/spline.txt',delim = '\t')
+scaling_spline <- smooth.spline(x = spline_input$score,
+                                y = spline_input$scale,
+                                spar = 0.02)
+plot(scaling_spline)
+```
+
+
+Get adjustment of unscaled values from the scaler logfile. The adjustment was
+applied before scaling so that there were the same number of negatives in each
+dataset. As such, the scaling spline is only accurate when used after this
+slight adjustment.
+
+Also get the min and max scores from the dataset used for scaling. As done in the
+Ryan et al 2012 scaling, any scores more negative than the min score or more
+positive than the max score used for scaling use the scaling factors of the min or
+max. In practice, if a value to be scaled is larger than any value in our training
+set, we use the scaling factor from the largest observed value of the training set.
+```{r}
+adjustment <-
+  grep('adjustment=', readLines('Supplemental_Figures/SGA_Scaling/scaler_output/scaler_log.txt'), value=TRUE) %>% 
+  strsplit(., '=') %>% 
+  `[[`(1) %>% 
+  `[`(2) %>% 
+  as.numeric()
+
+max_score <-
+  grep('max_score=', readLines('Supplemental_Figures/SGA_Scaling/scaler_output/scaler_log.txt'), value=TRUE) %>% 
+  strsplit(., '=') %>% 
+  `[[`(1) %>% 
+  `[`(2) %>% 
+  as.numeric()
+
+min_score <-
+  grep('min_score=', readLines('Supplemental_Figures/SGA_Scaling/scaler_output/scaler_log.txt'), value=TRUE) %>% 
+  strsplit(., '=') %>% 
+  `[[`(1) %>% 
+  `[`(2) %>% 
+  as.numeric()
+
+# upper/lower bounds scaling factors
+ubsf <- predict(scaling_spline, max_score)$y
+lbsf <- predict(scaling_spline, min_score)$y
+```
+
+The scaling is performed according to the method employed by Ryan et al 2012,
+shown in scaler.py and below (code received through personal communication).
+
+#-----from scaler.py-----#
+# This function creates a curve which maps scores to scaling factors
+# The s=0.02 defines how close the curve fits your data points
+s = UnivariateSpline(score, scale, s=0.02)def s_bounded(x) :
+
+# if the value to be scaled is larger than any value in our training set,
+# we use the scaling factor from the largest observed value
+def s_bounded(x) :
+    if x<min(score) :
+        x = min(score)
+    elif x > max(score) :
+        x=max(score)
+    return s(x)
+    
+# This function applies our scaling factor to a given value
+g = lambda x : (x + adjustment) * s_bounded(x + adjustment)
+
+
+Scale the SGA
+```{r}
+SGA_scaled_to_EMAP <- SGA %>%
+  mutate(score_adjusted = score + adjustment) %>% 
+  mutate(scaling_factor = case_when(score_adjusted > max_score ~ ubsf,
+                                    score_adjusted < min_score ~ lbsf,
+                                    TRUE ~ predict(scaling_spline, .$score_adjusted)$y)) %>% 
+  mutate(score_scaled_to_emap = score_adjusted * scaling_factor)
+```
+
+Save the scaled_SGA
+```{r}
+save(SGA_scaled_to_EMAP, file='Data/SGA_Scaling/SGA_2016_full_scaled.rda')
+```
+
+Load the scaled_SGA
+```{r}
+load('Data/SGA_Scaling/SGA_2016_full_scaled.rda')
+```
+
+Example of how to get all interactions involving a gene, in this case Gsp1
+```{r}
+SGA_scaled_to_EMAP %>%
+  filter(grepl('gsp1', query_allele_name) | grepl('gsp1', array_allele_name)) %>% 
+  select(query_strain_id, query_allele_name,
+         array_strain_id, array_allele_name, score_scaled_to_emap) %>% 
+  arrange(score_scaled_to_emap)
+
+```
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+load
+p2b
+inline
++ NAME RESI RESN CHAIN SEGI        X        Y        Z     B   
+
++    FROM      TO
+
+end
+p2b
+inline
++ NAME RESI RESN CHAIN SEGI        X        Y        Z     B   
+
++    FROM      TO
+
+end
+end
+
+# determine connectivity 
+
+reference
+
+   # how much VDW overlap generally determines a bond
+   bond_cutoff    = 0.4
+
+   # how far out are our neighbors?
+   neighbor_cutoff = 8.0
+
+   # should we treat HIS, ASN, GLN as symmetric (1=yes, 0=no)
+   coarse_symmetry = 1 
+
+end
+
+# generate the difference distance matrix
+
+compare end
+
+# now cluster (the settings rarely need to be changed).
+
+analyze
+
+   group_distance_cutoff     =    0.50  #  Distance (Angstroms)
+   group_angle_cutoff        =   90.00  #  Angle (Degrees) 0-180
+   group_shape_cutoff        =  100.00  #  Shape Ratio (25-500)
+
+   cluster_distance_cutoff   =    1.75  #  Distance (Angstroms)
+   cluster_angle_cutoff      =  180.00  #  Angle (Degrees) 0-180
+   cluster_shape_cutoff      =  250.00  #  Shape Ratio (25-500)
+
+   domain_similarity_cutoff  =    2.50  #  Ratio > 1.0
+   domain_size_cutoff        =   10     #  Atom Count
+   domain_shape_cutoff       =  500.00  #  Shape Ratio (25-500)
+
+end
+
+# write out the interpolation
+
+write 
+
+   interpolation
+      steps = 30
+      from 1 to 2
+   end
+
+end
+
+# terminate RigiMOL
+   
+stop
+

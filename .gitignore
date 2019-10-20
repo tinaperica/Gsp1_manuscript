@@ -1,0 +1,54 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+*.pdf
+*.ai
+*.png
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+.DS_Store
+.rda
+
+
+### individual files
+for_Chris_and_Tina_mutants_data_summary_table.xlsx
+Nature_Figure_Template_183mm.ait
+spitzemapko_correlations_and_bonferroni_fdr_all.RData
+spitzemapko_for_corr.rda
+spitzemapko.rda
+spitzemap.rda
+Western_blot_processing_notes.txt
+## whole directories
+Manuscript/
+for_Nevan/
+talks/
+Final_Figures/
+Extended_Figures/
+Supplementary_Data_Tables/
+Supplemental_Figures/
+Figure2_APMS/
+Figure5_Cell_Network/
+Figure3_Biophysics/
+Figure4_Multispecificity/
+Figure1_E-MAP/
+Data/silver_stains/
+Data/old_backup/
+Data/Westerns/
+####
+Data/RanGEF_assay/data_parsed.txt
+Data/RanGEF_assay/fit_data.txt
+

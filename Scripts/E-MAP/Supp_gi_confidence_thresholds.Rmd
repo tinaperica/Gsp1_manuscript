@@ -1,0 +1,151 @@
+---
+title: "gi_confidence_thresholds.Rmd"
+author: "Chris Mathy"
+email: "chris.mathy@ucsf.edu"
+date: "3/22/2019"
+output: html_document
+---
+
+```{r, setup, include=FALSE}
+require('knitr')
+opts_knit$set(root.dir = '../..')
+```
+
+
+import packages and data
+```{r echo=T, results='hide'}
+library(tidyverse)
+load('Data/spitzemap.rda')
+```
+
+One sensible way to identify significance thresholds for EMAP data is to consider
+Fig 4c from the following reference:
+
+Collins, S. R., Schuldiner, M., Krogan, N. J., & Weissman, J. S. (2006). A strategy
+for extracting and analyzing large-scale quantitative epistatic interaction data.
+Genome biology, 7(7), R63.
+
+This figure plots the estimated fraction of observations that arise from genuine
+genetic interactions for a given averaged S-score (so the average score from both
+kan/nat pair and nat/kan pair measurements. This fractional expectation gives a
+measure of confidence that a given S-score reflects a genuine interaction, and
+could be used as weights when performing analyses with S-scores.
+
+Below, some points are estimated from figure 4c and used to fit a spline that
+defines our confidence function. One can crudely overlay the transparent figure
+plotted below onto the paper figure to show that we get fairly reasonable
+agreement.
+
+The fit spline produces the following values:
+  -6    -5    -4    -3    -2    -1    0     1     2     3     4     5     6
+  1.00  0.99  0.95  0.83  0.43  0.14  0.02  0.07  0.26  0.65  0.86  0.95  0.99
+  
+Note that the spline fits S-score < -5.6 to values slightly (by 1e-3) above 1.
+If these confidence values are being used as weights for scores, simply cap all
+weights at 1.0.
+```{r}
+# Estimate points from Fig 4c
+d <- data.frame(avg_S_score = seq(-6, 6, by=0.5),
+                confidence = c(1, 1, 0.99, 0.98, 0.95, 0.9, 0.85, 0.65, 0.45,
+                               0.2, 0.15, 0.08, 0, 0.05, 0.07, 0.15,
+                               0.22, 0.5, 0.65, 0.75, 0.87, 0.93, .95, .98, 0.99))
+
+confidence_spline <- smooth.spline(x = d$avg_S_score, y = d$confidence, spar = 0.3)
+
+confidence_fxn <- data.frame(x <- seq(-6, 6, by = 0.1),
+                             y <- predict(confidence_spline, seq(-6, 6, by = 0.1))$y)
+
+
+# S-score < -4 or > 4.9 has a confidence value greater than 0.95, using our spline
+lower_sig_thresh <- max(confidence_fxn$x[(confidence_fxn$y > 0.95) &
+                                         (confidence_fxn$x < 0)])
+upper_sig_thresh <- min(confidence_fxn$x[(confidence_fxn$y > 0.95) &
+                                         (confidence_fxn$x > 0)])
+print(lower_sig_thresh)
+print(upper_sig_thresh)
+
+
+ggplot(confidence_fxn, aes(x=x, y=y)) +
+  geom_point(color='red', size = 0.5) +
+  geom_hline(yintercept = 0.95, color = 'blue') +
+  xlab('Averaged S-score') + ylab('Confidence') + 
+  theme_classic() +
+  theme(
+    text = element_text(family = "Helvetica", size = 6),
+    axis.title = element_text(size = 6),
+    axis.text = element_text(size = 6),
+    axis.ticks = element_line(size = 0.05),
+    axis.ticks.length = unit(0.05, 'cm'),
+    axis.line = element_line(size = 0.1),
+    panel.grid.major = element_line(colour = "grey50")
+  )
+ggsave('Supplemental_Figures/S_score_confidence_spline.png', height = 3, width = 3)
+```
+
+Additionally, The SGA dataset from Costanzo et al 2016 was published with
+suggested thresholds:
+  - lenient (P < 0.05)
+  - intermediate (P < 0.05 and |score| > 0.08)
+  - stringent (P <0.05 and score > 0.16 or score < -0.12)
+  
+For the intermediate confidence, the code below shows that the scaled score
+thresholds corresponding to |score| > 0.08 are scaled_score < 2.25 and
+scaled_score < -2.97.
+
+```{r}
+# SGA p-value filtering
+spline_input <- read_delim('Supplemental_Figures/SGA_Scaling/scaler_output/spline.txt', delim = '\t')
+scaling_spline <- smooth.spline(x = spline_input$score, y = spline_input$scale, spar = 0.02)
+
+# compute scaled thresholds for intermediate stringency of SGA (abs(score) > 0.08)
+adj = .0051 # need to add adjustment to score first (adjustment = .0051)
+print(predict(scaling_spline, 0.08 + adj)$y * (0.08 + adj)) # upper threshold
+print(predict(scaling_spline, -0.08 + adj)$y * (-0.08 + adj)) # lower threshold
+```
+
+
+One other question we might ask is: what is the distribution of pvalues for SGA
+scores that have been scaled to EMAP format? The plot below bins values in
+intervals of 1, so the boxplot for rounded_score of -1 corresponds to all scores
+between -1.00 and -1.99. We see that the median p-value is below
+0.05 (-log(p) > 1.3) for scores > 3 or < -5.
+```{r}
+spitzemap %>% 
+  filter(interaction_network != 'gsp1_pEMAP', abs(score) < 10) %>%
+  select(score, pvalue) %>%
+  mutate('neg_log_pvalue' = -log10(pvalue),
+         'score_rounded' = as.factor(trunc(score))) %>%
+  ggplot(aes(x = score_rounded, y = neg_log_pvalue)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_hline(yintercept = -log10(0.05), color = 'red') +
+    ylim(0, 2) +
+    xlab('SGA score scaled to E-MAP format') + ylab('SGA p-value, from CellMap\n(negative log transformed)') +
+    ggtitle('Distribution of SGA p-values scaled to EMAP format\nred line indicates a p-value of 0.05') +
+    theme_classic() +
+    theme(
+      text = element_text(family = "Helvetica", size = 6),
+      axis.title = element_text(size = 6),
+      axis.text = element_text(size = 6),
+      axis.ticks = element_line(size = 0.05),
+      axis.ticks.length = unit(0.05, 'cm'),
+      axis.line = element_line(size = 0.1),
+      panel.grid.major = element_line(colour = "grey50")
+    )
+ggsave('Supplemental_Figures/SGA_scaled_score_vs_pval.pdf', height = 3, width = 3.5)
+dev.off()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

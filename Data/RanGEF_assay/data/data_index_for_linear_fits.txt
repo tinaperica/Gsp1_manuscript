@@ -1,0 +1,4 @@
+sample	well	conc	GEF_conc	date	k_est	cutoff_time	data_file
+PE6_H141V	C11	3.75	5	20180828	0.001		GEF_assay/2018_data/20180828_GEF_FRET_assay.txt
+PE6_H141V	C12	4	5	20180828	0.001		GEF_assay/2018_data/20180828_GEF_FRET_assay.txt
+PE6_H141V	E12	4.5	5	20180828	0.001		GEF_assay/2018_data/20180828_GEF_FRET_assay3.txt
