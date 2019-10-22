@@ -20,6 +20,11 @@ intrinsic_hydrolysis <- read_tsv('Data/RanGAP_assay/intrinsic_hydrolysis.txt')
 intersect_mutants <- intersect(GAP.data$mutant, GEF.data$mutant)
 GAP.data <- GAP.data %>% 
   filter(mutant %in% intersect_mutants)
+GAP.data_unaveraged <- GAP.data   # this is to add individual point to barplots
+GAP.data <- GAP.data %>% select(mutant, 'kcat' = mean_kcat, 'Km' = mean_Km, 
+                                'kcat_Km' = mean_kcat_Km,	kcat_sd, Km_sd, sd, 
+                                mean_log_kcat, mean_log_Km, log_kcat_sd, log_Km_sd, log_kcat_over_Km, log_sd) %>% 
+  unique()
 GEF.data <- GEF.data %>% 
   filter(mutant %in% intersect_mutants)
 
@@ -34,21 +39,25 @@ gap_plot <- GAP.data %>%
   mutate('interface' = ifelse( mutant == 'WT', 'WT', interface)) %>% 
   unique() %>% 
   mutate("mutant" = factor(mutant, mut_ordered_by_kcat_Km)) %>%
-  ggplot(aes(mutant, kcat_Km, fill = interface)) + geom_bar(stat = "identity") + 
+  ggplot(aes(mutant, kcat_Km, fill = interface)) + 
+  geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = kcat_Km - sd, ymax = kcat_Km + sd), width = 0.5, size = 0.2, alpha = 0.75) +
-  ylab(expression("k"['cat']*" / K"['m']*" [s "^-{}^{1}*mu*"M"^-{}^{1}*"]")) +
+  geom_point(data = GAP.data_unaveraged, aes(x = mutant, y = kcat_Km), size = 0.7, fill = 'black', alpha = 0.4) +
+  ylab(expression("k"['cat']*" / K"['m']*" [s "^-{1}*mu*"M"^-{1}*"]")) +
   xlab(element_blank()) +
-  ggtitle('GAP mediated hydrolysis') + 
+  ggtitle('GAP-mediated GTP hydrolysis') + 
   labs(fill = element_blank()) +
   theme_classic() +
   scale_fill_manual(values = GAP_barplot_colors) +
   geom_hline(yintercept = GAP.data$kcat_Km[GAP.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
-  theme(text = element_text(size = 6, family='Helvetica'), 
+  theme(text = element_text(size = 6, family = 'Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 6), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 6.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.position = 'bottom',
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
@@ -58,21 +67,25 @@ gap_kcat_plot <- GAP.data %>%
   mutate('interface' = ifelse( mutant == 'WT', 'WT', interface)) %>% 
   unique() %>% 
   mutate("mutant" = factor(mutant, mut_ordered_by_kcat_Km)) %>%
-  ggplot(aes(mutant, kcat, fill = interface)) + geom_bar(stat = "identity") + 
+  ggplot(aes(mutant, kcat, fill = interface)) + 
+  geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = kcat - kcat_sd, ymax = kcat + kcat_sd), width = 0.5, size = 0.2, alpha = 0.75) +
-  ylab(expression("k"['cat']*" [s"^-{}^{1}*"]")) +
+  geom_point(data = GAP.data_unaveraged, aes(x = mutant, y = kcat), size = 0.7, alpha = 0.4, fill = 'black') +
+  ylab(expression("k"['cat']*" [s"^-{1}*"]")) +
   xlab(element_blank()) +
-  ggtitle('GAP mediated hydrolysis') + 
+  ggtitle('GAP-mediated GTP hydrolysis') + 
   labs(fill = element_blank()) +
   theme_classic() +
   scale_fill_manual(values = GAP_barplot_colors) +
   geom_hline(yintercept = GAP.data$kcat[GAP.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
-  theme(text = element_text(size = 6, family='Helvetica'), 
+  theme(text = element_text(size = 6, family = 'Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 7.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.position = 'none',
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
@@ -82,8 +95,10 @@ gap_Km_plot <- GAP.data %>%
   mutate('interface' = ifelse( mutant == 'WT', 'WT', interface)) %>% 
   unique() %>% 
   mutate("mutant" = factor(mutant, mut_ordered_by_kcat_Km)) %>%
-  ggplot(aes(mutant, Km, fill = interface)) + geom_bar(stat = "identity") + 
+  ggplot(aes(mutant, Km, fill = interface)) + 
+  geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = Km - Km_sd, ymax = Km + Km_sd), width = 0.5, size = 0.2, alpha = 0.75) +
+  geom_point(data = GAP.data_unaveraged, aes(x = mutant, y = Km), size = 0.7, fill = 'black', alpha = 0.4) +
   ylab(expression("K"['m']*" ["*mu*"M]")) +
   xlab('\nGsp1 point mutant') +
   ggtitle('') + 
@@ -93,10 +108,12 @@ gap_Km_plot <- GAP.data %>%
   geom_hline(yintercept = GAP.data$Km[GAP.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
   theme(text = element_text(size = 6, family='Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 7.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.position = 'bottom',
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
@@ -114,20 +131,22 @@ gef_plot <- GEF.data %>%
   mutate("mutant" = factor(mutant, mut_ordered_by_kcat_Km)) %>%
   ggplot(aes(mutant, kcat_Km, fill = `GEF interface`)) + geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = kcat_Km - kcat_Km_sd, ymax = kcat_Km + kcat_Km_sd), width = 0.5, size = 0.2, alpha = 0.75) +
-  ylab(expression("k"['cat']*" / K"['m']*" [s "^-{}^{1}*mu*"M"^-{}^{1}*"]")) +
+  ylab(expression("k"['cat']*" / K"['m']*" [s "^-{1}*mu*"M"^-{1}*"]")) +
   xlab('\nGsp1 point mutant') +
-  ggtitle('GEF mediated nucleotide exchange') + 
+  ggtitle('GEF-mediated nucleotide exchange') + 
   labs(fill = element_blank()) +
   theme_classic() +
   scale_fill_manual(values = GEF_barplot_colors) +
   geom_hline(yintercept = GEF.data$kcat_Km[GEF.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
-  theme(text = element_text(size = 6, family='Helvetica'), 
+  theme(text = element_text(size = 6, family = 'Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 6), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 6.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         legend.position = 'bottom',
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
 # GEF Extended Data Figure (kcat)
@@ -138,20 +157,22 @@ gef_kcat_plot <- GEF.data %>%
   mutate("mutant" = factor(mutant, mut_ordered_by_kcat_Km)) %>%
   ggplot(aes(mutant, kcat, fill = `GEF interface`)) + geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = kcat - kcat_sd, ymax = kcat + kcat_sd), width = 0.5, size = 0.2, alpha = 0.75) +
-  ylab(expression("k"['cat']*" [s"^-{}^{1}*"]")) +
+  ylab(expression("k"['cat']*" [s"^-{1}*"]")) +
   xlab('') +
-  ggtitle('GEF mediated nucleotide exchange') + 
+  ggtitle('GEF-mediated nucleotide exchange') + 
   labs(fill = element_blank()) +
   theme_classic() +
   scale_fill_manual(values = GEF_barplot_colors) +
   geom_hline(yintercept = GEF.data$kcat[GEF.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
-  theme(text = element_text(size = 6, family='Helvetica'), 
+  theme(text = element_text(size = 6, family = 'Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 7.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         legend.position = 'none',
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
 # GEF Extended Data Figure (Km)
@@ -171,11 +192,13 @@ gef_Km_plot <- GEF.data %>%
   geom_hline(yintercept = GEF.data$Km[GEF.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
   theme(text = element_text(size = 6, family='Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 7.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         legend.position = 'bottom',
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
 # GEF Extended Data Figure (Km) inset
@@ -196,11 +219,13 @@ gef_Km_plot_zoom <- GEF.data %>%
   geom_hline(yintercept = GEF.data$Km[GEF.data$mutant == 'WT'], linetype = "dashed", size = 0.3) +
   theme(text = element_text(size = 6, family='Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 6), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 7.5),
         legend.text = element_text(size = 6),
         legend.key.size =  unit(0.22, 'cm'),
         legend.position = 'none',
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
 # Plot main figure - kcat/Km
@@ -215,15 +240,21 @@ ggsave(file.path(extended_directory, 'Ext_Fig5ABCD_gap_and_gef_kcat_and_Km_supp_
 # Plot intrinsic hydrolysis barplot for supplementary data
 intrinsic_hydrolysis <- intrinsic_hydrolysis %>% 
   filter(mutant %in% intersect_mutants)
+intrinsic_hydrolysis_unaveraged <- intrinsic_hydrolysis
+intrinsic_hydrolysis <- intrinsic_hydrolysis %>% 
+  select(mutant, mean_rel_rate, sd_rel_rate) %>% unique()
 mut_ordered_by_int <- intrinsic_hydrolysis %>% 
-  arrange(mean_rel_rate) %>% pull(mutant)
+  arrange(mean_rel_rate) %>% pull(mutant) %>% unique()
+intrinsic_hydrolysis_unaveraged <- intrinsic_hydrolysis_unaveraged %>% 
+  mutate("mutant" = factor(mutant, mut_ordered_by_int))
 intrinsic_hydrolysis %>% 
   mutate('residue' = ifelse( mutant == 'WT', 'WT', 'mutant')) %>% 
   mutate("mutant" = factor(mutant, mut_ordered_by_int)) %>%
   ggplot(aes(mutant, mean_rel_rate, fill = residue)) + 
   geom_bar(stat = "identity") + 
   geom_errorbar(aes(ymin = mean_rel_rate - sd_rel_rate, ymax = mean_rel_rate + sd_rel_rate), width = 0.5, size = 0.2, alpha = 0.75) +
-  ylab(expression("GTP hydrolysis rate [s"^-{}^{1}*"]")) +
+  geom_point(data = intrinsic_hydrolysis_unaveraged, aes(x = mutant, y = rel_rate), fill = 'black', size = 0.7, alpha = 0.4) +
+  ylab(expression("GTP hydrolysis rate [s"^-{1}*"]")) +
   ggtitle('Intrinsic GTP hydrolysis rate') +
   xlab('\nGsp1 point mutant') +
   theme_classic() +
@@ -231,10 +262,12 @@ intrinsic_hydrolysis %>%
   geom_hline(yintercept = intrinsic_hydrolysis$mean_rel_rate[intrinsic_hydrolysis$mutant == 'WT'], linetype = "dashed", size = 0.3) +
   theme(text = element_text(size = 6, family = 'Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 6), 
+        axis.text.y = element_text(size = 6), 
         axis.title = element_text(size = 6),
         legend.text = element_text(size = 6),
         legend.position = 'none',
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 ggsave(file.path(extended_directory, 'Ext_Fig6A_intrinsic_hydrolysis_barplot.pdf'), height = 3, width = 3.5)
 
@@ -280,6 +313,7 @@ data %>%
   scale_fill_manual(values = barplot_colors, labels = c('GAP mediated GTP hydrolysis', 'GEF mediated nucleotide exchange')) +
   theme(text = element_text(size = 7, family='Helvetica'), 
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7), 
+        axis.text.y = element_text(size = 6), 
         legend.text = element_text(size = 7),
         axis.line = element_line(size = 0.1),
         legend.key.size =  unit(0.22, 'cm'),

@@ -198,7 +198,7 @@ pval_heatmap <- Heatmap(
   cluster_columns = as.dendrogram(col.hc), column_split = 7, column_dend_height = unit(6, "mm"),
   column_order = col.hc$order,
   # cluster_columns = F, column_order = col_pcoor_ordering,
-  show_column_names = F,
+  show_column_names = T,
   column_names_gp = gpar(fontsize = 2, fontfamily = 'Helvetica'),
   
   # yeast gene cluster annotation
@@ -212,6 +212,35 @@ pval_heatmap <- Heatmap(
     )
   )
 )
+
+clustered_col_dend <- column_dend(pval_heatmap)
+labels(clustered_col_dend)
+
+clustered_col_dend %>% 
+  lapply(labels) %>% 
+  enframe() %>% 
+  unnest(value) %>% 
+  rename('cluster' = name, 'strain' = value) %>% 
+  write_csv('Supplementary_Data_Tables/Excel_files/corr_clustering_heatmap_cluster_gene_sets.csv')
+
+# loop to extract genes for each cluster.
+ for (i in 1:length(clustered_col_dend)){
+   
+   
+   if (i == 1) {
+     clu <- t(t(row.names(mat[row_order(HM)[[i]],])))
+     out <- cbind(clu, paste("cluster", i, sep=""))
+     colnames(out) <- c("GeneID", "Cluster")
+   } else {
+   clu <- t(t(row.names(mat[row_order(HM)[[i]],])))
+   clu <- cbind(clu, paste("cluster", i, sep=""))
+   out <- rbind(out, clu)
+   }
+}
+
+
+labels(clustered_col_dend[[5]])
+
 
 # make legends
 heatmap_legend <-

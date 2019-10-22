@@ -86,6 +86,7 @@ assembled_figure <- plot_grid(plots$WT$raw, plots$WT$fit,
                               plots$T34E$raw, plots$T34E$fit, 
                               plots$R108G$raw, plots$R108G$fit,
                               align = 'hv', nrow = 3, ncol = 2)
+
 pdf('Supplemental_Figures/Supplemental_Fig8_example_of_raw_and_fit_GEF_data.pdf',  width = 8, height = 9)
 assembled_figure
 dev.off()
@@ -120,12 +121,13 @@ for (i in seq_along(mutants)) {
     theme_classic() +
     ylim(c(0, 4)) +
     xlab(expression('Gsp1 concentration  ['*mu*'M]')) +
-    ylab(expression('v'[0]*" / GEF concentration in "*mu*"M  [s"^-{}^{1}*"]")) +
+    ylab(expression('v'[0]*" / GEF concentration in "*mu*"M  [s"^-{1}*"]")) +
     theme(text = element_text(size = 7, family = 'Helvetica'), 
           axis.text.x = element_text(size = 7), 
           axis.title = element_text(size = 7),
-          axis.line = element_line(size = 0.1)) +
-    ggtitle(mut)
+          axis.line = element_line(size = 0.1),
+          axis.ticks = element_line(size = 0.1)) +
+    ggtitle(str_c(mut, ' Gsp1    n = ', count(temp)$n))
 }
 assembled_figure <- plot_grid(plots$WT, plots$T34E, plots$R108Q, align = 'h', nrow = 1, labels = 'auto', label_size = 8)
 pdf('Supplemental_Figures/Supplemental_Fig9_GEF_MichaelisMenten_examples.pdf',  width = 7, height = 3)
