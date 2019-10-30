@@ -361,14 +361,14 @@ fit_MM <- function(data) { ### fits Michaelis-Menten
   kcat <- Vmax
   data$kcat <- kcat
   data$Km <- Km
-  kcat_sd <- summary(out)$parameters[1,2]
-  data$kcat_sd <- kcat_sd
+  kcat_se <- summary(out)$parameters[1,2]
+  data$kcat_se <- kcat_se
   Km_sd <- summary(out)$parameters[2,2]
-  data$Km_sd <- Km_sd
+  data$Km_se <- Km_se
   data$kcat_Km <- kcat / Km
-  #kcat_Km_sd <- sqrt(kcat_sd^2) + sqrt(Km_sd^2)
-  kcat_Km_sd <- sqrt( (kcat_sd/kcat)^2 + (Km_sd/Km)^2 ) * (kcat/Km)
-  data$kcat_Km_sd <- kcat_Km_sd
+  #kcat_Km_se <- sqrt(kcat_se^2) + sqrt(Km_se^2)
+  kcat_Km_se <- sqrt( (kcat_se/kcat)^2 + (Km_se/Km)^2 ) * (kcat/Km)
+  data$kcat_Km_se <- kcat_Km_se
   data$predicted_v0 <- (data$conc * Vmax) / (Km + data$conc)
   return(data)
 }   
@@ -516,5 +516,5 @@ MM.data <- processed.data %>%
 plot_MM_bins(MM.data, output = output)
 
 MM.data_to_save <- MM.data %>% 
-  select(sample, mutant, kcat, kcat_sd, Km, Km_sd, kcat_Km, kcat_Km_sd) %>% unique()
+  select(sample, mutant, kcat, kcat_se, Km, Km_se, kcat_Km, kcat_Km_se) %>% unique()
 write_tsv(MM.data_to_save, file.path(output, "MM_data.txt"))
