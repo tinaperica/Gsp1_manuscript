@@ -30,7 +30,8 @@ clustfn <- function(mat, dist_method, clust_method) {
 }
 
 # prepare kinetics data for plotting as ratio of relative GAP, GEF efficiencies
-GAP_kinetics <- read_tsv('Data/RanGAP_assay/GAP_kinetics_MichaelisMenten_parameters.txt', col_types = cols())
+GAP_kinetics <- read_tsv('Data/RanGAP_assay/GAP_kinetics_MichaelisMenten_parameters.txt', col_types = cols()) %>% 
+  select(mutant, 'kcat_Km' = mean_kcat_Km, 'kcat' = mean_kcat, 'Km' = mean_Km) %>% unique()
 GEF_kinetics <- read_tsv('Data/RanGEF_assay/GEF_kinetics_MichaelisMenten_parameters.txt', col_types = cols())
 
 WT_GEF <- filter(GEF_kinetics, mutant == 'WT')
@@ -267,6 +268,10 @@ barchart_legend <-
 
 # save 
 pdf('Figure4_Multispecificity/Plots/4B_Corr_Pvalue_Heatmap.pdf', width = 4.5, height = 2.7)
+draw(pval_heatmap)
+dev.off()
+
+pdf('talks/Corr_Pvalue_Heatmap_for_slides.pdf', width = 6, height = 2.7)
 draw(pval_heatmap)
 dev.off()
 
