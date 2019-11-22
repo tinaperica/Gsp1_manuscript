@@ -23,11 +23,13 @@ nmr_data <- read_csv('Data/31P_NMR_Data.csv', col_types = cols()) %>%
 # Read in intrinsic and GAP-mediated GTP hydrolysis data
 intrinsic_hydrolysis <- read_tsv('Data/RanGAP_assay/intrinsic_hydrolysis.txt') %>% 
   select(mutant, 'int'= mean_log_rel_rate, 'sd' = sd_log_rel_rate) %>% 
-  gather("measure", "value", -mutant, -sd)
+  gather("measure", "value", -mutant, -sd) %>% 
+  unique()
 
 MM.data <- read_tsv("Data/RanGAP_assay/GAP_kinetics_MichaelisMenten_parameters.txt") %>% 
   select(mutant, 'kcat_Km' = log_kcat_over_Km, 'sd' = log_sd) %>% 
-  gather("measure", "value", -mutant, -sd)
+  gather("measure", "value", -mutant, -sd) %>% 
+  unique()
 data <- bind_rows(MM.data, intrinsic_hydrolysis, nmr_data)
 
 WT_parameters <- data %>% 
@@ -39,7 +41,7 @@ data <- data %>%
   inner_join(., WT_parameters, by = 'measure') %>% 
   select(mutant, measure, 'value' = value.x, 'sd' = sd.x, 'wt_value' = value.y, 'wt_sd' = sd.y) %>% 
   #mutate('rel_value' = value/wt_value, 'rel_sd' = (sqrt( (sd/value)^2 + (wt_sd/wt_value)^2 ) * value/wt_value)) %>% 
-  mutate('rel_value' = ifelse(measure == 'NMR',value/wt_value, value - wt_value), 'rel_sd' = sqrt( sd^2 + wt_sd^2)) %>% 
+  mutate('rel_value' = ifelse(measure == 'NMR',value/wt_value, value - wt_value), 'rel_sd' = sqrt( sd^2 + wt_sd^2)) %>% #### this rel_sd is correct because log(sd) = sd/mean_value, and this sd here is actually log(sd) already
   select(mutant, measure, 'value' = rel_value, 'sd' = rel_sd)
 
 # plot GAP vs state 2
@@ -72,12 +74,14 @@ GAP_NMR_spread %>%
   ylab(expression("GAP mediated GTP hydrolysis relative k"['cat']*"/K"['m'])) +
   xlab(expression("\n% "*gamma*" phosphate in "*gamma*" state 2")) +
   theme_classic() +
+  scale_x_continuous(breaks = seq(0, 100, by = 20)) +
   geom_abline(intercept = GAPNMRfit$coefficients[1], slope = GAPNMRfit$coefficients[2], color = ucsf_colors$pink1, alpha = 0.5) +  
   theme(text = element_text(size = 6),
-        axis.title.x = element_text(size = 6), 
-        axis.title.y = element_text(size = 6),
-        axis.line = element_line(size = 0.1))
-ggsave(file.path(main_directory, '3D_GAP_vs_NMR_state_2_scatterplot.pdf'), height = 2, width = 2)
+        axis.title = element_text(size = 6), 
+        axis.text = element_text(size = 6),
+        axis.line = element_line(size = 0.1), 
+        axis.ticks = element_line(size = 0.1))
+ggsave(file.path(main_directory, '3D_GAP_vs_NMR_state_2_scatterplot.pdf'), height = 2.5, width = 2.5)
 
 
 # plot intrinsic hydrolysis vs state 2
@@ -99,11 +103,13 @@ int_NMR_spread %>%
   ylab(expression(" relative intrinsic GTP hydrolysis rate [s"^-{}^{1}*']')) +
   xlab(expression("\n% "*gamma*" phosphate in "*gamma*" state 2")) +
   theme_classic() +
+  scale_x_continuous(breaks = seq(0, 100, by = 20)) +
   geom_abline(intercept = intNMRfit$coefficients[1], slope = intNMRfit$coefficients[2], color = ucsf_colors$pink1, alpha = 0.5) +  
   theme(text = element_text(size = 6),
         axis.title.x = element_text(size = 6), 
         axis.title.y = element_text(size = 6),
-        axis.line = element_line(size = 0.1))
+        axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1))
 ggsave(file.path(extended_directory, 'Ext_Fig6B_intrinsic_vs_NMR_state_2_scatterplot.pdf'), height = 2.5, width = 2.5)
 
 

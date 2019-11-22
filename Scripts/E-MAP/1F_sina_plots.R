@@ -113,7 +113,7 @@ ggplot(data = data, aes(x = group, y = pearson, color = group)) +
                               paste('Weak mutant','not in partner', 'interface', sep = '\n'),
                               paste('Weak mutant','in partner', 'interface', sep = '\n'),
                               paste('All other','correlations', sep = '\n'))) +
-  scale_size(name = 'P-value', range = c(0.25, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c(ucsf_colors$gray3,
                                 ucsf_colors$gray1,
@@ -151,7 +151,7 @@ ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
   scale_x_discrete(breaks=c('1', '2'),
   labels = c(paste('Strong mutants','and partners', sep = '\n'),
              paste('Strong mutants','and non-partners', sep = '\n'))) +
-  scale_size(name = 'P-value', range = c(0.25, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c('black', 'black')) +
   stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,

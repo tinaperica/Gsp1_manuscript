@@ -21,9 +21,13 @@ intersect_mutants <- intersect(GAP.data$mutant, GEF.data$mutant)
 GAP.data <- GAP.data %>% 
   filter(mutant %in% intersect_mutants)
 GAP.data_unaveraged <- GAP.data   # this is to add individual point to barplots
-GAP.data <- GAP.data %>% select(mutant, 'kcat' = mean_kcat, 'Km' = mean_Km, 
-                                'kcat_Km' = mean_kcat_Km,	kcat_sd, Km_sd, sd, 
-                                mean_log_kcat, mean_log_Km, log_kcat_sd, log_Km_sd, log_kcat_over_Km, log_sd) %>% 
+GAP.data <- test <- GAP.data %>% 
+  group_by(mutant) %>% 
+  mutate('kcat_Km_sem' = sd/sqrt(length(sd))) %>% 
+  ungroup() %>% 
+  select(mutant, 'kcat' = mean_kcat, 'Km' = mean_Km, 
+        'kcat_Km' = mean_kcat_Km,	kcat_sd, Km_sd, sd, kcat_Km_sem,
+        mean_log_kcat, mean_log_Km, log_kcat_sd, log_Km_sd, log_kcat_over_Km, log_sd) %>% 
   unique()
 GEF.data <- GEF.data %>% 
   filter(mutant %in% intersect_mutants)
@@ -275,11 +279,11 @@ ggsave(file.path(extended_directory, 'Ext_Fig6A_intrinsic_hydrolysis_barplot.pdf
 # Supplemental Figure, relative GAP and GEF data on the same barplot
 WT_GAP <- GAP.data %>% 
   filter(mutant == "WT") %>% 
-  select(mutant, 'WT_kcat_Km' = kcat_Km, 'WT_sd' = sd)
+  select(mutant, 'WT_kcat_Km' = kcat_Km, 'WT_sem' = kcat_Km_sem)
 rel_GAP.data <- GAP.data %>% 
-  mutate('WT_kcat_Km' = WT_GAP$WT_kcat_Km, 'WT_sd' = WT_GAP$WT_sd) %>% 
+  mutate('WT_kcat_Km' = WT_GAP$WT_kcat_Km, 'WT_sem' = WT_GAP$WT_sem) %>% 
   mutate('rel_GAP_kcat_Km' = kcat_Km/WT_kcat_Km, 
-         'rel_GAP_sd' = std.error.product(x = kcat_Km, sd.x = sd, y = WT_kcat_Km, sd.y = WT_sd)) %>% 
+         'rel_GAP_sd' = std.error.product(x = kcat_Km, sd.x = kcat_Km_sem, y = WT_kcat_Km, sd.y = WT_sem)) %>% 
   select(mutant, rel_GAP_kcat_Km, rel_GAP_sd)
 WT_GEF <- GEF.data %>% 
   filter(mutant == "WT") %>% 
@@ -316,8 +320,9 @@ data %>%
         axis.text.y = element_text(size = 6), 
         legend.text = element_text(size = 7),
         axis.line = element_line(size = 0.1),
+        axis.ticks = element_line(size = 0.1),
         legend.key.size =  unit(0.22, 'cm'),
         legend.position = 'right',
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray"))
 
-ggsave(filename = file.path(extended_directory, "Ext_Fig5_e_GAP_GEF_combined_barplot_kcat_over_Km_v2.pdf"), height = 3, width = 6.3)
+ggsave(filename = file.path(extended_directory, "Ext_Fig5_e_GAP_GEF_combined_barplot_kcat_over_Km_v2_both_se_and_sem.pdf"), height = 3, width = 6.3)

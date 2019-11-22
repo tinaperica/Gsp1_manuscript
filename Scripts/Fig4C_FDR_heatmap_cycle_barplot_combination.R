@@ -14,7 +14,11 @@ all_queries <- read_tsv('Data/all_queries.txt') %>%
   select(query, 'gene_name' = name) %>% 
   mutate('gene_set' = 'all')
 gene_set <- bind_rows(gene_set, all_queries)
-GAP_kinetics <- read_tsv('Data/RanGAP_assay/GAP_kinetics_MichaelisMenten_parameters.txt')
+GAP_kinetics <- read_tsv('Data/RanGAP_assay/GAP_kinetics_MichaelisMenten_parameters.txt') %>% 
+  select(mutant, 'kcat' = mean_kcat, 'Km' = mean_Km, 
+         'kcat_Km' = mean_kcat_Km,	kcat_sd, Km_sd, sd,
+         mean_log_kcat, mean_log_Km, log_kcat_sd, log_Km_sd, log_kcat_over_Km, log_sd) %>% 
+  unique()
 GEF_kinetics <- read_tsv('Data/RanGEF_assay/GEF_kinetics_MichaelisMenten_parameters.txt')
 WT_GEF <- GEF_kinetics %>% 
   filter(mutant == "WT")
