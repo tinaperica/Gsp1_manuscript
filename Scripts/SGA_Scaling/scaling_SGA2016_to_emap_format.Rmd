@@ -291,7 +291,7 @@ shown in scaler.py and below (code received through personal communication).
 #-----from scaler.py-----#
 # This function creates a curve which maps scores to scaling factors
 # The s=0.02 defines how close the curve fits your data points
-s = UnivariateSpline(score, scale, s=0.02)def s_bounded(x) :
+s = UnivariateSpline(score, scale, s=0.02)
 
 # if the value to be scaled is larger than any value in our training set,
 # we use the scaling factor from the largest observed value

@@ -83,6 +83,26 @@ GAP_NMR_spread %>%
         axis.ticks = element_line(size = 0.1))
 ggsave(file.path(main_directory, '3D_GAP_vs_NMR_state_2_scatterplot.pdf'), height = 2.5, width = 2.5)
 
+GAP_NMR_spread_lnNMR <- GAP_NMR_spread %>% 
+  mutate('NMR' = ifelse(NMR != 0, log(NMR/100), log(0.001)))
+GAPNMRfit_ln <- lm(kcat_Km ~ NMR, data = GAP_NMR_spread_lnNMR)
+GAP_NMR_spread_lnNMR %>% 
+  ggplot(aes(y = kcat_Km, x = NMR)) + 
+  geom_point(size = 2, alpha = 0.5) +
+  geom_errorbar(aes(ymin = kcat_Km - sd, ymax = kcat_Km + sd), width = 0.1, size = 0.1) + 
+  #geom_rect(data = outliers, inherit.aes = F, fill = ucsf_colors$gray3, alpha = 0.2,
+   #         aes(xmin = outliers$xmin, xmax = outliers$xmax, ymin = outliers$ymin, ymax = outliers$ymax)) + 
+  geom_text_repel(aes(label = mutant), size = 2, point.padding = 0.1, segment.size = 0.3) +
+  ylab(expression("ln (GAP mediated GTP hydrolysis relative k"['cat']*"/K"['m']*')')) +
+  xlab(expression("\n ln (% "*gamma*" phosphate in "*gamma*" state 2)")) +
+  theme_classic() +
+  geom_abline(intercept = GAPNMRfit_ln$coefficients[1], slope = GAPNMRfit_ln$coefficients[2], color = ucsf_colors$pink1, alpha = 0.5) +  
+  theme(text = element_text(size = 6),
+        axis.title = element_text(size = 6), 
+        axis.text = element_text(size = 6),
+        axis.line = element_line(size = 0.1), 
+        axis.ticks = element_line(size = 0.1))
+ggsave('~/Desktop/log_log_NMR_state_2_scatterplot.pdf', height = 2.5, width = 2.5)
 
 # plot intrinsic hydrolysis vs state 2
 int_NMR_spread <- data %>% 
