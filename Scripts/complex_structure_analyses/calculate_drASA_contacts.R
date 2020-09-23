@@ -2,10 +2,12 @@ library(bio3d)
 library(tidyverse)
 library(RColorBrewer)
 
-standard_SASA <- read_tsv("per_AA_standard_ASA_CWilke.txt", col_names = T)
+
+
+standard_SASA <- read_tsv("Scripts/complex_structure_analyses/per_AA_standard_ASA_CWilke.txt", col_names = T)
 switch_loops <- tibble(resi = c(19:25, 41:47, 69:77), "loop" = c(rep("ploop", 7), rep("switch1", 7), rep("switch2",9)))
-pdb_dir <- "pdbs/clean"
-chainA_dir <- "pdbs/clean_chainA/"
+pdb_dir <- "PyMOL_figures/pdbs/clean"
+chainA_dir <- "PyMOL_figures/pdbs/clean_chainA"
 files_list <- list.files(path = pdb_dir)
 all_chains_file_paths <- file.path(pdb_dir, files_list)
 chainA_file_paths <- file.path(chainA_dir, files_list)

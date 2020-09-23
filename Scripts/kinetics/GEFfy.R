@@ -339,6 +339,7 @@ plot_fits_show_bkgrnd <- function(data, output = getwd()) {
 }
 fit_MM <- function(data) { ### fits Michaelis-Menten
   sample <- data %>% pull(sample) %>% unique()
+  root_n <- data %>% pull(condition) %>% unique() %>% length() %>% sqrt()
   print(sample)
   sample_conc <- data %>% pull(conc) %>% unique()
   data_to_fit <- data %>% 
@@ -363,12 +364,18 @@ fit_MM <- function(data) { ### fits Michaelis-Menten
   data$Km <- Km
   kcat_se <- summary(out)$parameters[1,2]
   data$kcat_se <- kcat_se
-  Km_sd <- summary(out)$parameters[2,2]
+  kcat_sd <- kcat_se * root_n
+  data$kcat_sd <- kcat_sd
+  Km_se <- summary(out)$parameters[2,2]
   data$Km_se <- Km_se
+  Km_sd <- Km_se * root_n
+  data$Km_sd <- Km_sd
   data$kcat_Km <- kcat / Km
   #kcat_Km_se <- sqrt(kcat_se^2) + sqrt(Km_se^2)
   kcat_Km_se <- sqrt( (kcat_se/kcat)^2 + (Km_se/Km)^2 ) * (kcat/Km)
+  kcat_Km_sd <- sqrt( (kcat_sd/kcat)^2 + (Km_sd/Km)^2 ) * (kcat/Km)
   data$kcat_Km_se <- kcat_Km_se
+  data$kcat_Km_sd <- kcat_Km_sd
   data$predicted_v0 <- (data$conc * Vmax) / (Km + data$conc)
   return(data)
 }   
@@ -444,11 +451,11 @@ plot_MM_bins <- function(data, output = getwd()) {
 
 #### set output directory
 today <- gsub('-', '', today(tzone="US/Pacific")) # set date, for filenaming purposes
-output <- str_c(today, '_GEF_output', '/')
+output <- str_c('Data/RanGEF_assay/', today, '_GEF_output', '/')
 dir.create(output, showWarnings = FALSE)
 
 ### first plot raw data for everything
-plot_raw_data(dataset, by_sample = T, output = output)
+#plot_raw_data(dataset, by_sample = T, output = output)  ### do this only once
 
 #### Fit data assuming photobleaching decay is exponential, with observations in fluorescence units
 exp_fits <- dataset %>% 
@@ -487,7 +494,8 @@ processed.data <- processed.data %>%
   mutate("v0" = vf0 * conversion_ratio) %>% 
   ungroup()
 
-plot_fits_show_bkgrnd(processed.data, output = output)
+# plot the fits - don't do this every time - too slow
+#plot_fits_show_bkgrnd(processed.data, output = output)
 
 if (length(exp_fits) > 0) {
   fit.parameters <- processed.data %>% 
@@ -501,10 +509,14 @@ if (length(exp_fits) > 0) {
       arrange(sample, conc)
 }
 
-fit.parameters %>%
-   ggplot(., aes(x = conc, y = v0 , color = row, shape = as.character(date))) + 
-   geom_point() + facet_grid(~ sample)
+# fit.parameters %>%
+#    ggplot(., aes(x = conc, y = v0 , color = row, shape = as.character(date))) + 
+#    geom_point() + facet_grid(~ sample)
 
+initial_rates <- processed.data %>%
+  select(sample, v0, conc, condition, date) %>% 
+  unique() 
+initial_rates %>% write_tsv('Data/RanGEF_assay/GEF_assay_initial_rate_data.txt')
 MM.data <- processed.data %>%
   select(sample, v0, conc, condition, date) %>% 
   unique() %>% 
@@ -516,5 +528,5 @@ MM.data <- processed.data %>%
 plot_MM_bins(MM.data, output = output)
 
 MM.data_to_save <- MM.data %>% 
-  select(sample, mutant, kcat, kcat_se, Km, Km_se, kcat_Km, kcat_Km_se) %>% unique()
-write_tsv(MM.data_to_save, file.path(output, "MM_data.txt"))
+  select(sample, mutant, kcat, kcat_se, kcat_sd, Km, Km_se, Km_sd, kcat_Km, kcat_Km_se, kcat_Km_sd) %>% unique()
+write_tsv(MM.data_to_save, file.path(output, "20200506_GEF_MM_data.txt"))

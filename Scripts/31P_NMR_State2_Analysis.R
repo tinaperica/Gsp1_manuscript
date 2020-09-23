@@ -6,7 +6,7 @@ ordering = c('H141R','K132H','Y157A','D79S','WT',
              'G80A','R108L','R78K','T34G','Q147E',
              'T34L','T34A','T34Q','T34E')
 
-data <- read_csv('Data/31P_NMR/31P_NMR_Data.csv', col_types = cols()) %>%
+data <- read_csv('Data/31P_NMR_Data.csv', col_types = cols()) %>%
   filter(peak %in% c('gamma1','gamma2')) %>%
   select(variant, peak, integral_rel) %>%
   spread(peak, integral_rel) %>%

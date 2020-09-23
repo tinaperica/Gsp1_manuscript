@@ -1,0 +1,11 @@
+>Gsp1GTP_II
+- GAP * (kcat*Gsp1GTP_II)/(Km+Gsp1GTP_II)
+- k_ex_r * Gsp1GTP_II
++ k_ex_f * Gsp1GTP_I
+>Gsp1GTP_I
++ k_ex_r * Gsp1GTP_II
+- k_ex_f * Gsp1GTP_I
+>Gsp1GDP
++ GAP * (kcat*Gsp1GTP_II)/(Km+Gsp1GTP_II)
+>GAP
+0

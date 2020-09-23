@@ -125,11 +125,11 @@ pvalue_plot <- partners_data %>%
 
 
 combined_plots <- plot_grid(drASA_plot, pvalue_plot, align = 'v', rel_heights = c(1, 1.374), nrow = 2)
-cairo_pdf(filename = 'Figure2_APMS/AP-MS_semicircle_plot_partners_TEST_v2.pdf', family = "Arial Unicode MS", width = 3.8, height = 3.89)
+cairo_pdf(filename = 'Revisions/Extended_Figures/AP-MS_semicircle_plot_partners_TEST_v2.pdf', family = "Arial Unicode MS", width = 5, height = 4.2)
 combined_plots
 dev.off()
 
-cairo_pdf(file = 'Figure2_APMS/AP-MS_semicircle_plot_partners_for_legend.pdf', family = "Arial Unicode MS", width = 6, height = 4)
+cairo_pdf(file = 'Figure2_APMS/AP-MS_semicircle_plot_partners_for_legend.pdf', family = "Arial Unicode MS", width = 6, height = 3.9)
 combined_plots
 dev.off()
 

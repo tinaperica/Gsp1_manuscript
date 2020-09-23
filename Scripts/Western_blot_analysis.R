@@ -1,4 +1,5 @@
 library(tidyverse)
+library(ggforce)
 source('ucsf_colors.R')
 
 raw_data <-
@@ -57,16 +58,19 @@ ggplot(data = strong_mutant_data,
        aes(x = factor(sample),
            y = avg_rel_expr,
            fill = factor(ifelse(sample == 'WT', 'WT', 'mutant')))) +
-  geom_col(position = 'dodge', color = 'black', width = 0.8) +
+  geom_col(position = 'dodge', color = 'black', width = 0.7) +
   geom_point(data = strong_mutant_data,
              aes(x = factor(sample),
-                 y = avg_rel_expr_by_round)) +
+                 y = avg_rel_expr_by_round),
+             size = 0.5) +
   geom_errorbar(aes(ymin=avg_rel_expr-std_rel_expr,
                     ymax=avg_rel_expr+std_rel_expr),
                 width = 0.4, position='dodge') +
   scale_fill_manual(values = c(ucsf_colors$gray3, ucsf_colors$navy1)) +
   geom_hline(yintercept=1, color = 'red', linetype = 'dashed') +
-  xlab('Gsp1 strain') + ylab('Average Relative Expression MUT/WT') +
+  xlab('S. cerevisiae strain with genomically integrated Gsp1 point mutant') + 
+  ylab('Average Relative Expression MUT/WT') +
+  ggtitle('Strong mutants by genetic interaction profiles') +
   facet_grid(~residue, scales = 'free_x', space = 'free_x', switch = 'x') +
   theme_classic() +
   theme(text=element_text(size=6, family='Helvetica'),
@@ -75,7 +79,7 @@ ggplot(data = strong_mutant_data,
         strip.text.x = element_blank(),
         legend.position = 'none')
   
-ggsave('Extended_Figures/Ext_Fig2A_Westerns_Strong_Mutants.pdf', width = 7, height = 2)
+ggsave('Extended_Figures/Ext_Fig2A_Westerns_Strong_Mutants.pdf', width = 5, height = 2)
 dev.off()
 
 weak_mutant_data <- filter(processed_data, sample %in% c(weak_mutants, controls))
@@ -84,16 +88,19 @@ ggplot(data = weak_mutant_data,
        aes(x = factor(sample),
            y = avg_rel_expr,
            fill = factor(ifelse(sample == 'WT', 'WT', 'mutant')))) +
-  geom_col(position = 'dodge', color = 'black', width = 0.8) +
+  geom_col(position = 'dodge', color = 'black', width = 0.7) +
   geom_point(data = weak_mutant_data,
              aes(x = factor(sample),
-                 y = avg_rel_expr_by_round)) +
+                 y = avg_rel_expr_by_round),
+             size = 0.5) +
   geom_errorbar(aes(ymin=avg_rel_expr-std_rel_expr,
                     ymax=avg_rel_expr+std_rel_expr),
                 width = 0.4, position='dodge') +
   scale_fill_manual(values = c(ucsf_colors$gray3, ucsf_colors$navy1)) +
   geom_hline(yintercept=1, color = 'red', linetype = 'dashed') +
-  xlab('Gsp1 strain') + ylab('Average Relative Expression MUT/WT') +
+  xlab('S. cerevisiae strain with genomically integrated Gsp1 point mutant') + 
+  ylab('Average Relative Expression MUT/WT') +
+  ggtitle('Weak mutants by genetic interaction profiles') +
   facet_grid(~residue, scales = 'free_x', space = 'free_x', switch = 'x') +
   theme_classic() +
   theme(text=element_text(size=6, family='Helvetica'),
@@ -102,12 +109,12 @@ ggplot(data = weak_mutant_data,
         strip.text.x = element_blank(),
         legend.position = 'none')
 
-ggsave('Extended_Figures/Ext_Fig2B_Westerns_Weak_Mutants.pdf', width = 7, height = 2)
+ggsave('Extended_Figures/Ext_Fig2B_Westerns_Weak_Mutants.pdf', width = 5, height = 2)
 dev.off()
 
 
 # # plot all mutants
-# processed_data %>% 
+# processed_data %>%
 #   ggplot(aes(x = factor(sample), y = avg_rel_expr,
 #              fill = factor(ifelse(sample == 'WT', 'WT', 'mutant')))) +
 #   geom_col(position = 'dodge', color = 'black', width = 0.8) +
@@ -159,4 +166,68 @@ pdf('Supplemental_Figures/Westerns_one_residue_per_page.pdf', onefile = TRUE)
 plots
 dev.off()
 
+
+##### REVISIONS
+# plot sina plots comparing weak to strong mutants across all mutants
+# simple plot just comparing distribution
+# processed_data %>%
+#   mutate(mutant_strength = case_when(sample %in% strong_mutants ~ 'Strong Mutants',
+#                                      sample %in% weak_mutants ~ 'Weak Mutants')) %>%
+#   filter(!is.na(mutant_strength)) %>%
+#   ggplot(aes(x = mutant_strength, y = relative_expression)) +
+#   geom_sina() +
+#   stat_summary(fun.y=mean, geom='point', color=ucsf_colors$pink1, size = 5)
+# 
+# ggsave('Revisions/Sina_westerns_all_points.pdf', height = 4, width = 4)
+# dev.off()
+
+# can also make a plot showing row means
+data_for_sina <-
+  processed_data %>% 
+  mutate(mutant_strength = case_when(
+    sample %in% strong_mutants ~ 'Strong Mutants',
+    sample %in% weak_mutants ~ 'Weak Mutants')) %>% 
+  filter(!is.na(mutant_strength))
+
+# can also replace avg_rel_expr_by_round with relative_expression to plot every technical replicate
+# (i.e. measurement from a single lane) as points
+data_for_mean <-
+  data_for_sina %>%
+  select(mutant_strength, round, avg_rel_expr_by_round) %>%
+  unique() %>%
+  group_by(mutant_strength, round) %>% 
+  mutate(avg_per_round_by_mutant_strength = mean(avg_rel_expr_by_round)) %>%
+  select(-avg_rel_expr_by_round) %>%
+  unique()
+
+
+ggplot(data_for_sina,
+       aes(x = mutant_strength,
+       # y = relative_expression,
+       y = avg_rel_expr_by_round,
+       color = round, group = mutant_strength)) +
+  geom_sina(maxwidth=0.7, size=1.5, alpha = 0.75, stroke=0, seed = 2) +
+  scale_color_manual(name = 'Biological\nReplicate',
+                     values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1)) +
+  stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median, geom = "crossbar",
+               fatten = 0, width = 0.5, color = 'black', show.legend = FALSE) + 
+  # geom_point(data = avg_per_round_by_mutant_strength,
+  #            mapping = aes(mutant_strength, avg_per_round_by_mutant_strength,
+  #                          fill = round, group=mutant_strength),
+  #            pch=21, size=3,
+  #            position = position_jitter(width = 0.02, seed = 3)) +
+  scale_fill_manual(name = 'Biological\nReplicate',
+                    values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1),
+                    ) +
+  xlab('') + ylab('Relative Expression MUT/WT') +
+  guides(color = guide_legend(override.aes = list(size = 1.5))) +
+  theme_classic() +
+  theme(text=element_text(size=6, family='Helvetica'),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        legend.position = 'top')
+
+ggsave('Revisions/Extended_Figures/EDF_2/Ext_Fig2C_Sina_westerns_avg_per_bio_replicate.pdf',
+       height = 4.5, width = 2, useDingbats=F)
+dev.off()
 

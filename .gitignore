@@ -1,6 +1,5 @@
 .Rproj.user
 .Rhistory
-.RData
 .Ruserdata
 .DS_Store
 # produced vignettes
@@ -49,6 +48,7 @@ Data/RanGEF_assay/fit_data.txt
 Western_blot_processing_notes.txt
 ## whole directories
 Manuscript/
+Revisions/
 for_Nevan/
 talks/
 Final_Figures/

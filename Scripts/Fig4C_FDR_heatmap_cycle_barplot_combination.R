@@ -35,7 +35,7 @@ GAP_kinetics <- GAP_kinetics %>%
   mutate('rel_GAP_Km' = Km/WT_GAP$Km) %>% 
   select(mutant, rel_GAP_kcat_Km, rel_GAP_kcat, rel_GAP_Km)
 
-kinetics <- GEF_kinetics %>% 
+kinetics <- GEF_kinetics %>%
   inner_join(., GAP_kinetics, by = 'mutant') %>% 
   mutate('GAP/GEF' = rel_GAP_kcat_Km/rel_GEF_kcat_Km) %>% 
   mutate('GAP/GEF' = ifelse(`GAP/GEF` > 30, 30, `GAP/GEF`)) %>% 

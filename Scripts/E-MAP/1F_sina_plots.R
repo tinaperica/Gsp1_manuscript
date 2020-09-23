@@ -3,11 +3,6 @@
 library(tidyverse)
 library(ggforce)
 library(ggrepel)
-library(cowplot)
-library(grid)
-library(gridExtra)
-library(gtable)
-library(Hmisc)
 source('ucsf_colors.R')
 
 ##### load datafiles
@@ -61,19 +56,25 @@ corr_for_sina <-
   mutate(is_core = case_when(is_core ~ is_core, is.na(is_core) ~ F),
          partner = case_when(strain %in% partner_index$strain ~ T, T ~ F))
 
+# plot
 corr_for_sina %>% 
   filter(is_strong, partner) %>% 
-  ggplot(aes(x = is_core, y = pearson, color = is_core, size = greater_fdr)) +
+  mutate(pval_point_size = ifelse(greater_fdr > 0.05, 0.01, 0.5)) %>% 
+  ggplot(aes(x = is_core, y = pearson, color = is_core, size = pval_point_size)) +
   geom_sina(alpha = 1, maxwidth = 0.8, seed = 2) +
   scale_x_discrete(breaks=c(T, F),
                    labels = c(paste('Strong mutant','in partner interface', sep = '\n'),
                               paste('Strong mutant','not in partner interface', sep = '\n'))) +
-  scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  # scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  scale_size(name = 'p-value', range = c(0.01, 0.5), breaks = c(0.5, 0.01),
+             labels=c(expression('\u2264 0.05'), '> 0.05')) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c(ucsf_colors$gray3, ucsf_colors$gray1)) +
-  stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,
-               geom = "errorbar", width = 0.1, size = 0.75) +
-  stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  # stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
+               fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) + 
+  # stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,
+  #              geom = "errorbar", width = 0.1, size = 0.75) +
   ylim(c(-0.15, 0.5)) + xlab('') + ylab('Pearson correlation\nwith partner profile') +
   theme_classic() +
   theme(
@@ -85,7 +86,8 @@ corr_for_sina %>%
     legend.position = 'right',
     axis.line = element_line(size = 0.1)
   )
-ggsave('Figure1_E-MAP/Plots/1F_Sinaplots.pdf', height = 1.9, width = 3.1)
+# ggsave('Figure1_E-MAP/Plots/1F_Sinaplots.pdf', height = 1.9, width = 3.1)
+ggsave('Revisions/Main Figures/Figure1/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
 dev.off()
 
 
@@ -101,11 +103,13 @@ data <-
                            is_strong & is_core & partner ~ '2',
                            !is_strong & !is_core & partner ~ '3',
                            !is_strong & is_core & partner ~ '4',
-                           !partner ~ '5'))
+                           !partner ~ '5')) %>% 
+  mutate(pval_point_size = ifelse(greater_fdr > 0.05, 0.01, 0.5))
+  
 
 ggplot(data = data, aes(x = group, y = pearson, color = group)) +
-  geom_sina(data = filter(data, group != '5'), aes(size = greater_fdr),
-            alpha = 1, maxwidth = 0.8, seed = 2) +
+  geom_sina(data = filter(data, group != '5'), aes(size = pval_point_size),
+            alpha = 1, maxwidth = 0.9, seed = 2, shape=16) +
   geom_violin(data = filter(data, group == '5'), fill = ucsf_colors$cyan1) +
   scale_x_discrete(breaks=c('1', '2', '3', '4', '5'),
                    labels = c(paste('Strong mutant','not in partner', 'interface', sep = '\n'),
@@ -113,16 +117,18 @@ ggplot(data = data, aes(x = group, y = pearson, color = group)) +
                               paste('Weak mutant','not in partner', 'interface', sep = '\n'),
                               paste('Weak mutant','in partner', 'interface', sep = '\n'),
                               paste('All other','correlations', sep = '\n'))) +
-  scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  # scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  scale_size(name = 'p-value', range = c(0.01, 0.5), breaks = c(0.5, 0.01),
+             labels=c(expression('\u2264 0.05'), '> 0.05')) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c(ucsf_colors$gray3,
                                 ucsf_colors$gray1,
                                 ucsf_colors$purple1,
-                                ucsf_colors$purple3,
+                                ucsf_colors$purple2,
                                 ucsf_colors$cyan1)) +
-  stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,
-               geom = "errorbar", width = 0.1, size = 0.75) +
-  stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  # stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
+               fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) + 
   ylim(c(-0.15, 0.5)) + xlab('') + ylab('Pearson correlation') +
   theme_classic() +
   theme(
@@ -135,28 +141,33 @@ ggplot(data = data, aes(x = group, y = pearson, color = group)) +
     legend.text = element_text(size = 6),
     axis.line = element_line(size = 0.1)
   )
-ggsave('Extended_Figures/Ext_Fig3_Sinaplots_strong_weak_all.pdf', height = 2, width = 3.7)
+# ggsave('Extended_Figures/Ext_Fig3_Sinaplots_strong_weak_all.pdf', height = 2, width = 3.7)
+ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
 dev.off()
 
+
 data2 <-
-  corr_for_sina %>% 
+  corr_for_sina %>%
   mutate(group = case_when(is_strong & partner ~ '1',
-                           is_strong & !partner ~ '2')) %>% 
-  filter(group %in% c('1', '2'))
+                           is_strong & !partner ~ '2')) %>%
+  filter(group %in% c('1', '2')) %>% 
+  mutate(pval_point_size = ifelse(greater_fdr > 0.05, 0.01, 0.5))
 
 ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
-  geom_sina(data = filter(data2, group == '1'), aes(size = greater_fdr),
-            alpha = 1, maxwidth = 0.8, seed = 2) +
+  geom_sina(data = filter(data2, group == '1'), aes(size = pval_point_size),
+            alpha = 1, maxwidth = 0.8, seed = 2, shape=16) +
   geom_violin(data = filter(data2, group == '2'), fill = 'black') +
   scale_x_discrete(breaks=c('1', '2'),
   labels = c(paste('Strong mutants','and partners', sep = '\n'),
              paste('Strong mutants','and non-partners', sep = '\n'))) +
-  scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  # scale_size(name = 'P-value', range = c(0.5, 0.01), breaks = c(1.0, 0.1, 0.01)) +
+  scale_size(name = 'p-value', range = c(0.01, 0.5), breaks = c(0.5, 0.01),
+             labels=c(expression('\u2264 0.05'), '> 0.05')) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c('black', 'black')) +
-  stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,
-               geom = "errorbar", width = 0.1, size = 0.75) +
   stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
+               fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) +
   ylim(c(-0.15, 0.5)) + xlab('') + ylab('Pearson correlation') +
   theme_classic() +
   theme(
@@ -169,7 +180,8 @@ ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
     legend.text = element_text(size = 6),
     axis.line = element_line(size = 0.1)
   )
-ggsave('Extended_Figures/Ext_Fig3_Sinaplots_partners_nonpartners.pdf', height = 2, width = 2)
+# ggsave('Extended_Figures/Ext_Fig3_Sinaplots_partners_nonpartners.pdf', height = 2, width = 2)
+ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3C.pdf', height = 2, width = 2, device=cairo_pdf)
 dev.off()
 
 # make a table for the supplement showing the top correlations from the sinaplot

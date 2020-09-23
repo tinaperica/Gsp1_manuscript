@@ -8,7 +8,7 @@ ordering <- c('H141R','H141V','K132H','Y157A','D79S','WT',
              'G80A','R108L','R78K','T34G','Q147E',
              'T34D','T34L','T34A','T34Q','T34E')
 
-nmr_data <- read_csv('Data/31P_NMR/31P_NMR_Data.csv', col_types = cols()) %>%
+nmr_data <- read_csv('Data/31P_NMR_Data.csv', col_types = cols()) %>%
   filter(peak %in% c('gamma1','gamma2')) %>%
   select(variant, peak, integral_rel) %>%
   spread(peak, integral_rel) %>%
@@ -43,6 +43,7 @@ data <- data %>%
 
 GAP_NMR_spread <- data %>% 
   select(-sd) %>% 
+  unique() %>% 
   filter(measure %in% c('kcat_Km', 'NMR')) %>% 
   spread(measure, value) 
 GAP_NMR_spread <- data %>% 

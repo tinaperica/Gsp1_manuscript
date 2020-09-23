@@ -5,6 +5,7 @@ bg_color white
 load "~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/PyMOL_figures/pdbs/clean/corefit_structures_all/1ibr.pdb_flsq.pdb"
 load "~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/PyMOL_figures/pdbs/clean/corefit_structures_all/3gj0.pdb_flsq.pdb"
 
+
 align 1ibr.pdb_flsq, 3gj0.pdb_flsq.pdb
 
 create RanGTP, 1ibr.pdb_flsq and chain A and resi 1-181
@@ -62,7 +63,6 @@ set depth_cue, off
 set specular, off
 set ray_shadows, off
 set surface_quality, 3
-
 
 
 png ~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/Figure1_E-MAP/Plots/Fig1B_mutations_and_switch_front.png, dpi = 1200, 0, 0, -1
