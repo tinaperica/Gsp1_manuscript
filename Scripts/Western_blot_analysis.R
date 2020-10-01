@@ -205,10 +205,11 @@ ggplot(data_for_sina,
        aes(x = mutant_strength,
        # y = relative_expression,
        y = avg_rel_expr_by_round,
-       color = round, group = mutant_strength)) +
+       # color = round,
+       group = mutant_strength)) +
   geom_sina(maxwidth=0.7, size=1.5, alpha = 0.75, stroke=0, seed = 2) +
-  scale_color_manual(name = 'Biological\nReplicate',
-                     values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1)) +
+  # scale_color_manual(name = 'Biological\nReplicate',
+  #                    values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1)) +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median, geom = "crossbar",
                fatten = 0, width = 0.5, color = 'black', show.legend = FALSE) + 
   # geom_point(data = avg_per_round_by_mutant_strength,
@@ -216,18 +217,18 @@ ggplot(data_for_sina,
   #                          fill = round, group=mutant_strength),
   #            pch=21, size=3,
   #            position = position_jitter(width = 0.02, seed = 3)) +
-  scale_fill_manual(name = 'Biological\nReplicate',
-                    values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1),
-                    ) +
+  # scale_fill_manual(name = 'Biological\nReplicate',
+  #                   values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1),
+  #                   ) +
   xlab('') + ylab('Relative Expression MUT/WT') +
-  guides(color = guide_legend(override.aes = list(size = 1.5))) +
+  # guides(color = guide_legend(override.aes = list(size = 1.5))) +
   theme_classic() +
   theme(text=element_text(size=6, family='Helvetica'),
         strip.background = element_blank(),
         strip.text.x = element_blank(),
         legend.position = 'top')
 
-ggsave('Revisions/Extended_Figures/EDF_2/Ext_Fig2C_Sina_westerns_avg_per_bio_replicate.pdf',
+ggsave('Revisions/Extended_Figures/EDF_2/Ext_Fig2C_Sina_westerns_avg_per_bio_replicate_2.0.pdf',
        height = 4.5, width = 2, useDingbats=F)
 dev.off()
 
