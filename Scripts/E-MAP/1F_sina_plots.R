@@ -165,7 +165,7 @@ ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
              labels=c(expression('\u2264 0.05'), '> 0.05')) +
   scale_color_manual(name = 'category', guide = 'none',
                      values = c('black', 'black')) +
-  stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
+  # stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
   stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
                fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) +
   ylim(c(-0.15, 0.5)) + xlab('') + ylab('Pearson correlation') +

@@ -211,7 +211,7 @@ ggplot(data_for_sina,
   # scale_color_manual(name = 'Biological\nReplicate',
   #                    values = c(ucsf_colors$pink1, ucsf_colors$cyan1, ucsf_colors$green1)) +
   stat_summary(fun.y = median, fun.ymin = median, fun.ymax = median, geom = "crossbar",
-               fatten = 0, width = 0.5, color = 'black', show.legend = FALSE) + 
+               fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) + 
   # geom_point(data = avg_per_round_by_mutant_strength,
   #            mapping = aes(mutant_strength, avg_per_round_by_mutant_strength,
   #                          fill = round, group=mutant_strength),
@@ -229,6 +229,6 @@ ggplot(data_for_sina,
         legend.position = 'top')
 
 ggsave('Revisions/Extended_Figures/EDF_2/Ext_Fig2C_Sina_westerns_avg_per_bio_replicate_2.0.pdf',
-       height = 4.5, width = 2, useDingbats=F)
+       height = 4.1, width = 2, useDingbats=F)
 dev.off()
 
