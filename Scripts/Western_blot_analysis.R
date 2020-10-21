@@ -137,34 +137,34 @@ dev.off()
 
 
 # Also plot westerns by residue, in one table, and one residue per page
-processed_data %>% 
-  mutate(id = paste(date, gel, lane, sep = '_')) %>% 
-  ggplot(aes(x = id, y = relative_expression, fill = round)) +
-  geom_col(position= 'dodge') +
-  facet_wrap(~sample, scales = 'free') +
-  ylab('Relative Expression MUT/WT') +
-  theme_classic() +
-  theme(text=element_text(size=6, family='Helvetica'),
-        axis.text.x=element_text(angle=90))
-ggsave('Supplemental_Figures/Westerns_by_residue.pdf', width = 8.5, height = 11)
-dev.off()
+# processed_data %>% 
+#   mutate(id = paste(date, gel, lane, sep = '_')) %>% 
+#   ggplot(aes(x = id, y = relative_expression, fill = round)) +
+#   geom_col(position= 'dodge') +
+#   facet_wrap(~sample, scales = 'free') +
+#   ylab('Relative Expression MUT/WT') +
+#   theme_classic() +
+#   theme(text=element_text(size=6, family='Helvetica'),
+#         axis.text.x=element_text(angle=90))
+#ggsave('Supplemental_Figures/Westerns_by_residue.pdf', width = 8.5, height = 11)
+#dev.off()
 
-plots <- list()
-for (i in seq(length(unique(processed_data$sample)))) {
-  sample_name <- unique(processed_data$sample)[i]
-  plots[[i]] <-
-    processed_data %>% 
-    mutate(id = paste(date, gel, lane, sep = '_')) %>% 
-    filter(sample == sample_name) %>% 
-    ggplot(aes(x = id, y = relative_expression, fill = round)) +
-    geom_col(position= 'dodge') +
-    xlab(sample_name) + ylab('Relative Expression MUT/WT') +
-    theme_classic() +
-    theme(axis.text.x=element_text(angle=90,hjust=1))
-}
-pdf('Supplemental_Figures/Westerns_one_residue_per_page.pdf', onefile = TRUE)
-plots
-dev.off()
+# plots <- list()
+# for (i in seq(length(unique(processed_data$sample)))) {
+#   sample_name <- unique(processed_data$sample)[i]
+#   plots[[i]] <-
+#     processed_data %>% 
+#     mutate(id = paste(date, gel, lane, sep = '_')) %>% 
+#     filter(sample == sample_name) %>% 
+#     ggplot(aes(x = id, y = relative_expression, fill = round)) +
+#     geom_col(position= 'dodge') +
+#     xlab(sample_name) + ylab('Relative Expression MUT/WT') +
+#     theme_classic() +
+#     theme(axis.text.x=element_text(angle=90,hjust=1))
+# }
+# #pdf('Supplemental_Figures/Westerns_one_residue_per_page.pdf', onefile = TRUE)
+# #plots
+# #dev.off()
 
 
 ##### REVISIONS
@@ -199,7 +199,9 @@ data_for_mean <-
   mutate(avg_per_round_by_mutant_strength = mean(avg_rel_expr_by_round)) %>%
   select(-avg_rel_expr_by_round) %>%
   unique()
-
+## get n
+data_for_sina %>% group_by(mutant_strength) %>% 
+  summarise('count' = n())
 
 ggplot(data_for_sina,
        aes(x = mutant_strength,
