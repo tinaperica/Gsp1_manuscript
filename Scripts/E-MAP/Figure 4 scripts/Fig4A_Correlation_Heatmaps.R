@@ -10,7 +10,12 @@ source('ucsf_colors.R')
 ##### LOAD DATA
 
 # load correlation matrix
-load('Data/filtered_v6_correlations.RData')
+# load('Data/filtered_v6_correlations.RData')
+
+load('Data/filtered_correlations_BNF_2.RData')
+filtered_correlations <- filtered_correlations_BNF_2
+
+
 
 # load kinetics data for plotting as ratio of relative GAP, GEF efficiencies
 kinetics <- read_delim('Data/kinetics_data_relative_to_WT.txt', delim='\t', col_types=cols())
@@ -51,12 +56,12 @@ corr_mat <-
 # perform clustering
 row.hc <- clustfn(corr_mat, dist_method = 'euclidean', clust_method = 'ward.D2')
 col.hc <- clustfn(t(corr_mat), dist_method = 'pearson', clust_method = 'ward.D2')
-
+dim(corr_mat)
 
 ##### ROTATION OF THE TREES
 
 # rotate the yeast query gene tree so the density goes from upper left to lower right
-row.hc <- rotate(row.hc, rev(row.hc$labels[row.hc$order]))
+# row.hc <- rotate(row.hc, rev(row.hc$labels[row.hc$order]))
 
 # rotate mutants based on kinetics ordering (ratio of GAP/GEF relative efficiencies)
 kinetics_ordering <-
@@ -99,8 +104,8 @@ col.hc <- as.hclust(col.dend)
 
 # save the mutant ordering
 mutant_ordering_clustered <- col.hc$labels[col.hc$order]
-write(mutant_ordering_clustered, 'Figure4_Multispecificity/Plots/4B_order_of_mutants.txt')
-write(mutant_ordering_clustered, 'Data/4B_order_of_mutants.txt')
+# write(mutant_ordering_clustered, 'Figure4_Multispecificity/Plots/4B_order_of_mutants.txt')
+# write(mutant_ordering_clustered, 'Data/4B_order_of_mutants.txt')
 
 
 ##### PREPARE DATA STRUCTURES FOR ANNOTATIONS
@@ -254,9 +259,9 @@ add_error_bars_and_stars <- function(annot, val, err) {
   decorate_annotation(annot, {
     # x positions
     err_w = 0.2  # width of error bars
-    x = c(seq(1,6), seq(7.54, 13.54), seq(15.08,23.08))
-    x0 = c(seq(1,6), seq(7.54, 13.54), seq(15.08,23.08)) - err_w
-    x1 = c(seq(1,6), seq(7.54, 13.54), seq(15.08,23.08)) + err_w
+    x = c(seq(1,6), seq(7.54, 14.54), seq(16.08,23.08))
+    x0 = c(seq(1,6), seq(7.54, 14.54), seq(16.08,23.08)) - err_w
+    x1 = c(seq(1,6), seq(7.54, 14.54), seq(16.08,23.08)) + err_w
     
     # y positions
     y = val[co]
@@ -268,13 +273,13 @@ add_error_bars_and_stars <- function(annot, val, err) {
     grid.segments(x0=x0, x1=x1, y0=y0, y1=y0, default.units = 'native', gp = gpar(lex=0.5))
     grid.segments(x0=x0, x1=x1, y0=y1, y1=y1, default.units = 'native', gp = gpar(lex=0.5))
     if (annot == 'in vitro\nGAP relative\nefficiency\n(MUT/WT)') {
-      x_star = c(19.08, 20.08, 21.08)
+      x_star = c(20.08, 21.08, 22.08)
       y_star = rep(0.4, 3)
     } else if (annot == 'in vitro\nGEF relative\nefficiency\n(MUT/WT)') {
-      x_star = c(13.54, 19.08, 20.08, 21.08)
+      x_star = c(13.54, 20.08, 21.08, 22.08)
       y_star = rep(0.1, 4)
     } else if (annot == 'Ln ratio of\nGAP/GEF rel.\nefficiences') {
-      x_star = c(13.54, 19.08, 20.08, 21.08)
+      x_star = c(13.54, 20.08, 21.08, 22.08)
       y_star = rep(0.6, 4)
     }
     
@@ -297,7 +302,7 @@ add_error_bars_and_stars <- function(annot, val, err) {
 }
 
 # save heatmap
-pdf('Revisions/Main Figures/Figure4/4A_Corr_Pvalue_Heatmap.pdf', width = 2.7, height = 4.5)
+pdf('Revisions2/4A_Corr_Pvalue_Heatmap_0629.pdf', width = 4.5, height = 6.7)
 draw(pval_heatmap)
 
 add_error_bars_and_stars('in vitro\nGAP relative\nefficiency\n(MUT/WT)',

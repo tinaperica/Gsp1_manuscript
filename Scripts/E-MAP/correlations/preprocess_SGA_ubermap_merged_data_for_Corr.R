@@ -5,18 +5,22 @@ library(gmp) #### for factorize
 bad_strains <- c('YBR084C-A', 'YBR098W', 'YCR036W',  'YCR044C',  'YCR077C',  'YHR090C', 
                  'YJL117W', 'YJL190C', 'YKR024C', 'YKR062W', 'YML008C', 'YML051W', 'YMR231W', 
                  'YNL330C', 'YPR072W', 'YDL192W', 'YDL082W', 'YDR443C', 'YDL135C', 'YDL135C')
-load("basic_E-MAP_data/spitzemapko.rda")
+load("Data/spitzemapko.rda")
 
 ### spitzemapko has the damp queries removed, and it also keeps only ko array genes 
 ### (so we can compare them to our ko genes)
 ### damp queries are removed because the Costanzo paper says 
 ### that for many of the damps they couldn't confirm lower expression
-### however, keep damps for CRM1, PSE1, MTR10 and YRB2, because those are the only queries we have for those Gsp1 partners
-#### partners for which there is no data in the Costanzo dataset: NMD5, NUP116, KAP104, KAP120
-load("basic_E-MAP_data/spitzemap.rda")
+### however, keep damps for CRM1 and YRB2, because those are the only queries we have for those Gsp1 partners
+#### partners for which there is no data in the Costanzo dataset: NMD5, NUP116, KAP104, KAP120, (PSE1 and MTR10 are only screened against the TSA library) 
+#load("Data/spitzemap.rda")
+load("Data/SGA_Scaling/SGA_2016_full_scaled.rda")
+damps_to_add <- SGA_scaled_to_EMAP %>% 
+  filter(query_allele_name %in% c('crm1_damp', 'yrb2_damp')) %>% 
+  filter(arraytype_temp == 'DMA30') %>% #### using this array type because it is much bigger: 3349 values vs 890
+  select(names(spitzemapko)) %>% 
+  arrange(query_allele_name, array_allele_name)
 
-damps_to_add <- spitzemap %>% 
-  filter(query_allele_name %in% c('crm1_damp', 'pse1_damp', 'mtr10_damp', 'yrb2_damp'))
 #### distribution of scores
 damps_to_add %>% ggplot(aes(x = score, color = query_allele_name)) + geom_density()
 ## looks like all of them have significant score values, might mean they are real damps
@@ -27,10 +31,8 @@ spitzemapko %>% filter(query_allele_name %in% c('GSP1 - T34E', 'GSP1 - R108L')) 
   ggplot(aes(x = score.x, y = score.y)) + geom_point() + facet_grid(query_allele_name.x ~ query_allele_name.y)
 ### they all seem to have a phenotype so I'll keep them
 spitzemapko <- bind_rows(spitzemapko, damps_to_add)
-for_supp_info <- spitzemapko %>%  select(query_allele_name, query_ORF, array_allele_name, array_ORF, score, interaction_network)
-write_tsv(for_supp_info, 'Supp_Table4_scaled_SGA_and_Gsp1_E-MAP_combined.txt')
 sga_index <- spitzemapko %>% select(query_allele_name, query_ORF) %>% unique()
-write_tsv(sga_index, 'basic_E-MAP_data/spitzemapko_query_orf_index.txt')
+write_tsv(sga_index, 'Data/E-MAP/spitzemapko_query_orf_index.txt')
 array_ORFs_from_SGA <- spitzemapko %>% 
   filter(interaction_network != "gsp1_pEMAP") %>% 
   pull(array_ORF) %>% unique()
@@ -55,8 +57,6 @@ queries_to_keep %>% filter(grepl('rna1', query_allele_name) |
                            grepl('srm1', query_allele_name) | 
                              grepl('ntf', query_allele_name) |
                            grepl('kap', query_allele_name) |
-                           grepl('mtr10', query_allele_name) |
-                            grepl('pse1', query_allele_name) |
                            grepl('crm1', query_allele_name))
 
 queries_to_keep %>% 
@@ -65,7 +65,6 @@ queries_to_keep <- queries_to_keep %>%
   filter(count_array > 950)
 spitzemapko_for_corr <- spitzemapko_for_corr %>% 
   filter(query_allele_name %in% queries_to_keep$query_allele_name)
-#### for pse1_damp and mtr10_damp there are only 117 and 142 array alleles so we are losing those alleles
 
 #### How many (non-Gsp1) query alleles are there in spitzemapko_for_correlations?
 spitzemapko_for_corr %>% filter(! query_ORF == 'YLR293C') %>% pull(query_allele_name) %>% unique() %>% length()
@@ -109,29 +108,28 @@ make_task_files <- function(pairs, step, task_outpath) {
 }
 
 mutants <- spitzemapko_for_corr %>% 
-  filter(grepl(query_allele_name, pattern = "GSP1 - ")) %>% 
+  filter(grepl(query_allele_name, pattern = "GSP1 - ")) %>%
+  filter(! query_allele_name == "GSP1 - NTER3XFLAG WT") %>% 
+  filter(! query_allele_name == "GSP1 - CTER3XFLAG WT") %>% 
+  filter(! query_allele_name == "GSP1 - T34N") %>% 
   pull(query_allele_name) %>% unique()
 
 all_genes_and_mutants <- spitzemapko_for_corr %>%
+  filter(! query_allele_name == "GSP1 - NTER3XFLAG WT") %>% 
+  filter(! query_allele_name == "GSP1 - CTER3XFLAG WT") %>% 
+  filter(! query_allele_name == "GSP1 - T34N") %>% 
   pull(query_allele_name) %>% unique()
+  
 length(all_genes_and_mutants)
 genes <- all_genes_and_mutants[! all_genes_and_mutants %in% mutants]
 length(genes)
 
-ms_hits_orfs <- read_tsv("SAINT_MS_hits.txt", col_names = F) %>%
-  pull(X1)
-ms_hits_gene_uniqs <- spitzemapko_for_corr %>% 
-  filter(query_ORF %in% ms_hits_orfs) %>% 
-  filter(! grepl(query_allele_name, pattern =  "GSP1 - ")) %>% 
-  pull(query_allele_name) %>% unique()
+all_gsp1_pairs <- expand.grid('mutants' = mutants, 'genes' = genes)
+all_gsp1_pairs <- tibble('mutants' = as.character(all_gsp1_pairs$mutants), 'genes' = as.character(all_gsp1_pairs$genes)) 
 ### all the pairs, including the mutants, to calculate all correlations/similarities
-all_pairs <- combn(all_genes_and_mutants, 2) ### all pairs (including mutants)
-pairs_to_save <- tibble("gene1" = all_pairs[1, ], "gene2" = all_pairs[2, ]) 
-write_tsv(pairs_to_save, "corr_of_corr_with_SGA/all_pairs.txt")
-# only pairs of mutants and partners (for quick correlation of correlations calculations )
-mut_gene_pairs <- t(as.matrix(expand.grid(mutants, genes)))
-###
-mut_ms_hit_pairs <- t(as.matrix(expand.grid(mutants, ms_hits_gene_uniqs)))
+#all_pairs <- combn(all_genes_and_mutants, 2) ### all pairs (including mutants)
+#pairs_to_save <- tibble("gene1" = all_pairs[1, ], "gene2" = all_pairs[2, ]) 
+write_tsv(all_gsp1_pairs, "Data/pairs.txt")
 
 ### make task files for all pairs
 (n_pairs <- length(all_pairs)/2)
@@ -139,26 +137,9 @@ mut_ms_hit_pairs <- t(as.matrix(expand.grid(mutants, ms_hits_gene_uniqs)))
 (step <- 47 * 13 * 3)
 n_pairs / step
 ### 1-6721611:1833 for correlations - 3667 jobs
-make_task_files(all_pairs, step, "corr_of_corr_with_SGA/all_correlations_task_info/")
-
-#load("corr_of_corr_with_SGA/all_correlations_task_info/2129806_task_info.RData")
-
-# # # make task file for all mut-gene pairs (for corr of corr calculations later)
-# (n_pairs <- length(mut_gene_pairs)/2)
-# (factors <- factorize(n_pairs))
-# step <- n_pairs
-# #   ## 1 job per selected cluster
-# make_task_files(mut_gene_pairs, step, "corr_of_corr_with_SGA/mut_gene_corr_of_corr_task_info")
-# 
-# 
-# # # make task file for all mut-gene pairs (for corr of corr calculations later)
-# (n_pairs <- length(mut_ms_hit_pairs)/2)
-# (factors <- factorize(n_pairs))
-# step <- n_pairs
-# #   ## 1 job per selected cluster
-# make_task_files(mut_ms_hit_pairs, step, "corr_of_corr_with_SGA/mut_ms_hit_corr_of_corr_task_info/")
+#make_task_files(all_pairs, step, "Data/all_correlations_task_info/")
 
 spitzemapko_for_corr <- spitzemapko_for_corr %>% 
   select(-query_ORF)
 #### save spitzemapko for correlations
-save(spitzemapko_for_corr, file = "basic_E-MAP_data/spitzemapko_for_corr.rda")
+save(spitzemapko_for_corr, file = "Data/spitzemapko_for_corr.rda")

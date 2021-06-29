@@ -40,7 +40,7 @@ gsp1_pEMAP <-
 
 import SGA data and prepare it for concatenation
 ```{r}
-load('../scaling_Costanzo_SGA_data/data/SGA_2016_full_scaled.rda')
+load('Data/SGA_scaling/SGA_2016_full_scaled.rda')
 
 SGA_to_combine <-
   SGA_scaled_to_EMAP %>% 

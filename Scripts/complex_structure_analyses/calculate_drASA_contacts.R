@@ -111,6 +111,9 @@ for (i in seq_along(all_chains_file_paths)) {
 #write_delim(contacts_table, "4A_contacts.txt", delim = "\t")
 index <- read_tsv("index.txt", col_names = T)
 Ran_seq_index <- read_tsv("Gsp1_to_Ran.index", col_names = T)
+# index <- read_tsv("Scripts/complex_structure_analyses/index.txt", col_names = T)
+# Ran_seq_index <- read_tsv("Scripts/complex_structure_analyses/Gsp1_to_Ran.index", col_names = T)
+
 
 ### residues contacting the nucleotide (based on the 6 A threshold)
 nuc_merged <- inner_join(nucleotide_contacts_table, index, by = c("file_path"))
@@ -139,7 +142,8 @@ merged_mamm_SASA <- merged_SASA %>%
   inner_join(., Ran_seq_index, by = c("resno" = "pdb_seq_num")) %>% 
   select(partner, "yeastresnum" = ref_seq_num, deltarASA, interface, pdb_id) %>% 
   mutate("deltarASA" = round(deltarASA, 2))
-currated_SASA <- bind_rows(merged_yeast_SASA, merged_mamm_SASA) %>% 
+curated_SASA <- bind_rows(merged_yeast_SASA, merged_mamm_SASA) %>% 
+  filter(partner != 'GSP1') %>% 
   group_by(yeastresnum, partner) %>% 
   filter(deltarASA == max(deltarASA, na.rm = T)) %>% 
   filter(deltarASA > 0.05) %>% 
@@ -147,5 +151,5 @@ currated_SASA <- bind_rows(merged_yeast_SASA, merged_mamm_SASA) %>%
   arrange(interface, yeastresnum, partner) %>% 
   unique() %>% 
   ungroup()
-write_tsv(currated_SASA, "SASA_interfaces.txt")
+write_tsv(curated_SASA, "Data/SASA_interfaces.txt")
 

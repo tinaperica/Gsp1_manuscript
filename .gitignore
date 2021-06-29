@@ -26,6 +26,7 @@ vignettes/*.pdf
 ### individual files
 for_Chris_and_Tina_mutants_data_summary_table.xlsx
 Nature_Figure_Template_183mm.ait
+spitzemapko_correlations_and_pvalues_all.RData
 spitzemapko_correlations_and_bonferroni_fdr_all.RData
 spitzemapko_for_corr.rda
 spitzemapko.rda
@@ -49,6 +50,7 @@ Western_blot_processing_notes.txt
 ## whole directories
 Manuscript/
 Revisions/
+Revisions2/
 for_Nevan/
 talks/
 Final_Figures/
