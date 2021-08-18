@@ -9,9 +9,9 @@ load "~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/PyMOL_figures/pdbs/clean/
 create RanGAP, 1k5d1.pdb_flsq and chain C
 create Gsp1GAP, 1k5d1.pdb_flsq and chain A and resi 1-182+1250-1251
 delete 1k5d1.pdb_flsq
-#load "~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/PyMOL_figures/pdbs/clean/corefit_structures_all/1k5d.pdb_flsq.pdb"
-#create YRB1, 1k5d.pdb_flsq and chain B
-#delete 1k5d.pdb_flsq
+load "~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/PyMOL_figures/pdbs/clean/corefit_structures_all/1k5d.pdb_flsq.pdb"
+create YRB1, 1k5d.pdb_flsq and chain B
+delete 1k5d.pdb_flsq
 #set_view (\
  #   -0.307377636,    0.700903058,   -0.643627584,\
   #  -0.645513952,   -0.650535166,   -0.400146306,\
@@ -46,7 +46,7 @@ color ucsf_navy2, Gsp1GEF
 color ucsf_navy2, Gsp1GAP
 color ucsf_cyan1, RanGEF
 color ucsf_orange1, RanGAP
-#color ucsf_yellow1, YRB1
+color ucsf_yellow1, YRB1
 util.cbay resn GNP
 set valence, off
 hide all
@@ -80,6 +80,21 @@ show spheres, T34
 util.cbaw not polymer
 show sticks, not polymer
 png ~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/Revisions/Main Figures/Figure2/Fig2_T34_RanGAP_2.0.png, dpi = 1200, 0, 0, -1
+
+
+
+hide all
+color ucsf_navy2, Gsp1GAP
+show cartoon, Gsp1GAP
+show surface, YRB1
+#show spheres, GAP_core_1 and apms_mutations
+#color ucsf_orange1, GAP_core_1 and apms_mutations
+color ucsf_pink2, T34
+show spheres, T34
+util.cbaw not polymer
+show sticks, not polymer
+png ~/Box Sync/kortemmelab/home/tina/Gsp1_manuscript/Revisions/Main Figures/Figure2/Fig2_T34_Yrb1_2.0.png, dpi = 1200, 0, 0, -1
+
 
 #hide all
 #show cartoon, Gsp1GEF

@@ -91,7 +91,7 @@ emap_strong <- emap[labels(strong_dend),]
 
 # get list of gene names for each cluster, gene names hand chosen based on descriptions from SGD
 clusts <- list()
-clusts$`mRNA export` <- pull(filter(clusters_with_descriptions, cluster_number %in% c(612, 613)), name)
+clusts$`mRNA\nexport` <- pull(filter(clusters_with_descriptions, cluster_number %in% c(612, 613)), name)
 clusts$Dynactin <- pull(filter(clusters_with_descriptions, cluster_number %in% c(61, 262)), name)
 clusts$`tRNA\nurmylation` <- c('elp2','elp6','elp3','elp4','iki1')
 clusts$`Spindle assembly\nregulation` <- pull(filter(clusters_with_descriptions, cluster_number == 161), name)
@@ -116,7 +116,7 @@ hm <-
           row_title_gp = gpar(fontsize = 7), column_title_gp = gpar(fontsize = 7),
           cluster_rows = strong_dend, cluster_columns = as.dendrogram(col_hc),
           row_dend_reorder = FALSE, column_dend_reorder = FALSE,
-          row_dend_width = unit(6, "mm"), row_dend_side = "left",
+          row_dend_width = unit(5, "mm"), row_dend_side = "left",
           show_column_dend = F, show_column_names = F,
           row_names_side = "left", row_names_gp = gpar(fontsize = 6, fontfamily='Helvetica')
           )
@@ -124,7 +124,7 @@ hm <-
 # prepare a function to plot the heatmap of a small set of a genes (a "slice")
 make_heatmap_of_cluster <- function(slice, cluster_name) {
   Heatmap(slice, name = cluster_name, show_heatmap_legend = F,
-          width = unit (1.8, 'mm')*ncol(slice),
+          width = unit (1.6, 'mm')*ncol(slice),
           col = colorRamp2(c(-4, 0, 4), c(GI_cyan, GI_black, GI_yellow)),
           cluster_rows = strong_dend, cluster_columns = F,
           row_dend_reorder = F, column_dend_reorder = F,
@@ -137,7 +137,8 @@ make_heatmap_of_cluster <- function(slice, cluster_name) {
 }
 
 # add heatmaps for the small gene sets that will be shown as slices in the main figure
-main_fig_clusts <- clusts[names(clusts) %in% c('mRNA export','Dynactin','tRNA\nurmylation','Spindle assembly\nregulation')]
+# main_fig_clusts <- clusts[names(clusts) %in% c('mRNA export','Dynactin','tRNA\nurmylation','Spindle assembly\nregulation')]
+main_fig_clusts <- clusts[names(clusts) %in% c('mRNA\nexport','tRNA\nurmylation','Spindle assembly\nregulation')]
 
 for (i in seq_along(main_fig_clusts)) {
   genes <- unlist(main_fig_clusts[i])
@@ -148,8 +149,10 @@ for (i in seq_along(main_fig_clusts)) {
 }
 
 # plot the heatmap, with slice
-pdf('Figure1_E-MAP/Plots/1D_E-MAP.pdf', height = 2.6, width = 7.2)
-draw(hm, ht_gap = unit(0.75, 'mm'))
+# pdf('Figure1_E-MAP/Plots/1D_E-MAP.pdf', height = 2.6, width = 7.2)
+# pdf('Figure1_E-MAP/Plots/1D_E-MAP_FinalFormat.pdf', height = 2.4, width = 4.9)
+pdf('Figure1_E-MAP/Plots/1D_E-MAP_FinalFormat.pdf', height = 2.4, width = 7.2)
+draw(hm, ht_gap = unit(0.6, 'mm'))
 dev.off()
 
 # plot the legend for the main figure heatmap
@@ -204,7 +207,8 @@ make_heatmap_of_supp_cluster <- function(slice, cluster_name) {
 
 # plot the supplemental gene set slices
 hm_supp_slices <- HeatmapList()
-supp_fig_clusts <- clusts[! names(clusts) %in% c('mRNA export','Dynactin','tRNA\nurmylation','Spindle assembly\nregulation')]
+# supp_fig_clusts <- clusts[! names(clusts) %in% c('mRNA export','Dynactin','tRNA\nurmylation','Spindle assembly\nregulation')]
+supp_fig_clusts <- clusts[! names(clusts) %in% c('mRNA\nexport','tRNA\nurmylation','Spindle assembly\nregulation')]
 
 for (i in seq_along(supp_fig_clusts)) {
   genes <- unlist(supp_fig_clusts[i])
@@ -214,7 +218,8 @@ for (i in seq_along(supp_fig_clusts)) {
   hm_supp_slices = hm_supp_slices + make_heatmap_of_supp_cluster(slice, cluster_name)
 }
 
-pdf('Extended_Figures/Ext_Fig3B_Extra_Slices.pdf', height = 2.8, width = 3.5)
+# pdf('Extended_Figures/Ext_Fig3B_Extra_Slices.pdf', height = 2.8, width = 3.5)
+pdf('Extended_Figures/Ext_Fig3B_Extra_Slices_Final_Formatting.pdf', height = 2.8, width = 4)
 draw(hm_supp_slices, ht_gap = unit(2, 'mm'))
 dev.off()
 

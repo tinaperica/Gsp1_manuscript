@@ -39,8 +39,8 @@ data <-
   mutate(group = case_when(  # Define a new variable "group" for plotting purposes
     interaction_network == 'ExN_SGA' ~ 'Essential\ngene KDs',
     interaction_network == 'NxN_SGA' ~ 'Non-essential\ngene KOs',
-    (interaction_network == 'gsp1_pEMAP' & query_mutant %in% strong_mutants) ~ 'Strong\nGsp1\nmutants',
-    (interaction_network == 'gsp1_pEMAP' & ! query_mutant %in% strong_mutants) ~ 'Weak\nGsp1\nmutants'))
+    (interaction_network == 'gsp1_pEMAP' & query_mutant %in% strong_mutants) ~ 'Strong\nGsp1 mutants',
+    (interaction_network == 'gsp1_pEMAP' & ! query_mutant %in% strong_mutants) ~ 'Weak\nGsp1 mutants'))
 
 data_filtered <- 
   data %>% 
@@ -56,7 +56,7 @@ data_filtered %>%
   arrange(desc(n_sig)) %>% 
   write_csv('Figure1_E-MAP/Num_sig_interactions_by_mutant_abs_score_threshold_3.csv')
 
-gsp1_groups <- c('Strong\nGsp1\nmutants', 'Weak\nGsp1\nmutants')
+gsp1_groups <- c('Strong\nGsp1 mutants', 'Weak\nGsp1 mutants')
 
 # sina plots with total number of strong interactions per query
 set.seed(2)
@@ -80,6 +80,9 @@ ggplot(data_filtered, aes(x = group, y = n_sig)) +
     axis.line = element_line(size = 0.1)
   )
 ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin.pdf', width = 2.5, height = 1.9)
+ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin_for_EDF.pdf', width = 2.2, height = 1.5)
+
+ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin_FinalFormatting.pdf', width = 3, height = 1.3)
 #dev.off()
 
 # cdf plot for all interactions

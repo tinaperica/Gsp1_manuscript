@@ -10,6 +10,11 @@ source('ucsf_colors.R')
 output_directory <- 'Revisions2/Fig_and_analysis_for_StatReviewer/nr_corr/heatmap_and_barplot_output'
 ### input files
 load('Data/filtered_v5_correlations.RData')
+
+filtered_correlations <- 
+  filtered_correlations %>% 
+  filter(!grepl('damp', query_uniq2)
+  
 strong_mutants <- filtered_correlations %>% filter(grepl('GSP1', query_uniq1)) %>% pull(query_uniq1) %>% unique()
 mutants_ordered <- read_tsv('Data/4B_order_of_mutants.txt', col_names = F)$X1
 gene_set_data <- read_tsv('Data/gene_sets.txt') %>% 

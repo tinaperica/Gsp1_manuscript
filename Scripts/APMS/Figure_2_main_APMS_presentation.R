@@ -65,7 +65,7 @@ data_with_interfaces %>%
   stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
                color = ucsf_colors$pink1, size = 0.5, fatten = 0, width = 0.7) +
   xlab('') +
-  ylab(expression('log'[2]*'FC')) +
+  ylab(expression('log'[2]*'FC for preys with\nco-crystal structures with Gsp1')) +
   stat_compare_means(comparisons = my_comparisons,
                      symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1),
                                         symbols = c("****", "***", "**", "*", "ns"))) +
@@ -79,7 +79,7 @@ data_with_interfaces %>%
     legend.position = 'right',
     axis.line = element_line(size = 0.1)
   )
-ggsave('Revisions/Main Figures/Figure2/APMS_sinaplot_simple_mean.pdf', height = 1.9, width = 3.3)
+ggsave('Final_Formatting/temp/APMS_sinaplot_simple_mean.pdf', height = 1.7, width = 3.2)
 dev.off()
 t.test(x = data_with_interfaces$log2FC[data_with_interfaces$interface == 'interface'],
     y = data_with_interfaces$log2FC[data_with_interfaces$interface == 'not_interface'])
@@ -139,7 +139,7 @@ gap_gef %>%
     legend.position = 'right',
     axis.line = element_line(size = 0.1)
   )
-ggsave('Revisions/Main Figures/Figure2/APMS_GAP_GEF_sinaplot.pdf', height = 2, width = 3)
+ggsave('Final_Formatting/temp/APMS_GAP_GEF_sinaplot.pdf', height = 1.81, width = 3.3)
 
 # load('Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
 # correlations <- correlations %>%
