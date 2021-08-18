@@ -33,6 +33,7 @@ data %>%
   mutate('Prey_gene_name' = factor(Prey_gene_name, order_of_preys)) %>% 
   arrange(sample, Prey_gene_name) %>% 
   filter(interface_partner == Prey_gene_name & interface == 'core') %>% 
+  unique() %>% 
   ggplot(aes(x = sample, y = log2FC, fill = Prey_gene_name)) + 
   geom_col(color = 'black', size = 0.25) +
   scale_fill_manual(name = 'AP-MS Prey proteins when mutation is\nin the core with the prey interface', values = c(ucsf_colors$orange1, ucsf_colors$cyan1, ucsf_colors$yellow1, ucsf_colors$pink1, ucsf_colors$green1, ucsf_colors$green3)) +
@@ -54,13 +55,14 @@ data %>%
     legend.key.size = unit(0.35, "cm"),
     axis.line = element_line(size = 0.1)
   )
-ggsave('Revisions/Extended_Figures/EDF_5/EDF_APMS_barcols.pdf', height = 3.3, width = 4)
+ggsave('Final_Formatting/temp/EDF_APMS_barcols.pdf', height = 2.9, width = 5.5)
 
 data %>% 
   mutate('sample' = factor(sample, order_of_samples)) %>% 
   mutate('Prey_gene_name' = factor(Prey_gene_name, order_of_preys)) %>% 
   arrange(sample, Prey_gene_name) %>% 
   filter(interface_partner == Prey_gene_name) %>% 
+  unique() %>% 
   ggplot(aes(x = sample, y = log2FC, fill = Prey_gene_name)) + 
   geom_col(color = 'black', size = 0.25) +
   scale_fill_manual(name = 'AP-MS Prey proteins when mutation is\nin the core with the prey interface', values = c(ucsf_colors$orange1, ucsf_colors$cyan1, ucsf_colors$yellow1, ucsf_colors$pink1, ucsf_colors$green1, ucsf_colors$green3)) +
@@ -80,7 +82,7 @@ data %>%
     legend.key.size = unit(0.35, "cm"),
     axis.line = element_line(size = 0.1)
   )
-ggsave('Revisions/Extended_Figures/EDF_5/EDF_APMS_barcols_all.pdf', height = 3.3, width = 4)
+ggsave('Final_Formatting/temp/EDF_APMS_barcols_all.pdf', height = 2.9, width = 5.5)
 
 data %>% 
   mutate('sample' = factor(sample, order_of_samples)) %>% 

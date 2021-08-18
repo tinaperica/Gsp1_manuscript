@@ -6,7 +6,17 @@ source('ucsf_colors.R')
 
 ##### load datafiles
 load('Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
+
+correlations <- 
+  correlations %>% 
+  filter(!grepl('damp', query_uniq1), !grepl('damp', query_uniq2))
+
+
 load('Data/filtered_v6_correlations.RData')
+filtered_correlations <- 
+  filtered_correlations %>% 
+  filter(!grepl('damp', query_uniq2))
+
 name2ORF <- read_tsv('Data/spitzemap_name2ORF_index.txt') # in cjm_corr
 
 ##### Make index files for Gsp1 mutants and partners
@@ -71,7 +81,7 @@ corr_for_sina %>%
                      values = c(ucsf_colors$gray3, ucsf_colors$gray1)) +
   # stat_summary(fun.y = mean, geom = "point", color = ucsf_colors$pink1, size = 2) +
   stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "crossbar",
-               fatten = 0, width = 0.5, color = ucsf_colors$pink1, show.legend = FALSE) + 
+               fatten = 0, width = 0.7, color = ucsf_colors$pink1, show.legend = FALSE) + 
   # stat_summary(fun.data = mean_sdl, fun.args = list(mult=1), color = ucsf_colors$pink1,
   #              geom = "errorbar", width = 0.1, size = 0.75) +
   ylim(c(-0.15, 0.5)) + xlab('') + ylab('Pearson correlation\nwith partner profile') +
@@ -86,7 +96,9 @@ corr_for_sina %>%
     axis.line = element_line(size = 0.1)
   )
 # ggsave('Figure1_E-MAP/Plots/1F_Sinaplots.pdf', height = 1.9, width = 3.1)
-ggsave('Revisions/Main Figures/Figure1/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
+# ggsave('Revisions/Main Figures/Figure1/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
+# ggsave('Revisions2/Figure_Files/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
+ggsave('Figure1_E-MAP/Plots/1F_Sinaplots_FinalFormatting.pdf', height = 1.7, width = 3.1, device = cairo_pdf)
 dev.off()
 
 
@@ -145,7 +157,8 @@ ggplot(data = data, aes(x = group, y = pearson, color = group)) +
     axis.line = element_line(size = 0.1)
   )
 # ggsave('Extended_Figures/Ext_Fig3_Sinaplots_strong_weak_all.pdf', height = 2, width = 3.7)
-ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
+# ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
+ggsave('Revisions2/Figure_Files/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
 dev.off()
 
 
@@ -186,7 +199,9 @@ ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
     axis.line = element_line(size = 0.1)
   )
 # ggsave('Extended_Figures/Ext_Fig3_Sinaplots_partners_nonpartners.pdf', height = 2, width = 2)
-ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3C.pdf', height = 2, width = 2, device=cairo_pdf)
+# ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3C.pdf', height = 2, width = 2, device=cairo_pdf)
+#ggsave('Revisions2/Figure_Files/Ext_Fig3C.pdf', height = 2.2, width = 2, device=cairo_pdf)
+ggsave('Final_Formatting/temp/Ext_Fig4d.pdf', height = 2.2, width = 2.8, device=cairo_pdf)
 dev.off()
 
 # make a table for the supplement showing the top correlations from the sinaplot
@@ -198,6 +213,6 @@ corr_for_sina %>%
          'Partner strain name' = strain,
          'Pearson Correlation Coefficient' = pearson,
          'Residue in core' = is_core) %>% 
-  write_csv('Supplementary_Data_Tables/Supp_Table6_partner_correlations.csv')
+  write_csv('Supplementary_Data_Tables/Supp_Table4_partner_correlations.csv')
 
 

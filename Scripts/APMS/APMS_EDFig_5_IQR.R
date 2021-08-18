@@ -44,4 +44,4 @@ interquartile_range %>% ggplot(aes(x = IQR)) +
         legend.title = element_text(size = 7),
         #legend.key.size = unit(0.3, "cm"),
         axis.line = element_line(size = 0.1))
-ggsave('Revisions/Extended_Figures/Ext_Fig5_IQR_of_log2FC.pdf', width = 4, height = 3) 
+ggsave('Final_Formatting/temp/Ext_Fig5_IQR_of_log2FC.pdf', width = 5.5, height = 2.9) 

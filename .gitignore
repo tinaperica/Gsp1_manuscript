@@ -31,7 +31,7 @@ spitzemapko_correlations_and_bonferroni_fdr_all.RData
 spitzemapko_for_corr.rda
 spitzemapko.rda
 spitzemap.rda
-<<<<<<< HEAD
+
 Data/SGA_Scaling/SGA_2016_full.rda 
 Data/SGA_Scaling/SGA_NxN_avg.txt
 Data/SGA_Scaling/SGA_NxN_scaled_to_cF3.txt 
@@ -45,12 +45,13 @@ Supplementary_Data_Tables/Supplementary_Table4_Gsp1_E-MAP_and_scaled_CellMAP_SGA
 Western_blot_processing_notes.txt
 Data/RanGEF_assay/data_parsed.txt
 Data/RanGEF_assay/fit_data.txt
-=======
+
 Western_blot_processing_notes.txt
 ## whole directories
 Manuscript/
 Revisions/
 Revisions2/
+Final_Formatting/
 for_Nevan/
 talks/
 Final_Figures/

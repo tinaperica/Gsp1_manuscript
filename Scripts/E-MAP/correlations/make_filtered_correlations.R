@@ -28,6 +28,24 @@ sga_index <- read_tsv('Data/spitzemapko_query_orf_index.txt') %>%
 spitzemapko_for_corr <- spitzemapko_for_corr %>% 
   filter(! query_allele_name %in% c('GSP1 - NTER3XFLAG WT', 'GSP1 - CTER3XFLAG WT'))
 
+#### do the bonferroni and FDR correction  for the correlation p-values - RUN THIS ONCE - uncomment this sectio  to run
+# load('corr_of_corr_with_SGA/correlations/spitzemapko_correlations_and_pvalues_all.RData')
+# correlations <- correlations %>%
+#   group_by(query_uniq1) %>%
+#   mutate('fdr' = p.adjust(two_sided_p_value, method = 'fdr'),
+#          'bonferroni' = p.adjust(two_sided_p_value, method = 'bonferroni'),
+#          'greater_fdr' = p.adjust(greater_p_value, method = 'fdr'),
+#          'greater_bonferroni' = p.adjust(greater_p_value, method = 'bonferroni')) %>% 
+#   ungroup()
+# correlations <- correlations %>%
+#   inner_join(., sga_index, by = c('query_uniq1' = 'query')) %>%
+#   select(everything(), 'gene_name1' = gene_name)
+# correlations <- correlations %>% 
+#   inner_join(., sga_index, by = c('query_uniq2' = 'query')) %>%
+#   select(everything(), 'gene_name2' = gene_name)
+# save(correlations, file = 'Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
+load('Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
+
 
 ### how many query genes in spitzemapko (including Gsp1 mutants) 3665
 spitzemapko_for_corr %>%
@@ -36,7 +54,7 @@ spitzemapko_for_corr %>%
 chromatin_library_emap_array_genes <- spitzemapko_for_corr %>%
   filter(grepl('GSP1', query_allele_name)) %>%
   pull(array_ORF) %>% unique() 
-chromatin_library_emap_array_genes %>% length()
+chromatin_library_emap_array_genes %>% length()  ### 1127
 
 ### out of those 1127, 679 have a significant GI with at least one of the Gsp1 mutants (outside of -3, +3)
 chromatin_library_emap_array_genes_with_Gsp1_sig_GI <- spitzemapko_for_corr %>%
@@ -99,7 +117,6 @@ filtered_spitzemapko %>%
 
 ### since this removed a lot of Gsp1 mutants
 ### count again significant array genes with leftover mutants: 676
-#### (compared to 676 before - only 3 dropped out)
 chromatin_library_emap_array_genes_with_Gsp1_sig_GI <- filtered_spitzemapko %>%
   filter(grepl('GSP1', query_allele_name)) %>%
   filter((score < -3 | score > 3)) %>%
@@ -121,9 +138,6 @@ filtered_spitzemapko$score %>% length()
 filtered_spitzemapko %>% pull(query_allele_name) %>% unique() %>% length()
 filtered_spitzemapko %>% filter(grepl('GSP1', query_allele_name)) %>%
   pull(query_allele_name) %>% unique()
-### filtered_spitzemapko has 181,898 genetic interaction measurements with scores outside the (-3,3) range 
-### for 3403 queries 
-####  (which includes 22 Gsp1 point mutants)
 
 ### based on this decide which queries to keep
 ### but return all the genetic interactions for those queries (not just the strong ones outside the (-3,3) range
@@ -133,43 +147,11 @@ filtered_spitzemapko <- spitzemapko_for_corr %>%
   filter(query_allele_name %in% queries_to_keep)
 filtered_spitzemapko$score %>% length()
 filtered_spitzemapko %>% pull(query_allele_name) %>% unique() %>% length()
-##### filtered_spitzemapko has 3,529,000 genetic interactions for 3403 queries (including 22 Gsp1 point mutants)
 
-
-
-correlations %>% 
-  ggplot(aes(greater_p_value)) + 
-  geom_histogram() +
-  facet_wrap(~query_uniq1)
-
-#### do the bonferroni and FDR correction for the correlation p-values
-correlations <- read_tsv("Data/gsp1_gene_pair_correlations.txt")
-correlations <- correlations %>%
-  filter(genes %in% queries_to_keep) %>% 
-  group_by(mutants) %>% 
-  mutate('fdr' = p.adjust(two_sided_p_value, method = 'fdr'),
-         'bonferroni' = p.adjust(two_sided_p_value, method = 'bonferroni'),
-         'greater_fdr' = p.adjust(greater_p_value, method = 'fdr'),
-         'greater_bonferroni' = p.adjust(greater_p_value, method = 'bonferroni')) %>%
-  ungroup() %>% 
-  rename('query_uniq1' = mutants, 'query_uniq2' = genes)
-correlations <- correlations %>%
-  inner_join(., sga_index, by = c('query_uniq1' = 'query')) %>%
-  select(everything(), 'gene_name1' = gene_name)
-correlations <- correlations %>%
-  inner_join(., sga_index, by = c('query_uniq2' = 'query')) %>%
-  select(everything(), 'gene_name2' = gene_name)
-save(correlations, file = 'Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
-correlations %>% 
-  select('mutant' = query_uniq1, 'CellMAP_allele' = query_uniq2, 'yeast_gene' = gene_name2,	
-         'Pearson correlation' = 	pearson, 'greater p-value' = greater_p_value, 'greater FDR' = greater_fdr,
-         'greater Bonferroni' = greater_bonferroni) %>% 
-  arrange(mutant) %>% 
-  write_tsv(., 'Data/Supplementary_File_3.txt')
-### this data is provided in Supplementary File 3
-#### it contains correlations with all queries from filtered_correlations but for ALL mutants, not just the 22
-
-
+# correlations %>% 
+#   ggplot(aes(greater_p_value)) + 
+#   geom_histogram() +
+#   facet_wrap(~query_uniq1)
 
 
 
@@ -177,36 +159,47 @@ correlations %>%
 filtered_correlations <- correlations %>%
   filter(query_uniq1 %in% queries_to_keep & query_uniq2 %in% queries_to_keep)
 save(filtered_correlations, file = 'Data/filtered_correlations.RData')
+filtered_correlations %>% 
+  filter(grepl('GSP1', query_uniq1)) %>% 
+  filter(!grepl('GSP1', query_uniq2)) %>% 
+  filter(! (grepl('damp', query_uniq2))) %>% 
+  select('mutant' = query_uniq1, 'CellMAP_allele' = query_uniq2, 'yeast_gene' = gene_name2,	
+         'Pearson correlation' = 	pearson, 'greater p-value' = greater_p_value, 'greater FDR' = greater_fdr,
+         'greater Bonferroni' = greater_bonferroni) %>% 
+  arrange(mutant) %>% 
+  write_tsv(., 'Data/Supplementary_File_3.txt')
+  
 
 ### in the next step of filtering add filtering by positive corr FDR/Bonferroni
-queries_with_sig_corr <- filtered_correlations %>%   ## 1179
+queries_with_sig_corr <- filtered_correlations %>%  
   filter(grepl('GSP1', query_uniq1) & greater_fdr < 0.05) %>% 
   pull(query_uniq2) %>% unique()
-queries_with_sig_corr %>% length()
-queries_with_two_sig_corr <- filtered_correlations %>% ## 718
+queries_with_sig_corr %>% length() # 1223
+queries_with_two_sig_corr <- filtered_correlations %>% ##
   filter(grepl('GSP1', query_uniq1) & greater_fdr < 0.05) %>% 
   group_by(query_uniq2) %>% 
   summarize('sig_count' = n()) %>% 
   filter(sig_count > 1) %>% 
   pull(query_uniq2) %>% unique()
-queries_with_two_sig_corr %>% length()
-queries_with_bonf_sig_corr <- filtered_correlations %>% ### 380
+queries_with_two_sig_corr %>% length()  ## 763
+queries_with_bonf_sig_corr <- filtered_correlations %>% ###
   filter(grepl('GSP1', query_uniq1) & greater_bonferroni < 0.05) %>% 
   pull(query_uniq2) %>% unique()
-queries_with_bonf_sig_corr %>% length()
-queries_with_two_sig_bonf <- filtered_correlations %>% ## 224
+queries_with_bonf_sig_corr %>% length()  ## 499
+queries_with_two_sig_bonf <- filtered_correlations %>% ##
   filter(grepl('GSP1', query_uniq1) & greater_bonferroni < 0.05) %>% 
   group_by(query_uniq2) %>% 
   summarize('sig_count' = n()) %>% 
   filter(sig_count > 1) %>% 
   pull(query_uniq2) %>% unique()
-
+queries_with_two_sig_bonf %>% length()  ## 298
 filtered_correlations_BNF_1 <- filtered_correlations %>% 
   filter(query_uniq2 %in% queries_with_bonf_sig_corr) %>% 
   arrange(query_uniq2)
 filtered_correlations_BNF_1 %>% pull(query_uniq2) %>% unique()
 #### final filtered_correlations version BNF_1 has 380 queries
-save(filtered_correlations_BNF_1, file = 'Data/filtered_correlations_BNF_1.RData')
+filtered_correlations <- filtered_correlations_BNF_1
+save(filtered_correlations, file = 'Data/filtered_correlations_v5.RData')
 
 
 
@@ -215,7 +208,8 @@ filtered_correlations_BNF_2 <- filtered_correlations %>%
   filter(query_uniq2 %in% queries_with_two_sig_bonf)
 filtered_correlations_BNF_2 %>% pull(query_uniq2) %>% unique()
 #### final filtered_correlations version BNF_2 has 224 queries
-save(filtered_correlations_BNF_2, file = 'Data/filtered_correlations_BNF_2.RData')
+filtered_correlations <- filtered_correlations_BNF_2
+save(filtered_correlations, file = 'Data/filtered_correlations_v6.RData')
 
 ### filtering still keeps it to 22 Gsp1 mutants
 filtered_correlations_BNF_2 %>% filter(grepl('GSP1', query_uniq1) & (! grepl('GSP1', query_uniq2))) %>% pull(query_uniq1) %>% unique()
