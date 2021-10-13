@@ -55,7 +55,7 @@ data_with_interfaces %>%
   geom_sina(alpha = 1, maxwidth = 0.5, seed = 2) +
   geom_hline(yintercept = 0, linetype = 'dashed', color = ucsf_colors$gray1, size = 0.1) +
   scale_x_discrete(breaks=c(T, F),
-                   # labels = c('mutant in\npartner interface', 'mutant not in\npartner interface')
+                   labels = c('mutant in\npartner interface', 'mutant not in\npartner interface')
                    ) +
   scale_size(name = 'P-value of prey fold change', range = c(0.1, 1),
              breaks = c(0, 0.1, 1),
@@ -80,7 +80,6 @@ data_with_interfaces %>%
     axis.line = element_line(size = 0.1)
   )
 ggsave('Final_Formatting/temp/APMS_sinaplot_simple_mean.pdf', height = 1.7, width = 3.2)
-dev.off()
 t.test(x = data_with_interfaces$log2FC[data_with_interfaces$interface == 'interface'],
     y = data_with_interfaces$log2FC[data_with_interfaces$interface == 'not_interface'])
 # t = -4.6415, df = 70.442, p-value = 1.557e-05
@@ -101,6 +100,9 @@ t.test(x = data_with_interfaces$log2FC[data_with_interfaces$interface == 'interf
 #   mean of x mean of y 
 # -1.033314  1.030359 
 
+
+### print out the data for the Figure source file
+data_with_interfaces %>% write_tsv('Per_Figure_source_files/Fig2A.txt')
 
 
 gef_int_resi <- interfaces %>% filter(interface_partner == 'Srm1' & interface == 'core') %>% pull(residue) %>% unique()
@@ -141,6 +143,10 @@ gap_gef %>%
   )
 ggsave('Final_Formatting/temp/APMS_GAP_GEF_sinaplot.pdf', height = 1.81, width = 3.3)
 
+### Print for Figure 2 source file
+gap_gef %>% write_tsv('Per_Figure_source_files/Fig2B.txt')
+  
+  
 # load('Data/spitzemapko_correlations_and_bonferroni_fdr_all.RData')
 # correlations <- correlations %>%
 #   filter(grepl('GSP1', query_uniq1), !grepl('GSP1', query_uniq2)) %>%

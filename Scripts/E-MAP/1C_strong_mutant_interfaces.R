@@ -47,6 +47,14 @@ col_pcoor <-
   arrange(`V1`) %>% pull(partner)
 col.hc <- rotate(col.hc, col_pcoor)
 
+### print for source file
+mat %>% as_tibble() %>% 
+  mutate('residue number' = rownames(mat)) %>% 
+  select('residue number', everything()) %>% 
+  write_tsv('Per_Figure_source_files/EDF4a.txt')
+  
+
+
 # plot the Heatmap
 pdf('Figure1_E-MAP/Plots/1C_Interface_Heatmap.pdf', width = 2.5, height = 1.7)
 draw(

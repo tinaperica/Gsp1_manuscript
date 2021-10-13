@@ -26,6 +26,7 @@ clustfn <- function(mat, dist_method, clust_method) {
 
 
 data <- read_tsv('Data/APMS_data.txt') %>% 
+  mutate('log2FC' = as.double(log2FC)) %>% 
   filter(! Prey_gene_name == 'GSP1') %>% 
   filter(norm == 'eqM') %>% 
   mutate('Prey_gene_name' = str_c(substr(Prey_gene_name, 1, 1), tolower(substr(Prey_gene_name, 2, nchar(Prey_gene_name))))) %>% 
@@ -155,10 +156,15 @@ intersect_preys_data <- data %>%
   select(sample, mutant, tag, Prey_gene_name, log2FC, adj.pvalue) %>% 
   mutate('adj.pvalue' = ifelse(adj.pvalue >= 0.05, 0.1, adj.pvalue)) %>% 
   unique() %>% 
-  mutate('log2FC' = ifelse(log2FC < -4, -4, log2FC)) %>% 
-  mutate('log2FC' = ifelse(log2FC > 4, 4, log2FC)) %>% 
+  mutate('log2FC' = ifelse(log2FC < -4.00, -4, log2FC)) %>% 
+  mutate('log2FC' = ifelse(log2FC > 4.00, 4, log2FC)) %>% 
   mutate('mutant' = factor(mutant, levels = ordered_mutants)) %>% 
   arrange(mutant)
+
+### print data for Figure source file
+intersect_preys_data %>% write_tsv('Per_Figure_source_files/EDF5d.txt')
+
+
 matrix_for_clustering <- intersect_preys_data %>% 
   rename('partner' = Prey_gene_name) %>% 
   select(sample, partner, log2FC) %>% 

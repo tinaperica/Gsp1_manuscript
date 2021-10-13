@@ -1,0 +1,1585 @@
+yeast_num	partner	interface	nucleotide	mutated	switch
+6	Crm1	none	other	other	other
+6	Cse1	none	other	other	other
+6	Kap104	none	other	other	other
+6	Kap95	none	other	other	other
+6	Los1	none	other	other	other
+6	Msn5	none	other	other	other
+6	Mtr10	none	other	other	other
+6	Ntf2	none	other	other	other
+6	Nup1	core	other	other	other
+6	Nup60	none	other	other	other
+6	Pse1	none	other	other	other
+6	Rna1	none	other	other	other
+6	Srm1	none	other	other	other
+6	Srp1	none	other	other	other
+6	Yrb1	none	other	other	other
+6	Yrb2	none	other	other	other
+7	Crm1	none	other	other	other
+7	Cse1	none	other	other	other
+7	Kap104	none	other	other	other
+7	Kap95	none	other	other	other
+7	Los1	none	other	other	other
+7	Msn5	none	other	other	other
+7	Mtr10	none	other	other	other
+7	Ntf2	none	other	other	other
+7	Nup1	core	other	other	other
+7	Nup60	none	other	other	other
+7	Pse1	none	other	other	other
+7	Rna1	none	other	other	other
+7	Srm1	none	other	other	other
+7	Srp1	none	other	other	other
+7	Yrb1	none	other	other	other
+7	Yrb2	none	other	other	other
+21	Crm1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Cse1	core	within 5 A from the nucleotide	other	switch I or switch II
+21	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Kap95	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Mtr10	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Ntf2	core	within 5 A from the nucleotide	other	switch I or switch II
+21	Nup1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Pse1	core	within 5 A from the nucleotide	other	switch I or switch II
+21	Rna1	core	within 5 A from the nucleotide	other	switch I or switch II
+21	Srm1	core	within 5 A from the nucleotide	other	switch I or switch II
+21	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+21	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+22	Crm1	none	other	other	other
+22	Cse1	core	other	other	other
+22	Kap104	none	other	other	other
+22	Kap95	none	other	other	other
+22	Los1	none	other	other	other
+22	Msn5	none	other	other	other
+22	Mtr10	none	other	other	other
+22	Ntf2	none	other	other	other
+22	Nup1	none	other	other	other
+22	Nup60	none	other	other	other
+22	Pse1	core	other	other	other
+22	Rna1	core	other	other	other
+22	Srm1	rim	other	other	other
+22	Srp1	none	other	other	other
+22	Yrb1	none	other	other	other
+22	Yrb1	none	other	other	other
+22	Yrb2	none	other	other	other
+33	Crm1	none	other	other	other
+33	Cse1	none	other	other	other
+33	Kap104	none	other	other	other
+33	Kap95	rim	other	other	other
+33	Los1	none	other	other	other
+33	Msn5	none	other	other	other
+33	Mtr10	none	other	other	other
+33	Ntf2	none	other	other	other
+33	Nup1	none	other	other	other
+33	Nup60	none	other	other	other
+33	Pse1	none	other	other	other
+33	Rna1	none	other	other	other
+33	Srm1	none	other	other	other
+33	Srp1	none	other	other	other
+33	Yrb1	core	other	other	other
+33	Yrb1	core	other	other	other
+33	Yrb2	rim	other	other	other
+34	Crm1	none	other	mutated	other
+34	Cse1	none	other	mutated	other
+34	Kap104	none	other	mutated	other
+34	Kap95	rim	other	mutated	other
+34	Los1	none	other	mutated	other
+34	Msn5	none	other	mutated	other
+34	Mtr10	none	other	mutated	other
+34	Ntf2	none	other	mutated	other
+34	Nup1	none	other	mutated	other
+34	Nup60	none	other	mutated	other
+34	Pse1	none	other	mutated	other
+34	Rna1	none	other	mutated	other
+34	Srm1	none	other	mutated	other
+34	Srp1	none	other	mutated	other
+34	Yrb1	core	other	mutated	other
+34	Yrb1	core	other	mutated	other
+34	Yrb2	rim	other	mutated	other
+35	Crm1	none	other	other	other
+35	Cse1	none	other	other	other
+35	Kap104	none	other	other	other
+35	Kap95	core	other	other	other
+35	Los1	rim	other	other	other
+35	Msn5	none	other	other	other
+35	Mtr10	none	other	other	other
+35	Ntf2	none	other	other	other
+35	Nup1	none	other	other	other
+35	Nup60	none	other	other	other
+35	Pse1	none	other	other	other
+35	Rna1	none	other	other	other
+35	Srm1	none	other	other	other
+35	Srp1	none	other	other	other
+35	Yrb1	core	other	other	other
+35	Yrb1	core	other	other	other
+35	Yrb2	core	other	other	other
+36	Crm1	none	other	other	other
+36	Cse1	none	other	other	other
+36	Kap104	none	other	other	other
+36	Kap95	rim	other	other	other
+36	Los1	none	other	other	other
+36	Msn5	none	other	other	other
+36	Mtr10	rim	other	other	other
+36	Ntf2	none	other	other	other
+36	Nup1	none	other	other	other
+36	Nup60	none	other	other	other
+36	Pse1	none	other	other	other
+36	Rna1	none	other	other	other
+36	Srm1	none	other	other	other
+36	Srp1	none	other	other	other
+36	Yrb1	core	other	other	other
+36	Yrb1	core	other	other	other
+36	Yrb2	core	other	other	other
+37	Crm1	none	other	other	other
+37	Cse1	core	other	other	other
+37	Kap104	none	other	other	other
+37	Kap95	core	other	other	other
+37	Los1	core	other	other	other
+37	Msn5	none	other	other	other
+37	Mtr10	none	other	other	other
+37	Ntf2	none	other	other	other
+37	Nup1	none	other	other	other
+37	Nup60	none	other	other	other
+37	Pse1	none	other	other	other
+37	Rna1	none	other	other	other
+37	Srm1	none	other	other	other
+37	Srp1	none	other	other	other
+37	Yrb1	core	other	other	other
+37	Yrb1	core	other	other	other
+37	Yrb2	core	other	other	other
+41	Crm1	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Cse1	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Kap95	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Los1	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Mtr10	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Ntf2	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Nup1	rim	within 5 A from the nucleotide	other	switch I or switch II
+41	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Pse1	core	within 5 A from the nucleotide	other	switch I or switch II
+41	Rna1	core	within 5 A from the nucleotide	other	switch I or switch II
+41	Srm1	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+41	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Crm1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Cse1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Kap95	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Mtr10	support	within 5 A from the nucleotide	other	switch I or switch II
+43	Ntf2	rim	within 5 A from the nucleotide	other	switch I or switch II
+43	Nup1	rim	within 5 A from the nucleotide	other	switch I or switch II
+43	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Pse1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Rna1	core	within 5 A from the nucleotide	other	switch I or switch II
+43	Srm1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+43	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Crm1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Cse1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Kap95	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Mtr10	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Ntf2	rim	within 5 A from the nucleotide	other	switch I or switch II
+44	Nup1	rim	within 5 A from the nucleotide	other	switch I or switch II
+44	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Pse1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Rna1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Srm1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+44	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+45	Crm1	rim	other	other	switch I or switch II
+45	Cse1	rim	other	other	switch I or switch II
+45	Kap104	rim	other	other	switch I or switch II
+45	Kap95	rim	other	other	switch I or switch II
+45	Los1	none	other	other	switch I or switch II
+45	Msn5	rim	other	other	switch I or switch II
+45	Mtr10	rim	other	other	switch I or switch II
+45	Ntf2	core	other	other	switch I or switch II
+45	Nup1	support	other	other	switch I or switch II
+45	Nup60	none	other	other	switch I or switch II
+45	Pse1	rim	other	other	switch I or switch II
+45	Rna1	core	other	other	switch I or switch II
+45	Srm1	none	other	other	switch I or switch II
+45	Srp1	none	other	other	switch I or switch II
+45	Yrb1	none	other	other	switch I or switch II
+45	Yrb1	none	other	other	switch I or switch II
+45	Yrb2	none	other	other	switch I or switch II
+46	Crm1	support	other	other	switch I or switch II
+46	Cse1	support	other	other	switch I or switch II
+46	Kap104	core	other	other	switch I or switch II
+46	Kap95	support	other	other	switch I or switch II
+46	Los1	support	other	other	switch I or switch II
+46	Msn5	support	other	other	switch I or switch II
+46	Mtr10	support	other	other	switch I or switch II
+46	Ntf2	support	other	other	switch I or switch II
+46	Nup1	none	other	other	switch I or switch II
+46	Nup60	none	other	other	switch I or switch II
+46	Pse1	support	other	other	switch I or switch II
+46	Rna1	support	other	other	switch I or switch II
+46	Srm1	none	other	other	switch I or switch II
+46	Srp1	none	other	other	switch I or switch II
+46	Yrb1	none	other	other	switch I or switch II
+46	Yrb1	none	other	other	switch I or switch II
+46	Yrb2	none	other	other	switch I or switch II
+47	Crm1	support	other	other	other
+47	Cse1	support	other	other	other
+47	Kap104	support	other	other	other
+47	Kap95	support	other	other	other
+47	Los1	support	other	other	other
+47	Msn5	support	other	other	other
+47	Mtr10	support	other	other	other
+47	Ntf2	none	other	other	other
+47	Nup1	none	other	other	other
+47	Nup60	none	other	other	other
+47	Pse1	support	other	other	other
+47	Rna1	core	other	other	other
+47	Srm1	none	other	other	other
+47	Srp1	none	other	other	other
+47	Yrb1	none	other	other	other
+47	Yrb1	none	other	other	other
+47	Yrb2	none	other	other	other
+48	Crm1	rim	other	other	other
+48	Cse1	rim	other	other	other
+48	Kap104	core	other	other	other
+48	Kap95	none	other	other	other
+48	Los1	none	other	other	other
+48	Msn5	rim	other	other	other
+48	Mtr10	rim	other	other	other
+48	Ntf2	none	other	other	other
+48	Nup1	none	other	other	other
+48	Nup60	none	other	other	other
+48	Pse1	rim	other	other	other
+48	Rna1	rim	other	other	other
+48	Srm1	none	other	other	other
+48	Srp1	none	other	other	other
+48	Yrb1	none	other	other	other
+48	Yrb1	none	other	other	other
+48	Yrb2	none	other	other	other
+49	Crm1	core	other	other	other
+49	Cse1	rim	other	other	other
+49	Kap104	core	other	other	other
+49	Kap95	core	other	other	other
+49	Los1	core	other	other	other
+49	Msn5	core	other	other	other
+49	Mtr10	core	other	other	other
+49	Ntf2	none	other	other	other
+49	Nup1	support	other	other	other
+49	Nup60	none	other	other	other
+49	Pse1	core	other	other	other
+49	Rna1	none	other	other	other
+49	Srm1	none	other	other	other
+49	Srp1	none	other	other	other
+49	Yrb1	none	other	other	other
+49	Yrb1	none	other	other	other
+49	Yrb2	none	other	other	other
+53	Crm1	none	other	other	other
+53	Cse1	none	other	other	other
+53	Kap104	none	other	other	other
+53	Kap95	none	other	other	other
+53	Los1	none	other	other	other
+53	Msn5	none	other	other	other
+53	Mtr10	none	other	other	other
+53	Ntf2	none	other	other	other
+53	Nup1	none	other	other	other
+53	Nup60	none	other	other	other
+53	Pse1	none	other	other	other
+53	Rna1	none	other	other	other
+53	Srm1	none	other	other	other
+53	Srp1	none	other	other	other
+53	Yrb1	rim	other	other	other
+53	Yrb1	rim	other	other	other
+53	Yrb2	core	other	other	other
+55	Crm1	none	other	other	other
+55	Cse1	none	other	other	other
+55	Kap104	none	other	other	other
+55	Kap95	none	other	other	other
+55	Los1	none	other	other	other
+55	Msn5	none	other	other	other
+55	Mtr10	none	other	other	other
+55	Ntf2	none	other	other	other
+55	Nup1	none	other	other	other
+55	Nup60	none	other	other	other
+55	Pse1	none	other	other	other
+55	Rna1	none	other	other	other
+55	Srm1	none	other	other	other
+55	Srp1	none	other	other	other
+55	Yrb1	rim	other	other	other
+55	Yrb1	rim	other	other	other
+55	Yrb2	core	other	other	other
+57	Crm1	none	other	other	other
+57	Cse1	none	other	other	other
+57	Kap104	none	other	other	other
+57	Kap95	none	other	other	other
+57	Los1	none	other	other	other
+57	Msn5	none	other	other	other
+57	Mtr10	none	other	other	other
+57	Ntf2	none	other	other	other
+57	Nup1	none	other	other	other
+57	Nup60	none	other	other	other
+57	Pse1	none	other	other	other
+57	Rna1	none	other	other	other
+57	Srm1	none	other	other	other
+57	Srp1	none	other	other	other
+57	Yrb1	core	other	other	other
+57	Yrb1	none	other	other	other
+57	Yrb2	core	other	other	other
+58	Crm1	none	other	mutated	other
+58	Cse1	none	other	mutated	other
+58	Kap104	none	other	mutated	other
+58	Kap95	none	other	mutated	other
+58	Los1	none	other	mutated	other
+58	Msn5	none	other	mutated	other
+58	Mtr10	none	other	mutated	other
+58	Ntf2	none	other	mutated	other
+58	Nup1	rim	other	mutated	other
+58	Nup60	none	other	mutated	other
+58	Pse1	none	other	mutated	other
+58	Rna1	none	other	mutated	other
+58	Srm1	none	other	mutated	other
+58	Srp1	none	other	mutated	other
+58	Yrb1	core	other	mutated	other
+58	Yrb1	none	other	mutated	other
+58	Yrb2	core	other	mutated	other
+59	Crm1	none	other	other	other
+59	Cse1	none	other	other	other
+59	Kap104	none	other	other	other
+59	Kap95	none	other	other	other
+59	Los1	none	other	other	other
+59	Msn5	none	other	other	other
+59	Mtr10	none	other	other	other
+59	Ntf2	none	other	other	other
+59	Nup1	rim	other	other	other
+59	Nup60	none	other	other	other
+59	Pse1	none	other	other	other
+59	Rna1	none	other	other	other
+59	Srm1	none	other	other	other
+59	Srp1	none	other	other	other
+59	Yrb1	core	other	other	other
+59	Yrb1	none	other	other	other
+59	Yrb2	core	other	other	other
+66	Crm1	support	other	other	other
+66	Cse1	core	other	other	other
+66	Kap104	support	other	other	other
+66	Kap95	core	other	other	other
+66	Los1	core	other	other	other
+66	Msn5	support	other	other	other
+66	Mtr10	support	other	other	other
+66	Ntf2	none	other	other	other
+66	Nup1	support	other	other	other
+66	Nup60	none	other	other	other
+66	Pse1	support	other	other	other
+66	Rna1	none	other	other	other
+66	Srm1	none	other	other	other
+66	Srp1	none	other	other	other
+66	Yrb1	none	other	other	other
+66	Yrb1	none	other	other	other
+66	Yrb2	none	other	other	other
+69	Crm1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Cse1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Kap95	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Mtr10	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Ntf2	core	within 5 A from the nucleotide	other	switch I or switch II
+69	Nup1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Pse1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Rna1	support	within 5 A from the nucleotide	other	switch I or switch II
+69	Srm1	core	within 5 A from the nucleotide	other	switch I or switch II
+69	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+69	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Crm1	rim	within 5 A from the nucleotide	other	switch I or switch II
+71	Cse1	rim	within 5 A from the nucleotide	other	switch I or switch II
+71	Kap104	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Kap95	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Msn5	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Mtr10	rim	within 5 A from the nucleotide	other	switch I or switch II
+71	Ntf2	support	within 5 A from the nucleotide	other	switch I or switch II
+71	Nup1	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Pse1	core	within 5 A from the nucleotide	other	switch I or switch II
+71	Rna1	core	within 5 A from the nucleotide	other	switch I or switch II
+71	Srm1	support	within 5 A from the nucleotide	other	switch I or switch II
+71	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+71	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Crm1	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Cse1	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Kap104	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Kap95	core	within 5 A from the nucleotide	other	switch I or switch II
+72	Los1	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Msn5	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Mtr10	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Ntf2	support	within 5 A from the nucleotide	other	switch I or switch II
+72	Nup1	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Pse1	rim	within 5 A from the nucleotide	other	switch I or switch II
+72	Rna1	core	within 5 A from the nucleotide	other	switch I or switch II
+72	Srm1	support	within 5 A from the nucleotide	other	switch I or switch II
+72	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+72	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Crm1	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Cse1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Kap104	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Kap95	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Los1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Msn5	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Mtr10	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Ntf2	core	within 5 A from the nucleotide	other	switch I or switch II
+73	Nup1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Nup60	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Pse1	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Rna1	rim	within 5 A from the nucleotide	other	switch I or switch II
+73	Srm1	core	within 5 A from the nucleotide	other	switch I or switch II
+73	Srp1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Yrb1	none	within 5 A from the nucleotide	other	switch I or switch II
+73	Yrb2	none	within 5 A from the nucleotide	other	switch I or switch II
+74	Crm1	none	other	other	switch I or switch II
+74	Cse1	none	other	other	switch I or switch II
+74	Kap104	core	other	other	switch I or switch II
+74	Kap95	none	other	other	switch I or switch II
+74	Los1	none	other	other	switch I or switch II
+74	Msn5	none	other	other	switch I or switch II
+74	Mtr10	rim	other	other	switch I or switch II
+74	Ntf2	core	other	other	switch I or switch II
+74	Nup1	none	other	other	switch I or switch II
+74	Nup60	none	other	other	switch I or switch II
+74	Pse1	none	other	other	switch I or switch II
+74	Rna1	rim	other	other	switch I or switch II
+74	Srm1	core	other	other	switch I or switch II
+74	Srp1	none	other	other	switch I or switch II
+74	Yrb1	none	other	other	switch I or switch II
+74	Yrb1	none	other	other	switch I or switch II
+74	Yrb2	none	other	other	switch I or switch II
+75	Crm1	none	other	other	switch I or switch II
+75	Cse1	none	other	other	switch I or switch II
+75	Kap104	core	other	other	switch I or switch II
+75	Kap95	none	other	other	switch I or switch II
+75	Los1	none	other	other	switch I or switch II
+75	Msn5	none	other	other	switch I or switch II
+75	Mtr10	none	other	other	switch I or switch II
+75	Ntf2	core	other	other	switch I or switch II
+75	Nup1	none	other	other	switch I or switch II
+75	Nup60	none	other	other	switch I or switch II
+75	Pse1	none	other	other	switch I or switch II
+75	Rna1	none	other	other	switch I or switch II
+75	Srm1	core	other	other	switch I or switch II
+75	Srp1	none	other	other	switch I or switch II
+75	Yrb1	none	other	other	switch I or switch II
+75	Yrb1	none	other	other	switch I or switch II
+75	Yrb2	none	other	other	switch I or switch II
+76	Crm1	core	other	other	switch I or switch II
+76	Cse1	core	other	other	switch I or switch II
+76	Kap104	core	other	other	switch I or switch II
+76	Kap95	core	other	other	switch I or switch II
+76	Los1	core	other	other	switch I or switch II
+76	Msn5	core	other	other	switch I or switch II
+76	Mtr10	core	other	other	switch I or switch II
+76	Ntf2	rim	other	other	switch I or switch II
+76	Nup1	none	other	other	switch I or switch II
+76	Nup60	none	other	other	switch I or switch II
+76	Pse1	core	other	other	switch I or switch II
+76	Rna1	rim	other	other	switch I or switch II
+76	Srm1	rim	other	other	switch I or switch II
+76	Srp1	none	other	other	switch I or switch II
+76	Yrb1	none	other	other	switch I or switch II
+76	Yrb1	none	other	other	switch I or switch II
+76	Yrb2	none	other	other	switch I or switch II
+77	Crm1	core	other	other	switch I or switch II
+77	Cse1	core	other	other	switch I or switch II
+77	Kap104	core	other	other	switch I or switch II
+77	Kap95	core	other	other	switch I or switch II
+77	Los1	core	other	other	switch I or switch II
+77	Msn5	core	other	other	switch I or switch II
+77	Mtr10	core	other	other	switch I or switch II
+77	Ntf2	none	other	other	switch I or switch II
+77	Nup1	none	other	other	switch I or switch II
+77	Nup60	none	other	other	switch I or switch II
+77	Pse1	core	other	other	switch I or switch II
+77	Rna1	rim	other	other	switch I or switch II
+77	Srm1	none	other	other	switch I or switch II
+77	Srp1	none	other	other	switch I or switch II
+77	Yrb1	none	other	other	switch I or switch II
+77	Yrb1	none	other	other	switch I or switch II
+77	Yrb2	none	other	other	switch I or switch II
+78	Crm1	rim	other	mutated	other
+78	Cse1	core	other	mutated	other
+78	Kap104	core	other	mutated	other
+78	Kap95	core	other	mutated	other
+78	Los1	rim	other	mutated	other
+78	Msn5	rim	other	mutated	other
+78	Mtr10	core	other	mutated	other
+78	Ntf2	core	other	mutated	other
+78	Nup1	rim	other	mutated	other
+78	Nup60	none	other	mutated	other
+78	Pse1	support	other	mutated	other
+78	Rna1	support	other	mutated	other
+78	Srm1	rim	other	mutated	other
+78	Srp1	none	other	mutated	other
+78	Yrb1	none	other	mutated	other
+78	Yrb1	none	other	mutated	other
+78	Yrb2	none	other	mutated	other
+79	Crm1	core	other	mutated	other
+79	Cse1	core	other	mutated	other
+79	Kap104	support	other	mutated	other
+79	Kap95	core	other	mutated	other
+79	Los1	support	other	mutated	other
+79	Msn5	core	other	mutated	other
+79	Mtr10	core	other	mutated	other
+79	Ntf2	rim	other	mutated	other
+79	Nup1	none	other	mutated	other
+79	Nup60	none	other	mutated	other
+79	Pse1	core	other	mutated	other
+79	Rna1	none	other	mutated	other
+79	Srm1	rim	other	mutated	other
+79	Srp1	none	other	mutated	other
+79	Yrb1	none	other	mutated	other
+79	Yrb1	none	other	mutated	other
+79	Yrb2	none	other	mutated	other
+80	Crm1	core	other	mutated	other
+80	Cse1	core	other	mutated	other
+80	Kap104	core	other	mutated	other
+80	Kap95	core	other	mutated	other
+80	Los1	core	other	mutated	other
+80	Msn5	core	other	mutated	other
+80	Mtr10	core	other	mutated	other
+80	Ntf2	core	other	mutated	other
+80	Nup1	support	other	mutated	other
+80	Nup60	none	other	mutated	other
+80	Pse1	core	other	mutated	other
+80	Rna1	none	other	mutated	other
+80	Srm1	none	other	mutated	other
+80	Srp1	none	other	mutated	other
+80	Yrb1	none	other	mutated	other
+80	Yrb1	none	other	mutated	other
+80	Yrb2	none	other	mutated	other
+83	Crm1	core	other	other	other
+83	Cse1	core	other	other	other
+83	Kap104	core	other	other	other
+83	Kap95	core	other	other	other
+83	Los1	core	other	other	other
+83	Msn5	core	other	other	other
+83	Mtr10	core	other	other	other
+83	Ntf2	none	other	other	other
+83	Nup1	rim	other	other	other
+83	Nup60	none	other	other	other
+83	Pse1	core	other	other	other
+83	Rna1	none	other	other	other
+83	Srm1	none	other	other	other
+83	Srp1	none	other	other	other
+83	Yrb1	none	other	other	other
+83	Yrb1	none	other	other	other
+83	Yrb2	none	other	other	other
+84	Crm1	rim	other	mutated	other
+84	Cse1	rim	other	mutated	other
+84	Kap104	rim	other	mutated	other
+84	Kap95	rim	other	mutated	other
+84	Los1	rim	other	mutated	other
+84	Msn5	rim	other	mutated	other
+84	Mtr10	rim	other	mutated	other
+84	Ntf2	none	other	mutated	other
+84	Nup1	rim	other	mutated	other
+84	Nup60	none	other	mutated	other
+84	Pse1	rim	other	mutated	other
+84	Rna1	none	other	mutated	other
+84	Srm1	none	other	mutated	other
+84	Srp1	none	other	mutated	other
+84	Yrb1	none	other	mutated	other
+84	Yrb1	none	other	mutated	other
+84	Yrb2	none	other	mutated	other
+95	Crm1	support	other	other	other
+95	Cse1	support	other	other	other
+95	Kap104	none	other	other	other
+95	Kap95	none	other	other	other
+95	Los1	core	other	other	other
+95	Msn5	none	other	other	other
+95	Mtr10	support	other	other	other
+95	Ntf2	none	other	other	other
+95	Nup1	none	other	other	other
+95	Nup60	none	other	other	other
+95	Pse1	core	other	other	other
+95	Rna1	support	other	other	other
+95	Srm1	support	other	other	other
+95	Srp1	none	other	other	other
+95	Yrb1	none	other	other	other
+95	Yrb1	none	other	other	other
+95	Yrb2	none	other	other	other
+96	Crm1	core	other	other	other
+96	Cse1	core	other	other	other
+96	Kap104	none	other	other	other
+96	Kap95	none	other	other	other
+96	Los1	none	other	other	other
+96	Msn5	none	other	other	other
+96	Mtr10	core	other	other	other
+96	Ntf2	none	other	other	other
+96	Nup1	none	other	other	other
+96	Nup60	none	other	other	other
+96	Pse1	core	other	other	other
+96	Rna1	support	other	other	other
+96	Srm1	core	other	other	other
+96	Srp1	none	other	other	other
+96	Yrb1	none	other	other	other
+96	Yrb1	none	other	other	other
+96	Yrb2	none	other	other	other
+97	Crm1	rim	other	other	other
+97	Cse1	rim	other	other	other
+97	Kap104	none	other	other	other
+97	Kap95	none	other	other	other
+97	Los1	none	other	other	other
+97	Msn5	none	other	other	other
+97	Mtr10	none	other	other	other
+97	Ntf2	none	other	other	other
+97	Nup1	none	other	other	other
+97	Nup60	none	other	other	other
+97	Pse1	none	other	other	other
+97	Rna1	core	other	other	other
+97	Srm1	core	other	other	other
+97	Srp1	core	other	other	other
+97	Yrb1	none	other	other	other
+97	Yrb1	none	other	other	other
+97	Yrb2	none	other	other	other
+98	Crm1	core	other	other	other
+98	Cse1	rim	other	other	other
+98	Kap104	none	other	other	other
+98	Kap95	none	other	other	other
+98	Los1	rim	other	other	other
+98	Msn5	none	other	other	other
+98	Mtr10	none	other	other	other
+98	Ntf2	none	other	other	other
+98	Nup1	none	other	other	other
+98	Nup60	none	other	other	other
+98	Pse1	none	other	other	other
+98	Rna1	core	other	other	other
+98	Srm1	core	other	other	other
+98	Srp1	rim	other	other	other
+98	Yrb1	none	other	other	other
+98	Yrb1	none	other	other	other
+98	Yrb2	none	other	other	other
+101	Crm1	rim	other	mutated	other
+101	Cse1	none	other	mutated	other
+101	Kap104	none	other	mutated	other
+101	Kap95	none	other	mutated	other
+101	Los1	rim	other	mutated	other
+101	Msn5	rim	other	mutated	other
+101	Mtr10	none	other	mutated	other
+101	Ntf2	none	other	mutated	other
+101	Nup1	none	other	mutated	other
+101	Nup60	none	other	mutated	other
+101	Pse1	none	other	mutated	other
+101	Rna1	rim	other	mutated	other
+101	Srm1	core	other	mutated	other
+101	Srp1	core	other	mutated	other
+101	Yrb1	none	other	mutated	other
+101	Yrb1	none	other	mutated	other
+101	Yrb2	none	other	mutated	other
+102	Crm1	support	other	mutated	other
+102	Cse1	none	other	mutated	other
+102	Kap104	none	other	mutated	other
+102	Kap95	none	other	mutated	other
+102	Los1	core	other	mutated	other
+102	Msn5	none	other	mutated	other
+102	Mtr10	support	other	mutated	other
+102	Ntf2	none	other	mutated	other
+102	Nup1	none	other	mutated	other
+102	Nup60	none	other	mutated	other
+102	Pse1	none	other	mutated	other
+102	Rna1	support	other	mutated	other
+102	Srm1	support	other	mutated	other
+102	Srp1	none	other	mutated	other
+102	Yrb1	none	other	mutated	other
+102	Yrb1	none	other	mutated	other
+102	Yrb2	none	other	mutated	other
+104	Crm1	rim	other	other	other
+104	Cse1	none	other	other	other
+104	Kap104	none	other	other	other
+104	Kap95	none	other	other	other
+104	Los1	core	other	other	other
+104	Msn5	core	other	other	other
+104	Mtr10	none	other	other	other
+104	Ntf2	none	other	other	other
+104	Nup1	none	other	other	other
+104	Nup60	none	other	other	other
+104	Pse1	none	other	other	other
+104	Rna1	none	other	other	other
+104	Srm1	core	other	other	other
+104	Srp1	none	other	other	other
+104	Yrb1	none	other	other	other
+104	Yrb1	none	other	other	other
+104	Yrb2	none	other	other	other
+105	Crm1	rim	other	mutated	other
+105	Cse1	none	other	mutated	other
+105	Kap104	none	other	mutated	other
+105	Kap95	rim	other	mutated	other
+105	Los1	rim	other	mutated	other
+105	Msn5	core	other	mutated	other
+105	Mtr10	core	other	mutated	other
+105	Ntf2	none	other	mutated	other
+105	Nup1	none	other	mutated	other
+105	Nup60	none	other	mutated	other
+105	Pse1	none	other	mutated	other
+105	Rna1	none	other	mutated	other
+105	Srm1	core	other	mutated	other
+105	Srp1	rim	other	mutated	other
+105	Yrb1	none	other	mutated	other
+105	Yrb1	none	other	mutated	other
+105	Yrb2	none	other	mutated	other
+108	Crm1	core	other	mutated	other
+108	Cse1	rim	other	mutated	other
+108	Kap104	rim	other	mutated	other
+108	Kap95	rim	other	mutated	other
+108	Los1	core	other	mutated	other
+108	Msn5	core	other	mutated	other
+108	Mtr10	core	other	mutated	other
+108	Ntf2	none	other	mutated	other
+108	Nup1	none	other	mutated	other
+108	Nup60	none	other	mutated	other
+108	Pse1	rim	other	mutated	other
+108	Rna1	none	other	mutated	other
+108	Srm1	core	other	mutated	other
+108	Srp1	none	other	mutated	other
+108	Yrb1	none	other	mutated	other
+108	Yrb1	none	other	mutated	other
+108	Yrb2	none	other	mutated	other
+109	Crm1	none	other	other	other
+109	Cse1	core	other	other	other
+109	Kap104	support	other	other	other
+109	Kap95	core	other	other	other
+109	Los1	support	other	other	other
+109	Msn5	core	other	other	other
+109	Mtr10	support	other	other	other
+109	Ntf2	none	other	other	other
+109	Nup1	none	other	other	other
+109	Nup60	none	other	other	other
+109	Pse1	support	other	other	other
+109	Rna1	none	other	other	other
+109	Srm1	core	other	other	other
+109	Srp1	none	other	other	other
+109	Yrb1	none	other	other	other
+109	Yrb1	none	other	other	other
+109	Yrb2	none	other	other	other
+112	Crm1	core	other	mutated	other
+112	Cse1	core	other	mutated	other
+112	Kap104	core	other	mutated	other
+112	Kap95	core	other	mutated	other
+112	Los1	core	other	mutated	other
+112	Msn5	core	other	mutated	other
+112	Mtr10	core	other	mutated	other
+112	Ntf2	none	other	mutated	other
+112	Nup1	none	other	mutated	other
+112	Nup60	none	other	mutated	other
+112	Pse1	core	other	mutated	other
+112	Rna1	none	other	mutated	other
+112	Srm1	rim	other	mutated	other
+112	Srp1	none	other	mutated	other
+112	Yrb1	none	other	mutated	other
+112	Yrb1	none	other	mutated	other
+112	Yrb2	none	other	mutated	other
+113	Crm1	core	other	other	other
+113	Crm1	core	other	other	other
+113	Cse1	core	other	other	other
+113	Kap104	support	other	other	other
+113	Kap95	core	other	other	other
+113	Los1	core	other	other	other
+113	Msn5	core	other	other	other
+113	Mtr10	core	other	other	other
+113	Ntf2	none	other	other	other
+113	Nup1	none	other	other	other
+113	Nup60	none	other	other	other
+113	Pse1	core	other	other	other
+113	Rna1	none	other	other	other
+113	Srm1	none	other	other	other
+113	Srp1	none	other	other	other
+113	Yrb1	none	other	other	other
+113	Yrb1	none	other	other	other
+113	Yrb2	none	other	other	other
+115	Crm1	rim	other	mutated	other
+115	Cse1	rim	other	mutated	other
+115	Kap104	rim	other	mutated	other
+115	Kap95	rim	other	mutated	other
+115	Los1	rim	other	mutated	other
+115	Msn5	rim	other	mutated	other
+115	Mtr10	rim	other	mutated	other
+115	Ntf2	none	other	mutated	other
+115	Nup1	none	other	mutated	other
+115	Nup60	none	other	mutated	other
+115	Pse1	rim	other	mutated	other
+115	Rna1	none	other	mutated	other
+115	Srm1	none	other	mutated	other
+115	Srp1	none	other	mutated	other
+115	Yrb1	none	other	mutated	other
+115	Yrb1	none	other	mutated	other
+115	Yrb2	none	other	mutated	other
+125	Crm1	none	other	other	other
+125	Cse1	support	other	other	other
+125	Kap104	none	other	other	other
+125	Kap95	none	other	other	other
+125	Los1	core	other	other	other
+125	Msn5	none	other	other	other
+125	Mtr10	none	other	other	other
+125	Ntf2	none	other	other	other
+125	Nup1	none	other	other	other
+125	Nup60	none	other	other	other
+125	Pse1	core	other	other	other
+125	Rna1	support	other	other	other
+125	Srm1	none	other	other	other
+125	Srp1	none	other	other	other
+125	Yrb1	none	other	other	other
+125	Yrb1	none	other	other	other
+125	Yrb2	none	other	other	other
+127	Crm1	rim	within 5 A from the nucleotide	other	other
+127	Cse1	core	within 5 A from the nucleotide	other	other
+127	Kap104	core	within 5 A from the nucleotide	other	other
+127	Kap95	none	within 5 A from the nucleotide	other	other
+127	Los1	rim	within 5 A from the nucleotide	other	other
+127	Msn5	none	within 5 A from the nucleotide	other	other
+127	Mtr10	none	within 5 A from the nucleotide	other	other
+127	Ntf2	none	within 5 A from the nucleotide	other	other
+127	Nup1	none	within 5 A from the nucleotide	other	other
+127	Nup60	none	within 5 A from the nucleotide	other	other
+127	Pse1	none	within 5 A from the nucleotide	other	other
+127	Rna1	none	within 5 A from the nucleotide	other	other
+127	Srm1	none	within 5 A from the nucleotide	other	other
+127	Srp1	none	within 5 A from the nucleotide	other	other
+127	Yrb1	none	within 5 A from the nucleotide	other	other
+127	Yrb1	none	within 5 A from the nucleotide	other	other
+127	Yrb2	none	within 5 A from the nucleotide	other	other
+128	Crm1	none	other	other	other
+128	Cse1	core	other	other	other
+128	Kap104	rim	other	other	other
+128	Kap95	none	other	other	other
+128	Los1	core	other	other	other
+128	Msn5	none	other	other	other
+128	Mtr10	rim	other	other	other
+128	Ntf2	none	other	other	other
+128	Nup1	none	other	other	other
+128	Nup60	none	other	other	other
+128	Pse1	core	other	other	other
+128	Rna1	rim	other	other	other
+128	Srm1	none	other	other	other
+128	Srp1	none	other	other	other
+128	Yrb1	none	other	other	other
+128	Yrb1	none	other	other	other
+128	Yrb2	none	other	other	other
+129	Crm1	none	other	mutated	other
+129	Cse1	rim	other	mutated	other
+129	Kap104	rim	other	mutated	other
+129	Kap95	rim	other	mutated	other
+129	Los1	none	other	mutated	other
+129	Msn5	rim	other	mutated	other
+129	Mtr10	none	other	mutated	other
+129	Ntf2	none	other	mutated	other
+129	Nup1	none	other	mutated	other
+129	Nup60	none	other	mutated	other
+129	Pse1	none	other	mutated	other
+129	Rna1	rim	other	mutated	other
+129	Srm1	none	other	mutated	other
+129	Srp1	rim	other	mutated	other
+129	Yrb1	none	other	mutated	other
+129	Yrb1	none	other	mutated	other
+129	Yrb2	none	other	mutated	other
+130	Crm1	rim	other	other	other
+130	Cse1	rim	other	other	other
+130	Kap104	none	other	other	other
+130	Kap95	none	other	other	other
+130	Los1	rim	other	other	other
+130	Msn5	rim	other	other	other
+130	Mtr10	none	other	other	other
+130	Ntf2	none	other	other	other
+130	Nup1	none	other	other	other
+130	Nup60	none	other	other	other
+130	Pse1	rim	other	other	other
+130	Rna1	core	other	other	other
+130	Srm1	none	other	other	other
+130	Srp1	rim	other	other	other
+130	Yrb1	none	other	other	other
+130	Yrb1	none	other	other	other
+130	Yrb2	none	other	other	other
+131	Crm1	support	other	other	other
+131	Cse1	support	other	other	other
+131	Kap104	core	other	other	other
+131	Kap95	none	other	other	other
+131	Los1	none	other	other	other
+131	Msn5	none	other	other	other
+131	Mtr10	none	other	other	other
+131	Ntf2	none	other	other	other
+131	Nup1	none	other	other	other
+131	Nup60	none	other	other	other
+131	Pse1	none	other	other	other
+131	Rna1	core	other	other	other
+131	Srm1	none	other	other	other
+131	Srp1	support	other	other	other
+131	Yrb1	none	other	other	other
+131	Yrb1	none	other	other	other
+131	Yrb2	none	other	other	other
+132	Crm1	core	other	mutated	other
+132	Cse1	rim	other	mutated	other
+132	Kap104	none	other	mutated	other
+132	Kap95	none	other	mutated	other
+132	Los1	rim	other	mutated	other
+132	Msn5	rim	other	mutated	other
+132	Mtr10	none	other	mutated	other
+132	Ntf2	none	other	mutated	other
+132	Nup1	none	other	mutated	other
+132	Nup60	none	other	mutated	other
+132	Pse1	none	other	mutated	other
+132	Rna1	core	other	mutated	other
+132	Srm1	rim	other	mutated	other
+132	Srp1	core	other	mutated	other
+132	Yrb1	none	other	mutated	other
+132	Yrb1	none	other	mutated	other
+132	Yrb2	none	other	mutated	other
+134	Crm1	none	other	other	other
+134	Cse1	rim	other	other	other
+134	Kap104	core	other	other	other
+134	Kap95	none	other	other	other
+134	Los1	none	other	other	other
+134	Msn5	none	other	other	other
+134	Mtr10	none	other	other	other
+134	Ntf2	none	other	other	other
+134	Nup1	none	other	other	other
+134	Nup60	none	other	other	other
+134	Pse1	none	other	other	other
+134	Rna1	rim	other	other	other
+134	Srm1	none	other	other	other
+134	Srp1	rim	other	other	other
+134	Yrb1	none	other	other	other
+134	Yrb1	none	other	other	other
+134	Yrb2	none	other	other	other
+135	Crm1	core	other	other	other
+135	Cse1	core	other	other	other
+135	Kap104	core	other	other	other
+135	Kap95	none	other	other	other
+135	Los1	none	other	other	other
+135	Msn5	none	other	other	other
+135	Mtr10	none	other	other	other
+135	Ntf2	none	other	other	other
+135	Nup1	none	other	other	other
+135	Nup60	none	other	other	other
+135	Pse1	none	other	other	other
+135	Rna1	none	other	other	other
+135	Srm1	rim	other	other	other
+135	Srp1	none	other	other	other
+135	Yrb1	none	other	other	other
+135	Yrb1	none	other	other	other
+135	Yrb2	none	other	other	other
+137	Crm1	none	other	mutated	other
+137	Cse1	none	other	mutated	other
+137	Kap104	none	other	mutated	other
+137	Kap95	none	other	mutated	other
+137	Los1	none	other	mutated	other
+137	Msn5	none	other	mutated	other
+137	Mtr10	core	other	mutated	other
+137	Ntf2	none	other	mutated	other
+137	Nup1	none	other	mutated	other
+137	Nup60	none	other	mutated	other
+137	Pse1	none	other	mutated	other
+137	Rna1	rim	other	mutated	other
+137	Srm1	none	other	mutated	other
+137	Srp1	core	other	mutated	other
+137	Yrb1	none	other	mutated	other
+137	Yrb1	none	other	mutated	other
+137	Yrb2	none	other	mutated	other
+139	Crm1	rim	other	mutated	other
+139	Cse1	none	other	mutated	other
+139	Kap104	none	other	mutated	other
+139	Kap95	core	other	mutated	other
+139	Los1	rim	other	mutated	other
+139	Msn5	none	other	mutated	other
+139	Mtr10	rim	other	mutated	other
+139	Ntf2	none	other	mutated	other
+139	Nup1	none	other	mutated	other
+139	Nup60	none	other	mutated	other
+139	Pse1	core	other	mutated	other
+139	Rna1	none	other	mutated	other
+139	Srm1	core	other	mutated	other
+139	Srp1	rim	other	mutated	other
+139	Yrb1	none	other	mutated	other
+139	Yrb1	none	other	mutated	other
+139	Yrb2	none	other	mutated	other
+141	Crm1	support	other	mutated	other
+141	Cse1	none	other	mutated	other
+141	Kap104	support	other	mutated	other
+141	Kap95	core	other	mutated	other
+141	Los1	none	other	mutated	other
+141	Msn5	none	other	mutated	other
+141	Mtr10	core	other	mutated	other
+141	Ntf2	none	other	mutated	other
+141	Nup1	none	other	mutated	other
+141	Nup60	none	other	mutated	other
+141	Pse1	support	other	mutated	other
+141	Rna1	none	other	mutated	other
+141	Srm1	none	other	mutated	other
+141	Srp1	none	other	mutated	other
+141	Yrb1	none	other	mutated	other
+141	Yrb1	none	other	mutated	other
+141	Yrb2	none	other	mutated	other
+142	Crm1	core	other	other	other
+142	Cse1	rim	other	other	other
+142	Kap104	core	other	other	other
+142	Kap95	core	other	other	other
+142	Los1	rim	other	other	other
+142	Msn5	rim	other	other	other
+142	Mtr10	core	other	other	other
+142	Ntf2	none	other	other	other
+142	Nup1	none	other	other	other
+142	Nup60	none	other	other	other
+142	Pse1	core	other	other	other
+142	Rna1	none	other	other	other
+142	Srm1	rim	other	other	other
+142	Srp1	none	other	other	other
+142	Yrb1	none	other	other	other
+142	Yrb1	none	other	other	other
+142	Yrb2	none	other	other	other
+143	Crm1	rim	other	mutated	other
+143	Cse1	rim	other	mutated	other
+143	Kap104	core	other	mutated	other
+143	Kap95	rim	other	mutated	other
+143	Los1	rim	other	mutated	other
+143	Msn5	rim	other	mutated	other
+143	Mtr10	core	other	mutated	other
+143	Ntf2	none	other	mutated	other
+143	Nup1	none	other	mutated	other
+143	Nup60	none	other	mutated	other
+143	Pse1	core	other	mutated	other
+143	Rna1	none	other	mutated	other
+143	Srm1	rim	other	mutated	other
+143	Srp1	none	other	mutated	other
+143	Yrb1	none	other	mutated	other
+143	Yrb1	none	other	mutated	other
+143	Yrb2	none	other	mutated	other
+144	Crm1	rim	other	other	other
+144	Cse1	rim	other	other	other
+144	Kap104	none	other	other	other
+144	Kap95	none	other	other	other
+144	Los1	rim	other	other	other
+144	Msn5	none	other	other	other
+144	Mtr10	rim	other	other	other
+144	Ntf2	none	other	other	other
+144	Nup1	none	other	other	other
+144	Nup60	none	other	other	other
+144	Pse1	core	other	other	other
+144	Rna1	none	other	other	other
+144	Srm1	none	other	other	other
+144	Srp1	none	other	other	other
+144	Yrb1	none	other	other	other
+144	Yrb1	none	other	other	other
+144	Yrb2	none	other	other	other
+145	Crm1	core	other	other	other
+145	Cse1	rim	other	other	other
+145	Kap104	rim	other	other	other
+145	Kap95	rim	other	other	other
+145	Los1	rim	other	other	other
+145	Msn5	rim	other	other	other
+145	Mtr10	support	other	other	other
+145	Ntf2	none	other	other	other
+145	Nup1	none	other	other	other
+145	Nup60	none	other	other	other
+145	Pse1	rim	other	other	other
+145	Rna1	none	other	other	other
+145	Srm1	none	other	other	other
+145	Srp1	none	other	other	other
+145	Yrb1	none	other	other	other
+145	Yrb1	none	other	other	other
+145	Yrb2	none	other	other	other
+147	Crm1	core	other	mutated	other
+147	Cse1	none	other	mutated	other
+147	Kap104	support	other	mutated	other
+147	Kap95	core	other	mutated	other
+147	Los1	core	other	mutated	other
+147	Msn5	core	other	mutated	other
+147	Mtr10	support	other	mutated	other
+147	Ntf2	none	other	mutated	other
+147	Nup1	none	other	mutated	other
+147	Nup60	none	other	mutated	other
+147	Pse1	core	other	mutated	other
+147	Rna1	none	other	mutated	other
+147	Srm1	none	other	mutated	other
+147	Srp1	none	other	mutated	other
+147	Yrb1	none	other	mutated	other
+147	Yrb1	none	other	mutated	other
+147	Yrb2	none	other	mutated	other
+148	Crm1	support	other	mutated	other
+148	Cse1	support	other	mutated	other
+148	Kap104	support	other	mutated	other
+148	Kap95	none	other	mutated	other
+148	Los1	support	other	mutated	other
+148	Msn5	none	other	mutated	other
+148	Mtr10	support	other	mutated	other
+148	Ntf2	none	other	mutated	other
+148	Nup1	none	other	mutated	other
+148	Nup60	none	other	mutated	other
+148	Pse1	none	other	mutated	other
+148	Rna1	none	other	mutated	other
+148	Srm1	none	other	mutated	other
+148	Srp1	none	other	mutated	other
+148	Yrb1	none	other	mutated	other
+148	Yrb1	none	other	mutated	other
+148	Yrb2	none	other	mutated	other
+154	Crm1	none	within 5 A from the nucleotide	mutated	other
+154	Cse1	core	within 5 A from the nucleotide	mutated	other
+154	Kap104	none	within 5 A from the nucleotide	mutated	other
+154	Kap95	core	within 5 A from the nucleotide	mutated	other
+154	Los1	rim	within 5 A from the nucleotide	mutated	other
+154	Msn5	none	within 5 A from the nucleotide	mutated	other
+154	Mtr10	rim	within 5 A from the nucleotide	mutated	other
+154	Ntf2	none	within 5 A from the nucleotide	mutated	other
+154	Nup1	none	within 5 A from the nucleotide	mutated	other
+154	Nup60	none	within 5 A from the nucleotide	mutated	other
+154	Pse1	rim	within 5 A from the nucleotide	mutated	other
+154	Rna1	none	within 5 A from the nucleotide	mutated	other
+154	Srm1	none	within 5 A from the nucleotide	mutated	other
+154	Srp1	none	within 5 A from the nucleotide	mutated	other
+154	Yrb1	none	within 5 A from the nucleotide	mutated	other
+154	Yrb1	none	within 5 A from the nucleotide	mutated	other
+154	Yrb2	none	within 5 A from the nucleotide	mutated	other
+155	Crm1	rim	within 5 A from the nucleotide	other	other
+155	Cse1	core	within 5 A from the nucleotide	other	other
+155	Kap104	rim	within 5 A from the nucleotide	other	other
+155	Kap95	core	within 5 A from the nucleotide	other	other
+155	Los1	rim	within 5 A from the nucleotide	other	other
+155	Msn5	none	within 5 A from the nucleotide	other	other
+155	Mtr10	none	within 5 A from the nucleotide	other	other
+155	Ntf2	none	within 5 A from the nucleotide	other	other
+155	Nup1	none	within 5 A from the nucleotide	other	other
+155	Nup60	none	within 5 A from the nucleotide	other	other
+155	Pse1	none	within 5 A from the nucleotide	other	other
+155	Rna1	none	within 5 A from the nucleotide	other	other
+155	Srm1	none	within 5 A from the nucleotide	other	other
+155	Srp1	none	within 5 A from the nucleotide	other	other
+155	Yrb1	none	within 5 A from the nucleotide	other	other
+155	Yrb1	none	within 5 A from the nucleotide	other	other
+155	Yrb2	none	within 5 A from the nucleotide	other	other
+156	Crm1	none	other	other	other
+156	Cse1	rim	other	other	other
+156	Kap104	core	other	other	other
+156	Kap95	core	other	other	other
+156	Los1	core	other	other	other
+156	Msn5	none	other	other	other
+156	Mtr10	none	other	other	other
+156	Ntf2	none	other	other	other
+156	Nup1	none	other	other	other
+156	Nup60	none	other	other	other
+156	Pse1	none	other	other	other
+156	Rna1	none	other	other	other
+156	Srm1	none	other	other	other
+156	Srp1	none	other	other	other
+156	Yrb1	core	other	other	other
+156	Yrb1	core	other	other	other
+156	Yrb2	rim	other	other	other
+157	Crm1	core	other	mutated	other
+157	Cse1	rim	other	mutated	other
+157	Kap104	core	other	mutated	other
+157	Kap95	core	other	mutated	other
+157	Los1	rim	other	mutated	other
+157	Msn5	none	other	mutated	other
+157	Mtr10	rim	other	mutated	other
+157	Ntf2	none	other	mutated	other
+157	Nup1	none	other	mutated	other
+157	Nup60	none	other	mutated	other
+157	Pse1	none	other	mutated	other
+157	Rna1	none	other	mutated	other
+157	Srm1	none	other	mutated	other
+157	Srp1	none	other	mutated	other
+157	Yrb1	none	other	mutated	other
+157	Yrb1	none	other	mutated	other
+157	Yrb2	none	other	mutated	other
+159	Crm1	none	other	other	other
+159	Cse1	none	other	other	other
+159	Kap104	support	other	other	other
+159	Kap95	support	other	other	other
+159	Los1	none	other	other	other
+159	Msn5	none	other	other	other
+159	Mtr10	none	other	other	other
+159	Ntf2	none	other	other	other
+159	Nup1	none	other	other	other
+159	Nup60	none	other	other	other
+159	Pse1	none	other	other	other
+159	Rna1	none	other	other	other
+159	Srm1	none	other	other	other
+159	Srp1	none	other	other	other
+159	Yrb1	core	other	other	other
+159	Yrb1	core	other	other	other
+159	Yrb2	support	other	other	other
+160	Crm1	none	other	other	other
+160	Cse1	none	other	other	other
+160	Kap104	core	other	other	other
+160	Kap95	core	other	other	other
+160	Los1	none	other	other	other
+160	Msn5	none	other	other	other
+160	Mtr10	none	other	other	other
+160	Ntf2	none	other	other	other
+160	Nup1	none	other	other	other
+160	Nup60	none	other	other	other
+160	Pse1	none	other	other	other
+160	Rna1	none	other	other	other
+160	Srm1	none	other	other	other
+160	Srp1	none	other	other	other
+160	Yrb1	core	other	other	other
+160	Yrb1	core	other	other	other
+160	Yrb2	core	other	other	other
+161	Crm1	none	other	other	other
+161	Cse1	none	other	other	other
+161	Kap104	core	other	other	other
+161	Kap95	core	other	other	other
+161	Los1	core	other	other	other
+161	Msn5	core	other	other	other
+161	Mtr10	core	other	other	other
+161	Ntf2	none	other	other	other
+161	Nup1	none	other	other	other
+161	Nup60	none	other	other	other
+161	Pse1	rim	other	other	other
+161	Rna1	none	other	other	other
+161	Srm1	none	other	other	other
+161	Srp1	none	other	other	other
+161	Yrb1	none	other	other	other
+161	Yrb1	none	other	other	other
+161	Yrb2	none	other	other	other
+168	Crm1	none	other	other	other
+168	Cse1	none	other	other	other
+168	Kap104	core	other	other	other
+168	Kap95	core	other	other	other
+168	Los1	none	other	other	other
+168	Msn5	support	other	other	other
+168	Mtr10	core	other	other	other
+168	Ntf2	none	other	other	other
+168	Nup1	none	other	other	other
+168	Nup60	none	other	other	other
+168	Pse1	core	other	other	other
+168	Rna1	none	other	other	other
+168	Srm1	none	other	other	other
+168	Srp1	none	other	other	other
+168	Yrb1	none	other	other	other
+168	Yrb1	none	other	other	other
+168	Yrb2	none	other	other	other
+169	Crm1	rim	other	mutated	other
+169	Cse1	none	other	mutated	other
+169	Kap104	none	other	mutated	other
+169	Kap95	rim	other	mutated	other
+169	Los1	none	other	mutated	other
+169	Msn5	rim	other	mutated	other
+169	Mtr10	none	other	mutated	other
+169	Ntf2	none	other	mutated	other
+169	Nup1	none	other	mutated	other
+169	Nup60	none	other	mutated	other
+169	Pse1	none	other	mutated	other
+169	Rna1	none	other	mutated	other
+169	Srm1	none	other	mutated	other
+169	Srp1	none	other	mutated	other
+169	Yrb1	none	other	mutated	other
+169	Yrb1	none	other	mutated	other
+169	Yrb2	none	other	mutated	other
+170	Crm1	none	other	other	other
+170	Cse1	none	other	other	other
+170	Kap104	none	other	other	other
+170	Kap95	none	other	other	other
+170	Los1	none	other	other	other
+170	Msn5	none	other	other	other
+170	Mtr10	none	other	other	other
+170	Ntf2	none	other	other	other
+170	Nup1	core	other	other	other
+170	Nup60	none	other	other	other
+170	Pse1	none	other	other	other
+170	Rna1	none	other	other	other
+170	Srm1	none	other	other	other
+170	Srp1	none	other	other	other
+170	Yrb1	none	other	other	other
+170	Yrb1	none	other	other	other
+170	Yrb2	support	other	other	other
+171	Crm1	none	other	other	other
+171	Cse1	none	other	other	other
+171	Kap104	none	other	other	other
+171	Kap95	none	other	other	other
+171	Los1	none	other	other	other
+171	Msn5	none	other	other	other
+171	Mtr10	none	other	other	other
+171	Ntf2	none	other	other	other
+171	Nup1	core	other	other	other
+171	Nup60	none	other	other	other
+171	Pse1	none	other	other	other
+171	Rna1	none	other	other	other
+171	Srm1	none	other	other	other
+171	Srp1	none	other	other	other
+171	Yrb1	core	other	other	other
+171	Yrb1	none	other	other	other
+171	Yrb2	core	other	other	other
+173	Crm1	none	other	other	other
+173	Cse1	none	other	other	other
+173	Kap104	none	other	other	other
+173	Kap95	none	other	other	other
+173	Los1	none	other	other	other
+173	Msn5	none	other	other	other
+173	Mtr10	none	other	other	other
+173	Ntf2	none	other	other	other
+173	Nup1	none	other	other	other
+173	Nup60	none	other	other	other
+173	Pse1	none	other	other	other
+173	Rna1	none	other	other	other
+173	Srm1	none	other	other	other
+173	Srp1	none	other	other	other
+173	Yrb1	support	other	other	other
+173	Yrb1	none	other	other	other
+173	Yrb2	core	other	other	other
+178	Crm1	none	other	other	other
+178	Cse1	none	other	other	other
+178	Kap104	none	other	other	other
+178	Kap95	support	other	other	other
+178	Los1	none	other	other	other
+178	Msn5	none	other	other	other
+178	Mtr10	none	other	other	other
+178	Ntf2	none	other	other	other
+178	Nup1	none	other	other	other
+178	Nup60	none	other	other	other
+178	Pse1	none	other	other	other
+178	Rna1	none	other	other	other
+178	Srm1	none	other	other	other
+178	Srp1	none	other	other	other
+178	Yrb1	core	other	other	other
+178	Yrb1	core	other	other	other
+178	Yrb2	core	other	other	other
+179	Crm1	none	other	other	other
+179	Cse1	none	other	other	other
+179	Kap104	none	other	other	other
+179	Kap95	rim	other	other	other
+179	Los1	none	other	other	other
+179	Msn5	none	other	other	other
+179	Mtr10	none	other	other	other
+179	Ntf2	none	other	other	other
+179	Nup1	none	other	other	other
+179	Nup60	none	other	other	other
+179	Pse1	none	other	other	other
+179	Rna1	none	other	other	other
+179	Srm1	none	other	other	other
+179	Srp1	none	other	other	other
+179	Yrb1	rim	other	other	other
+179	Yrb1	rim	other	other	other
+179	Yrb2	core	other	other	other
+180	Crm1	none	other	mutated	other
+180	Cse1	none	other	mutated	other
+180	Kap104	rim	other	mutated	other
+180	Kap95	none	other	mutated	other
+180	Los1	none	other	mutated	other
+180	Msn5	none	other	mutated	other
+180	Mtr10	none	other	mutated	other
+180	Ntf2	none	other	mutated	other
+180	Nup1	none	other	mutated	other
+180	Nup60	none	other	mutated	other
+180	Pse1	none	other	mutated	other
+180	Rna1	none	other	mutated	other
+180	Srm1	none	other	mutated	other
+180	Srp1	none	other	mutated	other
+180	Yrb1	core	other	mutated	other
+180	Yrb2	rim	other	mutated	other
+181	Crm1	none	other	other	other
+181	Cse1	none	other	other	other
+181	Kap104	none	other	other	other
+181	Kap95	none	other	other	other
+181	Los1	none	other	other	other
+181	Msn5	none	other	other	other
+181	Mtr10	none	other	other	other
+181	Ntf2	none	other	other	other
+181	Nup1	none	other	other	other
+181	Nup60	none	other	other	other
+181	Pse1	none	other	other	other
+181	Rna1	none	other	other	other
+181	Srm1	none	other	other	other
+181	Srp1	none	other	other	other
+181	Yrb1	core	other	other	other
+181	Yrb2	core	other	other	other
+182	Crm1	none	other	other	other
+182	Cse1	none	other	other	other
+182	Kap104	none	other	other	other
+182	Kap95	none	other	other	other
+182	Los1	none	other	other	other
+182	Msn5	none	other	other	other
+182	Mtr10	none	other	other	other
+182	Ntf2	none	other	other	other
+182	Nup1	none	other	other	other
+182	Nup60	none	other	other	other
+182	Pse1	none	other	other	other
+182	Rna1	none	other	other	other
+182	Srm1	none	other	other	other
+182	Srp1	none	other	other	other
+182	Yrb1	core	other	other	other
+182	Yrb2	core	other	other	other
+183	Crm1	none	other	other	other
+183	Cse1	none	other	other	other
+183	Kap104	none	other	other	other
+183	Kap95	none	other	other	other
+183	Los1	none	other	other	other
+183	Msn5	none	other	other	other
+183	Mtr10	none	other	other	other
+183	Ntf2	none	other	other	other
+183	Nup1	none	other	other	other
+183	Nup60	none	other	other	other
+183	Pse1	none	other	other	other
+183	Rna1	none	other	other	other
+183	Srm1	none	other	other	other
+183	Srp1	none	other	other	other
+183	Yrb1	core	other	other	other
+183	Yrb2	core	other	other	other
+186	Crm1	none	other	other	other
+186	Cse1	none	other	other	other
+186	Kap104	none	other	other	other
+186	Kap95	none	other	other	other
+186	Los1	none	other	other	other
+186	Msn5	none	other	other	other
+186	Mtr10	none	other	other	other
+186	Ntf2	none	other	other	other
+186	Nup1	none	other	other	other
+186	Nup60	none	other	other	other
+186	Pse1	none	other	other	other
+186	Rna1	none	other	other	other
+186	Srm1	none	other	other	other
+186	Srp1	none	other	other	other
+186	Yrb1	core	other	other	other
+186	Yrb2	core	other	other	other
+189	Crm1	none	within 5 A from the nucleotide	other	other
+189	Cse1	none	within 5 A from the nucleotide	other	other
+189	Kap104	none	within 5 A from the nucleotide	other	other
+189	Kap95	none	within 5 A from the nucleotide	other	other
+189	Los1	none	within 5 A from the nucleotide	other	other
+189	Msn5	none	within 5 A from the nucleotide	other	other
+189	Mtr10	none	within 5 A from the nucleotide	other	other
+189	Ntf2	none	within 5 A from the nucleotide	other	other
+189	Nup1	none	within 5 A from the nucleotide	other	other
+189	Nup60	none	within 5 A from the nucleotide	other	other
+189	Pse1	none	within 5 A from the nucleotide	other	other
+189	Rna1	none	within 5 A from the nucleotide	other	other
+189	Srm1	none	within 5 A from the nucleotide	other	other
+189	Srp1	none	within 5 A from the nucleotide	other	other
+189	Yrb1	none	within 5 A from the nucleotide	other	other
+189	Yrb2	none	within 5 A from the nucleotide	other	other
+203	Crm1	none	other	other	other
+203	Cse1	none	other	other	other
+203	Kap104	none	other	other	other
+203	Kap95	none	other	other	other
+203	Los1	none	other	other	other
+203	Msn5	none	other	other	other
+203	Mtr10	none	other	other	other
+203	Ntf2	none	other	other	other
+203	Nup1	none	other	other	other
+203	Nup60	none	other	other	other
+203	Pse1	none	other	other	other
+203	Rna1	none	other	other	other
+203	Srm1	none	other	other	other
+203	Srp1	none	other	other	other
+203	Yrb1	core	other	other	other
+203	Yrb2	rim	other	other	other
+206	Crm1	none	other	other	other
+206	Cse1	none	other	other	other
+206	Kap104	none	other	other	other
+206	Kap95	none	other	other	other
+206	Los1	none	other	other	other
+206	Msn5	none	other	other	other
+206	Mtr10	none	other	other	other
+206	Ntf2	none	other	other	other
+206	Nup1	none	other	other	other
+206	Nup60	none	other	other	other
+206	Pse1	none	other	other	other
+206	Rna1	none	other	other	other
+206	Srm1	none	other	other	other
+206	Srp1	none	other	other	other
+206	Yrb1	core	other	other	other
+206	Yrb2	core	other	other	other
+207	Crm1	none	other	other	other
+207	Cse1	none	other	other	other
+207	Kap104	none	other	other	other
+207	Kap95	none	other	other	other
+207	Los1	none	other	other	other
+207	Msn5	none	other	other	other
+207	Mtr10	none	other	other	other
+207	Ntf2	none	other	other	other
+207	Nup1	none	other	other	other
+207	Nup60	none	other	other	other
+207	Pse1	none	other	other	other
+207	Rna1	none	other	other	other
+207	Srm1	none	other	other	other
+207	Srp1	none	other	other	other
+207	Yrb1	core	other	other	other
+207	Yrb2	core	other	other	other
+211	Crm1	none	other	other	other
+211	Cse1	none	other	other	other
+211	Kap104	none	other	other	other
+211	Kap95	none	other	other	other
+211	Los1	none	other	other	other
+211	Msn5	none	other	other	other
+211	Mtr10	none	other	other	other
+211	Ntf2	none	other	other	other
+211	Nup1	none	other	other	other
+211	Nup60	none	other	other	other
+211	Pse1	none	other	other	other
+211	Rna1	none	other	other	other
+211	Srm1	none	other	other	other
+211	Srp1	none	other	other	other
+211	Yrb1	core	other	other	other
+211	Yrb2	core	other	other	other
+212	Crm1	none	other	other	other
+212	Cse1	none	other	other	other
+212	Kap104	none	other	other	other
+212	Kap95	none	other	other	other
+212	Los1	none	other	other	other
+212	Msn5	none	other	other	other
+212	Mtr10	none	other	other	other
+212	Ntf2	none	other	other	other
+212	Nup1	none	other	other	other
+212	Nup60	none	other	other	other
+212	Pse1	none	other	other	other
+212	Rna1	none	other	other	other
+212	Srm1	none	other	other	other
+212	Srp1	none	other	other	other
+212	Yrb1	core	other	other	other
+212	Yrb2	rim	other	other	other
+213	Crm1	none	other	other	other
+213	Cse1	none	other	other	other
+213	Kap104	none	other	other	other
+213	Kap95	none	other	other	other
+213	Los1	none	other	other	other
+213	Msn5	none	other	other	other
+213	Mtr10	none	other	other	other
+213	Ntf2	none	other	other	other
+213	Nup1	none	other	other	other
+213	Nup60	none	other	other	other
+213	Pse1	none	other	other	other
+213	Rna1	none	other	other	other
+213	Srm1	none	other	other	other
+213	Srp1	none	other	other	other
+213	Yrb1	core	other	other	other
+213	Yrb2	rim	other	other	other
+214	Crm1	rim	other	other	other
+214	Cse1	none	other	other	other
+214	Kap104	none	other	other	other
+214	Kap95	none	other	other	other
+214	Los1	none	other	other	other
+214	Msn5	none	other	other	other
+214	Mtr10	none	other	other	other
+214	Ntf2	none	other	other	other
+214	Nup1	none	other	other	other
+214	Nup60	none	other	other	other
+214	Pse1	none	other	other	other
+214	Rna1	none	other	other	other
+214	Srm1	none	other	other	other
+214	Srp1	none	other	other	other
+214	Yrb1	core	other	other	other
+214	Yrb2	none	other	other	other

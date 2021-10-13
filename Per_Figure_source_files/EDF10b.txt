@@ -1,0 +1,451 @@
+mutant	query	gene_set	pearson
+Q147E	caf40	transcription regulation and mediator complex	-0.0221
+D79S	caf40	transcription regulation and mediator complex	0.0645
+R108G	caf40	transcription regulation and mediator complex	0.0285
+R108I	caf40	transcription regulation and mediator complex	-0.0524
+R108L	caf40	transcription regulation and mediator complex	-0.0215
+R108Q	caf40	transcription regulation and mediator complex	0.0442
+R108Y	caf40	transcription regulation and mediator complex	0.011
+R112S	caf40	transcription regulation and mediator complex	0.0289
+R78K	caf40	transcription regulation and mediator complex	0.055
+T34A	caf40	transcription regulation and mediator complex	-0.0373
+T34E	caf40	transcription regulation and mediator complex	-0.0076
+T34G	caf40	transcription regulation and mediator complex	0.0499
+T34Q	caf40	transcription regulation and mediator complex	0.0205
+Y157A	caf40	transcription regulation and mediator complex	0.0858
+G80A	caf40	transcription regulation and mediator complex	0.0245
+H141R	caf40	transcription regulation and mediator complex	0.0393
+K101R	caf40	transcription regulation and mediator complex	-0.0492
+D79A	caf40	transcription regulation and mediator complex	0.076
+Q147E	cdc73	transcription regulation and mediator complex	0.0379
+D79S	cdc73	transcription regulation and mediator complex	0.0351
+R108G	cdc73	transcription regulation and mediator complex	0.0332
+R108I	cdc73	transcription regulation and mediator complex	0.08
+R108L	cdc73	transcription regulation and mediator complex	0.0306
+R108Q	cdc73	transcription regulation and mediator complex	-0.1095
+R108Y	cdc73	transcription regulation and mediator complex	-0.0106
+R112S	cdc73	transcription regulation and mediator complex	-0.0014
+R78K	cdc73	transcription regulation and mediator complex	-0.0233
+T34A	cdc73	transcription regulation and mediator complex	0.0909
+T34E	cdc73	transcription regulation and mediator complex	0.0527
+T34G	cdc73	transcription regulation and mediator complex	0.0501
+T34Q	cdc73	transcription regulation and mediator complex	0.047
+Y157A	cdc73	transcription regulation and mediator complex	0.0222
+G80A	cdc73	transcription regulation and mediator complex	0.0075
+H141R	cdc73	transcription regulation and mediator complex	-0.0971
+K101R	cdc73	transcription regulation and mediator complex	0.0012
+D79A	cdc73	transcription regulation and mediator complex	-0.0081
+D79S	ceg1-34	5' mRNA capping	0.0532
+Q147E	ceg1-34	5' mRNA capping	-0.0122
+R108G	ceg1-34	5' mRNA capping	0.1047
+R108I	ceg1-34	5' mRNA capping	-0.0233
+R108L	ceg1-34	5' mRNA capping	-0.0536
+R108Q	ceg1-34	5' mRNA capping	0.0045
+R108Y	ceg1-34	5' mRNA capping	0.0232
+R112S	ceg1-34	5' mRNA capping	0.0211
+R78K	ceg1-34	5' mRNA capping	-0.0278
+T34A	ceg1-34	5' mRNA capping	0.0898
+T34E	ceg1-34	5' mRNA capping	0.0506
+T34G	ceg1-34	5' mRNA capping	0.0517
+T34Q	ceg1-34	5' mRNA capping	-0.0015
+Y157A	ceg1-34	5' mRNA capping	0.0464
+G80A	ceg1-34	5' mRNA capping	0.0631
+H141R	ceg1-34	5' mRNA capping	-0.0138
+K101R	ceg1-34	5' mRNA capping	-0.0076
+D79A	ceg1-34	5' mRNA capping	0.0175
+D79S	ceg1-ts	5' mRNA capping	0.0811
+Q147E	ceg1-ts	5' mRNA capping	-0.0342
+R108G	ceg1-ts	5' mRNA capping	-0.037
+R108I	ceg1-ts	5' mRNA capping	-0.0612
+R108L	ceg1-ts	5' mRNA capping	-0.0824
+R108Q	ceg1-ts	5' mRNA capping	-0.0865
+R108Y	ceg1-ts	5' mRNA capping	-0.0536
+R112S	ceg1-ts	5' mRNA capping	-0.0067
+R78K	ceg1-ts	5' mRNA capping	0.0276
+T34A	ceg1-ts	5' mRNA capping	0.1154
+T34E	ceg1-ts	5' mRNA capping	0.1393
+T34G	ceg1-ts	5' mRNA capping	0.1076
+T34Q	ceg1-ts	5' mRNA capping	0.1353
+Y157A	ceg1-ts	5' mRNA capping	0.1957
+G80A	ceg1-ts	5' mRNA capping	0.0192
+H141R	ceg1-ts	5' mRNA capping	-0.067
+K101R	ceg1-ts	5' mRNA capping	0.0628
+D79A	ceg1-ts	5' mRNA capping	0.0749
+D79S	cet1-15	5' mRNA capping	0.0919
+Q147E	cet1-15	5' mRNA capping	-8e-4
+R108G	cet1-15	5' mRNA capping	0.0188
+R108I	cet1-15	5' mRNA capping	-0.0126
+R108L	cet1-15	5' mRNA capping	-0.0448
+R108Q	cet1-15	5' mRNA capping	-0.038
+R108Y	cet1-15	5' mRNA capping	0.0072
+R112S	cet1-15	5' mRNA capping	0.0167
+R78K	cet1-15	5' mRNA capping	-0.0477
+T34A	cet1-15	5' mRNA capping	0.1019
+T34E	cet1-15	5' mRNA capping	0.0926
+T34G	cet1-15	5' mRNA capping	0.096
+T34Q	cet1-15	5' mRNA capping	0.0931
+Y157A	cet1-15	5' mRNA capping	0.1169
+G80A	cet1-15	5' mRNA capping	0.0525
+H141R	cet1-15	5' mRNA capping	-0.037
+K101R	cet1-15	5' mRNA capping	0.0083
+D79A	cet1-15	5' mRNA capping	0.0819
+D79S	cet1-2	5' mRNA capping	0.0984
+Q147E	cet1-2	5' mRNA capping	-0.003
+R108G	cet1-2	5' mRNA capping	0.0025
+R108I	cet1-2	5' mRNA capping	-0.0297
+R108L	cet1-2	5' mRNA capping	-0.0728
+R108Q	cet1-2	5' mRNA capping	-0.0338
+R108Y	cet1-2	5' mRNA capping	-0.0019
+R112S	cet1-2	5' mRNA capping	0.034
+R78K	cet1-2	5' mRNA capping	-0.0181
+T34A	cet1-2	5' mRNA capping	0.0616
+T34E	cet1-2	5' mRNA capping	0.1325
+T34G	cet1-2	5' mRNA capping	0.1261
+T34Q	cet1-2	5' mRNA capping	0.1004
+Y157A	cet1-2	5' mRNA capping	0.121
+G80A	cet1-2	5' mRNA capping	0.0163
+H141R	cet1-2	5' mRNA capping	-0.006
+K101R	cet1-2	5' mRNA capping	0.0178
+D79A	cet1-2	5' mRNA capping	0.1546
+Q147E	dcs1	5' mRNA capping	0.0122
+D79S	dcs1	5' mRNA capping	0.1267
+R108G	dcs1	5' mRNA capping	-0.0038
+R108I	dcs1	5' mRNA capping	-0.0779
+R108L	dcs1	5' mRNA capping	-0.0649
+R108Q	dcs1	5' mRNA capping	-0.0186
+R108Y	dcs1	5' mRNA capping	-0.0087
+R112S	dcs1	5' mRNA capping	-0.001
+R78K	dcs1	5' mRNA capping	0.0061
+T34A	dcs1	5' mRNA capping	-0.0344
+T34E	dcs1	5' mRNA capping	0.0197
+T34G	dcs1	5' mRNA capping	0.0771
+T34Q	dcs1	5' mRNA capping	0.0149
+Y157A	dcs1	5' mRNA capping	0.0671
+G80A	dcs1	5' mRNA capping	0.0679
+H141R	dcs1	5' mRNA capping	0.0037
+K101R	dcs1	5' mRNA capping	-0.0277
+D79A	dcs1	5' mRNA capping	0.1127
+D79S	med11-ts	transcription regulation and mediator complex	0.1357
+Q147E	med11-ts	transcription regulation and mediator complex	0.0742
+R108G	med11-ts	transcription regulation and mediator complex	0.0194
+R108I	med11-ts	transcription regulation and mediator complex	0.1247
+R108L	med11-ts	transcription regulation and mediator complex	0.0641
+R108Q	med11-ts	transcription regulation and mediator complex	-0.0857
+R108Y	med11-ts	transcription regulation and mediator complex	0.049
+R112S	med11-ts	transcription regulation and mediator complex	0.0888
+R78K	med11-ts	transcription regulation and mediator complex	-0.0079
+T34A	med11-ts	transcription regulation and mediator complex	0.1537
+T34E	med11-ts	transcription regulation and mediator complex	0.2257
+T34G	med11-ts	transcription regulation and mediator complex	0.1413
+T34Q	med11-ts	transcription regulation and mediator complex	0.1996
+Y157A	med11-ts	transcription regulation and mediator complex	0.0925
+G80A	med11-ts	transcription regulation and mediator complex	0.0488
+H141R	med11-ts	transcription regulation and mediator complex	-0.0453
+K101R	med11-ts	transcription regulation and mediator complex	0.1523
+D79A	med11-ts	transcription regulation and mediator complex	0.1385
+D79S	med6-5001	transcription regulation and mediator complex	0.1389
+Q147E	med6-5001	transcription regulation and mediator complex	0.0833
+R108G	med6-5001	transcription regulation and mediator complex	-0.0125
+R108I	med6-5001	transcription regulation and mediator complex	0.0581
+R108L	med6-5001	transcription regulation and mediator complex	0.0015
+R108Q	med6-5001	transcription regulation and mediator complex	-0.0975
+R108Y	med6-5001	transcription regulation and mediator complex	-0.0092
+R112S	med6-5001	transcription regulation and mediator complex	0.0466
+R78K	med6-5001	transcription regulation and mediator complex	-0.0302
+T34A	med6-5001	transcription regulation and mediator complex	0.1251
+T34E	med6-5001	transcription regulation and mediator complex	0.1462
+T34G	med6-5001	transcription regulation and mediator complex	0.0506
+T34Q	med6-5001	transcription regulation and mediator complex	0.1211
+Y157A	med6-5001	transcription regulation and mediator complex	0.1229
+G80A	med6-5001	transcription regulation and mediator complex	0.0092
+H141R	med6-5001	transcription regulation and mediator complex	-0.0525
+K101R	med6-5001	transcription regulation and mediator complex	0.069
+D79A	med6-5001	transcription regulation and mediator complex	0.1055
+D79S	med6-ts	transcription regulation and mediator complex	0.0593
+Q147E	med6-ts	transcription regulation and mediator complex	0.0065
+R108G	med6-ts	transcription regulation and mediator complex	0.0845
+R108I	med6-ts	transcription regulation and mediator complex	0.0151
+R108L	med6-ts	transcription regulation and mediator complex	0.0138
+R108Q	med6-ts	transcription regulation and mediator complex	0.0082
+R108Y	med6-ts	transcription regulation and mediator complex	0.0721
+R112S	med6-ts	transcription regulation and mediator complex	0.0573
+R78K	med6-ts	transcription regulation and mediator complex	-0.0358
+T34A	med6-ts	transcription regulation and mediator complex	0.0942
+T34E	med6-ts	transcription regulation and mediator complex	0.102
+T34G	med6-ts	transcription regulation and mediator complex	0.0758
+T34Q	med6-ts	transcription regulation and mediator complex	0.0605
+Y157A	med6-ts	transcription regulation and mediator complex	0.0889
+G80A	med6-ts	transcription regulation and mediator complex	-0.001
+H141R	med6-ts	transcription regulation and mediator complex	0.0304
+K101R	med6-ts	transcription regulation and mediator complex	-0.0341
+D79A	med6-ts	transcription regulation and mediator complex	0.044
+D79S	med7-141	transcription regulation and mediator complex	0.0252
+Q147E	med7-141	transcription regulation and mediator complex	-0.0284
+R108G	med7-141	transcription regulation and mediator complex	0.045
+R108I	med7-141	transcription regulation and mediator complex	0.0492
+R108L	med7-141	transcription regulation and mediator complex	0.014
+R108Q	med7-141	transcription regulation and mediator complex	0.0037
+R108Y	med7-141	transcription regulation and mediator complex	0.0411
+R112S	med7-141	transcription regulation and mediator complex	0.0914
+R78K	med7-141	transcription regulation and mediator complex	-0.047
+T34A	med7-141	transcription regulation and mediator complex	0.0587
+T34E	med7-141	transcription regulation and mediator complex	0.0391
+T34G	med7-141	transcription regulation and mediator complex	0.0677
+T34Q	med7-141	transcription regulation and mediator complex	0.0609
+Y157A	med7-141	transcription regulation and mediator complex	0.1102
+G80A	med7-141	transcription regulation and mediator complex	-0.0218
+H141R	med7-141	transcription regulation and mediator complex	-0.0143
+K101R	med7-141	transcription regulation and mediator complex	-0.0089
+D79A	med7-141	transcription regulation and mediator complex	0.0535
+D79S	med7-163	transcription regulation and mediator complex	0.0974
+Q147E	med7-163	transcription regulation and mediator complex	0.0662
+R108G	med7-163	transcription regulation and mediator complex	0.0071
+R108I	med7-163	transcription regulation and mediator complex	0.0497
+R108L	med7-163	transcription regulation and mediator complex	-0.0127
+R108Q	med7-163	transcription regulation and mediator complex	-0.0754
+R108Y	med7-163	transcription regulation and mediator complex	-0.002
+R112S	med7-163	transcription regulation and mediator complex	0.0581
+R78K	med7-163	transcription regulation and mediator complex	-0.0175
+T34A	med7-163	transcription regulation and mediator complex	0.1369
+T34E	med7-163	transcription regulation and mediator complex	0.1149
+T34G	med7-163	transcription regulation and mediator complex	0.0476
+T34Q	med7-163	transcription regulation and mediator complex	0.0571
+Y157A	med7-163	transcription regulation and mediator complex	0.1398
+G80A	med7-163	transcription regulation and mediator complex	0.0345
+H141R	med7-163	transcription regulation and mediator complex	-0.018
+K101R	med7-163	transcription regulation and mediator complex	0.0066
+D79A	med7-163	transcription regulation and mediator complex	0.0509
+D79S	med8-51	transcription regulation and mediator complex	0.1736
+Q147E	med8-51	transcription regulation and mediator complex	0.0659
+R108G	med8-51	transcription regulation and mediator complex	-0.0048
+R108I	med8-51	transcription regulation and mediator complex	0.0327
+R108L	med8-51	transcription regulation and mediator complex	-0.0111
+R108Q	med8-51	transcription regulation and mediator complex	-0.1229
+R108Y	med8-51	transcription regulation and mediator complex	0.0164
+R112S	med8-51	transcription regulation and mediator complex	0.027
+R78K	med8-51	transcription regulation and mediator complex	-0.0198
+T34A	med8-51	transcription regulation and mediator complex	0.1629
+T34E	med8-51	transcription regulation and mediator complex	0.1906
+T34G	med8-51	transcription regulation and mediator complex	0.13
+T34Q	med8-51	transcription regulation and mediator complex	0.1808
+Y157A	med8-51	transcription regulation and mediator complex	0.2091
+G80A	med8-51	transcription regulation and mediator complex	-0.0098
+H141R	med8-51	transcription regulation and mediator complex	-0.0684
+K101R	med8-51	transcription regulation and mediator complex	0.1009
+D79A	med8-51	transcription regulation and mediator complex	0.1459
+D79S	pab1-5001	5' mRNA capping	0.1566
+Q147E	pab1-5001	5' mRNA capping	0.0597
+R108G	pab1-5001	5' mRNA capping	0.0359
+R108I	pab1-5001	5' mRNA capping	0.0649
+R108L	pab1-5001	5' mRNA capping	0.0421
+R108Q	pab1-5001	5' mRNA capping	0.0237
+R108Y	pab1-5001	5' mRNA capping	0.03
+R112S	pab1-5001	5' mRNA capping	0.0546
+R78K	pab1-5001	5' mRNA capping	0.0203
+T34A	pab1-5001	5' mRNA capping	0.099
+T34E	pab1-5001	5' mRNA capping	0.1414
+T34G	pab1-5001	5' mRNA capping	0.2233
+T34Q	pab1-5001	5' mRNA capping	0.14
+Y157A	pab1-5001	5' mRNA capping	0.1124
+G80A	pab1-5001	5' mRNA capping	0.0705
+H141R	pab1-5001	5' mRNA capping	0.042
+K101R	pab1-5001	5' mRNA capping	0.0946
+D79A	pab1-5001	5' mRNA capping	0.1737
+D79S	pab1-5002	5' mRNA capping	0.103
+Q147E	pab1-5002	5' mRNA capping	0.0303
+R108G	pab1-5002	5' mRNA capping	0.032
+R108I	pab1-5002	5' mRNA capping	0.0682
+R108L	pab1-5002	5' mRNA capping	0.0356
+R108Q	pab1-5002	5' mRNA capping	0.0663
+R108Y	pab1-5002	5' mRNA capping	0.0368
+R112S	pab1-5002	5' mRNA capping	0.0651
+R78K	pab1-5002	5' mRNA capping	0.0077
+T34A	pab1-5002	5' mRNA capping	0.0701
+T34E	pab1-5002	5' mRNA capping	0.0569
+T34G	pab1-5002	5' mRNA capping	0.1107
+T34Q	pab1-5002	5' mRNA capping	0.0791
+Y157A	pab1-5002	5' mRNA capping	0.0555
+G80A	pab1-5002	5' mRNA capping	0.0743
+H141R	pab1-5002	5' mRNA capping	0.034
+K101R	pab1-5002	5' mRNA capping	0.04
+D79A	pab1-5002	5' mRNA capping	0.099
+D79S	rba50-5001	transcription regulation and mediator complex	0.0905
+Q147E	rba50-5001	transcription regulation and mediator complex	0.0241
+R108G	rba50-5001	transcription regulation and mediator complex	0.0073
+R108I	rba50-5001	transcription regulation and mediator complex	0.0395
+R108L	rba50-5001	transcription regulation and mediator complex	0.0076
+R108Q	rba50-5001	transcription regulation and mediator complex	-0.0239
+R108Y	rba50-5001	transcription regulation and mediator complex	0.0567
+R112S	rba50-5001	transcription regulation and mediator complex	0.094
+R78K	rba50-5001	transcription regulation and mediator complex	-0.0419
+T34A	rba50-5001	transcription regulation and mediator complex	0.0619
+T34E	rba50-5001	transcription regulation and mediator complex	0.1247
+T34G	rba50-5001	transcription regulation and mediator complex	0.0631
+T34Q	rba50-5001	transcription regulation and mediator complex	0.1284
+Y157A	rba50-5001	transcription regulation and mediator complex	0.1245
+G80A	rba50-5001	transcription regulation and mediator complex	0.0155
+H141R	rba50-5001	transcription regulation and mediator complex	0.0297
+K101R	rba50-5001	transcription regulation and mediator complex	0.0619
+D79A	rba50-5001	transcription regulation and mediator complex	0.1318
+D79S	sgv1-23	transcription regulation and mediator complex	0.108
+Q147E	sgv1-23	transcription regulation and mediator complex	0.0088
+R108G	sgv1-23	transcription regulation and mediator complex	-0.0718
+R108I	sgv1-23	transcription regulation and mediator complex	0.0376
+R108L	sgv1-23	transcription regulation and mediator complex	-0.0329
+R108Q	sgv1-23	transcription regulation and mediator complex	-0.1286
+R108Y	sgv1-23	transcription regulation and mediator complex	-0.0762
+R112S	sgv1-23	transcription regulation and mediator complex	-0.0772
+R78K	sgv1-23	transcription regulation and mediator complex	0.0361
+T34A	sgv1-23	transcription regulation and mediator complex	0.117
+T34E	sgv1-23	transcription regulation and mediator complex	0.1751
+T34G	sgv1-23	transcription regulation and mediator complex	0.133
+T34Q	sgv1-23	transcription regulation and mediator complex	0.1149
+Y157A	sgv1-23	transcription regulation and mediator complex	0.0917
+G80A	sgv1-23	transcription regulation and mediator complex	0.0072
+H141R	sgv1-23	transcription regulation and mediator complex	-0.1032
+K101R	sgv1-23	transcription regulation and mediator complex	0.083
+D79A	sgv1-23	transcription regulation and mediator complex	0.0625
+D79S	sgv1-35	transcription regulation and mediator complex	0.1174
+Q147E	sgv1-35	transcription regulation and mediator complex	0.0487
+R108G	sgv1-35	transcription regulation and mediator complex	0.021
+R108I	sgv1-35	transcription regulation and mediator complex	0.0411
+R108L	sgv1-35	transcription regulation and mediator complex	0.0078
+R108Q	sgv1-35	transcription regulation and mediator complex	-0.0831
+R108Y	sgv1-35	transcription regulation and mediator complex	0.035
+R112S	sgv1-35	transcription regulation and mediator complex	0.0307
+R78K	sgv1-35	transcription regulation and mediator complex	-0.0396
+T34A	sgv1-35	transcription regulation and mediator complex	0.1361
+T34E	sgv1-35	transcription regulation and mediator complex	0.122
+T34G	sgv1-35	transcription regulation and mediator complex	0.0726
+T34Q	sgv1-35	transcription regulation and mediator complex	0.1184
+Y157A	sgv1-35	transcription regulation and mediator complex	0.1253
+G80A	sgv1-35	transcription regulation and mediator complex	0.0456
+H141R	sgv1-35	transcription regulation and mediator complex	-0.0545
+K101R	sgv1-35	transcription regulation and mediator complex	0.0771
+D79A	sgv1-35	transcription regulation and mediator complex	0.0998
+D79S	sgv1-80	transcription regulation and mediator complex	0.0735
+Q147E	sgv1-80	transcription regulation and mediator complex	0.035
+R108G	sgv1-80	transcription regulation and mediator complex	0.0403
+R108I	sgv1-80	transcription regulation and mediator complex	0.035
+R108L	sgv1-80	transcription regulation and mediator complex	0.0249
+R108Q	sgv1-80	transcription regulation and mediator complex	-0.0765
+R108Y	sgv1-80	transcription regulation and mediator complex	0.0652
+R112S	sgv1-80	transcription regulation and mediator complex	0.077
+R78K	sgv1-80	transcription regulation and mediator complex	-0.0313
+T34A	sgv1-80	transcription regulation and mediator complex	0.1337
+T34E	sgv1-80	transcription regulation and mediator complex	0.0969
+T34G	sgv1-80	transcription regulation and mediator complex	0.0754
+T34Q	sgv1-80	transcription regulation and mediator complex	0.1253
+Y157A	sgv1-80	transcription regulation and mediator complex	0.1143
+G80A	sgv1-80	transcription regulation and mediator complex	0.0347
+H141R	sgv1-80	transcription regulation and mediator complex	-0.0098
+K101R	sgv1-80	transcription regulation and mediator complex	0.0606
+D79A	sgv1-80	transcription regulation and mediator complex	0.0892
+D79S	soh1	transcription regulation and mediator complex	0.129
+Q147E	soh1	transcription regulation and mediator complex	0.0431
+R108G	soh1	transcription regulation and mediator complex	0.1041
+R108I	soh1	transcription regulation and mediator complex	0.0872
+R108L	soh1	transcription regulation and mediator complex	0.0379
+R108Q	soh1	transcription regulation and mediator complex	-0.0031
+R108Y	soh1	transcription regulation and mediator complex	0.0848
+R112S	soh1	transcription regulation and mediator complex	0.0562
+R78K	soh1	transcription regulation and mediator complex	-0.0514
+T34A	soh1	transcription regulation and mediator complex	0.1495
+T34E	soh1	transcription regulation and mediator complex	0.1357
+T34G	soh1	transcription regulation and mediator complex	0.1346
+T34Q	soh1	transcription regulation and mediator complex	0.1224
+Y157A	soh1	transcription regulation and mediator complex	0.0872
+G80A	soh1	transcription regulation and mediator complex	0.0473
+H141R	soh1	transcription regulation and mediator complex	0.0224
+K101R	soh1	transcription regulation and mediator complex	0.0212
+D79A	soh1	transcription regulation and mediator complex	0.0858
+Q147E	srb2	transcription regulation and mediator complex	0.1002
+D79S	srb2	transcription regulation and mediator complex	0.1494
+R108G	srb2	transcription regulation and mediator complex	0.0689
+R108I	srb2	transcription regulation and mediator complex	0.1016
+R108L	srb2	transcription regulation and mediator complex	0.098
+R108Q	srb2	transcription regulation and mediator complex	-0.0466
+R108Y	srb2	transcription regulation and mediator complex	0.1174
+R112S	srb2	transcription regulation and mediator complex	0.1037
+R78K	srb2	transcription regulation and mediator complex	-0.0108
+T34A	srb2	transcription regulation and mediator complex	0.2055
+T34E	srb2	transcription regulation and mediator complex	0.1918
+T34G	srb2	transcription regulation and mediator complex	0.121
+T34Q	srb2	transcription regulation and mediator complex	0.1756
+Y157A	srb2	transcription regulation and mediator complex	0.0627
+G80A	srb2	transcription regulation and mediator complex	0.062
+H141R	srb2	transcription regulation and mediator complex	0.0376
+K101R	srb2	transcription regulation and mediator complex	0.0821
+D79A	srb2	transcription regulation and mediator complex	0.1215
+D79S	ssl1-t242i	transcription regulation and mediator complex	0.0779
+Q147E	ssl1-t242i	transcription regulation and mediator complex	-0.0208
+R108G	ssl1-t242i	transcription regulation and mediator complex	0.0249
+R108I	ssl1-t242i	transcription regulation and mediator complex	-0.0219
+R108L	ssl1-t242i	transcription regulation and mediator complex	-3e-4
+R108Q	ssl1-t242i	transcription regulation and mediator complex	0.0348
+R108Y	ssl1-t242i	transcription regulation and mediator complex	0.048
+R112S	ssl1-t242i	transcription regulation and mediator complex	0.1161
+R78K	ssl1-t242i	transcription regulation and mediator complex	0.0011
+T34A	ssl1-t242i	transcription regulation and mediator complex	0.0614
+T34E	ssl1-t242i	transcription regulation and mediator complex	0.0703
+T34G	ssl1-t242i	transcription regulation and mediator complex	0.0525
+T34Q	ssl1-t242i	transcription regulation and mediator complex	0.0892
+Y157A	ssl1-t242i	transcription regulation and mediator complex	0.1571
+G80A	ssl1-t242i	transcription regulation and mediator complex	0.0043
+H141R	ssl1-t242i	transcription regulation and mediator complex	0.0378
+K101R	ssl1-t242i	transcription regulation and mediator complex	-0.0024
+D79A	ssl1-t242i	transcription regulation and mediator complex	0.1116
+Q147E	sub1	transcription regulation and mediator complex	0.0475
+D79S	sub1	transcription regulation and mediator complex	0.1976
+R108G	sub1	transcription regulation and mediator complex	-0.0306
+R108I	sub1	transcription regulation and mediator complex	0.003
+R108L	sub1	transcription regulation and mediator complex	0.0055
+R108Q	sub1	transcription regulation and mediator complex	-0.0591
+R108Y	sub1	transcription regulation and mediator complex	-0.0402
+R112S	sub1	transcription regulation and mediator complex	-0.0476
+R78K	sub1	transcription regulation and mediator complex	0.0439
+T34A	sub1	transcription regulation and mediator complex	0.1288
+T34E	sub1	transcription regulation and mediator complex	0.1737
+T34G	sub1	transcription regulation and mediator complex	0.0885
+T34Q	sub1	transcription regulation and mediator complex	0.2032
+Y157A	sub1	transcription regulation and mediator complex	0.164
+G80A	sub1	transcription regulation and mediator complex	0.012
+H141R	sub1	transcription regulation and mediator complex	-0.0479
+K101R	sub1	transcription regulation and mediator complex	0.1181
+D79A	sub1	transcription regulation and mediator complex	0.1631
+D79S	sum1	transcription regulation and mediator complex	0.1234
+Q147E	sum1	transcription regulation and mediator complex	-0.0134
+R108G	sum1	transcription regulation and mediator complex	-0.0337
+R108I	sum1	transcription regulation and mediator complex	-0.0215
+R108L	sum1	transcription regulation and mediator complex	-0.0734
+R108Q	sum1	transcription regulation and mediator complex	-0.0135
+R108Y	sum1	transcription regulation and mediator complex	-0.0345
+R112S	sum1	transcription regulation and mediator complex	-0.0503
+R78K	sum1	transcription regulation and mediator complex	-0.0182
+T34A	sum1	transcription regulation and mediator complex	-0.028
+T34E	sum1	transcription regulation and mediator complex	0.0266
+T34G	sum1	transcription regulation and mediator complex	0.1264
+T34Q	sum1	transcription regulation and mediator complex	0.0483
+Y157A	sum1	transcription regulation and mediator complex	0.1298
+G80A	sum1	transcription regulation and mediator complex	-0.0128
+H141R	sum1	transcription regulation and mediator complex	-0.05
+K101R	sum1	transcription regulation and mediator complex	-0.0243
+D79A	sum1	transcription regulation and mediator complex	0.1458
+D79S	tfb4-5001	transcription regulation and mediator complex	0.061
+Q147E	tfb4-5001	transcription regulation and mediator complex	0.0195
+R108G	tfb4-5001	transcription regulation and mediator complex	0.0175
+R108I	tfb4-5001	transcription regulation and mediator complex	-0.0448
+R108L	tfb4-5001	transcription regulation and mediator complex	-0.0886
+R108Q	tfb4-5001	transcription regulation and mediator complex	0.0169
+R108Y	tfb4-5001	transcription regulation and mediator complex	0.0212
+R112S	tfb4-5001	transcription regulation and mediator complex	0.0281
+R78K	tfb4-5001	transcription regulation and mediator complex	-0.0756
+T34A	tfb4-5001	transcription regulation and mediator complex	0.0482
+T34E	tfb4-5001	transcription regulation and mediator complex	0.053900000000000003
+T34G	tfb4-5001	transcription regulation and mediator complex	0.0544
+T34Q	tfb4-5001	transcription regulation and mediator complex	0.0734
+Y157A	tfb4-5001	transcription regulation and mediator complex	0.2039
+G80A	tfb4-5001	transcription regulation and mediator complex	0.0178
+H141R	tfb4-5001	transcription regulation and mediator complex	-0.0195
+K101R	tfb4-5001	transcription regulation and mediator complex	-0.0045
+D79A	tfb4-5001	transcription regulation and mediator complex	0.0826

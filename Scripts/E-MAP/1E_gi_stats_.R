@@ -2,7 +2,7 @@ library(tidyverse)
 library(ggforce)
 source('ucsf_colors.R')
 
-# load the spitzemapko, which ctonains the Gsp1 EMAP and the subset of the SGA
+# load the spitzemapko, which contains the Gsp1 EMAP and the subset of the SGA
 # that consists of genetic interactions where at least one strain is a knockout
 load('Data/spitzemapko.rda')
 
@@ -83,6 +83,12 @@ ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin.pdf', width = 2.5, height = 1.9)
 ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin_for_EDF.pdf', width = 2.2, height = 1.5)
 
 ggsave('Figure1_E-MAP/Plots/1E_GI_Stats_Violin_FinalFormatting.pdf', width = 3, height = 1.3)
+
+### For per figure source file
+data_filtered %>% 
+  mutate(group = str_replace(group, '\n',' ')) %>% 
+  write_csv('Per_Figure_source_files/Fig1D.csv')
+
 #dev.off()
 
 # cdf plot for all interactions

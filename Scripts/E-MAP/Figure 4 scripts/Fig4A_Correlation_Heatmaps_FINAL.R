@@ -53,6 +53,15 @@ corr_mat <-
   as.matrix() %>% 
   t()
 
+
+### print out for Figure Soruce file
+filtered_correlations %>%
+  filter(grepl('GSP1', query_uniq1) & (! grepl('GSP1', query_uniq2))) %>%
+  mutate('mutant' = substring(query_uniq1, first = 8)) %>%
+  select(mutant, 'query' = query_uniq2, greater_fdr) %>% 
+  spread(query, greater_fdr) %>% write_tsv('Per_Figure_source_files/Fig1a.txt')
+
+
 # perform clustering
 row.hc <- clustfn(corr_mat, dist_method = 'euclidean', clust_method = 'ward.D2')
 col.hc <- clustfn(t(corr_mat), dist_method = 'pearson', clust_method = 'ward.D2')

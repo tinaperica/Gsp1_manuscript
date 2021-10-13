@@ -82,7 +82,15 @@ ggplot(data = strong_mutant_data,
 ggsave('Extended_Figures/Ext_Fig2A_Westerns_Strong_Mutants.pdf', width = 5, height = 2)
 dev.off()
 
+### print for Per Figure Source files
+strong_mutant_data %>% write_tsv('Per_Figure_source_files/EDF2a.txt')
+  
+  
 weak_mutant_data <- filter(processed_data, sample %in% c(weak_mutants, controls))
+
+### print for Per Figure Source files
+weak_mutant_data %>% write_tsv('Per_Figure_source_files/EDF2b.txt')
+
 
 ggplot(data = weak_mutant_data,
        aes(x = factor(sample),
@@ -234,3 +242,5 @@ ggsave('Revisions/Extended_Figures/EDF_2/Ext_Fig2C_Sina_westerns_avg_per_bio_rep
        height = 4.1, width = 2, useDingbats=F)
 dev.off()
 
+### print for Per Figure Source file
+data_for_sina %>% write_tsv('Per_Figure_source_files/EDF2c.txt')

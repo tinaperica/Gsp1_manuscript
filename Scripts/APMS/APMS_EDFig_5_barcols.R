@@ -56,6 +56,9 @@ data %>%
     axis.line = element_line(size = 0.1)
   )
 ggsave('Final_Formatting/temp/EDF_APMS_barcols.pdf', height = 2.9, width = 5.5)
+### print for source file
+data %>% write_tsv('Per_Figure_source_files/EDF6_AB.txt')
+#####
 
 data %>% 
   mutate('sample' = factor(sample, order_of_samples)) %>% 

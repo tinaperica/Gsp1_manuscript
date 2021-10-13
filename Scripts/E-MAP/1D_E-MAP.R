@@ -83,7 +83,7 @@ clusters_with_descriptions %>%
                       paste0(cluster_dir, '/cluster_', cluster_number, '.csv'),
                       delim = ',', na = '', write_delim))
 
-# for the main figure, only show the storng mutants
+# for the main figure, only show the strong mutants
 # the clustering separates these mutants out as the first branch of the dendrogram
 strong_dend <- as.dendrogram(row_hc)[[1]]
 order.dendrogram(strong_dend) <- seq_along(get_nodes_attr(strong_dend, 'members'))
@@ -120,7 +120,29 @@ hm <-
           show_column_dend = F, show_column_names = F,
           row_names_side = "left", row_names_gp = gpar(fontsize = 6, fontfamily='Helvetica')
           )
+### for Figure source file
+emap_strong %>% as_tibble() %>% 
+  mutate('Gsp1_mutant' = rownames(emap_strong)) %>% 
+  select(Gsp1_mutant, everything()) %>% 
+  write_csv('Per_Figure_source_files/Fig1C.csv')
+emap %>% as_tibble() %>% 
+  mutate('Gsp1_mutant' = rownames(emap)) %>% 
+  select(Gsp1_mutant, everything()) %>% 
+  write_csv('Per_Figure_source_files/EDF3.csv')
 
+fig_slices <- c(clusts$`mRNA\nexport`, clusts$`tRNA\nurmylation`, clusts$`Spindle assembly\nregulation`)
+edf_slices <- c(clusts$Dynactin, clusts$SWR1, clusts$HOG1, clusts$`mRNA\nsplicing`, clusts$Mitochondrial, clusts$Rpd3L)
+emap_strong %>% as_tibble() %>% 
+  mutate('Gsp1_mutant' = rownames(emap_strong)) %>% 
+  select(Gsp1_mutant, fig_slices) %>% 
+  write_csv('Per_Figure_source_files/Fig1C_slices.csv')
+emap_strong %>% as_tibble() %>% 
+  mutate('Gsp1_mutant' = rownames(emap_strong)) %>% 
+  select(Gsp1_mutant, edf_slices) %>% 
+  write_csv('Per_Figure_source_files/EDF4B.csv')
+
+
+####
 # prepare a function to plot the heatmap of a small set of a genes (a "slice")
 make_heatmap_of_cluster <- function(slice, cluster_name) {
   Heatmap(slice, name = cluster_name, show_heatmap_legend = F,

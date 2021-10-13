@@ -1,0 +1,649 @@
+mutant	query	gene_set	pearson
+D79S	asm4	nuclear transport of protein and mRNA	0.2714
+Q147E	asm4	nuclear transport of protein and mRNA	0.2701
+R108G	asm4	nuclear transport of protein and mRNA	0.1888
+R108I	asm4	nuclear transport of protein and mRNA	0.1956
+R108L	asm4	nuclear transport of protein and mRNA	0.2819
+R108Q	asm4	nuclear transport of protein and mRNA	0.1559
+R108Y	asm4	nuclear transport of protein and mRNA	0.2185
+R112S	asm4	nuclear transport of protein and mRNA	0.1312
+R78K	asm4	nuclear transport of protein and mRNA	-0.0832
+T34A	asm4	nuclear transport of protein and mRNA	0.3793
+T34E	asm4	nuclear transport of protein and mRNA	0.2414
+T34G	asm4	nuclear transport of protein and mRNA	0.1048
+T34Q	asm4	nuclear transport of protein and mRNA	0.2391
+Y157A	asm4	nuclear transport of protein and mRNA	0.0506
+G80A	asm4	nuclear transport of protein and mRNA	0.298
+H141R	asm4	nuclear transport of protein and mRNA	0.1539
+K101R	asm4	nuclear transport of protein and mRNA	0.1937
+D79A	asm4	nuclear transport of protein and mRNA	0.1429
+D79S	cse1-5002	Gsp1 partner	0.3022
+Q147E	cse1-5002	Gsp1 partner	0.148
+R108G	cse1-5002	Gsp1 partner	0.0379
+R108I	cse1-5002	Gsp1 partner	0.0721
+R108L	cse1-5002	Gsp1 partner	0.0164
+R108Q	cse1-5002	Gsp1 partner	-0.0317
+R108Y	cse1-5002	Gsp1 partner	0.0326
+R112S	cse1-5002	Gsp1 partner	-0.0303
+R78K	cse1-5002	Gsp1 partner	-0.0696
+T34A	cse1-5002	Gsp1 partner	0.2104
+T34E	cse1-5002	Gsp1 partner	0.1994
+T34G	cse1-5002	Gsp1 partner	0.2467
+T34Q	cse1-5002	Gsp1 partner	0.1738
+Y157A	cse1-5002	Gsp1 partner	0.0637
+G80A	cse1-5002	Gsp1 partner	0.2357
+H141R	cse1-5002	Gsp1 partner	-0.0069
+K101R	cse1-5002	Gsp1 partner	0.0869
+D79A	cse1-5002	Gsp1 partner	0.2047
+D79S	dbp5-1	nuclear transport of protein and mRNA	0.1931
+Q147E	dbp5-1	nuclear transport of protein and mRNA	0.3063
+R108G	dbp5-1	nuclear transport of protein and mRNA	0.1076
+R108I	dbp5-1	nuclear transport of protein and mRNA	0.1559
+R108L	dbp5-1	nuclear transport of protein and mRNA	0.1418
+R108Q	dbp5-1	nuclear transport of protein and mRNA	0.0031
+R108Y	dbp5-1	nuclear transport of protein and mRNA	0.1262
+R112S	dbp5-1	nuclear transport of protein and mRNA	0.0953
+R78K	dbp5-1	nuclear transport of protein and mRNA	-0.0401
+T34A	dbp5-1	nuclear transport of protein and mRNA	0.2503
+T34E	dbp5-1	nuclear transport of protein and mRNA	0.1727
+T34G	dbp5-1	nuclear transport of protein and mRNA	0.055
+T34Q	dbp5-1	nuclear transport of protein and mRNA	0.1535
+Y157A	dbp5-1	nuclear transport of protein and mRNA	0.0962
+G80A	dbp5-1	nuclear transport of protein and mRNA	0.1992
+H141R	dbp5-1	nuclear transport of protein and mRNA	0.0984
+K101R	dbp5-1	nuclear transport of protein and mRNA	0.1026
+D79A	dbp5-1	nuclear transport of protein and mRNA	0.079
+D79S	gle1-2	nuclear transport of protein and mRNA	0.0625
+Q147E	gle1-2	nuclear transport of protein and mRNA	0.1618
+R108G	gle1-2	nuclear transport of protein and mRNA	0.0648
+R108I	gle1-2	nuclear transport of protein and mRNA	0.1083
+R108L	gle1-2	nuclear transport of protein and mRNA	0.0996
+R108Q	gle1-2	nuclear transport of protein and mRNA	0.0366
+R108Y	gle1-2	nuclear transport of protein and mRNA	0.0476
+R112S	gle1-2	nuclear transport of protein and mRNA	0.1069
+R78K	gle1-2	nuclear transport of protein and mRNA	0.0229
+T34A	gle1-2	nuclear transport of protein and mRNA	0.1414
+T34E	gle1-2	nuclear transport of protein and mRNA	0.0961
+T34G	gle1-2	nuclear transport of protein and mRNA	-0.0169
+T34Q	gle1-2	nuclear transport of protein and mRNA	0.0982
+Y157A	gle1-2	nuclear transport of protein and mRNA	0.0462
+G80A	gle1-2	nuclear transport of protein and mRNA	0.1406
+H141R	gle1-2	nuclear transport of protein and mRNA	0.0798
+K101R	gle1-2	nuclear transport of protein and mRNA	0.0724
+D79A	gle1-2	nuclear transport of protein and mRNA	0.055
+D79S	gle1-4	nuclear transport of protein and mRNA	0.0807
+Q147E	gle1-4	nuclear transport of protein and mRNA	0.1547
+R108G	gle1-4	nuclear transport of protein and mRNA	0.1052
+R108I	gle1-4	nuclear transport of protein and mRNA	0.1612
+R108L	gle1-4	nuclear transport of protein and mRNA	0.1673
+R108Q	gle1-4	nuclear transport of protein and mRNA	0.0761
+R108Y	gle1-4	nuclear transport of protein and mRNA	0.1338
+R112S	gle1-4	nuclear transport of protein and mRNA	0.1222
+R78K	gle1-4	nuclear transport of protein and mRNA	0.0072
+T34A	gle1-4	nuclear transport of protein and mRNA	0.1982
+T34E	gle1-4	nuclear transport of protein and mRNA	0.1156
+T34G	gle1-4	nuclear transport of protein and mRNA	0.0076
+T34Q	gle1-4	nuclear transport of protein and mRNA	0.1546
+Y157A	gle1-4	nuclear transport of protein and mRNA	0.0959
+G80A	gle1-4	nuclear transport of protein and mRNA	0.1259
+H141R	gle1-4	nuclear transport of protein and mRNA	0.1045
+K101R	gle1-4	nuclear transport of protein and mRNA	0.0894
+D79A	gle1-4	nuclear transport of protein and mRNA	0.0713
+D79S	gle2	nuclear transport of protein and mRNA	0.2308
+Q147E	gle2	nuclear transport of protein and mRNA	0.1875
+R108G	gle2	nuclear transport of protein and mRNA	0.1197
+R108I	gle2	nuclear transport of protein and mRNA	0.1689
+R108L	gle2	nuclear transport of protein and mRNA	0.2415
+R108Q	gle2	nuclear transport of protein and mRNA	0.1023
+R108Y	gle2	nuclear transport of protein and mRNA	0.1937
+R112S	gle2	nuclear transport of protein and mRNA	0.1436
+R78K	gle2	nuclear transport of protein and mRNA	0.0068
+T34A	gle2	nuclear transport of protein and mRNA	0.2733
+T34E	gle2	nuclear transport of protein and mRNA	0.1567
+T34G	gle2	nuclear transport of protein and mRNA	0.1453
+T34Q	gle2	nuclear transport of protein and mRNA	0.1695
+Y157A	gle2	nuclear transport of protein and mRNA	0.0077
+G80A	gle2	nuclear transport of protein and mRNA	0.2575
+H141R	gle2	nuclear transport of protein and mRNA	0.1637
+K101R	gle2	nuclear transport of protein and mRNA	0.1668
+D79A	gle2	nuclear transport of protein and mRNA	0.1138
+D79S	kap95-e126k	Gsp1 partner	0.4146
+Q147E	kap95-e126k	Gsp1 partner	0.323
+R108G	kap95-e126k	Gsp1 partner	0.1162
+R108I	kap95-e126k	Gsp1 partner	0.1719
+R108L	kap95-e126k	Gsp1 partner	0.1753
+R108Q	kap95-e126k	Gsp1 partner	0.0608
+R108Y	kap95-e126k	Gsp1 partner	0.1645
+R112S	kap95-e126k	Gsp1 partner	0.1112
+R78K	kap95-e126k	Gsp1 partner	-0.0485
+T34A	kap95-e126k	Gsp1 partner	0.2791
+T34E	kap95-e126k	Gsp1 partner	0.2813
+T34G	kap95-e126k	Gsp1 partner	0.2365
+T34Q	kap95-e126k	Gsp1 partner	0.2681
+Y157A	kap95-e126k	Gsp1 partner	0.092
+G80A	kap95-e126k	Gsp1 partner	0.3545
+H141R	kap95-e126k	Gsp1 partner	0.115
+K101R	kap95-e126k	Gsp1 partner	0.2449
+D79A	kap95-e126k	Gsp1 partner	0.2754
+D79S	mex67-ts5	nuclear transport of protein and mRNA	0.2193
+Q147E	mex67-ts5	nuclear transport of protein and mRNA	0.1748
+R108G	mex67-ts5	nuclear transport of protein and mRNA	0.1341
+R108I	mex67-ts5	nuclear transport of protein and mRNA	0.2282
+R108L	mex67-ts5	nuclear transport of protein and mRNA	0.2705
+R108Q	mex67-ts5	nuclear transport of protein and mRNA	0.0568
+R108Y	mex67-ts5	nuclear transport of protein and mRNA	0.1691
+R112S	mex67-ts5	nuclear transport of protein and mRNA	0.1501
+R78K	mex67-ts5	nuclear transport of protein and mRNA	0.0083
+T34A	mex67-ts5	nuclear transport of protein and mRNA	0.3101
+T34E	mex67-ts5	nuclear transport of protein and mRNA	0.251
+T34G	mex67-ts5	nuclear transport of protein and mRNA	0.1034
+T34Q	mex67-ts5	nuclear transport of protein and mRNA	0.2334
+Y157A	mex67-ts5	nuclear transport of protein and mRNA	0.0766
+G80A	mex67-ts5	nuclear transport of protein and mRNA	0.1065
+H141R	mex67-ts5	nuclear transport of protein and mRNA	0.1171
+K101R	mex67-ts5	nuclear transport of protein and mRNA	0.2171
+D79A	mex67-ts5	nuclear transport of protein and mRNA	0.1313
+Q147E	mlp2	nuclear transport of protein and mRNA	0.0938
+D79S	mlp2	nuclear transport of protein and mRNA	0.0705
+R108G	mlp2	nuclear transport of protein and mRNA	0.1238
+R108I	mlp2	nuclear transport of protein and mRNA	0.003
+R108L	mlp2	nuclear transport of protein and mRNA	0.0427
+R108Q	mlp2	nuclear transport of protein and mRNA	0.1095
+R108Y	mlp2	nuclear transport of protein and mRNA	0.1297
+R112S	mlp2	nuclear transport of protein and mRNA	0.0601
+R78K	mlp2	nuclear transport of protein and mRNA	-0.024
+T34A	mlp2	nuclear transport of protein and mRNA	0.1095
+T34E	mlp2	nuclear transport of protein and mRNA	0.068
+T34G	mlp2	nuclear transport of protein and mRNA	0.0611
+T34Q	mlp2	nuclear transport of protein and mRNA	0.0398
+Y157A	mlp2	nuclear transport of protein and mRNA	0.0098
+G80A	mlp2	nuclear transport of protein and mRNA	0.1583
+H141R	mlp2	nuclear transport of protein and mRNA	0.1469
+K101R	mlp2	nuclear transport of protein and mRNA	-0.0014
+D79A	mlp2	nuclear transport of protein and mRNA	0.0639
+Q147E	mog1	nuclear transport of protein and mRNA	0.1817
+D79S	mog1	nuclear transport of protein and mRNA	0.238
+R108G	mog1	nuclear transport of protein and mRNA	0.2561
+R108I	mog1	nuclear transport of protein and mRNA	0.3222
+R108L	mog1	nuclear transport of protein and mRNA	0.4114
+R108Q	mog1	nuclear transport of protein and mRNA	0.1836
+R108Y	mog1	nuclear transport of protein and mRNA	0.3052
+R112S	mog1	nuclear transport of protein and mRNA	0.2237
+R78K	mog1	nuclear transport of protein and mRNA	-0.0375
+T34A	mog1	nuclear transport of protein and mRNA	0.3811
+T34E	mog1	nuclear transport of protein and mRNA	0.3216
+T34G	mog1	nuclear transport of protein and mRNA	0.1123
+T34Q	mog1	nuclear transport of protein and mRNA	0.3337
+Y157A	mog1	nuclear transport of protein and mRNA	0.0844
+G80A	mog1	nuclear transport of protein and mRNA	0.1664
+H141R	mog1	nuclear transport of protein and mRNA	0.1684
+K101R	mog1	nuclear transport of protein and mRNA	0.3081
+D79A	mog1	nuclear transport of protein and mRNA	0.1418
+D79S	ntf2-5001	Gsp1 partner	0.2171
+Q147E	ntf2-5001	Gsp1 partner	0.2044
+R108G	ntf2-5001	Gsp1 partner	0.2131
+R108I	ntf2-5001	Gsp1 partner	0.2544
+R108L	ntf2-5001	Gsp1 partner	0.3612
+R108Q	ntf2-5001	Gsp1 partner	0.1936
+R108Y	ntf2-5001	Gsp1 partner	0.3091
+R112S	ntf2-5001	Gsp1 partner	0.3043
+R78K	ntf2-5001	Gsp1 partner	-0.0426
+T34A	ntf2-5001	Gsp1 partner	0.3231
+T34E	ntf2-5001	Gsp1 partner	0.2354
+T34G	ntf2-5001	Gsp1 partner	0.0259
+T34Q	ntf2-5001	Gsp1 partner	0.2588
+Y157A	ntf2-5001	Gsp1 partner	0.0609
+G80A	ntf2-5001	Gsp1 partner	0.2275
+H141R	ntf2-5001	Gsp1 partner	0.2296
+K101R	ntf2-5001	Gsp1 partner	0.255
+D79A	ntf2-5001	Gsp1 partner	0.1621
+D79S	ntf2-h104y	Gsp1 partner	0.309
+Q147E	ntf2-h104y	Gsp1 partner	0.2101
+R108G	ntf2-h104y	Gsp1 partner	0.2171
+R108I	ntf2-h104y	Gsp1 partner	0.2275
+R108L	ntf2-h104y	Gsp1 partner	0.3827
+R108Q	ntf2-h104y	Gsp1 partner	0.2245
+R108Y	ntf2-h104y	Gsp1 partner	0.3612
+R112S	ntf2-h104y	Gsp1 partner	0.3353
+R78K	ntf2-h104y	Gsp1 partner	-0.0322
+T34A	ntf2-h104y	Gsp1 partner	0.2946
+T34E	ntf2-h104y	Gsp1 partner	0.3116
+T34G	ntf2-h104y	Gsp1 partner	0.1453
+T34Q	ntf2-h104y	Gsp1 partner	0.3135
+Y157A	ntf2-h104y	Gsp1 partner	0.0334
+G80A	ntf2-h104y	Gsp1 partner	0.2402
+H141R	ntf2-h104y	Gsp1 partner	0.2929
+K101R	ntf2-h104y	Gsp1 partner	0.3389
+D79A	ntf2-h104y	Gsp1 partner	0.2459
+Q147E	nup100	nuclear transport of protein and mRNA	0.079
+D79S	nup100	nuclear transport of protein and mRNA	0.0203
+R108G	nup100	nuclear transport of protein and mRNA	0.2077
+R108I	nup100	nuclear transport of protein and mRNA	0.1247
+R108L	nup100	nuclear transport of protein and mRNA	0.0948
+R108Q	nup100	nuclear transport of protein and mRNA	0.1027
+R108Y	nup100	nuclear transport of protein and mRNA	0.1285
+R112S	nup100	nuclear transport of protein and mRNA	0.0472
+R78K	nup100	nuclear transport of protein and mRNA	-0.009
+T34A	nup100	nuclear transport of protein and mRNA	0.156
+T34E	nup100	nuclear transport of protein and mRNA	0.0062
+T34G	nup100	nuclear transport of protein and mRNA	-0.0427
+T34Q	nup100	nuclear transport of protein and mRNA	0.026
+Y157A	nup100	nuclear transport of protein and mRNA	-0.0119
+G80A	nup100	nuclear transport of protein and mRNA	0.0535
+H141R	nup100	nuclear transport of protein and mRNA	0.061
+K101R	nup100	nuclear transport of protein and mRNA	-0.0114
+D79A	nup100	nuclear transport of protein and mRNA	6e-4
+Q147E	nup133	nuclear transport of protein and mRNA	0.1505
+D79S	nup133	nuclear transport of protein and mRNA	0.2009
+R108G	nup133	nuclear transport of protein and mRNA	0.1053
+R108I	nup133	nuclear transport of protein and mRNA	0.097
+R108L	nup133	nuclear transport of protein and mRNA	0.161
+R108Q	nup133	nuclear transport of protein and mRNA	0.025
+R108Y	nup133	nuclear transport of protein and mRNA	0.2033
+R112S	nup133	nuclear transport of protein and mRNA	0.1648
+R78K	nup133	nuclear transport of protein and mRNA	-0.0371
+T34A	nup133	nuclear transport of protein and mRNA	0.2401
+T34E	nup133	nuclear transport of protein and mRNA	0.1757
+T34G	nup133	nuclear transport of protein and mRNA	0.137
+T34Q	nup133	nuclear transport of protein and mRNA	0.1819
+Y157A	nup133	nuclear transport of protein and mRNA	0.0619
+G80A	nup133	nuclear transport of protein and mRNA	0.1462
+H141R	nup133	nuclear transport of protein and mRNA	0.1494
+K101R	nup133	nuclear transport of protein and mRNA	0.1092
+D79A	nup133	nuclear transport of protein and mRNA	0.1708
+D79S	nup145-r4	nuclear transport of protein and mRNA	0.252
+Q147E	nup145-r4	nuclear transport of protein and mRNA	0.2865
+R108G	nup145-r4	nuclear transport of protein and mRNA	0.2116
+R108I	nup145-r4	nuclear transport of protein and mRNA	0.1851
+R108L	nup145-r4	nuclear transport of protein and mRNA	0.2423
+R108Q	nup145-r4	nuclear transport of protein and mRNA	0.116
+R108Y	nup145-r4	nuclear transport of protein and mRNA	0.2542
+R112S	nup145-r4	nuclear transport of protein and mRNA	0.2037
+R78K	nup145-r4	nuclear transport of protein and mRNA	-0.0303
+T34A	nup145-r4	nuclear transport of protein and mRNA	0.333
+T34E	nup145-r4	nuclear transport of protein and mRNA	0.2268
+T34G	nup145-r4	nuclear transport of protein and mRNA	0.1195
+T34Q	nup145-r4	nuclear transport of protein and mRNA	0.2227
+Y157A	nup145-r4	nuclear transport of protein and mRNA	0.097
+G80A	nup145-r4	nuclear transport of protein and mRNA	0.2641
+H141R	nup145-r4	nuclear transport of protein and mRNA	0.2515
+K101R	nup145-r4	nuclear transport of protein and mRNA	0.1438
+D79A	nup145-r4	nuclear transport of protein and mRNA	0.1449
+D79S	nup157	nuclear transport of protein and mRNA	0.1815
+Q147E	nup157	nuclear transport of protein and mRNA	0.1646
+R108G	nup157	nuclear transport of protein and mRNA	0.1423
+R108I	nup157	nuclear transport of protein and mRNA	0.2019
+R108L	nup157	nuclear transport of protein and mRNA	0.2527
+R108Q	nup157	nuclear transport of protein and mRNA	0.1016
+R108Y	nup157	nuclear transport of protein and mRNA	0.1785
+R112S	nup157	nuclear transport of protein and mRNA	0.0771
+R78K	nup157	nuclear transport of protein and mRNA	-0.0388
+T34A	nup157	nuclear transport of protein and mRNA	0.3273
+T34E	nup157	nuclear transport of protein and mRNA	0.2208
+T34G	nup157	nuclear transport of protein and mRNA	0.078
+T34Q	nup157	nuclear transport of protein and mRNA	0.2196
+Y157A	nup157	nuclear transport of protein and mRNA	0.0759
+G80A	nup157	nuclear transport of protein and mRNA	0.1794
+H141R	nup157	nuclear transport of protein and mRNA	0.1183
+K101R	nup157	nuclear transport of protein and mRNA	0.155
+D79A	nup157	nuclear transport of protein and mRNA	0.0689
+Q147E	nup188	nuclear transport of protein and mRNA	0.2765
+D79S	nup188	nuclear transport of protein and mRNA	0.3215
+R108G	nup188	nuclear transport of protein and mRNA	0.2371
+R108I	nup188	nuclear transport of protein and mRNA	0.2066
+R108L	nup188	nuclear transport of protein and mRNA	0.2409
+R108Q	nup188	nuclear transport of protein and mRNA	0.131
+R108Y	nup188	nuclear transport of protein and mRNA	0.2634
+R112S	nup188	nuclear transport of protein and mRNA	0.1794
+R78K	nup188	nuclear transport of protein and mRNA	-0.0368
+T34A	nup188	nuclear transport of protein and mRNA	0.3735
+T34E	nup188	nuclear transport of protein and mRNA	0.3163
+T34G	nup188	nuclear transport of protein and mRNA	0.2019
+T34Q	nup188	nuclear transport of protein and mRNA	0.301
+Y157A	nup188	nuclear transport of protein and mRNA	0.068
+G80A	nup188	nuclear transport of protein and mRNA	0.2735
+H141R	nup188	nuclear transport of protein and mRNA	0.1896
+K101R	nup188	nuclear transport of protein and mRNA	0.2412
+D79A	nup188	nuclear transport of protein and mRNA	0.2348
+Q147E	nup2	nuclear transport of protein and mRNA	0.2688
+D79S	nup2	nuclear transport of protein and mRNA	0.2722
+R108G	nup2	nuclear transport of protein and mRNA	0.0898
+R108I	nup2	nuclear transport of protein and mRNA	0.1677
+R108L	nup2	nuclear transport of protein and mRNA	0.2218
+R108Q	nup2	nuclear transport of protein and mRNA	0.0423
+R108Y	nup2	nuclear transport of protein and mRNA	0.1428
+R112S	nup2	nuclear transport of protein and mRNA	0.0863
+R78K	nup2	nuclear transport of protein and mRNA	-0.005
+T34A	nup2	nuclear transport of protein and mRNA	0.3743
+T34E	nup2	nuclear transport of protein and mRNA	0.2783
+T34G	nup2	nuclear transport of protein and mRNA	0.1073
+T34Q	nup2	nuclear transport of protein and mRNA	0.2634
+Y157A	nup2	nuclear transport of protein and mRNA	0.1541
+G80A	nup2	nuclear transport of protein and mRNA	0.3075
+H141R	nup2	nuclear transport of protein and mRNA	0.0957
+K101R	nup2	nuclear transport of protein and mRNA	0.2333
+D79A	nup2	nuclear transport of protein and mRNA	0.1435
+D79S	nup42	nuclear transport of protein and mRNA	0.1307
+Q147E	nup42	nuclear transport of protein and mRNA	0.167
+R108G	nup42	nuclear transport of protein and mRNA	0.1533
+R108I	nup42	nuclear transport of protein and mRNA	0.0987
+R108L	nup42	nuclear transport of protein and mRNA	0.1977
+R108Q	nup42	nuclear transport of protein and mRNA	0.1636
+R108Y	nup42	nuclear transport of protein and mRNA	0.1943
+R112S	nup42	nuclear transport of protein and mRNA	0.1019
+R78K	nup42	nuclear transport of protein and mRNA	-0.0151
+T34A	nup42	nuclear transport of protein and mRNA	0.212
+T34E	nup42	nuclear transport of protein and mRNA	0.0987
+T34G	nup42	nuclear transport of protein and mRNA	0.0417
+T34Q	nup42	nuclear transport of protein and mRNA	0.1314
+Y157A	nup42	nuclear transport of protein and mRNA	-0.0169
+G80A	nup42	nuclear transport of protein and mRNA	0.1627
+H141R	nup42	nuclear transport of protein and mRNA	0.1092
+K101R	nup42	nuclear transport of protein and mRNA	0.1327
+D79A	nup42	nuclear transport of protein and mRNA	0.064
+Q147E	nup53	nuclear transport of protein and mRNA	0.2371
+D79S	nup53	nuclear transport of protein and mRNA	0.287
+R108G	nup53	nuclear transport of protein and mRNA	0.2219
+R108I	nup53	nuclear transport of protein and mRNA	0.2311
+R108L	nup53	nuclear transport of protein and mRNA	0.2499
+R108Q	nup53	nuclear transport of protein and mRNA	0.1219
+R108Y	nup53	nuclear transport of protein and mRNA	0.2428
+R112S	nup53	nuclear transport of protein and mRNA	0.1249
+R78K	nup53	nuclear transport of protein and mRNA	-0.0333
+T34A	nup53	nuclear transport of protein and mRNA	0.3707
+T34E	nup53	nuclear transport of protein and mRNA	0.2899
+T34G	nup53	nuclear transport of protein and mRNA	0.1089
+T34Q	nup53	nuclear transport of protein and mRNA	0.2652
+Y157A	nup53	nuclear transport of protein and mRNA	0.1028
+G80A	nup53	nuclear transport of protein and mRNA	0.2116
+H141R	nup53	nuclear transport of protein and mRNA	0.1715
+K101R	nup53	nuclear transport of protein and mRNA	0.1688
+D79A	nup53	nuclear transport of protein and mRNA	0.1805
+D79S	nup57-5001	nuclear transport of protein and mRNA	0.115
+Q147E	nup57-5001	nuclear transport of protein and mRNA	0.1591
+R108G	nup57-5001	nuclear transport of protein and mRNA	0.2288
+R108I	nup57-5001	nuclear transport of protein and mRNA	0.2684
+R108L	nup57-5001	nuclear transport of protein and mRNA	0.2993
+R108Q	nup57-5001	nuclear transport of protein and mRNA	0.1801
+R108Y	nup57-5001	nuclear transport of protein and mRNA	0.2346
+R112S	nup57-5001	nuclear transport of protein and mRNA	0.0984
+R78K	nup57-5001	nuclear transport of protein and mRNA	0.0148
+T34A	nup57-5001	nuclear transport of protein and mRNA	0.3074
+T34E	nup57-5001	nuclear transport of protein and mRNA	0.113
+T34G	nup57-5001	nuclear transport of protein and mRNA	-0.0593
+T34Q	nup57-5001	nuclear transport of protein and mRNA	0.1644
+Y157A	nup57-5001	nuclear transport of protein and mRNA	0.0453
+G80A	nup57-5001	nuclear transport of protein and mRNA	0.1683
+H141R	nup57-5001	nuclear transport of protein and mRNA	0.1502
+K101R	nup57-5001	nuclear transport of protein and mRNA	0.1714
+D79A	nup57-5001	nuclear transport of protein and mRNA	0.0346
+D79S	nup57-e17	nuclear transport of protein and mRNA	0.3341
+Q147E	nup57-e17	nuclear transport of protein and mRNA	0.1864
+R108G	nup57-e17	nuclear transport of protein and mRNA	0.1765
+R108I	nup57-e17	nuclear transport of protein and mRNA	0.106
+R108L	nup57-e17	nuclear transport of protein and mRNA	0.1661
+R108Q	nup57-e17	nuclear transport of protein and mRNA	0.0713
+R108Y	nup57-e17	nuclear transport of protein and mRNA	0.2023
+R112S	nup57-e17	nuclear transport of protein and mRNA	0.1811
+R78K	nup57-e17	nuclear transport of protein and mRNA	-0.0993
+T34A	nup57-e17	nuclear transport of protein and mRNA	0.3156
+T34E	nup57-e17	nuclear transport of protein and mRNA	0.3086
+T34G	nup57-e17	nuclear transport of protein and mRNA	0.2289
+T34Q	nup57-e17	nuclear transport of protein and mRNA	0.2817
+Y157A	nup57-e17	nuclear transport of protein and mRNA	0.1356
+G80A	nup57-e17	nuclear transport of protein and mRNA	0.2901
+H141R	nup57-e17	nuclear transport of protein and mRNA	0.2337
+K101R	nup57-e17	nuclear transport of protein and mRNA	0.2317
+D79A	nup57-e17	nuclear transport of protein and mRNA	0.2677
+D79S	nup60	Gsp1 partner	0.2078
+Q147E	nup60	Gsp1 partner	0.1581
+R108G	nup60	Gsp1 partner	0.0795
+R108I	nup60	Gsp1 partner	0.046
+R108L	nup60	Gsp1 partner	0.0503
+R108Q	nup60	Gsp1 partner	0.0058
+R108Y	nup60	Gsp1 partner	0.1121
+R112S	nup60	Gsp1 partner	0.0933
+R78K	nup60	Gsp1 partner	-0.0304
+T34A	nup60	Gsp1 partner	0.1846
+T34E	nup60	Gsp1 partner	0.2061
+T34G	nup60	Gsp1 partner	0.1705
+T34Q	nup60	Gsp1 partner	0.1804
+Y157A	nup60	Gsp1 partner	0.053
+G80A	nup60	Gsp1 partner	0.1685
+H141R	nup60	Gsp1 partner	0.0845
+K101R	nup60	Gsp1 partner	0.0626
+D79A	nup60	Gsp1 partner	0.1191
+D79S	nup82-5004	nuclear transport of protein and mRNA	0.2336
+Q147E	nup82-5004	nuclear transport of protein and mRNA	0.2704
+R108G	nup82-5004	nuclear transport of protein and mRNA	0.2128
+R108I	nup82-5004	nuclear transport of protein and mRNA	0.2597
+R108L	nup82-5004	nuclear transport of protein and mRNA	0.3197
+R108Q	nup82-5004	nuclear transport of protein and mRNA	0.1504
+R108Y	nup82-5004	nuclear transport of protein and mRNA	0.2604
+R112S	nup82-5004	nuclear transport of protein and mRNA	0.1648
+R78K	nup82-5004	nuclear transport of protein and mRNA	-0.0162
+T34A	nup82-5004	nuclear transport of protein and mRNA	0.3711
+T34E	nup82-5004	nuclear transport of protein and mRNA	0.2318
+T34G	nup82-5004	nuclear transport of protein and mRNA	0.1073
+T34Q	nup82-5004	nuclear transport of protein and mRNA	0.2752
+Y157A	nup82-5004	nuclear transport of protein and mRNA	0.1083
+G80A	nup82-5004	nuclear transport of protein and mRNA	0.1952
+H141R	nup82-5004	nuclear transport of protein and mRNA	0.1848
+K101R	nup82-5004	nuclear transport of protein and mRNA	0.2032
+D79A	nup82-5004	nuclear transport of protein and mRNA	0.1562
+D79S	nup82-5005	nuclear transport of protein and mRNA	0.0277
+Q147E	nup82-5005	nuclear transport of protein and mRNA	0.0783
+R108G	nup82-5005	nuclear transport of protein and mRNA	0.0598
+R108I	nup82-5005	nuclear transport of protein and mRNA	0.0816
+R108L	nup82-5005	nuclear transport of protein and mRNA	0.1092
+R108Q	nup82-5005	nuclear transport of protein and mRNA	0.0555
+R108Y	nup82-5005	nuclear transport of protein and mRNA	0.0619
+R112S	nup82-5005	nuclear transport of protein and mRNA	0.0411
+R78K	nup82-5005	nuclear transport of protein and mRNA	0.0669
+T34A	nup82-5005	nuclear transport of protein and mRNA	0.0984
+T34E	nup82-5005	nuclear transport of protein and mRNA	0.0435
+T34G	nup82-5005	nuclear transport of protein and mRNA	-0.0255
+T34Q	nup82-5005	nuclear transport of protein and mRNA	0.0335
+Y157A	nup82-5005	nuclear transport of protein and mRNA	0.0266
+G80A	nup82-5005	nuclear transport of protein and mRNA	0.0185
+H141R	nup82-5005	nuclear transport of protein and mRNA	0.0711
+K101R	nup82-5005	nuclear transport of protein and mRNA	0.038
+D79A	nup82-5005	nuclear transport of protein and mRNA	-0.0078
+D79S	nup84	nuclear transport of protein and mRNA	0.1363
+Q147E	nup84	nuclear transport of protein and mRNA	0.1276
+R108G	nup84	nuclear transport of protein and mRNA	0.0978
+R108I	nup84	nuclear transport of protein and mRNA	0.0585
+R108L	nup84	nuclear transport of protein and mRNA	0.0368
+R108Q	nup84	nuclear transport of protein and mRNA	0.0499
+R108Y	nup84	nuclear transport of protein and mRNA	0.0842
+R112S	nup84	nuclear transport of protein and mRNA	0.0657
+R78K	nup84	nuclear transport of protein and mRNA	-0.0513
+T34A	nup84	nuclear transport of protein and mRNA	0.1051
+T34E	nup84	nuclear transport of protein and mRNA	0.056
+T34G	nup84	nuclear transport of protein and mRNA	0.0384
+T34Q	nup84	nuclear transport of protein and mRNA	0.0838
+Y157A	nup84	nuclear transport of protein and mRNA	0.0414
+G80A	nup84	nuclear transport of protein and mRNA	0.1164
+H141R	nup84	nuclear transport of protein and mRNA	0.0466
+K101R	nup84	nuclear transport of protein and mRNA	0.0083
+D79A	nup84	nuclear transport of protein and mRNA	0.1343
+Q147E	pom152	nuclear transport of protein and mRNA	0.3046
+D79S	pom152	nuclear transport of protein and mRNA	0.2281
+R108G	pom152	nuclear transport of protein and mRNA	0.2216
+R108I	pom152	nuclear transport of protein and mRNA	0.3211
+R108L	pom152	nuclear transport of protein and mRNA	0.3294
+R108Q	pom152	nuclear transport of protein and mRNA	0.0904
+R108Y	pom152	nuclear transport of protein and mRNA	0.2288
+R112S	pom152	nuclear transport of protein and mRNA	0.092
+R78K	pom152	nuclear transport of protein and mRNA	-0.0498
+T34A	pom152	nuclear transport of protein and mRNA	0.4338
+T34E	pom152	nuclear transport of protein and mRNA	0.2428
+T34G	pom152	nuclear transport of protein and mRNA	0.0509
+T34Q	pom152	nuclear transport of protein and mRNA	0.2167
+Y157A	pom152	nuclear transport of protein and mRNA	0.0719
+G80A	pom152	nuclear transport of protein and mRNA	0.2133
+H141R	pom152	nuclear transport of protein and mRNA	0.1276
+K101R	pom152	nuclear transport of protein and mRNA	0.1908
+D79A	pom152	nuclear transport of protein and mRNA	0.0674
+Q147E	pom34	nuclear transport of protein and mRNA	0.264
+D79S	pom34	nuclear transport of protein and mRNA	0.2372
+R108G	pom34	nuclear transport of protein and mRNA	0.2044
+R108I	pom34	nuclear transport of protein and mRNA	0.3276
+R108L	pom34	nuclear transport of protein and mRNA	0.3855
+R108Q	pom34	nuclear transport of protein and mRNA	0.1568
+R108Y	pom34	nuclear transport of protein and mRNA	0.2802
+R112S	pom34	nuclear transport of protein and mRNA	0.1543
+R78K	pom34	nuclear transport of protein and mRNA	-0.0248
+T34A	pom34	nuclear transport of protein and mRNA	0.3759
+T34E	pom34	nuclear transport of protein and mRNA	0.2257
+T34G	pom34	nuclear transport of protein and mRNA	0.1082
+T34Q	pom34	nuclear transport of protein and mRNA	0.2418
+Y157A	pom34	nuclear transport of protein and mRNA	0.0404
+G80A	pom34	nuclear transport of protein and mRNA	0.1749
+H141R	pom34	nuclear transport of protein and mRNA	0.1728
+K101R	pom34	nuclear transport of protein and mRNA	0.2492
+D79A	pom34	nuclear transport of protein and mRNA	0.1139
+D79S	rna1-1	Gsp1 partner	0.089
+Q147E	rna1-1	Gsp1 partner	0.0666
+R108G	rna1-1	Gsp1 partner	0.0609
+R108I	rna1-1	Gsp1 partner	0.045
+R108L	rna1-1	Gsp1 partner	-0.0079
+R108Q	rna1-1	Gsp1 partner	-0.0038
+R108Y	rna1-1	Gsp1 partner	0.0347
+R112S	rna1-1	Gsp1 partner	0.0432
+R78K	rna1-1	Gsp1 partner	-0.0711
+T34A	rna1-1	Gsp1 partner	0.1214
+T34E	rna1-1	Gsp1 partner	0.1295
+T34G	rna1-1	Gsp1 partner	0.1199
+T34Q	rna1-1	Gsp1 partner	0.0959
+Y157A	rna1-1	Gsp1 partner	0.0878
+G80A	rna1-1	Gsp1 partner	0.0735
+H141R	rna1-1	Gsp1 partner	-0.0229
+K101R	rna1-1	Gsp1 partner	0.0371
+D79A	rna1-1	Gsp1 partner	0.0562
+D79S	rna1-s116f	Gsp1 partner	0.1081
+Q147E	rna1-s116f	Gsp1 partner	0.1139
+R108G	rna1-s116f	Gsp1 partner	0.0578
+R108I	rna1-s116f	Gsp1 partner	0.0091
+R108L	rna1-s116f	Gsp1 partner	-0.032
+R108Q	rna1-s116f	Gsp1 partner	-0.0378
+R108Y	rna1-s116f	Gsp1 partner	0.0276
+R112S	rna1-s116f	Gsp1 partner	0.044
+R78K	rna1-s116f	Gsp1 partner	-0.0072
+T34A	rna1-s116f	Gsp1 partner	0.1637
+T34E	rna1-s116f	Gsp1 partner	0.1013
+T34G	rna1-s116f	Gsp1 partner	0.1031
+T34Q	rna1-s116f	Gsp1 partner	0.1232
+Y157A	rna1-s116f	Gsp1 partner	0.1168
+G80A	rna1-s116f	Gsp1 partner	0.0947
+H141R	rna1-s116f	Gsp1 partner	0.0365
+K101R	rna1-s116f	Gsp1 partner	0.0042
+D79A	rna1-s116f	Gsp1 partner	0.1242
+D79S	srm1-g282s	Gsp1 partner	0.1652
+Q147E	srm1-g282s	Gsp1 partner	0.1524
+R108G	srm1-g282s	Gsp1 partner	0.0626
+R108I	srm1-g282s	Gsp1 partner	0.139
+R108L	srm1-g282s	Gsp1 partner	0.1527
+R108Q	srm1-g282s	Gsp1 partner	-0.0031
+R108Y	srm1-g282s	Gsp1 partner	0.104
+R112S	srm1-g282s	Gsp1 partner	0.1154
+R78K	srm1-g282s	Gsp1 partner	0.022
+T34A	srm1-g282s	Gsp1 partner	0.1729
+T34E	srm1-g282s	Gsp1 partner	0.2249
+T34G	srm1-g282s	Gsp1 partner	0.1476
+T34Q	srm1-g282s	Gsp1 partner	0.2038
+Y157A	srm1-g282s	Gsp1 partner	-0.039
+G80A	srm1-g282s	Gsp1 partner	0.1073
+H141R	srm1-g282s	Gsp1 partner	0.0573
+K101R	srm1-g282s	Gsp1 partner	0.2359
+D79A	srm1-g282s	Gsp1 partner	0.1534
+D79S	srm1-ts	Gsp1 partner	0.3085
+Q147E	srm1-ts	Gsp1 partner	0.2142
+R108G	srm1-ts	Gsp1 partner	0.1462
+R108I	srm1-ts	Gsp1 partner	0.2059
+R108L	srm1-ts	Gsp1 partner	0.2773
+R108Q	srm1-ts	Gsp1 partner	0.1214
+R108Y	srm1-ts	Gsp1 partner	0.208
+R112S	srm1-ts	Gsp1 partner	0.1945
+R78K	srm1-ts	Gsp1 partner	0.0124
+T34A	srm1-ts	Gsp1 partner	0.2881
+T34E	srm1-ts	Gsp1 partner	0.3155
+T34G	srm1-ts	Gsp1 partner	0.2321
+T34Q	srm1-ts	Gsp1 partner	0.3015
+Y157A	srm1-ts	Gsp1 partner	0.0354
+G80A	srm1-ts	Gsp1 partner	0.2188
+H141R	srm1-ts	Gsp1 partner	0.1596
+K101R	srm1-ts	Gsp1 partner	0.3197
+D79A	srm1-ts	Gsp1 partner	0.251
+D79S	srp1-5001	Gsp1 partner	0.2343
+Q147E	srp1-5001	Gsp1 partner	0.1417
+R108G	srp1-5001	Gsp1 partner	-0.0277
+R108I	srp1-5001	Gsp1 partner	0.0516
+R108L	srp1-5001	Gsp1 partner	0.047
+R108Q	srp1-5001	Gsp1 partner	-0.0685
+R108Y	srp1-5001	Gsp1 partner	0.0337
+R112S	srp1-5001	Gsp1 partner	0.0361
+R78K	srp1-5001	Gsp1 partner	-0.0124
+T34A	srp1-5001	Gsp1 partner	0.1557
+T34E	srp1-5001	Gsp1 partner	0.1805
+T34G	srp1-5001	Gsp1 partner	0.1779
+T34Q	srp1-5001	Gsp1 partner	0.1529
+Y157A	srp1-5001	Gsp1 partner	0.0327
+G80A	srp1-5001	Gsp1 partner	0.1775
+H141R	srp1-5001	Gsp1 partner	0.0373
+K101R	srp1-5001	Gsp1 partner	0.1149
+D79A	srp1-5001	Gsp1 partner	0.171
+D79S	sus1	nuclear transport of protein and mRNA	0.1721
+Q147E	sus1	nuclear transport of protein and mRNA	0.1547
+R108G	sus1	nuclear transport of protein and mRNA	0.1681
+R108I	sus1	nuclear transport of protein and mRNA	0.0617
+R108L	sus1	nuclear transport of protein and mRNA	0.0955
+R108Q	sus1	nuclear transport of protein and mRNA	0.1067
+R108Y	sus1	nuclear transport of protein and mRNA	0.1539
+R112S	sus1	nuclear transport of protein and mRNA	0.1114
+R78K	sus1	nuclear transport of protein and mRNA	-0.006
+T34A	sus1	nuclear transport of protein and mRNA	0.1037
+T34E	sus1	nuclear transport of protein and mRNA	0.1051
+T34G	sus1	nuclear transport of protein and mRNA	0.0862
+T34Q	sus1	nuclear transport of protein and mRNA	0.0999
+Y157A	sus1	nuclear transport of protein and mRNA	-0.0106
+G80A	sus1	nuclear transport of protein and mRNA	0.1702
+H141R	sus1	nuclear transport of protein and mRNA	0.1579
+K101R	sus1	nuclear transport of protein and mRNA	0.0744
+D79A	sus1	nuclear transport of protein and mRNA	0.1266
+Q147E	thp2	nuclear transport of protein and mRNA	0.2347
+D79S	thp2	nuclear transport of protein and mRNA	0.2073
+R108G	thp2	nuclear transport of protein and mRNA	0.1388
+R108I	thp2	nuclear transport of protein and mRNA	0.0863
+R108L	thp2	nuclear transport of protein and mRNA	0.0947
+R108Q	thp2	nuclear transport of protein and mRNA	0.0606
+R108Y	thp2	nuclear transport of protein and mRNA	0.1235
+R112S	thp2	nuclear transport of protein and mRNA	0.089
+R78K	thp2	nuclear transport of protein and mRNA	-0.052
+T34A	thp2	nuclear transport of protein and mRNA	0.2629
+T34E	thp2	nuclear transport of protein and mRNA	0.1756
+T34G	thp2	nuclear transport of protein and mRNA	0.072
+T34Q	thp2	nuclear transport of protein and mRNA	0.1951
+Y157A	thp2	nuclear transport of protein and mRNA	0.1728
+G80A	thp2	nuclear transport of protein and mRNA	0.136
+H141R	thp2	nuclear transport of protein and mRNA	0.0787
+K101R	thp2	nuclear transport of protein and mRNA	0.0948
+D79A	thp2	nuclear transport of protein and mRNA	0.1434
+D79S	yrb1-51	Gsp1 partner	0.2502
+Q147E	yrb1-51	Gsp1 partner	0.1942
+R108G	yrb1-51	Gsp1 partner	0.01
+R108I	yrb1-51	Gsp1 partner	0.1171
+R108L	yrb1-51	Gsp1 partner	0.0904
+R108Q	yrb1-51	Gsp1 partner	-0.0696
+R108Y	yrb1-51	Gsp1 partner	0.0329
+R112S	yrb1-51	Gsp1 partner	0.0011
+R78K	yrb1-51	Gsp1 partner	-0.0814
+T34A	yrb1-51	Gsp1 partner	0.2676
+T34E	yrb1-51	Gsp1 partner	0.2898
+T34G	yrb1-51	Gsp1 partner	0.1781
+T34Q	yrb1-51	Gsp1 partner	0.241
+Y157A	yrb1-51	Gsp1 partner	0.0843
+G80A	yrb1-51	Gsp1 partner	0.2354
+H141R	yrb1-51	Gsp1 partner	-0.0029
+K101R	yrb1-51	Gsp1 partner	0.1912
+D79A	yrb1-51	Gsp1 partner	0.1672

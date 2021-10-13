@@ -1,0 +1,631 @@
+mutant	query	gene_set	pearson
+D79S	act1-112	actin, tubulin, and polarity	-0.1088
+Q147E	act1-112	actin, tubulin, and polarity	-0.1366
+R108G	act1-112	actin, tubulin, and polarity	0.0958
+R108I	act1-112	actin, tubulin, and polarity	-0.0468
+R108L	act1-112	actin, tubulin, and polarity	0.0462
+R108Q	act1-112	actin, tubulin, and polarity	0.1673
+R108Y	act1-112	actin, tubulin, and polarity	0.0879
+R112S	act1-112	actin, tubulin, and polarity	0.0918
+R78K	act1-112	actin, tubulin, and polarity	0.0924
+T34A	act1-112	actin, tubulin, and polarity	-0.1009
+T34E	act1-112	actin, tubulin, and polarity	-0.0908
+T34G	act1-112	actin, tubulin, and polarity	-0.0957
+T34Q	act1-112	actin, tubulin, and polarity	-0.0657
+Y157A	act1-112	actin, tubulin, and polarity	-0.0779
+G80A	act1-112	actin, tubulin, and polarity	-7e-4
+H141R	act1-112	actin, tubulin, and polarity	0.1198
+K101R	act1-112	actin, tubulin, and polarity	-0.0869
+D79A	act1-112	actin, tubulin, and polarity	-0.06
+D79S	act1-119	actin, tubulin, and polarity	-0.0628
+Q147E	act1-119	actin, tubulin, and polarity	-0.0956
+R108G	act1-119	actin, tubulin, and polarity	0.0708
+R108I	act1-119	actin, tubulin, and polarity	0.0039
+R108L	act1-119	actin, tubulin, and polarity	0.0792
+R108Q	act1-119	actin, tubulin, and polarity	0.1418
+R108Y	act1-119	actin, tubulin, and polarity	0.0637
+R112S	act1-119	actin, tubulin, and polarity	0.0894
+R78K	act1-119	actin, tubulin, and polarity	0.0855
+T34A	act1-119	actin, tubulin, and polarity	-0.0584
+T34E	act1-119	actin, tubulin, and polarity	-0.0447
+T34G	act1-119	actin, tubulin, and polarity	-0.0489
+T34Q	act1-119	actin, tubulin, and polarity	-0.013
+Y157A	act1-119	actin, tubulin, and polarity	-0.0887
+G80A	act1-119	actin, tubulin, and polarity	-0.0356
+H141R	act1-119	actin, tubulin, and polarity	0.0951
+K101R	act1-119	actin, tubulin, and polarity	-0.0444
+D79A	act1-119	actin, tubulin, and polarity	-0.0151
+D79S	act1-121	actin, tubulin, and polarity	-0.0729
+Q147E	act1-121	actin, tubulin, and polarity	-0.0395
+R108G	act1-121	actin, tubulin, and polarity	0.0972
+R108I	act1-121	actin, tubulin, and polarity	-0.0157
+R108L	act1-121	actin, tubulin, and polarity	0.0219
+R108Q	act1-121	actin, tubulin, and polarity	0.1802
+R108Y	act1-121	actin, tubulin, and polarity	0.0619
+R112S	act1-121	actin, tubulin, and polarity	0.066
+R78K	act1-121	actin, tubulin, and polarity	0.0472
+T34A	act1-121	actin, tubulin, and polarity	-0.0876
+T34E	act1-121	actin, tubulin, and polarity	-0.0841
+T34G	act1-121	actin, tubulin, and polarity	-0.0581
+T34Q	act1-121	actin, tubulin, and polarity	-0.0305
+Y157A	act1-121	actin, tubulin, and polarity	-0.0708
+G80A	act1-121	actin, tubulin, and polarity	0.0441
+H141R	act1-121	actin, tubulin, and polarity	0.1231
+K101R	act1-121	actin, tubulin, and polarity	-0.021
+D79A	act1-121	actin, tubulin, and polarity	-0.0042
+D79S	act1-124	actin, tubulin, and polarity	-0.0825
+Q147E	act1-124	actin, tubulin, and polarity	-0.0309
+R108G	act1-124	actin, tubulin, and polarity	0.0833
+R108I	act1-124	actin, tubulin, and polarity	-0.0059
+R108L	act1-124	actin, tubulin, and polarity	0.015
+R108Q	act1-124	actin, tubulin, and polarity	0.1523
+R108Y	act1-124	actin, tubulin, and polarity	0.0366
+R112S	act1-124	actin, tubulin, and polarity	0.0314
+R78K	act1-124	actin, tubulin, and polarity	0.0428
+T34A	act1-124	actin, tubulin, and polarity	-0.0913
+T34E	act1-124	actin, tubulin, and polarity	-0.0955
+T34G	act1-124	actin, tubulin, and polarity	-0.0431
+T34Q	act1-124	actin, tubulin, and polarity	-0.0598
+Y157A	act1-124	actin, tubulin, and polarity	-0.0556
+G80A	act1-124	actin, tubulin, and polarity	-0.0209
+H141R	act1-124	actin, tubulin, and polarity	0.1112
+K101R	act1-124	actin, tubulin, and polarity	-0.0669
+D79A	act1-124	actin, tubulin, and polarity	-0.0395
+D79S	act1-125	actin, tubulin, and polarity	-0.068
+Q147E	act1-125	actin, tubulin, and polarity	-0.0693
+R108G	act1-125	actin, tubulin, and polarity	0.1008
+R108I	act1-125	actin, tubulin, and polarity	0.002
+R108L	act1-125	actin, tubulin, and polarity	0.0246
+R108Q	act1-125	actin, tubulin, and polarity	0.1201
+R108Y	act1-125	actin, tubulin, and polarity	0.062
+R112S	act1-125	actin, tubulin, and polarity	0.0531
+R78K	act1-125	actin, tubulin, and polarity	0.0533
+T34A	act1-125	actin, tubulin, and polarity	-0.0449
+T34E	act1-125	actin, tubulin, and polarity	-0.1143
+T34G	act1-125	actin, tubulin, and polarity	-0.0948
+T34Q	act1-125	actin, tubulin, and polarity	-0.0431
+Y157A	act1-125	actin, tubulin, and polarity	-0.053
+G80A	act1-125	actin, tubulin, and polarity	-0.0185
+H141R	act1-125	actin, tubulin, and polarity	0.0382
+K101R	act1-125	actin, tubulin, and polarity	-0.0877
+D79A	act1-125	actin, tubulin, and polarity	-0.0445
+D79S	act1-136	actin, tubulin, and polarity	-0.088
+Q147E	act1-136	actin, tubulin, and polarity	-0.1202
+R108G	act1-136	actin, tubulin, and polarity	0.0401
+R108I	act1-136	actin, tubulin, and polarity	-0.0679
+R108L	act1-136	actin, tubulin, and polarity	0.0168
+R108Q	act1-136	actin, tubulin, and polarity	0.1322
+R108Y	act1-136	actin, tubulin, and polarity	0.0424
+R112S	act1-136	actin, tubulin, and polarity	0.0842
+R78K	act1-136	actin, tubulin, and polarity	0.1334
+T34A	act1-136	actin, tubulin, and polarity	-0.0927
+T34E	act1-136	actin, tubulin, and polarity	-0.1014
+T34G	act1-136	actin, tubulin, and polarity	-0.0698
+T34Q	act1-136	actin, tubulin, and polarity	-0.0364
+Y157A	act1-136	actin, tubulin, and polarity	0.0039
+G80A	act1-136	actin, tubulin, and polarity	-0.0421
+H141R	act1-136	actin, tubulin, and polarity	0.0726
+K101R	act1-136	actin, tubulin, and polarity	-0.1131
+D79A	act1-136	actin, tubulin, and polarity	0.0042
+D79S	act1-155	actin, tubulin, and polarity	-0.0169
+Q147E	act1-155	actin, tubulin, and polarity	-0.0305
+R108G	act1-155	actin, tubulin, and polarity	0.1316
+R108I	act1-155	actin, tubulin, and polarity	-0.0058
+R108L	act1-155	actin, tubulin, and polarity	0.0226
+R108Q	act1-155	actin, tubulin, and polarity	0.1756
+R108Y	act1-155	actin, tubulin, and polarity	0.0849
+R112S	act1-155	actin, tubulin, and polarity	0.0553
+R78K	act1-155	actin, tubulin, and polarity	0.0052
+T34A	act1-155	actin, tubulin, and polarity	-0.0604
+T34E	act1-155	actin, tubulin, and polarity	-0.0749
+T34G	act1-155	actin, tubulin, and polarity	-0.057
+T34Q	act1-155	actin, tubulin, and polarity	-0.0299
+Y157A	act1-155	actin, tubulin, and polarity	-0.0565
+G80A	act1-155	actin, tubulin, and polarity	0.0326
+H141R	act1-155	actin, tubulin, and polarity	0.1334
+K101R	act1-155	actin, tubulin, and polarity	-0.0495
+D79A	act1-155	actin, tubulin, and polarity	0.011
+D79S	act1-3	actin, tubulin, and polarity	-0.1161
+Q147E	act1-3	actin, tubulin, and polarity	-0.1083
+R108G	act1-3	actin, tubulin, and polarity	0.0756
+R108I	act1-3	actin, tubulin, and polarity	-0.0403
+R108L	act1-3	actin, tubulin, and polarity	0.052
+R108Q	act1-3	actin, tubulin, and polarity	0.1469
+R108Y	act1-3	actin, tubulin, and polarity	0.0778
+R112S	act1-3	actin, tubulin, and polarity	0.1068
+R78K	act1-3	actin, tubulin, and polarity	0.0661
+T34A	act1-3	actin, tubulin, and polarity	-0.1166
+T34E	act1-3	actin, tubulin, and polarity	-0.0914
+T34G	act1-3	actin, tubulin, and polarity	-0.1115
+T34Q	act1-3	actin, tubulin, and polarity	-0.0412
+Y157A	act1-3	actin, tubulin, and polarity	-0.0091
+G80A	act1-3	actin, tubulin, and polarity	-0.02
+H141R	act1-3	actin, tubulin, and polarity	0.1345
+K101R	act1-3	actin, tubulin, and polarity	-0.0743
+D79A	act1-3	actin, tubulin, and polarity	-0.0357
+D79S	arc15-10	actin, tubulin, and polarity	-0.0623
+Q147E	arc15-10	actin, tubulin, and polarity	-0.0587
+R108G	arc15-10	actin, tubulin, and polarity	0.0636
+R108I	arc15-10	actin, tubulin, and polarity	0.0213
+R108L	arc15-10	actin, tubulin, and polarity	0.0665
+R108Q	arc15-10	actin, tubulin, and polarity	0.1293
+R108Y	arc15-10	actin, tubulin, and polarity	0.0348
+R112S	arc15-10	actin, tubulin, and polarity	0.0318
+R78K	arc15-10	actin, tubulin, and polarity	0.0994
+T34A	arc15-10	actin, tubulin, and polarity	-0.0486
+T34E	arc15-10	actin, tubulin, and polarity	-0.0444
+T34G	arc15-10	actin, tubulin, and polarity	-0.043
+T34Q	arc15-10	actin, tubulin, and polarity	-0.0147
+Y157A	arc15-10	actin, tubulin, and polarity	-0.0099
+G80A	arc15-10	actin, tubulin, and polarity	-0.0505
+H141R	arc15-10	actin, tubulin, and polarity	0.0354
+K101R	arc15-10	actin, tubulin, and polarity	-0.0509
+D79A	arc15-10	actin, tubulin, and polarity	-0.0396
+Q147E	arc18	actin, tubulin, and polarity	-0.0451
+D79S	arc18	actin, tubulin, and polarity	-0.0556
+R108G	arc18	actin, tubulin, and polarity	0.1202
+R108I	arc18	actin, tubulin, and polarity	-0.0456
+R108L	arc18	actin, tubulin, and polarity	0.0021
+R108Q	arc18	actin, tubulin, and polarity	0.1391
+R108Y	arc18	actin, tubulin, and polarity	0.0507
+R112S	arc18	actin, tubulin, and polarity	0.0304
+R78K	arc18	actin, tubulin, and polarity	0.0266
+T34A	arc18	actin, tubulin, and polarity	-0.0797
+T34E	arc18	actin, tubulin, and polarity	-0.1065
+T34G	arc18	actin, tubulin, and polarity	-0.0709
+T34Q	arc18	actin, tubulin, and polarity	-0.0648
+Y157A	arc18	actin, tubulin, and polarity	-0.0579
+G80A	arc18	actin, tubulin, and polarity	0.0383
+H141R	arc18	actin, tubulin, and polarity	0.0637
+K101R	arc18	actin, tubulin, and polarity	-0.0908
+D79A	arc18	actin, tubulin, and polarity	-0.0474
+Q147E	bni1	actin, tubulin, and polarity	-0.0212
+D79S	bni1	actin, tubulin, and polarity	-0.0899
+R108G	bni1	actin, tubulin, and polarity	0.2197
+R108I	bni1	actin, tubulin, and polarity	-0.0283
+R108L	bni1	actin, tubulin, and polarity	0.0158
+R108Q	bni1	actin, tubulin, and polarity	0.2564
+R108Y	bni1	actin, tubulin, and polarity	0.161
+R112S	bni1	actin, tubulin, and polarity	0.0696
+R78K	bni1	actin, tubulin, and polarity	-0.0315
+T34A	bni1	actin, tubulin, and polarity	-0.0738
+T34E	bni1	actin, tubulin, and polarity	-0.1216
+T34G	bni1	actin, tubulin, and polarity	-0.0692
+T34Q	bni1	actin, tubulin, and polarity	-0.0901
+Y157A	bni1	actin, tubulin, and polarity	-0.0032
+G80A	bni1	actin, tubulin, and polarity	0.0566
+H141R	bni1	actin, tubulin, and polarity	0.2347
+K101R	bni1	actin, tubulin, and polarity	-0.0851
+D79A	bni1	actin, tubulin, and polarity	0.0039
+D79S	boi2	actin, tubulin, and polarity	-0.0223
+Q147E	boi2	actin, tubulin, and polarity	-0.0226
+R108G	boi2	actin, tubulin, and polarity	0.1325
+R108I	boi2	actin, tubulin, and polarity	-0.0166
+R108L	boi2	actin, tubulin, and polarity	-0.0298
+R108Q	boi2	actin, tubulin, and polarity	0.1645
+R108Y	boi2	actin, tubulin, and polarity	0.1002
+R112S	boi2	actin, tubulin, and polarity	0.0426
+R78K	boi2	actin, tubulin, and polarity	-0.0912
+T34A	boi2	actin, tubulin, and polarity	-0.0624
+T34E	boi2	actin, tubulin, and polarity	-0.0631
+T34G	boi2	actin, tubulin, and polarity	0.0171
+T34Q	boi2	actin, tubulin, and polarity	-0.052
+Y157A	boi2	actin, tubulin, and polarity	-0.0334
+G80A	boi2	actin, tubulin, and polarity	0.1195
+H141R	boi2	actin, tubulin, and polarity	0.1771
+K101R	boi2	actin, tubulin, and polarity	-0.0189
+D79A	boi2	actin, tubulin, and polarity	0.0224
+Q147E	cap1	actin, tubulin, and polarity	-0.0287
+D79S	cap1	actin, tubulin, and polarity	-0.0401
+R108G	cap1	actin, tubulin, and polarity	0.1301
+R108I	cap1	actin, tubulin, and polarity	0.0268
+R108L	cap1	actin, tubulin, and polarity	0.0258
+R108Q	cap1	actin, tubulin, and polarity	0.1705
+R108Y	cap1	actin, tubulin, and polarity	0.061
+R112S	cap1	actin, tubulin, and polarity	0.0537
+R78K	cap1	actin, tubulin, and polarity	7e-4
+T34A	cap1	actin, tubulin, and polarity	-0.0371
+T34E	cap1	actin, tubulin, and polarity	-0.0258
+T34G	cap1	actin, tubulin, and polarity	-0.0281
+T34Q	cap1	actin, tubulin, and polarity	0.0045
+Y157A	cap1	actin, tubulin, and polarity	-0.0205
+G80A	cap1	actin, tubulin, and polarity	0.0612
+H141R	cap1	actin, tubulin, and polarity	0.1568
+K101R	cap1	actin, tubulin, and polarity	-0.0013
+D79A	cap1	actin, tubulin, and polarity	0.0257
+Q147E	cap2	actin, tubulin, and polarity	-0.0125
+D79S	cap2	actin, tubulin, and polarity	-0.0225
+R108G	cap2	actin, tubulin, and polarity	0.1075
+R108I	cap2	actin, tubulin, and polarity	-0.0192
+R108L	cap2	actin, tubulin, and polarity	0.0097
+R108Q	cap2	actin, tubulin, and polarity	0.1851
+R108Y	cap2	actin, tubulin, and polarity	0.0741
+R112S	cap2	actin, tubulin, and polarity	0.0098
+R78K	cap2	actin, tubulin, and polarity	0.0026
+T34A	cap2	actin, tubulin, and polarity	-0.0452
+T34E	cap2	actin, tubulin, and polarity	-0.0538
+T34G	cap2	actin, tubulin, and polarity	-0.0506
+T34Q	cap2	actin, tubulin, and polarity	-0.0097
+Y157A	cap2	actin, tubulin, and polarity	0.045
+G80A	cap2	actin, tubulin, and polarity	0.0418
+H141R	cap2	actin, tubulin, and polarity	0.0949
+K101R	cap2	actin, tubulin, and polarity	-0.0191
+D79A	cap2	actin, tubulin, and polarity	1e-4
+D79S	cct2-5001	actin, tubulin, and polarity	0.0577
+Q147E	cct2-5001	actin, tubulin, and polarity	-0.0367
+R108G	cct2-5001	actin, tubulin, and polarity	0.0611
+R108I	cct2-5001	actin, tubulin, and polarity	-0.0173
+R108L	cct2-5001	actin, tubulin, and polarity	-0.0381
+R108Q	cct2-5001	actin, tubulin, and polarity	0.0902
+R108Y	cct2-5001	actin, tubulin, and polarity	0.0433
+R112S	cct2-5001	actin, tubulin, and polarity	-0.024
+R78K	cct2-5001	actin, tubulin, and polarity	0.0138
+T34A	cct2-5001	actin, tubulin, and polarity	-0.012
+T34E	cct2-5001	actin, tubulin, and polarity	0.0405
+T34G	cct2-5001	actin, tubulin, and polarity	0.1228
+T34Q	cct2-5001	actin, tubulin, and polarity	0.0285
+Y157A	cct2-5001	actin, tubulin, and polarity	0.0681
+G80A	cct2-5001	actin, tubulin, and polarity	0.0326
+H141R	cct2-5001	actin, tubulin, and polarity	0.0601
+K101R	cct2-5001	actin, tubulin, and polarity	-0.0411
+D79A	cct2-5001	actin, tubulin, and polarity	0.0808
+D79S	ccz1	CVT pathway mitochondria and vacuole	-0.0182
+Q147E	ccz1	CVT pathway mitochondria and vacuole	-0.0127
+R108G	ccz1	CVT pathway mitochondria and vacuole	0.1736
+R108I	ccz1	CVT pathway mitochondria and vacuole	-0.0635
+R108L	ccz1	CVT pathway mitochondria and vacuole	-0.038
+R108Q	ccz1	CVT pathway mitochondria and vacuole	0.1895
+R108Y	ccz1	CVT pathway mitochondria and vacuole	0.118
+R112S	ccz1	CVT pathway mitochondria and vacuole	0.111
+R78K	ccz1	CVT pathway mitochondria and vacuole	-0.0936
+T34A	ccz1	CVT pathway mitochondria and vacuole	-0.0387
+T34E	ccz1	CVT pathway mitochondria and vacuole	-0.0245
+T34G	ccz1	CVT pathway mitochondria and vacuole	0.0166
+T34Q	ccz1	CVT pathway mitochondria and vacuole	-0.0202
+Y157A	ccz1	CVT pathway mitochondria and vacuole	-0.0721
+G80A	ccz1	CVT pathway mitochondria and vacuole	0.1184
+H141R	ccz1	CVT pathway mitochondria and vacuole	0.2389
+K101R	ccz1	CVT pathway mitochondria and vacuole	-0.0145
+D79A	ccz1	CVT pathway mitochondria and vacuole	0.0522
+D79S	cdc24-1	actin, tubulin, and polarity	-0.1356
+Q147E	cdc24-1	actin, tubulin, and polarity	-0.0173
+R108G	cdc24-1	actin, tubulin, and polarity	0.1282
+R108I	cdc24-1	actin, tubulin, and polarity	0.0175
+R108L	cdc24-1	actin, tubulin, and polarity	-0.0057
+R108Q	cdc24-1	actin, tubulin, and polarity	0.1343
+R108Y	cdc24-1	actin, tubulin, and polarity	0.0446
+R112S	cdc24-1	actin, tubulin, and polarity	0.0195
+R78K	cdc24-1	actin, tubulin, and polarity	-0.0244
+T34A	cdc24-1	actin, tubulin, and polarity	-0.081
+T34E	cdc24-1	actin, tubulin, and polarity	-0.1586
+T34G	cdc24-1	actin, tubulin, and polarity	-0.1167
+T34Q	cdc24-1	actin, tubulin, and polarity	-0.1167
+Y157A	cdc24-1	actin, tubulin, and polarity	-0.0846
+G80A	cdc24-1	actin, tubulin, and polarity	0.0252
+H141R	cdc24-1	actin, tubulin, and polarity	0.0709
+K101R	cdc24-1	actin, tubulin, and polarity	-0.069
+D79A	cdc24-1	actin, tubulin, and polarity	-0.075
+D79S	cdc24-11	actin, tubulin, and polarity	-0.073
+Q147E	cdc24-11	actin, tubulin, and polarity	-0.0487
+R108G	cdc24-11	actin, tubulin, and polarity	0.1607
+R108I	cdc24-11	actin, tubulin, and polarity	0.0029
+R108L	cdc24-11	actin, tubulin, and polarity	0.0035
+R108Q	cdc24-11	actin, tubulin, and polarity	0.1979
+R108Y	cdc24-11	actin, tubulin, and polarity	0.0876
+R112S	cdc24-11	actin, tubulin, and polarity	0.0241
+R78K	cdc24-11	actin, tubulin, and polarity	-0.0333
+T34A	cdc24-11	actin, tubulin, and polarity	-0.0705
+T34E	cdc24-11	actin, tubulin, and polarity	-0.149
+T34G	cdc24-11	actin, tubulin, and polarity	-0.0572
+T34Q	cdc24-11	actin, tubulin, and polarity	-0.1132
+Y157A	cdc24-11	actin, tubulin, and polarity	-0.0465
+G80A	cdc24-11	actin, tubulin, and polarity	0.0249
+H141R	cdc24-11	actin, tubulin, and polarity	0.0803
+K101R	cdc24-11	actin, tubulin, and polarity	-0.1053
+D79A	cdc24-11	actin, tubulin, and polarity	-0.0408
+D79S	cdc24-h	actin, tubulin, and polarity	-0.1178
+Q147E	cdc24-h	actin, tubulin, and polarity	-0.0294
+R108G	cdc24-h	actin, tubulin, and polarity	0.1065
+R108I	cdc24-h	actin, tubulin, and polarity	-0.007
+R108L	cdc24-h	actin, tubulin, and polarity	-0.0018
+R108Q	cdc24-h	actin, tubulin, and polarity	0.1161
+R108Y	cdc24-h	actin, tubulin, and polarity	0.0635
+R112S	cdc24-h	actin, tubulin, and polarity	0.0025
+R78K	cdc24-h	actin, tubulin, and polarity	-0.023
+T34A	cdc24-h	actin, tubulin, and polarity	-0.055
+T34E	cdc24-h	actin, tubulin, and polarity	-0.1334
+T34G	cdc24-h	actin, tubulin, and polarity	-0.0981
+T34Q	cdc24-h	actin, tubulin, and polarity	-0.1109
+Y157A	cdc24-h	actin, tubulin, and polarity	-0.0778
+G80A	cdc24-h	actin, tubulin, and polarity	0.0649
+H141R	cdc24-h	actin, tubulin, and polarity	0.1005
+K101R	cdc24-h	actin, tubulin, and polarity	-0.075
+D79A	cdc24-h	actin, tubulin, and polarity	-0.0984
+Q147E	cin2	actin, tubulin, and polarity	-0.0406
+D79S	cin2	actin, tubulin, and polarity	0.111
+R108G	cin2	actin, tubulin, and polarity	0.069
+R108I	cin2	actin, tubulin, and polarity	-0.0689
+R108L	cin2	actin, tubulin, and polarity	-0.0607
+R108Q	cin2	actin, tubulin, and polarity	0.1163
+R108Y	cin2	actin, tubulin, and polarity	0.0705
+R112S	cin2	actin, tubulin, and polarity	0.1123
+R78K	cin2	actin, tubulin, and polarity	-0.0445
+T34A	cin2	actin, tubulin, and polarity	-0.102
+T34E	cin2	actin, tubulin, and polarity	0.069
+T34G	cin2	actin, tubulin, and polarity	0.1684
+T34Q	cin2	actin, tubulin, and polarity	0.0752
+Y157A	cin2	actin, tubulin, and polarity	-0.009
+G80A	cin2	actin, tubulin, and polarity	0.0589
+H141R	cin2	actin, tubulin, and polarity	0.1967
+K101R	cin2	actin, tubulin, and polarity	0.045
+D79A	cin2	actin, tubulin, and polarity	0.2132
+Q147E	cin4	actin, tubulin, and polarity	0.0248
+D79S	cin4	actin, tubulin, and polarity	0.0432
+R108G	cin4	actin, tubulin, and polarity	0.138
+R108I	cin4	actin, tubulin, and polarity	-0.0261
+R108L	cin4	actin, tubulin, and polarity	-0.019
+R108Q	cin4	actin, tubulin, and polarity	0.1535
+R108Y	cin4	actin, tubulin, and polarity	0.1207
+R112S	cin4	actin, tubulin, and polarity	0.078
+R78K	cin4	actin, tubulin, and polarity	-0.0717
+T34A	cin4	actin, tubulin, and polarity	-0.0288
+T34E	cin4	actin, tubulin, and polarity	0.0104
+T34G	cin4	actin, tubulin, and polarity	0.0936
+T34Q	cin4	actin, tubulin, and polarity	-0.0042
+Y157A	cin4	actin, tubulin, and polarity	-0.0808
+G80A	cin4	actin, tubulin, and polarity	0.1418
+H141R	cin4	actin, tubulin, and polarity	0.1628
+K101R	cin4	actin, tubulin, and polarity	0.0033
+D79A	cin4	actin, tubulin, and polarity	0.0826
+D79S	cmd1-8	actin, tubulin, and polarity	-0.049
+Q147E	cmd1-8	actin, tubulin, and polarity	0.0247
+R108G	cmd1-8	actin, tubulin, and polarity	0.1584
+R108I	cmd1-8	actin, tubulin, and polarity	0.0151
+R108L	cmd1-8	actin, tubulin, and polarity	0.0115
+R108Q	cmd1-8	actin, tubulin, and polarity	0.192
+R108Y	cmd1-8	actin, tubulin, and polarity	0.1144
+R112S	cmd1-8	actin, tubulin, and polarity	0.0474
+R78K	cmd1-8	actin, tubulin, and polarity	-0.0645
+T34A	cmd1-8	actin, tubulin, and polarity	-0.0328
+T34E	cmd1-8	actin, tubulin, and polarity	-0.0789
+T34G	cmd1-8	actin, tubulin, and polarity	-0.0529
+T34Q	cmd1-8	actin, tubulin, and polarity	-0.0416
+Y157A	cmd1-8	actin, tubulin, and polarity	-0.0195
+G80A	cmd1-8	actin, tubulin, and polarity	0.1363
+H141R	cmd1-8	actin, tubulin, and polarity	0.209
+K101R	cmd1-8	actin, tubulin, and polarity	-0.0175
+D79A	cmd1-8	actin, tubulin, and polarity	0.0126
+D79S	cof1-8	actin, tubulin, and polarity	-0.0265
+Q147E	cof1-8	actin, tubulin, and polarity	0.0573
+R108G	cof1-8	actin, tubulin, and polarity	0.1758
+R108I	cof1-8	actin, tubulin, and polarity	0.081
+R108L	cof1-8	actin, tubulin, and polarity	0.0672
+R108Q	cof1-8	actin, tubulin, and polarity	0.1502
+R108Y	cof1-8	actin, tubulin, and polarity	0.1055
+R112S	cof1-8	actin, tubulin, and polarity	0.0272
+R78K	cof1-8	actin, tubulin, and polarity	-0.0309
+T34A	cof1-8	actin, tubulin, and polarity	0.0262
+T34E	cof1-8	actin, tubulin, and polarity	-0.0577
+T34G	cof1-8	actin, tubulin, and polarity	-0.0562
+T34Q	cof1-8	actin, tubulin, and polarity	-0.0031
+Y157A	cof1-8	actin, tubulin, and polarity	-0.0484
+G80A	cof1-8	actin, tubulin, and polarity	0.0812
+H141R	cof1-8	actin, tubulin, and polarity	0.1349
+K101R	cof1-8	actin, tubulin, and polarity	-0.0113
+D79A	cof1-8	actin, tubulin, and polarity	0.0191
+Q147E	dnm1	CVT pathway mitochondria and vacuole	0.0476
+D79S	dnm1	CVT pathway mitochondria and vacuole	0.0122
+R108G	dnm1	CVT pathway mitochondria and vacuole	0.1704
+R108I	dnm1	CVT pathway mitochondria and vacuole	0.0135
+R108L	dnm1	CVT pathway mitochondria and vacuole	0.0069
+R108Q	dnm1	CVT pathway mitochondria and vacuole	0.1364
+R108Y	dnm1	CVT pathway mitochondria and vacuole	0.1214
+R112S	dnm1	CVT pathway mitochondria and vacuole	0.0683
+R78K	dnm1	CVT pathway mitochondria and vacuole	-0.0014
+T34A	dnm1	CVT pathway mitochondria and vacuole	0.0165
+T34E	dnm1	CVT pathway mitochondria and vacuole	-0.0238
+T34G	dnm1	CVT pathway mitochondria and vacuole	0.0086
+T34Q	dnm1	CVT pathway mitochondria and vacuole	0.0211
+Y157A	dnm1	CVT pathway mitochondria and vacuole	0.0295
+G80A	dnm1	CVT pathway mitochondria and vacuole	0.0955
+H141R	dnm1	CVT pathway mitochondria and vacuole	0.192
+K101R	dnm1	CVT pathway mitochondria and vacuole	0.0038
+D79A	dnm1	CVT pathway mitochondria and vacuole	0.0971
+Q147E	fis1	CVT pathway mitochondria and vacuole	0.0424
+D79S	fis1	CVT pathway mitochondria and vacuole	0.0404
+R108G	fis1	CVT pathway mitochondria and vacuole	0.0965
+R108I	fis1	CVT pathway mitochondria and vacuole	-0.0705
+R108L	fis1	CVT pathway mitochondria and vacuole	-0.0575
+R108Q	fis1	CVT pathway mitochondria and vacuole	0.1089
+R108Y	fis1	CVT pathway mitochondria and vacuole	0.0632
+R112S	fis1	CVT pathway mitochondria and vacuole	0.0221
+R78K	fis1	CVT pathway mitochondria and vacuole	-0.0069
+T34A	fis1	CVT pathway mitochondria and vacuole	-0.0126
+T34E	fis1	CVT pathway mitochondria and vacuole	0.0132
+T34G	fis1	CVT pathway mitochondria and vacuole	0.0661
+T34Q	fis1	CVT pathway mitochondria and vacuole	0.0043
+Y157A	fis1	CVT pathway mitochondria and vacuole	0.0097
+G80A	fis1	CVT pathway mitochondria and vacuole	0.1239
+H141R	fis1	CVT pathway mitochondria and vacuole	0.1426
+K101R	fis1	CVT pathway mitochondria and vacuole	-0.0225
+D79A	fis1	CVT pathway mitochondria and vacuole	0.0779
+D79S	frq1-1	CVT pathway mitochondria and vacuole	0.0395
+Q147E	frq1-1	CVT pathway mitochondria and vacuole	-0.0532
+R108G	frq1-1	CVT pathway mitochondria and vacuole	0.0592
+R108I	frq1-1	CVT pathway mitochondria and vacuole	-0.0729
+R108L	frq1-1	CVT pathway mitochondria and vacuole	0.0134
+R108Q	frq1-1	CVT pathway mitochondria and vacuole	0.1483
+R108Y	frq1-1	CVT pathway mitochondria and vacuole	0.0853
+R112S	frq1-1	CVT pathway mitochondria and vacuole	0.0261
+R78K	frq1-1	CVT pathway mitochondria and vacuole	-0.0109
+T34A	frq1-1	CVT pathway mitochondria and vacuole	-0.1074
+T34E	frq1-1	CVT pathway mitochondria and vacuole	-0.1015
+T34G	frq1-1	CVT pathway mitochondria and vacuole	-0.0313
+T34Q	frq1-1	CVT pathway mitochondria and vacuole	-0.0278
+Y157A	frq1-1	CVT pathway mitochondria and vacuole	0.0849
+G80A	frq1-1	CVT pathway mitochondria and vacuole	-0.0724
+H141R	frq1-1	CVT pathway mitochondria and vacuole	0.0548
+K101R	frq1-1	CVT pathway mitochondria and vacuole	-0.0452
+D79A	frq1-1	CVT pathway mitochondria and vacuole	0.0276
+Q147E	lst7	CVT pathway mitochondria and vacuole	-0.0786
+D79S	lst7	CVT pathway mitochondria and vacuole	-0.0636
+R108G	lst7	CVT pathway mitochondria and vacuole	0.1344
+R108I	lst7	CVT pathway mitochondria and vacuole	0.0215
+R108L	lst7	CVT pathway mitochondria and vacuole	-0.001
+R108Q	lst7	CVT pathway mitochondria and vacuole	0.1406
+R108Y	lst7	CVT pathway mitochondria and vacuole	0.0783
+R112S	lst7	CVT pathway mitochondria and vacuole	0.0231
+R78K	lst7	CVT pathway mitochondria and vacuole	-0.0462
+T34A	lst7	CVT pathway mitochondria and vacuole	-0.0716
+T34E	lst7	CVT pathway mitochondria and vacuole	-0.1145
+T34G	lst7	CVT pathway mitochondria and vacuole	-0.0502
+T34Q	lst7	CVT pathway mitochondria and vacuole	-0.0998
+Y157A	lst7	CVT pathway mitochondria and vacuole	-0.0502
+G80A	lst7	CVT pathway mitochondria and vacuole	-0.0206
+H141R	lst7	CVT pathway mitochondria and vacuole	0.0873
+K101R	lst7	CVT pathway mitochondria and vacuole	-0.0895
+D79A	lst7	CVT pathway mitochondria and vacuole	-0.0137
+D79S	mon1	CVT pathway mitochondria and vacuole	0.0093
+Q147E	mon1	CVT pathway mitochondria and vacuole	-0.0317
+R108G	mon1	CVT pathway mitochondria and vacuole	0.1622
+R108I	mon1	CVT pathway mitochondria and vacuole	-0.0535
+R108L	mon1	CVT pathway mitochondria and vacuole	-0.0505
+R108Q	mon1	CVT pathway mitochondria and vacuole	0.1667
+R108Y	mon1	CVT pathway mitochondria and vacuole	0.0781
+R112S	mon1	CVT pathway mitochondria and vacuole	0.0907
+R78K	mon1	CVT pathway mitochondria and vacuole	-0.0953
+T34A	mon1	CVT pathway mitochondria and vacuole	-0.0601
+T34E	mon1	CVT pathway mitochondria and vacuole	-0.0365
+T34G	mon1	CVT pathway mitochondria and vacuole	0.0036
+T34Q	mon1	CVT pathway mitochondria and vacuole	-0.0555
+Y157A	mon1	CVT pathway mitochondria and vacuole	-0.0595
+G80A	mon1	CVT pathway mitochondria and vacuole	0.1408
+H141R	mon1	CVT pathway mitochondria and vacuole	0.1979
+K101R	mon1	CVT pathway mitochondria and vacuole	-0.0614
+D79A	mon1	CVT pathway mitochondria and vacuole	0.0579
+Q147E	mpc2	CVT pathway mitochondria and vacuole	-0.0461
+D79S	mpc2	CVT pathway mitochondria and vacuole	-0.0214
+R108G	mpc2	CVT pathway mitochondria and vacuole	0.1399
+R108I	mpc2	CVT pathway mitochondria and vacuole	0.0839
+R108L	mpc2	CVT pathway mitochondria and vacuole	0.0551
+R108Q	mpc2	CVT pathway mitochondria and vacuole	0.0835
+R108Y	mpc2	CVT pathway mitochondria and vacuole	0.0999
+R112S	mpc2	CVT pathway mitochondria and vacuole	0.0562
+R78K	mpc2	CVT pathway mitochondria and vacuole	-0.0178
+T34A	mpc2	CVT pathway mitochondria and vacuole	0.0448
+T34E	mpc2	CVT pathway mitochondria and vacuole	-0.0312
+T34G	mpc2	CVT pathway mitochondria and vacuole	-0.0444
+T34Q	mpc2	CVT pathway mitochondria and vacuole	-0.0225
+Y157A	mpc2	CVT pathway mitochondria and vacuole	0.0026
+G80A	mpc2	CVT pathway mitochondria and vacuole	0.0446
+H141R	mpc2	CVT pathway mitochondria and vacuole	0.0757
+K101R	mpc2	CVT pathway mitochondria and vacuole	-0.035
+D79A	mpc2	CVT pathway mitochondria and vacuole	-0.011
+D79S	rho3-1	actin, tubulin, and polarity	-0.0911
+Q147E	rho3-1	actin, tubulin, and polarity	-0.0437
+R108G	rho3-1	actin, tubulin, and polarity	0.1008
+R108I	rho3-1	actin, tubulin, and polarity	0.0245
+R108L	rho3-1	actin, tubulin, and polarity	-0.0111
+R108Q	rho3-1	actin, tubulin, and polarity	0.1225
+R108Y	rho3-1	actin, tubulin, and polarity	0.0393
+R112S	rho3-1	actin, tubulin, and polarity	-0.024
+R78K	rho3-1	actin, tubulin, and polarity	-0.0051
+T34A	rho3-1	actin, tubulin, and polarity	-0.0471
+T34E	rho3-1	actin, tubulin, and polarity	-0.1158
+T34G	rho3-1	actin, tubulin, and polarity	-0.1157
+T34Q	rho3-1	actin, tubulin, and polarity	-0.0445
+Y157A	rho3-1	actin, tubulin, and polarity	0.0061
+G80A	rho3-1	actin, tubulin, and polarity	0.0068
+H141R	rho3-1	actin, tubulin, and polarity	-0.0018
+K101R	rho3-1	actin, tubulin, and polarity	-0.0355
+D79A	rho3-1	actin, tubulin, and polarity	-0.0437
+Q147E	ssa2	CVT pathway mitochondria and vacuole	-0.0873
+D79S	ssa2	CVT pathway mitochondria and vacuole	-0.0446
+R108G	ssa2	CVT pathway mitochondria and vacuole	0.1187
+R108I	ssa2	CVT pathway mitochondria and vacuole	-0.0037
+R108L	ssa2	CVT pathway mitochondria and vacuole	0.0775
+R108Q	ssa2	CVT pathway mitochondria and vacuole	0.1281
+R108Y	ssa2	CVT pathway mitochondria and vacuole	0.1182
+R112S	ssa2	CVT pathway mitochondria and vacuole	0.0819
+R78K	ssa2	CVT pathway mitochondria and vacuole	0.0073
+T34A	ssa2	CVT pathway mitochondria and vacuole	-0.0197
+T34E	ssa2	CVT pathway mitochondria and vacuole	-0.065
+T34G	ssa2	CVT pathway mitochondria and vacuole	-0.0566
+T34Q	ssa2	CVT pathway mitochondria and vacuole	-0.0462
+Y157A	ssa2	CVT pathway mitochondria and vacuole	-0.0223
+G80A	ssa2	CVT pathway mitochondria and vacuole	-0.0379
+H141R	ssa2	CVT pathway mitochondria and vacuole	0.1006
+K101R	ssa2	CVT pathway mitochondria and vacuole	-0.0321
+D79A	ssa2	CVT pathway mitochondria and vacuole	-0.0318
+D79S	tub2-430	actin, tubulin, and polarity	0.0859
+Q147E	tub2-430	actin, tubulin, and polarity	0.0793
+R108G	tub2-430	actin, tubulin, and polarity	0.1356
+R108I	tub2-430	actin, tubulin, and polarity	-0.0554
+R108L	tub2-430	actin, tubulin, and polarity	-0.0963
+R108Q	tub2-430	actin, tubulin, and polarity	0.0898
+R108Y	tub2-430	actin, tubulin, and polarity	0.0786
+R112S	tub2-430	actin, tubulin, and polarity	-0.0037
+R78K	tub2-430	actin, tubulin, and polarity	-0.1239
+T34A	tub2-430	actin, tubulin, and polarity	0.0018
+T34E	tub2-430	actin, tubulin, and polarity	0.0101
+T34G	tub2-430	actin, tubulin, and polarity	0.1227
+T34Q	tub2-430	actin, tubulin, and polarity	0.0046
+Y157A	tub2-430	actin, tubulin, and polarity	-0.0188
+G80A	tub2-430	actin, tubulin, and polarity	0.1734
+H141R	tub2-430	actin, tubulin, and polarity	0.154
+K101R	tub2-430	actin, tubulin, and polarity	-0.0409
+D79A	tub2-430	actin, tubulin, and polarity	0.1463
+D79S	ypt10	CVT pathway mitochondria and vacuole	-0.0194
+Q147E	ypt10	CVT pathway mitochondria and vacuole	-1e-4
+R108G	ypt10	CVT pathway mitochondria and vacuole	0.0917
+R108I	ypt10	CVT pathway mitochondria and vacuole	0.0483
+R108L	ypt10	CVT pathway mitochondria and vacuole	0.0316
+R108Q	ypt10	CVT pathway mitochondria and vacuole	0.0845
+R108Y	ypt10	CVT pathway mitochondria and vacuole	0.0394
+R112S	ypt10	CVT pathway mitochondria and vacuole	-3e-4
+R78K	ypt10	CVT pathway mitochondria and vacuole	0.0221
+T34A	ypt10	CVT pathway mitochondria and vacuole	0.0354
+T34E	ypt10	CVT pathway mitochondria and vacuole	7e-4
+T34G	ypt10	CVT pathway mitochondria and vacuole	-0.0381
+T34Q	ypt10	CVT pathway mitochondria and vacuole	0.0275
+Y157A	ypt10	CVT pathway mitochondria and vacuole	0.0156
+G80A	ypt10	CVT pathway mitochondria and vacuole	-0.0383
+H141R	ypt10	CVT pathway mitochondria and vacuole	0.0451
+K101R	ypt10	CVT pathway mitochondria and vacuole	-0.0166
+D79A	ypt10	CVT pathway mitochondria and vacuole	0.0045
+Q147E	ypt7	CVT pathway mitochondria and vacuole	-0.003
+D79S	ypt7	CVT pathway mitochondria and vacuole	-0.0151
+R108G	ypt7	CVT pathway mitochondria and vacuole	0.1669
+R108I	ypt7	CVT pathway mitochondria and vacuole	-0.062
+R108L	ypt7	CVT pathway mitochondria and vacuole	-0.0305
+R108Q	ypt7	CVT pathway mitochondria and vacuole	0.2033
+R108Y	ypt7	CVT pathway mitochondria and vacuole	0.1337
+R112S	ypt7	CVT pathway mitochondria and vacuole	0.1007
+R78K	ypt7	CVT pathway mitochondria and vacuole	-0.0774
+T34A	ypt7	CVT pathway mitochondria and vacuole	-0.053
+T34E	ypt7	CVT pathway mitochondria and vacuole	-0.0474
+T34G	ypt7	CVT pathway mitochondria and vacuole	-7e-4
+T34Q	ypt7	CVT pathway mitochondria and vacuole	-0.0525
+Y157A	ypt7	CVT pathway mitochondria and vacuole	-0.0349
+G80A	ypt7	CVT pathway mitochondria and vacuole	0.1203
+H141R	ypt7	CVT pathway mitochondria and vacuole	0.2113
+K101R	ypt7	CVT pathway mitochondria and vacuole	-0.0249
+D79A	ypt7	CVT pathway mitochondria and vacuole	0.0221
+Q147E	zrt3	CVT pathway mitochondria and vacuole	-0.0663
+D79S	zrt3	CVT pathway mitochondria and vacuole	-0.0354
+R108G	zrt3	CVT pathway mitochondria and vacuole	0.1088
+R108I	zrt3	CVT pathway mitochondria and vacuole	-0.0147
+R108L	zrt3	CVT pathway mitochondria and vacuole	0.024
+R108Q	zrt3	CVT pathway mitochondria and vacuole	0.1264
+R108Y	zrt3	CVT pathway mitochondria and vacuole	0.1163
+R112S	zrt3	CVT pathway mitochondria and vacuole	0.1284
+R78K	zrt3	CVT pathway mitochondria and vacuole	-0.0071
+T34A	zrt3	CVT pathway mitochondria and vacuole	-0.0594
+T34E	zrt3	CVT pathway mitochondria and vacuole	-0.1186
+T34G	zrt3	CVT pathway mitochondria and vacuole	-0.012
+T34Q	zrt3	CVT pathway mitochondria and vacuole	-0.0774
+Y157A	zrt3	CVT pathway mitochondria and vacuole	0.0495
+G80A	zrt3	CVT pathway mitochondria and vacuole	-0.0758
+H141R	zrt3	CVT pathway mitochondria and vacuole	0.1025
+K101R	zrt3	CVT pathway mitochondria and vacuole	-0.1168
+D79A	zrt3	CVT pathway mitochondria and vacuole	0.0455

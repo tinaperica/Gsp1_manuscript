@@ -7,6 +7,7 @@ partners <- c('Srm1', 'Rna1', 'Yrb1', 'Mog1', 'Kap95', 'Kap120', 'Srp1', 'Pse1',
               "Tub2" , "Imh1",  "Vps71", "Puf6",  "Swr1",  "Vps72", "Cdc14",  "Ecm1",  "Rpl6b", "Rpl8b", "Rpp2a",
               "Slx9",  "Lsm6",  "Prp43", "Sub1",  "Caf40", "Sum1", 'Pol2', 'Spa2' )
 APMS <- read_tsv('Data/APMS_data.txt') %>% 
+  mutate('log2FC' = as.double(log2FC)) %>% 
   mutate('Prey_gene_name' = str_c(substr(Prey_gene_name, 1, 1), tolower(substr(Prey_gene_name, 2, nchar(Prey_gene_name))))) %>% 
   filter(Prey_gene_name %in% partners  & norm == 'eqM') %>% 
   select(mutant, tag, Prey_gene_name, log2FC, residue) %>%
@@ -73,6 +74,11 @@ dev.off()
 
 #partner_colors <- tibble('partner' = partners, 'color' = c(ucsf_colors$cyan1, ucsf_colors$orange1, rep(ucsf_colors$green1, times = length(partners) - 2)))
 
+### print for Per Figure Source file
+data %>% 
+  select(sample, mutant, tag, GAP, GEF, difference, Rna1, Srm1, Yrb1, Kap95, Vps71) %>% 
+  write_tsv('Per_Figure_source_files/EDF9.txt')
+
 ### now plot individual partners
 plot_partner <- function(partner) {
   data %>% 
@@ -104,7 +110,10 @@ plot_partner <- function(partner) {
           plot.margin = unit(c(0, 0, 0, 0), 'cm'))
   
 }
+
+
 data <- read_tsv('Data/APMS_data.txt') %>% 
+  mutate('log2FC' = as.double(log2FC)) %>% 
   mutate('Prey_gene_name' = str_c(substr(Prey_gene_name, 1, 1), tolower(substr(Prey_gene_name, 2, nchar(Prey_gene_name))))) %>% 
   filter(Prey_gene_name %in% partners  & norm == 'eqM') %>% 
   select(mutant, tag, Prey_gene_name, log2FC, residue, adj.pvalue) %>%

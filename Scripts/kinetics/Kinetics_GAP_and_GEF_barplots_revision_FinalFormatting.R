@@ -28,6 +28,16 @@ GAP.data <- GAP.data %>%
 GEF.data <- GEF.data %>% 
   filter(mutant %in% intersect_mutants)
 
+#### For Figure source data
+GAP.data %>% 
+  select(mutant, 'mean_kcat' = kcat, 'mean_Km' = Km, 'mean_kcat_Km' = kcat_Km, kcat_se, Km_se, 'kcat_Km_se' = se) %>% 
+  inner_join(., GAP.data_unaveraged, by = 'mutant') %>% 
+  write_tsv('Per_Figure_source_files/Fig3A.tsv')
+####
+#### For Figure source data
+GEF.data %>% write_tsv('Per_Figure_source_files/Fig3B.tsv')
+####
+
 # Prepare GAP plots
 mut_ordered_by_kcat_Km <- GAP.data %>% select(mutant, kcat_Km) %>% arrange(kcat_Km) %>% unique() %>% pull(mutant)
 GAP_barplot_colors <- c(ucsf_colors$orange1, ucsf_colors$gray2, ucsf_colors$navy2)
@@ -61,6 +71,7 @@ gap_plot <- GAP.data %>%
         legend.position = 'bottom',
         legend.background = element_rect(size = 0.1, linetype = "solid", colour = "gray")) +
   coord_flip()
+
 
 
 # GAP Extended Data Figure (kcat)
@@ -280,6 +291,10 @@ data <- data %>%
   mutate('mutant' = factor(mutant, order_of_mutants)) %>% 
   select(mutant, measure, value, se)
 
+### print for Figure source file
+data %>% write_tsv('Per_Figure_source_files/EDF7e.tsv')
+###
+
 data %>% 
   ggplot(aes(x = mutant, y = value, fill = measure)) + 
   geom_bar(stat = "identity", position = position_dodge()) +
@@ -342,4 +357,5 @@ intrinsic_hydrolysis %>%
   coord_flip()
 ggsave(file.path(extended_directory, 'Ext_Fig7A_intrinsic_hydrolysis_barplot.pdf'), height = 3, width = 3.5)
 
-
+### print for Figure source file
+intrinsic_hydrolysis %>% write_tsv('Per_Figure_source_files/EDF8b.txt')

@@ -47,6 +47,8 @@ ln_rel_GAP_gamma2_plot
 
 ggsave(filename = str_c(main_directory, 'Fig3d_GAP_kcatKm_vs_ln_NMR_gamma_Kex.pdf'), height = 2.05, width = 2.22)
 
+### Print for Figure source file
+temp %>% write_tsv('Per_Figure_source_files/Fig3D.tsv')
 
 ### make a plotting function that does just kcat or just Km
 plot_MM_parameter_gamma <- function(measure, input_data) {
@@ -130,6 +132,8 @@ temp %>%
         axis.ticks = element_line(size = 0.1))
 ggsave(file.path(extended_directory, 'EDF_7/EDFig7_intrinsic_vs_NMR_state_2_scatterplot.pdf'), height = 2.5, width = 2.5)
 
+### Print for Figure source file
+temp %>% write_tsv('Per_Figure_source_files/EDF8c.tsv')
 
 
 # plot intrinsic hydrolysis vs GAP-mediated

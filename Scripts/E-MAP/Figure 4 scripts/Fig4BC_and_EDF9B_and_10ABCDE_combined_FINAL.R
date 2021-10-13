@@ -137,6 +137,8 @@ line_plot <- ggplot(data = lp_df,
 #dev.off()
 ### END LINE PLOT TRY 2020-06-30
 
+### print for Figure Source file
+lp_df %>% write_tsv('Per_Figure_source_files/Fig4c.txt')
 
 ### SINA PLOT FOR Fig. 4B - print it together with Fig. 4c so they are nicely aligned
 # clean correlations dataset, so each row is a correlation between a mutant and a strain
@@ -168,6 +170,10 @@ data <-
   mutate(gene_set = ifelse(is.na(gene_set), 'other', gene_set) %>% 
            factor(levels = gene_sets_order)) %>% 
   arrange(mutant_group, gene_set)
+
+### print for per figure source file
+data %>% write_tsv('Per_Figure_source_files/Fig4b.txt')
+#####
 
 sinaplot <- ggplot(data, aes(x = mutant_group, y = pearson, size = greater_fdr)) +
   geom_violin(data = filter(data, gene_set == 'other'),
@@ -395,6 +401,12 @@ pdf(str_c(output_directory, '/Fig_4BC_line_plot.pdf'), width = 3.5, height = fil
 print(combn_plots)
 dev.off()
 
+### print for Per Figure Source File
+corr %>%
+  filter(gene_set %in% main_fig_gene_sets) %>% 
+  select(mutant, query, gene_set, pearson) %>% 
+  write_tsv('Per_Figure_source_files/Fig4d.txt')
+
 combn_plots <- plot_grid( 
                          plot[["spindle assembly checkpoint"]][['corr']],
                          plot[["nuclear pore complex"]][['corr']],
@@ -416,6 +428,20 @@ EDF_gene_sets <- c("Gsp1 partner", "nuclear transport of protein and mRNA",
                         "transcription regulation and mediator complex", "5' mRNA capping",
                         'histones and chromatin')
 plot <- list()
+
+### print for Per Figure Source File
+corr %>%
+  filter(gene_set %in% EDF_gene_sets[1:2]) %>% 
+  select(mutant, query, gene_set, pearson) %>% 
+  write_tsv('Per_Figure_source_files/EDF10a.txt')
+corr %>%
+  filter(gene_set %in% EDF_gene_sets[5:6]) %>% 
+  select(mutant, query, gene_set, pearson) %>% 
+  write_tsv('Per_Figure_source_files/EDF10b.txt')
+corr %>%
+  filter(gene_set %in% EDF_gene_sets[3:4]) %>% 
+  select(mutant, query, gene_set, pearson) %>% 
+  write_tsv('Per_Figure_source_files/EDF10c.txt')
 
 for (i in seq_along(EDF_gene_sets)) {
   gene_set_to_plot <- EDF_gene_sets[i]

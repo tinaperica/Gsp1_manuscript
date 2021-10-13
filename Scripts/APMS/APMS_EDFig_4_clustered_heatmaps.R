@@ -28,14 +28,21 @@ clustfn <- function(mat, dist_method, clust_method) {
 data <- read_tsv('Data/APMS_data.txt') %>% 
   filter(norm == 'eqM') %>% 
   filter(! Prey_gene_name == 'GSP1') %>% 
+  mutate('log2FC' = as.double(log2FC)) %>% 
   mutate('log2FC' = ifelse(log2FC < -4, -4, log2FC)) %>% 
   mutate('log2FC' = ifelse(log2FC > 4, 4, log2FC)) %>% 
+  mutate('log2FC' = ifelse(is.infinite(log2FC) & log2FC < 0, -4, log2FC)) %>% 
+  mutate('log2FC' = ifelse(is.infinite(log2FC) & log2FC > 0, 4, log2FC)) %>% 
   mutate('Prey_gene_name' = str_c(substr(Prey_gene_name, 1, 1), tolower(substr(Prey_gene_name, 2, nchar(Prey_gene_name))))) %>% 
   mutate('sample' = ifelse(tag == 'N', str_c('N-3xFL-', mutant), str_c(mutant, '-C-3xFL'))) %>% 
   mutate('Prey_gene_name' = case_when(is.na(Prey_gene_name) ~ PreyORF,
                                       !is.na(Prey_gene_name) ~ Prey_gene_name)) %>% 
   select(sample, tag, mutant, residue, Prey_gene_name, log2FC, adj.pvalue) %>% 
   unique()
+
+#### Source data for EDF5 b and c
+data %>% write_tsv('Per_Figure_source_files/EDF5_BC.txt')
+#####
 
 #### make a heatmap of all samples versus prey partners and cluster the samples by tag
 mat <-
@@ -47,11 +54,13 @@ mat <-
   as.matrix()
 
 ##### ward.D2 clustering
-row.hc <- get_dist(mat, method = 'euclidean') %>% hclust(method = 'ward.D2')
+row.dist <- get_dist(mat, method = 'euclidean') 
+sum(is.infinite(row.dist)) # there are 0 Infs  so set the Infs to max or min non-inf distance
+sum(is.na(row.dist))
+row.hc <- hclust(row.dist, method = 'ward.D2')
 ordered_samples <- row.hc$labels[row.hc$order]
 col.dist <- get_dist(t(mat), method = 'euclidean')
-# sum(is.na(col.dist)) # there are 11076 NA (and 39010 non-NA), so set the NAs to max distance
-# col.dist[is.na(col.dist)] <- max(col.dist, na.rm = T)
+sum(is.infinite(col.dist)) # there are 0 Infs  so set the Infs to max non-inf distance
 col.hc <-  hclust(col.dist, method = 'ward.D2')
 ordered_preys <- col.hc$labels[col.hc$order]
 

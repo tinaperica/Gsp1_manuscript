@@ -98,9 +98,13 @@ corr_for_sina %>%
 # ggsave('Figure1_E-MAP/Plots/1F_Sinaplots.pdf', height = 1.9, width = 3.1)
 # ggsave('Revisions/Main Figures/Figure1/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
 # ggsave('Revisions2/Figure_Files/1G_Sinaplots.pdf', height = 1.9, width = 3.1, device = cairo_pdf)
-ggsave('Figure1_E-MAP/Plots/1F_Sinaplots_FinalFormatting.pdf', height = 1.7, width = 3.1, device = cairo_pdf)
-dev.off()
+ggsave('Figure1_E-MAP/Plots/1E_Sinaplots_FinalFormatting.pdf', height = 1.7, width = 3.1, device = cairo_pdf)
 
+dev.off()
+corr_for_sina %>% 
+  filter(is_strong, partner) %>% 
+  select(mutant, strain, pearson, greater_fdr, is_strong, is_core, partner) %>% 
+  write_csv('Per_Figure_source_files/Fig1E.csv')
 
 corr_for_sina %>% 
   filter(is_strong, partner) %>% 
@@ -158,9 +162,9 @@ ggplot(data = data, aes(x = group, y = pearson, color = group)) +
   )
 # ggsave('Extended_Figures/Ext_Fig3_Sinaplots_strong_weak_all.pdf', height = 2, width = 3.7)
 # ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
-ggsave('Revisions2/Figure_Files/Ext_Fig3D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
+ggsave('Revisions2/Figure_Files/Ext_Fig4D.pdf', height = 2.2, width = 3.8,device=cairo_pdf)
 dev.off()
-
+data %>% write_csv('Per_Figure_source_files/EDF4D.csv')
 
 data2 <-
   corr_for_sina %>%
@@ -201,8 +205,9 @@ ggplot(data = data2, aes(x = group, y = pearson, color = group)) +
 # ggsave('Extended_Figures/Ext_Fig3_Sinaplots_partners_nonpartners.pdf', height = 2, width = 2)
 # ggsave('Revisions/Extended_Figures/EDF_3/Ext_Fig3C.pdf', height = 2, width = 2, device=cairo_pdf)
 #ggsave('Revisions2/Figure_Files/Ext_Fig3C.pdf', height = 2.2, width = 2, device=cairo_pdf)
-ggsave('Final_Formatting/temp/Ext_Fig4d.pdf', height = 2.2, width = 2.8, device=cairo_pdf)
+ggsave('Final_Formatting/temp/Ext_Fig4C.pdf', height = 2.2, width = 2.8, device=cairo_pdf)
 dev.off()
+data2 %>% write_csv('Per_Figure_source_files/EDF4C.csv')
 
 # make a table for the supplement showing the top correlations from the sinaplot
 corr_for_sina %>% 

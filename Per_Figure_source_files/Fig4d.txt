@@ -1,0 +1,703 @@
+mutant	query	gene_set	pearson
+D79S	arc1	tRNA modification	0.0576
+Q147E	arc1	tRNA modification	-0.0485
+R108G	arc1	tRNA modification	0.1291
+R108I	arc1	tRNA modification	-0.0355
+R108L	arc1	tRNA modification	0.0359
+R108Q	arc1	tRNA modification	0.0743
+R108Y	arc1	tRNA modification	0.1464
+R112S	arc1	tRNA modification	0.0483
+R78K	arc1	tRNA modification	-0.007
+T34A	arc1	tRNA modification	0.0362
+T34E	arc1	tRNA modification	0.025
+T34G	arc1	tRNA modification	-0.0185
+T34Q	arc1	tRNA modification	0.0049
+Y157A	arc1	tRNA modification	0.0908
+G80A	arc1	tRNA modification	0.0442
+H141R	arc1	tRNA modification	0.1297
+K101R	arc1	tRNA modification	-0.0484
+D79A	arc1	tRNA modification	-0.026
+D79S	asm4	nuclear pore complex	0.2714
+Q147E	asm4	nuclear pore complex	0.2701
+R108G	asm4	nuclear pore complex	0.1888
+R108I	asm4	nuclear pore complex	0.1956
+R108L	asm4	nuclear pore complex	0.2819
+R108Q	asm4	nuclear pore complex	0.1559
+R108Y	asm4	nuclear pore complex	0.2185
+R112S	asm4	nuclear pore complex	0.1312
+R78K	asm4	nuclear pore complex	-0.0832
+T34A	asm4	nuclear pore complex	0.3793
+T34E	asm4	nuclear pore complex	0.2414
+T34G	asm4	nuclear pore complex	0.1048
+T34Q	asm4	nuclear pore complex	0.2391
+Y157A	asm4	nuclear pore complex	0.0506
+G80A	asm4	nuclear pore complex	0.298
+H141R	asm4	nuclear pore complex	0.1539
+K101R	asm4	nuclear pore complex	0.1937
+D79A	asm4	nuclear pore complex	0.1429
+Q147E	bub3	spindle assembly checkpoint	0.0059
+D79S	bub3	spindle assembly checkpoint	0.1039
+R108G	bub3	spindle assembly checkpoint	-0.0775
+R108I	bub3	spindle assembly checkpoint	-0.0718
+R108L	bub3	spindle assembly checkpoint	-0.0355
+R108Q	bub3	spindle assembly checkpoint	-0.0507
+R108Y	bub3	spindle assembly checkpoint	0.0217
+R112S	bub3	spindle assembly checkpoint	0.0302
+R78K	bub3	spindle assembly checkpoint	0.079
+T34A	bub3	spindle assembly checkpoint	-0.0233
+T34E	bub3	spindle assembly checkpoint	0.1053
+T34G	bub3	spindle assembly checkpoint	0.2119
+T34Q	bub3	spindle assembly checkpoint	0.0656
+Y157A	bub3	spindle assembly checkpoint	-0.0546
+G80A	bub3	spindle assembly checkpoint	0.085
+H141R	bub3	spindle assembly checkpoint	0.0339
+K101R	bub3	spindle assembly checkpoint	0.065
+D79A	bub3	spindle assembly checkpoint	0.1255
+D79S	cdc20-1	spindle assembly checkpoint	0.1405
+Q147E	cdc20-1	spindle assembly checkpoint	0.0697
+R108G	cdc20-1	spindle assembly checkpoint	0.0149
+R108I	cdc20-1	spindle assembly checkpoint	0.0299
+R108L	cdc20-1	spindle assembly checkpoint	0.056
+R108Q	cdc20-1	spindle assembly checkpoint	7e-4
+R108Y	cdc20-1	spindle assembly checkpoint	0.057
+R112S	cdc20-1	spindle assembly checkpoint	0.039
+R78K	cdc20-1	spindle assembly checkpoint	0.0397
+T34A	cdc20-1	spindle assembly checkpoint	0.0959
+T34E	cdc20-1	spindle assembly checkpoint	0.0585
+T34G	cdc20-1	spindle assembly checkpoint	0.0969
+T34Q	cdc20-1	spindle assembly checkpoint	0.0414
+Y157A	cdc20-1	spindle assembly checkpoint	-0.0335
+G80A	cdc20-1	spindle assembly checkpoint	0.1793
+H141R	cdc20-1	spindle assembly checkpoint	0.0336
+K101R	cdc20-1	spindle assembly checkpoint	0.041
+D79A	cdc20-1	spindle assembly checkpoint	0.0661
+D79S	chl4	spindle assembly checkpoint	0.1358
+Q147E	chl4	spindle assembly checkpoint	0.0571
+R108G	chl4	spindle assembly checkpoint	-0.0225
+R108I	chl4	spindle assembly checkpoint	-0.0121
+R108L	chl4	spindle assembly checkpoint	-0.0491
+R108Q	chl4	spindle assembly checkpoint	-0.037
+R108Y	chl4	spindle assembly checkpoint	-0.0368
+R112S	chl4	spindle assembly checkpoint	-0.0236
+R78K	chl4	spindle assembly checkpoint	-0.0519
+T34A	chl4	spindle assembly checkpoint	0.0121
+T34E	chl4	spindle assembly checkpoint	0.1055
+T34G	chl4	spindle assembly checkpoint	0.1136
+T34Q	chl4	spindle assembly checkpoint	0.1052
+Y157A	chl4	spindle assembly checkpoint	-0.0392
+G80A	chl4	spindle assembly checkpoint	0.1201
+H141R	chl4	spindle assembly checkpoint	-0.0382
+K101R	chl4	spindle assembly checkpoint	0.1085
+D79A	chl4	spindle assembly checkpoint	0.1304
+Q147E	ctf19	spindle assembly checkpoint	-0.0128
+D79S	ctf19	spindle assembly checkpoint	0.1405
+R108G	ctf19	spindle assembly checkpoint	-0.0069
+R108I	ctf19	spindle assembly checkpoint	-0.0086
+R108L	ctf19	spindle assembly checkpoint	-0.0429
+R108Q	ctf19	spindle assembly checkpoint	0.0015
+R108Y	ctf19	spindle assembly checkpoint	-0.0159
+R112S	ctf19	spindle assembly checkpoint	0.0239
+R78K	ctf19	spindle assembly checkpoint	-0.0101
+T34A	ctf19	spindle assembly checkpoint	-0.0383
+T34E	ctf19	spindle assembly checkpoint	0.0706
+T34G	ctf19	spindle assembly checkpoint	0.1287
+T34Q	ctf19	spindle assembly checkpoint	0.0747
+Y157A	ctf19	spindle assembly checkpoint	-0.0683
+G80A	ctf19	spindle assembly checkpoint	0.0598
+H141R	ctf19	spindle assembly checkpoint	0.0146
+K101R	ctf19	spindle assembly checkpoint	0.0744
+D79A	ctf19	spindle assembly checkpoint	0.1245
+Q147E	ctf3	spindle assembly checkpoint	0.0202
+D79S	ctf3	spindle assembly checkpoint	0.1067
+R108G	ctf3	spindle assembly checkpoint	-0.0014
+R108I	ctf3	spindle assembly checkpoint	0.0028
+R108L	ctf3	spindle assembly checkpoint	-0.0128
+R108Q	ctf3	spindle assembly checkpoint	-0.0137
+R108Y	ctf3	spindle assembly checkpoint	-0.0023
+R112S	ctf3	spindle assembly checkpoint	9e-4
+R78K	ctf3	spindle assembly checkpoint	0.0066
+T34A	ctf3	spindle assembly checkpoint	-0.0107
+T34E	ctf3	spindle assembly checkpoint	0.0778
+T34G	ctf3	spindle assembly checkpoint	0.1293
+T34Q	ctf3	spindle assembly checkpoint	0.0795
+Y157A	ctf3	spindle assembly checkpoint	-0.0467
+G80A	ctf3	spindle assembly checkpoint	0.0512
+H141R	ctf3	spindle assembly checkpoint	-0.0122
+K101R	ctf3	spindle assembly checkpoint	0.1012
+D79A	ctf3	spindle assembly checkpoint	0.0924
+D79S	deg1	tRNA modification	-0.0645
+Q147E	deg1	tRNA modification	-0.0528
+R108G	deg1	tRNA modification	0.167
+R108I	deg1	tRNA modification	0.0053
+R108L	deg1	tRNA modification	0.0093
+R108Q	deg1	tRNA modification	0.1065
+R108Y	deg1	tRNA modification	0.1473
+R112S	deg1	tRNA modification	0.0929
+R78K	deg1	tRNA modification	-0.0127
+T34A	deg1	tRNA modification	0.0032
+T34E	deg1	tRNA modification	-0.0079
+T34G	deg1	tRNA modification	-0.0231
+T34Q	deg1	tRNA modification	0.0051
+Y157A	deg1	tRNA modification	-0.0198
+G80A	deg1	tRNA modification	-0.0497
+H141R	deg1	tRNA modification	0.1299
+K101R	deg1	tRNA modification	-0.0608
+D79A	deg1	tRNA modification	-0.0441
+D79S	dsn1-7	spindle assembly checkpoint	0.207
+Q147E	dsn1-7	spindle assembly checkpoint	0.028
+R108G	dsn1-7	spindle assembly checkpoint	-0.0352
+R108I	dsn1-7	spindle assembly checkpoint	-0.0198
+R108L	dsn1-7	spindle assembly checkpoint	-0.0208
+R108Q	dsn1-7	spindle assembly checkpoint	-0.0373
+R108Y	dsn1-7	spindle assembly checkpoint	0.0358
+R112S	dsn1-7	spindle assembly checkpoint	0.0271
+R78K	dsn1-7	spindle assembly checkpoint	-0.018
+T34A	dsn1-7	spindle assembly checkpoint	0.0437
+T34E	dsn1-7	spindle assembly checkpoint	0.2727
+T34G	dsn1-7	spindle assembly checkpoint	0.35
+T34Q	dsn1-7	spindle assembly checkpoint	0.2743
+Y157A	dsn1-7	spindle assembly checkpoint	-0.0557
+G80A	dsn1-7	spindle assembly checkpoint	0.0134
+H141R	dsn1-7	spindle assembly checkpoint	0.014
+K101R	dsn1-7	spindle assembly checkpoint	0.2615
+D79A	dsn1-7	spindle assembly checkpoint	0.2724
+D79S	dsn1-8	spindle assembly checkpoint	0.2421
+Q147E	dsn1-8	spindle assembly checkpoint	-0.0225
+R108G	dsn1-8	spindle assembly checkpoint	-0.0226
+R108I	dsn1-8	spindle assembly checkpoint	-0.0558
+R108L	dsn1-8	spindle assembly checkpoint	-0.0202
+R108Q	dsn1-8	spindle assembly checkpoint	-0.0298
+R108Y	dsn1-8	spindle assembly checkpoint	0.0226
+R112S	dsn1-8	spindle assembly checkpoint	0.0285
+R78K	dsn1-8	spindle assembly checkpoint	-0.0136
+T34A	dsn1-8	spindle assembly checkpoint	0.0512
+T34E	dsn1-8	spindle assembly checkpoint	0.2774
+T34G	dsn1-8	spindle assembly checkpoint	0.3223
+T34Q	dsn1-8	spindle assembly checkpoint	0.2509
+Y157A	dsn1-8	spindle assembly checkpoint	-0.0725
+G80A	dsn1-8	spindle assembly checkpoint	-5e-4
+H141R	dsn1-8	spindle assembly checkpoint	0.0034
+K101R	dsn1-8	spindle assembly checkpoint	0.2207
+D79A	dsn1-8	spindle assembly checkpoint	0.2678
+Q147E	elp4	tRNA modification	-0.0533
+D79S	elp4	tRNA modification	-0.0397
+R108G	elp4	tRNA modification	0.1294
+R108I	elp4	tRNA modification	0.0344
+R108L	elp4	tRNA modification	-0.0061
+R108Q	elp4	tRNA modification	0.1032
+R108Y	elp4	tRNA modification	0.0899
+R112S	elp4	tRNA modification	0.0602
+R78K	elp4	tRNA modification	-0.0507
+T34A	elp4	tRNA modification	-0.0465
+T34E	elp4	tRNA modification	-0.0622
+T34G	elp4	tRNA modification	-0.0119
+T34Q	elp4	tRNA modification	-0.0611
+Y157A	elp4	tRNA modification	-0.0089
+G80A	elp4	tRNA modification	-0.0393
+H141R	elp4	tRNA modification	0.0595
+K101R	elp4	tRNA modification	-0.118
+D79A	elp4	tRNA modification	-0.0362
+Q147E	iki1	tRNA modification	-0.0707
+D79S	iki1	tRNA modification	-0.0384
+R108G	iki1	tRNA modification	0.1293
+R108I	iki1	tRNA modification	0.0393
+R108L	iki1	tRNA modification	0.0286
+R108Q	iki1	tRNA modification	0.1299
+R108Y	iki1	tRNA modification	0.1076
+R112S	iki1	tRNA modification	0.0379
+R78K	iki1	tRNA modification	-0.0571
+T34A	iki1	tRNA modification	-0.0335
+T34E	iki1	tRNA modification	-0.1061
+T34G	iki1	tRNA modification	-0.0306
+T34Q	iki1	tRNA modification	-0.0614
+Y157A	iki1	tRNA modification	0.0373
+G80A	iki1	tRNA modification	-0.0931
+H141R	iki1	tRNA modification	0.0496
+K101R	iki1	tRNA modification	-0.1121
+D79A	iki1	tRNA modification	-0.0305
+D79S	ipl1-2	spindle assembly checkpoint	0.1303
+Q147E	ipl1-2	spindle assembly checkpoint	0.0672
+R108G	ipl1-2	spindle assembly checkpoint	-0.0211
+R108I	ipl1-2	spindle assembly checkpoint	-0.0213
+R108L	ipl1-2	spindle assembly checkpoint	-0.0325
+R108Q	ipl1-2	spindle assembly checkpoint	-1e-4
+R108Y	ipl1-2	spindle assembly checkpoint	-0.0142
+R112S	ipl1-2	spindle assembly checkpoint	-0.0085
+R78K	ipl1-2	spindle assembly checkpoint	-0.0182
+T34A	ipl1-2	spindle assembly checkpoint	0.0382
+T34E	ipl1-2	spindle assembly checkpoint	0.0809
+T34G	ipl1-2	spindle assembly checkpoint	0.1607
+T34Q	ipl1-2	spindle assembly checkpoint	0.0649
+Y157A	ipl1-2	spindle assembly checkpoint	0.056
+G80A	ipl1-2	spindle assembly checkpoint	0.015
+H141R	ipl1-2	spindle assembly checkpoint	0.0018
+K101R	ipl1-2	spindle assembly checkpoint	0.0383
+D79A	ipl1-2	spindle assembly checkpoint	0.1301
+D79S	mad1	spindle assembly checkpoint	0.1507
+Q147E	mad1	spindle assembly checkpoint	0.0507
+R108G	mad1	spindle assembly checkpoint	-0.005
+R108I	mad1	spindle assembly checkpoint	-0.0438
+R108L	mad1	spindle assembly checkpoint	-0.0353
+R108Q	mad1	spindle assembly checkpoint	-0.0058
+R108Y	mad1	spindle assembly checkpoint	0.035
+R112S	mad1	spindle assembly checkpoint	0.0312
+R78K	mad1	spindle assembly checkpoint	-0.0269
+T34A	mad1	spindle assembly checkpoint	0.0225
+T34E	mad1	spindle assembly checkpoint	0.1332
+T34G	mad1	spindle assembly checkpoint	0.2474
+T34Q	mad1	spindle assembly checkpoint	0.1099
+Y157A	mad1	spindle assembly checkpoint	-0.0825
+G80A	mad1	spindle assembly checkpoint	0.1094
+H141R	mad1	spindle assembly checkpoint	0.0595
+K101R	mad1	spindle assembly checkpoint	0.136
+D79A	mad1	spindle assembly checkpoint	0.1779
+Q147E	mad2	spindle assembly checkpoint	0.0362
+D79S	mad2	spindle assembly checkpoint	0.1572
+R108G	mad2	spindle assembly checkpoint	-0.0252
+R108I	mad2	spindle assembly checkpoint	-0.0168
+R108L	mad2	spindle assembly checkpoint	-0.0231
+R108Q	mad2	spindle assembly checkpoint	-0.0281
+R108Y	mad2	spindle assembly checkpoint	0.033
+R112S	mad2	spindle assembly checkpoint	0.0248
+R78K	mad2	spindle assembly checkpoint	0.0106
+T34A	mad2	spindle assembly checkpoint	0.026
+T34E	mad2	spindle assembly checkpoint	0.1538
+T34G	mad2	spindle assembly checkpoint	0.2693
+T34Q	mad2	spindle assembly checkpoint	0.1339
+Y157A	mad2	spindle assembly checkpoint	-0.1048
+G80A	mad2	spindle assembly checkpoint	0.0762
+H141R	mad2	spindle assembly checkpoint	0.0283
+K101R	mad2	spindle assembly checkpoint	0.1602
+D79A	mad2	spindle assembly checkpoint	0.1773
+D79S	mcm21	spindle assembly checkpoint	0.1296
+Q147E	mcm21	spindle assembly checkpoint	0.0167
+R108G	mcm21	spindle assembly checkpoint	-0.0504
+R108I	mcm21	spindle assembly checkpoint	-0.057
+R108L	mcm21	spindle assembly checkpoint	-0.063
+R108Q	mcm21	spindle assembly checkpoint	-0.0654
+R108Y	mcm21	spindle assembly checkpoint	-0.0441
+R112S	mcm21	spindle assembly checkpoint	-0.018
+R78K	mcm21	spindle assembly checkpoint	-0.071
+T34A	mcm21	spindle assembly checkpoint	-0.0166
+T34E	mcm21	spindle assembly checkpoint	0.0823
+T34G	mcm21	spindle assembly checkpoint	0.1359
+T34Q	mcm21	spindle assembly checkpoint	0.0648
+Y157A	mcm21	spindle assembly checkpoint	-0.0683
+G80A	mcm21	spindle assembly checkpoint	0.0584
+H141R	mcm21	spindle assembly checkpoint	-0.0271
+K101R	mcm21	spindle assembly checkpoint	0.0601
+D79A	mcm21	spindle assembly checkpoint	0.1111
+D79S	mps1-3796	spindle assembly checkpoint	0.1557
+Q147E	mps1-3796	spindle assembly checkpoint	0.1043
+R108G	mps1-3796	spindle assembly checkpoint	0.0301
+R108I	mps1-3796	spindle assembly checkpoint	-0.0276
+R108L	mps1-3796	spindle assembly checkpoint	-0.038
+R108Q	mps1-3796	spindle assembly checkpoint	0.0073
+R108Y	mps1-3796	spindle assembly checkpoint	0.0632
+R112S	mps1-3796	spindle assembly checkpoint	0.0749
+R78K	mps1-3796	spindle assembly checkpoint	-0.0018
+T34A	mps1-3796	spindle assembly checkpoint	0.0348
+T34E	mps1-3796	spindle assembly checkpoint	0.1286
+T34G	mps1-3796	spindle assembly checkpoint	0.1802
+T34Q	mps1-3796	spindle assembly checkpoint	0.1236
+Y157A	mps1-3796	spindle assembly checkpoint	-0.0179
+G80A	mps1-3796	spindle assembly checkpoint	0.0826
+H141R	mps1-3796	spindle assembly checkpoint	0.0491
+K101R	mps1-3796	spindle assembly checkpoint	0.1024
+D79A	mps1-3796	spindle assembly checkpoint	0.19
+D79S	mps1-417	spindle assembly checkpoint	0.1705
+Q147E	mps1-417	spindle assembly checkpoint	0.0596
+R108G	mps1-417	spindle assembly checkpoint	-0.0482
+R108I	mps1-417	spindle assembly checkpoint	-0.0365
+R108L	mps1-417	spindle assembly checkpoint	-0.0831
+R108Q	mps1-417	spindle assembly checkpoint	-0.0744
+R108Y	mps1-417	spindle assembly checkpoint	-0.0227
+R112S	mps1-417	spindle assembly checkpoint	-3e-4
+R78K	mps1-417	spindle assembly checkpoint	-0.0118
+T34A	mps1-417	spindle assembly checkpoint	-0.0147
+T34E	mps1-417	spindle assembly checkpoint	0.1135
+T34G	mps1-417	spindle assembly checkpoint	0.1786
+T34Q	mps1-417	spindle assembly checkpoint	0.1101
+Y157A	mps1-417	spindle assembly checkpoint	-0.0271
+G80A	mps1-417	spindle assembly checkpoint	0.0508
+H141R	mps1-417	spindle assembly checkpoint	-0.0116
+K101R	mps1-417	spindle assembly checkpoint	0.0715
+D79A	mps1-417	spindle assembly checkpoint	0.2049
+D79S	nnf1-77	spindle assembly checkpoint	0.101
+Q147E	nnf1-77	spindle assembly checkpoint	0.0859
+R108G	nnf1-77	spindle assembly checkpoint	0.0733
+R108I	nnf1-77	spindle assembly checkpoint	0.0546
+R108L	nnf1-77	spindle assembly checkpoint	0.0108
+R108Q	nnf1-77	spindle assembly checkpoint	0.0429
+R108Y	nnf1-77	spindle assembly checkpoint	0.0745
+R112S	nnf1-77	spindle assembly checkpoint	0.0413
+R78K	nnf1-77	spindle assembly checkpoint	-0.0492
+T34A	nnf1-77	spindle assembly checkpoint	0.0575
+T34E	nnf1-77	spindle assembly checkpoint	0.1419
+T34G	nnf1-77	spindle assembly checkpoint	0.1881
+T34Q	nnf1-77	spindle assembly checkpoint	0.143
+Y157A	nnf1-77	spindle assembly checkpoint	-0.0795
+G80A	nnf1-77	spindle assembly checkpoint	0.0356
+H141R	nnf1-77	spindle assembly checkpoint	0.0185
+K101R	nnf1-77	spindle assembly checkpoint	0.1666
+D79A	nnf1-77	spindle assembly checkpoint	0.1423
+D79S	nsl1-6	spindle assembly checkpoint	0.1266
+Q147E	nsl1-6	spindle assembly checkpoint	-0.0224
+R108G	nsl1-6	spindle assembly checkpoint	0.0024
+R108I	nsl1-6	spindle assembly checkpoint	0.0174
+R108L	nsl1-6	spindle assembly checkpoint	0.0248
+R108Q	nsl1-6	spindle assembly checkpoint	0.0116
+R108Y	nsl1-6	spindle assembly checkpoint	0.0308
+R112S	nsl1-6	spindle assembly checkpoint	0.0406
+R78K	nsl1-6	spindle assembly checkpoint	-0.0121
+T34A	nsl1-6	spindle assembly checkpoint	0.0317
+T34E	nsl1-6	spindle assembly checkpoint	0.1594
+T34G	nsl1-6	spindle assembly checkpoint	0.2032
+T34Q	nsl1-6	spindle assembly checkpoint	0.1811
+Y157A	nsl1-6	spindle assembly checkpoint	-0.1066
+G80A	nsl1-6	spindle assembly checkpoint	0.0163
+H141R	nsl1-6	spindle assembly checkpoint	5e-4
+K101R	nsl1-6	spindle assembly checkpoint	0.2137
+D79A	nsl1-6	spindle assembly checkpoint	0.1563
+Q147E	nup100	nuclear pore complex	0.079
+D79S	nup100	nuclear pore complex	0.0203
+R108G	nup100	nuclear pore complex	0.2077
+R108I	nup100	nuclear pore complex	0.1247
+R108L	nup100	nuclear pore complex	0.0948
+R108Q	nup100	nuclear pore complex	0.1027
+R108Y	nup100	nuclear pore complex	0.1285
+R112S	nup100	nuclear pore complex	0.0472
+R78K	nup100	nuclear pore complex	-0.009
+T34A	nup100	nuclear pore complex	0.156
+T34E	nup100	nuclear pore complex	0.0062
+T34G	nup100	nuclear pore complex	-0.0427
+T34Q	nup100	nuclear pore complex	0.026
+Y157A	nup100	nuclear pore complex	-0.0119
+G80A	nup100	nuclear pore complex	0.0535
+H141R	nup100	nuclear pore complex	0.061
+K101R	nup100	nuclear pore complex	-0.0114
+D79A	nup100	nuclear pore complex	6e-4
+Q147E	nup133	nuclear pore complex	0.1505
+D79S	nup133	nuclear pore complex	0.2009
+R108G	nup133	nuclear pore complex	0.1053
+R108I	nup133	nuclear pore complex	0.097
+R108L	nup133	nuclear pore complex	0.161
+R108Q	nup133	nuclear pore complex	0.025
+R108Y	nup133	nuclear pore complex	0.2033
+R112S	nup133	nuclear pore complex	0.1648
+R78K	nup133	nuclear pore complex	-0.0371
+T34A	nup133	nuclear pore complex	0.2401
+T34E	nup133	nuclear pore complex	0.1757
+T34G	nup133	nuclear pore complex	0.137
+T34Q	nup133	nuclear pore complex	0.1819
+Y157A	nup133	nuclear pore complex	0.0619
+G80A	nup133	nuclear pore complex	0.1462
+H141R	nup133	nuclear pore complex	0.1494
+K101R	nup133	nuclear pore complex	0.1092
+D79A	nup133	nuclear pore complex	0.1708
+D79S	nup145-r4	nuclear pore complex	0.252
+Q147E	nup145-r4	nuclear pore complex	0.2865
+R108G	nup145-r4	nuclear pore complex	0.2116
+R108I	nup145-r4	nuclear pore complex	0.1851
+R108L	nup145-r4	nuclear pore complex	0.2423
+R108Q	nup145-r4	nuclear pore complex	0.116
+R108Y	nup145-r4	nuclear pore complex	0.2542
+R112S	nup145-r4	nuclear pore complex	0.2037
+R78K	nup145-r4	nuclear pore complex	-0.0303
+T34A	nup145-r4	nuclear pore complex	0.333
+T34E	nup145-r4	nuclear pore complex	0.2268
+T34G	nup145-r4	nuclear pore complex	0.1195
+T34Q	nup145-r4	nuclear pore complex	0.2227
+Y157A	nup145-r4	nuclear pore complex	0.097
+G80A	nup145-r4	nuclear pore complex	0.2641
+H141R	nup145-r4	nuclear pore complex	0.2515
+K101R	nup145-r4	nuclear pore complex	0.1438
+D79A	nup145-r4	nuclear pore complex	0.1449
+D79S	nup157	nuclear pore complex	0.1815
+Q147E	nup157	nuclear pore complex	0.1646
+R108G	nup157	nuclear pore complex	0.1423
+R108I	nup157	nuclear pore complex	0.2019
+R108L	nup157	nuclear pore complex	0.2527
+R108Q	nup157	nuclear pore complex	0.1016
+R108Y	nup157	nuclear pore complex	0.1785
+R112S	nup157	nuclear pore complex	0.0771
+R78K	nup157	nuclear pore complex	-0.0388
+T34A	nup157	nuclear pore complex	0.3273
+T34E	nup157	nuclear pore complex	0.2208
+T34G	nup157	nuclear pore complex	0.078
+T34Q	nup157	nuclear pore complex	0.2196
+Y157A	nup157	nuclear pore complex	0.0759
+G80A	nup157	nuclear pore complex	0.1794
+H141R	nup157	nuclear pore complex	0.1183
+K101R	nup157	nuclear pore complex	0.155
+D79A	nup157	nuclear pore complex	0.0689
+Q147E	nup188	nuclear pore complex	0.2765
+D79S	nup188	nuclear pore complex	0.3215
+R108G	nup188	nuclear pore complex	0.2371
+R108I	nup188	nuclear pore complex	0.2066
+R108L	nup188	nuclear pore complex	0.2409
+R108Q	nup188	nuclear pore complex	0.131
+R108Y	nup188	nuclear pore complex	0.2634
+R112S	nup188	nuclear pore complex	0.1794
+R78K	nup188	nuclear pore complex	-0.0368
+T34A	nup188	nuclear pore complex	0.3735
+T34E	nup188	nuclear pore complex	0.3163
+T34G	nup188	nuclear pore complex	0.2019
+T34Q	nup188	nuclear pore complex	0.301
+Y157A	nup188	nuclear pore complex	0.068
+G80A	nup188	nuclear pore complex	0.2735
+H141R	nup188	nuclear pore complex	0.1896
+K101R	nup188	nuclear pore complex	0.2412
+D79A	nup188	nuclear pore complex	0.2348
+Q147E	nup2	nuclear pore complex	0.2688
+D79S	nup2	nuclear pore complex	0.2722
+R108G	nup2	nuclear pore complex	0.0898
+R108I	nup2	nuclear pore complex	0.1677
+R108L	nup2	nuclear pore complex	0.2218
+R108Q	nup2	nuclear pore complex	0.0423
+R108Y	nup2	nuclear pore complex	0.1428
+R112S	nup2	nuclear pore complex	0.0863
+R78K	nup2	nuclear pore complex	-0.005
+T34A	nup2	nuclear pore complex	0.3743
+T34E	nup2	nuclear pore complex	0.2783
+T34G	nup2	nuclear pore complex	0.1073
+T34Q	nup2	nuclear pore complex	0.2634
+Y157A	nup2	nuclear pore complex	0.1541
+G80A	nup2	nuclear pore complex	0.3075
+H141R	nup2	nuclear pore complex	0.0957
+K101R	nup2	nuclear pore complex	0.2333
+D79A	nup2	nuclear pore complex	0.1435
+D79S	nup42	nuclear pore complex	0.1307
+Q147E	nup42	nuclear pore complex	0.167
+R108G	nup42	nuclear pore complex	0.1533
+R108I	nup42	nuclear pore complex	0.0987
+R108L	nup42	nuclear pore complex	0.1977
+R108Q	nup42	nuclear pore complex	0.1636
+R108Y	nup42	nuclear pore complex	0.1943
+R112S	nup42	nuclear pore complex	0.1019
+R78K	nup42	nuclear pore complex	-0.0151
+T34A	nup42	nuclear pore complex	0.212
+T34E	nup42	nuclear pore complex	0.0987
+T34G	nup42	nuclear pore complex	0.0417
+T34Q	nup42	nuclear pore complex	0.1314
+Y157A	nup42	nuclear pore complex	-0.0169
+G80A	nup42	nuclear pore complex	0.1627
+H141R	nup42	nuclear pore complex	0.1092
+K101R	nup42	nuclear pore complex	0.1327
+D79A	nup42	nuclear pore complex	0.064
+Q147E	nup53	nuclear pore complex	0.2371
+D79S	nup53	nuclear pore complex	0.287
+R108G	nup53	nuclear pore complex	0.2219
+R108I	nup53	nuclear pore complex	0.2311
+R108L	nup53	nuclear pore complex	0.2499
+R108Q	nup53	nuclear pore complex	0.1219
+R108Y	nup53	nuclear pore complex	0.2428
+R112S	nup53	nuclear pore complex	0.1249
+R78K	nup53	nuclear pore complex	-0.0333
+T34A	nup53	nuclear pore complex	0.3707
+T34E	nup53	nuclear pore complex	0.2899
+T34G	nup53	nuclear pore complex	0.1089
+T34Q	nup53	nuclear pore complex	0.2652
+Y157A	nup53	nuclear pore complex	0.1028
+G80A	nup53	nuclear pore complex	0.2116
+H141R	nup53	nuclear pore complex	0.1715
+K101R	nup53	nuclear pore complex	0.1688
+D79A	nup53	nuclear pore complex	0.1805
+D79S	nup57-5001	nuclear pore complex	0.115
+Q147E	nup57-5001	nuclear pore complex	0.1591
+R108G	nup57-5001	nuclear pore complex	0.2288
+R108I	nup57-5001	nuclear pore complex	0.2684
+R108L	nup57-5001	nuclear pore complex	0.2993
+R108Q	nup57-5001	nuclear pore complex	0.1801
+R108Y	nup57-5001	nuclear pore complex	0.2346
+R112S	nup57-5001	nuclear pore complex	0.0984
+R78K	nup57-5001	nuclear pore complex	0.0148
+T34A	nup57-5001	nuclear pore complex	0.3074
+T34E	nup57-5001	nuclear pore complex	0.113
+T34G	nup57-5001	nuclear pore complex	-0.0593
+T34Q	nup57-5001	nuclear pore complex	0.1644
+Y157A	nup57-5001	nuclear pore complex	0.0453
+G80A	nup57-5001	nuclear pore complex	0.1683
+H141R	nup57-5001	nuclear pore complex	0.1502
+K101R	nup57-5001	nuclear pore complex	0.1714
+D79A	nup57-5001	nuclear pore complex	0.0346
+D79S	nup57-e17	nuclear pore complex	0.3341
+Q147E	nup57-e17	nuclear pore complex	0.1864
+R108G	nup57-e17	nuclear pore complex	0.1765
+R108I	nup57-e17	nuclear pore complex	0.106
+R108L	nup57-e17	nuclear pore complex	0.1661
+R108Q	nup57-e17	nuclear pore complex	0.0713
+R108Y	nup57-e17	nuclear pore complex	0.2023
+R112S	nup57-e17	nuclear pore complex	0.1811
+R78K	nup57-e17	nuclear pore complex	-0.0993
+T34A	nup57-e17	nuclear pore complex	0.3156
+T34E	nup57-e17	nuclear pore complex	0.3086
+T34G	nup57-e17	nuclear pore complex	0.2289
+T34Q	nup57-e17	nuclear pore complex	0.2817
+Y157A	nup57-e17	nuclear pore complex	0.1356
+G80A	nup57-e17	nuclear pore complex	0.2901
+H141R	nup57-e17	nuclear pore complex	0.2337
+K101R	nup57-e17	nuclear pore complex	0.2317
+D79A	nup57-e17	nuclear pore complex	0.2677
+D79S	nup82-5004	nuclear pore complex	0.2336
+Q147E	nup82-5004	nuclear pore complex	0.2704
+R108G	nup82-5004	nuclear pore complex	0.2128
+R108I	nup82-5004	nuclear pore complex	0.2597
+R108L	nup82-5004	nuclear pore complex	0.3197
+R108Q	nup82-5004	nuclear pore complex	0.1504
+R108Y	nup82-5004	nuclear pore complex	0.2604
+R112S	nup82-5004	nuclear pore complex	0.1648
+R78K	nup82-5004	nuclear pore complex	-0.0162
+T34A	nup82-5004	nuclear pore complex	0.3711
+T34E	nup82-5004	nuclear pore complex	0.2318
+T34G	nup82-5004	nuclear pore complex	0.1073
+T34Q	nup82-5004	nuclear pore complex	0.2752
+Y157A	nup82-5004	nuclear pore complex	0.1083
+G80A	nup82-5004	nuclear pore complex	0.1952
+H141R	nup82-5004	nuclear pore complex	0.1848
+K101R	nup82-5004	nuclear pore complex	0.2032
+D79A	nup82-5004	nuclear pore complex	0.1562
+D79S	nup82-5005	nuclear pore complex	0.0277
+Q147E	nup82-5005	nuclear pore complex	0.0783
+R108G	nup82-5005	nuclear pore complex	0.0598
+R108I	nup82-5005	nuclear pore complex	0.0816
+R108L	nup82-5005	nuclear pore complex	0.1092
+R108Q	nup82-5005	nuclear pore complex	0.0555
+R108Y	nup82-5005	nuclear pore complex	0.0619
+R112S	nup82-5005	nuclear pore complex	0.0411
+R78K	nup82-5005	nuclear pore complex	0.0669
+T34A	nup82-5005	nuclear pore complex	0.0984
+T34E	nup82-5005	nuclear pore complex	0.0435
+T34G	nup82-5005	nuclear pore complex	-0.0255
+T34Q	nup82-5005	nuclear pore complex	0.0335
+Y157A	nup82-5005	nuclear pore complex	0.0266
+G80A	nup82-5005	nuclear pore complex	0.0185
+H141R	nup82-5005	nuclear pore complex	0.0711
+K101R	nup82-5005	nuclear pore complex	0.038
+D79A	nup82-5005	nuclear pore complex	-0.0078
+D79S	nup84	nuclear pore complex	0.1363
+Q147E	nup84	nuclear pore complex	0.1276
+R108G	nup84	nuclear pore complex	0.0978
+R108I	nup84	nuclear pore complex	0.0585
+R108L	nup84	nuclear pore complex	0.0368
+R108Q	nup84	nuclear pore complex	0.0499
+R108Y	nup84	nuclear pore complex	0.0842
+R112S	nup84	nuclear pore complex	0.0657
+R78K	nup84	nuclear pore complex	-0.0513
+T34A	nup84	nuclear pore complex	0.1051
+T34E	nup84	nuclear pore complex	0.056
+T34G	nup84	nuclear pore complex	0.0384
+T34Q	nup84	nuclear pore complex	0.0838
+Y157A	nup84	nuclear pore complex	0.0414
+G80A	nup84	nuclear pore complex	0.1164
+H141R	nup84	nuclear pore complex	0.0466
+K101R	nup84	nuclear pore complex	0.0083
+D79A	nup84	nuclear pore complex	0.1343
+Q147E	pom152	nuclear pore complex	0.3046
+D79S	pom152	nuclear pore complex	0.2281
+R108G	pom152	nuclear pore complex	0.2216
+R108I	pom152	nuclear pore complex	0.3211
+R108L	pom152	nuclear pore complex	0.3294
+R108Q	pom152	nuclear pore complex	0.0904
+R108Y	pom152	nuclear pore complex	0.2288
+R112S	pom152	nuclear pore complex	0.092
+R78K	pom152	nuclear pore complex	-0.0498
+T34A	pom152	nuclear pore complex	0.4338
+T34E	pom152	nuclear pore complex	0.2428
+T34G	pom152	nuclear pore complex	0.0509
+T34Q	pom152	nuclear pore complex	0.2167
+Y157A	pom152	nuclear pore complex	0.0719
+G80A	pom152	nuclear pore complex	0.2133
+H141R	pom152	nuclear pore complex	0.1276
+K101R	pom152	nuclear pore complex	0.1908
+D79A	pom152	nuclear pore complex	0.0674
+Q147E	pom34	nuclear pore complex	0.264
+D79S	pom34	nuclear pore complex	0.2372
+R108G	pom34	nuclear pore complex	0.2044
+R108I	pom34	nuclear pore complex	0.3276
+R108L	pom34	nuclear pore complex	0.3855
+R108Q	pom34	nuclear pore complex	0.1568
+R108Y	pom34	nuclear pore complex	0.2802
+R112S	pom34	nuclear pore complex	0.1543
+R78K	pom34	nuclear pore complex	-0.0248
+T34A	pom34	nuclear pore complex	0.3759
+T34E	pom34	nuclear pore complex	0.2257
+T34G	pom34	nuclear pore complex	0.1082
+T34Q	pom34	nuclear pore complex	0.2418
+Y157A	pom34	nuclear pore complex	0.0404
+G80A	pom34	nuclear pore complex	0.1749
+H141R	pom34	nuclear pore complex	0.1728
+K101R	pom34	nuclear pore complex	0.2492
+D79A	pom34	nuclear pore complex	0.1139
+D79S	spc105-15	spindle assembly checkpoint	0.2714
+Q147E	spc105-15	spindle assembly checkpoint	0.0852
+R108G	spc105-15	spindle assembly checkpoint	-0.0582
+R108I	spc105-15	spindle assembly checkpoint	-0.0163
+R108L	spc105-15	spindle assembly checkpoint	-0.0277
+R108Q	spc105-15	spindle assembly checkpoint	-0.0904
+R108Y	spc105-15	spindle assembly checkpoint	0.0244
+R112S	spc105-15	spindle assembly checkpoint	-0.0159
+R78K	spc105-15	spindle assembly checkpoint	-6e-4
+T34A	spc105-15	spindle assembly checkpoint	0.0845
+T34E	spc105-15	spindle assembly checkpoint	0.2674
+T34G	spc105-15	spindle assembly checkpoint	0.3549
+T34Q	spc105-15	spindle assembly checkpoint	0.2486
+Y157A	spc105-15	spindle assembly checkpoint	-0.0295
+G80A	spc105-15	spindle assembly checkpoint	0.1325
+H141R	spc105-15	spindle assembly checkpoint	0.0024
+K101R	spc105-15	spindle assembly checkpoint	0.2414
+D79A	spc105-15	spindle assembly checkpoint	0.2577
+D79S	spc105-4	spindle assembly checkpoint	0.1755
+Q147E	spc105-4	spindle assembly checkpoint	0.0347
+R108G	spc105-4	spindle assembly checkpoint	-0.0176
+R108I	spc105-4	spindle assembly checkpoint	-0.0351
+R108L	spc105-4	spindle assembly checkpoint	-0.0272
+R108Q	spc105-4	spindle assembly checkpoint	-0.0217
+R108Y	spc105-4	spindle assembly checkpoint	0.0378
+R112S	spc105-4	spindle assembly checkpoint	0.048
+R78K	spc105-4	spindle assembly checkpoint	-0.0212
+T34A	spc105-4	spindle assembly checkpoint	0.0375
+T34E	spc105-4	spindle assembly checkpoint	0.1616
+T34G	spc105-4	spindle assembly checkpoint	0.2735
+T34Q	spc105-4	spindle assembly checkpoint	0.1479
+Y157A	spc105-4	spindle assembly checkpoint	-0.0184
+G80A	spc105-4	spindle assembly checkpoint	0.0711
+H141R	spc105-4	spindle assembly checkpoint	0.0317
+K101R	spc105-4	spindle assembly checkpoint	0.1472
+D79A	spc105-4	spindle assembly checkpoint	0.2018
+Q147E	uba4	tRNA modification	0.002
+D79S	uba4	tRNA modification	-0.0219
+R108G	uba4	tRNA modification	0.2454
+R108I	uba4	tRNA modification	0.0471
+R108L	uba4	tRNA modification	0.0559
+R108Q	uba4	tRNA modification	0.1858
+R108Y	uba4	tRNA modification	0.1184
+R112S	uba4	tRNA modification	0.0432
+R78K	uba4	tRNA modification	-0.0762
+T34A	uba4	tRNA modification	-0.0236
+T34E	uba4	tRNA modification	-0.088
+T34G	uba4	tRNA modification	-0.0595
+T34Q	uba4	tRNA modification	-0.0499
+Y157A	uba4	tRNA modification	0.1012
+G80A	uba4	tRNA modification	-0.0756
+H141R	uba4	tRNA modification	0.0774
+K101R	uba4	tRNA modification	-0.0662
+D79A	uba4	tRNA modification	-0.0374
+Q147E	urm1	tRNA modification	0.0047
+D79S	urm1	tRNA modification	-0.0129
+R108G	urm1	tRNA modification	0.1727
+R108I	urm1	tRNA modification	-0.0103
+R108L	urm1	tRNA modification	0.0092
+R108Q	urm1	tRNA modification	0.1169
+R108Y	urm1	tRNA modification	0.0975
+R112S	urm1	tRNA modification	0.0654
+R78K	urm1	tRNA modification	-0.0412
+T34A	urm1	tRNA modification	-0.0266
+T34E	urm1	tRNA modification	-0.0747
+T34G	urm1	tRNA modification	-0.0106
+T34Q	urm1	tRNA modification	-0.0474
+Y157A	urm1	tRNA modification	0.0756
+G80A	urm1	tRNA modification	-0.0358
+H141R	urm1	tRNA modification	0.1084
+K101R	urm1	tRNA modification	-0.0691
+D79A	urm1	tRNA modification	-0.0051
